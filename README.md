@@ -6,11 +6,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 
 - [Hacktoberfest Intro](https://www.youtube.com/embed/QpYJ8RtYiYE)
 - [How to pull request [Overview]](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Making changes / Project Structure](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Merge Conflict](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Got a comment on my pull request. So what now?](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Forking and Cloning](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Commit, Push and PR](https://www.youtube.com/embed/QpYJ8RtYiYE)
+- [Merge Conflict / comment](https://www.youtube.com/embed/QpYJ8RtYiYE)
 
 # Kontribution rules
 
