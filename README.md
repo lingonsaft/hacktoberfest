@@ -4,9 +4,9 @@ This is a beginner friendly project to help you get started with your [hacktober
 
 # Videos
 
-- [Hacktoberfest Intro](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [How to pull request [Overview]](https://www.youtube.com/embed/QpYJ8RtYiYE)
-- [Merge Conflict / comment](https://www.youtube.com/embed/QpYJ8RtYiYE)
+- [Hacktoberfest Intro](https://youtu.be/OsAFX_ZbgaE)
+- [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
+- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 # Kontribution rules
 
