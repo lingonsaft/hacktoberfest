@@ -171,3 +171,21 @@ summary{
 summary:hover{
   cursor: pointer;
 }
+
+.container {
+  margin-top: 2rem;
+}
+#footer {
+  border-top: 2px solid #555555;
+  margin: 2rem 0 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: rgba(110,110,130,0.8);
+  text-align: center;
+
+}
+
+#footer a img {
+  width: 4rem;
+  height: auto;
+}
