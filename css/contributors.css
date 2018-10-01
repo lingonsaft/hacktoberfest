@@ -8,3 +8,7 @@ body {
 .copy {
   padding-left: 50%;
 }
+
+.list{
+    list-style-type: none;
+}
