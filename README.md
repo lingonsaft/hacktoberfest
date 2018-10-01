@@ -16,6 +16,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling / code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributers.html file
+- Add images 
 
 # FAQ
 
@@ -31,3 +32,4 @@ This is a beginner friendly project to help you get started with your [hacktober
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - yes..
+- how many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?

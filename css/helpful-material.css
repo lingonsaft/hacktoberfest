@@ -2,17 +2,17 @@ body {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
-  background-color: #EEEEEE;
+  background-color:mistyrose;
 }
 
 #navbar {
   padding: 8px;
-  background-color: #FF0844;
+  background-color:lavenderblush;
 }
 
 #navbar a {
-	
   color: white;
+  margin-left: 6px;
   font-size: 18px;
   text-decoration:none;
   padding: 12px 16px;
@@ -21,4 +21,70 @@ body {
 
 #navbar a:hover {
   background-color: #DB093D;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 1.2%;
+  width: 100%;
+  height: 30px;
+  background-color: #FF0844;
+  color: white;
+   text-align: right;
+}
+
+.copy {
+  padding-left: 50%;
+}
+
+.fa {
+  background: #b0aaaa;
+  color: #333;
+  padding:10px;
+  font-size: 30px;
+  width: 20px;
+  border-radius: 50%;;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 1px;
+  -webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+-o-transform: scale(0.8);
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+}
+
+.fa-github:hover {
+  background: #333;
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.fa-instagram:hover {
+  background: #125688;
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
