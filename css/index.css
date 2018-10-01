@@ -19,6 +19,7 @@ body {
 }
 
 nav ul {
+  list-style-type: none;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -26,6 +27,7 @@ nav ul {
 }
 
 nav ul li {
+  list-style-type: none;
   display: inline-block;
   margin: 55px;
   margin-bottom: 15px;
