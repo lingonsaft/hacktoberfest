@@ -13,22 +13,6 @@ body {
 .color1{color:#000e7c;}
 .center{ text-align:center; }
 #other-videos{ display:inline-block;margin-right:30px; }
-<<<<<<< HEAD
-=======
-
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-bottom: 1.2%;
-  width: 100%;
-  height: 30px;
-  background-color: #FF0844;
-  color: white;
-   text-align: right;
-}
-
->>>>>>> 5ddca65c43222346ec06005a28fe76d8ecdb2a7d
 .copy {
   padding-left: 50%;
 }
