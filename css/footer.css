@@ -1,0 +1,39 @@
+@font-face { font-family: proxima-nova; src: url('ProximaNovaRegular.woff'); }
+
+footer, .navbar-brand {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center; 
+    line-height: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    padding: 28px 0;
+}
+  
+footer a {
+    padding: 1em;
+}
+
+#footer h3 {
+    padding: 5px;
+}
+
+.social-icons {
+    padding: 5px;
+    display: none;
+}
+
+#footer h3 span:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.footer-active .social-icons {
+    display: block;
+}
