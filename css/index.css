@@ -49,6 +49,8 @@ nav ul li a:hover {
   margin-left: 6px;
   color: white;
   font-size: 18px;
+  position:absolute;
+  
 }
 
 .tips {
