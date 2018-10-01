@@ -14,67 +14,45 @@ body {
 .color1{color:#000e7c;}
 .center{ text-align:center; }
 #other-videos{ display:inline-block;margin-right:30px; }
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 1.2%;
+  width: 100%;
+  height: 30px;
+  background-color: #FF0844;
+  color: white;
+  transition: bottom 0.5s;
+}
+
+#footer.active {
+  bottom: 50px !important;
+  transition: bottom 0.5s;
+}
+#footer.active #toggle-social-btn i{
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+#footer #toggle-social-btn i {
+  transition: transform 0.5s;
+}
+#footer #toggle-social-btn {
+  cursor: pointer;
+}
+
 .copy {
   padding-left: 50%;
-}
-
-.fa {
-  background: #b0aaaa;
-  color: #333;
-  padding:10px;
-  font-size: 30px;
-  width: 20px;
-  border-radius: 50%;;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 1px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-
-.fa-github:hover {
-  background: #333;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
-}
-
-.fa-twitter:hover {
-  background: #55ACEE;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
-}
-
-.fa-instagram:hover {
-  background: #125688;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
-}
-
-.fa-youtube:hover {
-  background: #bb0000;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .faq{ width:90%;margin-left:10%; }
 .faq-question {
   background-color: lightgray;
 }
-.tips {
-  font-size: 20px;
-}
+  .tips {
+    font-size: 20px;
+  }
 
 div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
@@ -105,9 +83,18 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .container {
   margin-top: 2rem;
 }
-#footer{ padding-bottom:20px; }
+#footer {
+  border-top: 2px solid #555555;
+  margin: 2rem 0 0 0;
+  padding-bottom: 2rem;
+  background: rgba(110,110,130,0.8);
+  text-align: center;
 
-#footer a img {
-  width: 2rem;
-  height: auto;
+}
+#footer .social-icons {
+  background: rgba(110,110,130,0.8);
+  line-height: 50px;
+}
+#footer h3 {
+  margin-bottom: -1px;
 }
