@@ -41,47 +41,41 @@ body {
   text-decoration: none;
   margin: 4px 1px;
   -webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--o-transform: scale(0.8);
--webkit-transition-duration: 0.5s;
--moz-transition-duration: 0.5s;
--o-transition-duration: 0.5s;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.fa-github:hover, .fa-twitter:hover, 
+.fa-instagram:hover, .fa-youtube:hover {
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
 
 .fa-github:hover {
   background: #333;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-twitter:hover {
   background: #55ACEE;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-instagram:hover {
   background: #125688;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-youtube:hover {
   background: #bb0000;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .faq-question {
   background-color: lightgray;
+}
+
 .tips {
   font-size: 20px;
 }
@@ -90,17 +84,18 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }  
 
+.contribution-rules-item.do,
 .contribution-rules-item.dont {
   border-bottom: 1px solid black;
   padding: 4px;
   margin-bottom: 4px;
+}
+
+.contribution-rules-item.dont {
   background-color: lightcoral;
 }
 
 .contribution-rules-item.do {
-  border-bottom: 1px solid black;
-  padding: 4px;
-  margin-bottom: 4px;
   background-color: lightgreen;
 }
 
@@ -112,18 +107,20 @@ details{
   box-shadow: 0 4px 8px 0 rgba(55,92,192,.08),0 0 1px 0 rgba(18,32,73,.08);
   text-align: left;
 }
+
 summary{
   font-weight: bold;
   font-size: 18px;
   text-align: left;
 }
-summary:hover{
-  cursor: pointer;
-}
+  summary:hover{
+    cursor: pointer;
+  }
 
 .container {
   margin-top: 2rem;
 }
+
 #footer {
   border-top: 2px solid #555555;
   margin: 2rem 0 0 0;
@@ -133,8 +130,7 @@ summary:hover{
   text-align: center;
 
 }
-
-#footer a img {
-  width: 4rem;
-  height: auto;
-}
+  #footer a img {
+    width: 4rem;
+    height: auto;
+  }

@@ -32,7 +32,7 @@ body {
   height: 30px;
   background-color: #FF0844;
   color: white;
-   text-align: right;
+  text-align: right;
 }
 
 .copy {
@@ -50,41 +50,33 @@ body {
   text-decoration: none;
   margin: 4px 1px;
   -webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--o-transform: scale(0.8);
--webkit-transition-duration: 0.5s;
--moz-transition-duration: 0.5s;
--o-transition-duration: 0.5s;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.fa-github:hover, .fa-twitter:hover, 
+.fa-instagram:hover, .fa-youtube:hover {
+  color: white;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
 
 .fa-github:hover {
   background: #333;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-twitter:hover {
   background: #55ACEE;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-instagram:hover {
   background: #125688;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
 
 .fa-youtube:hover {
   background: #bb0000;
-  color: white;
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -o-transform: scale(0.95);
 }
