@@ -8,10 +8,10 @@ This is a beginner friendly project to help you get started with your [hacktober
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
-# Kontribution rules
+# Contribution rules
 
-- Project must work when openening index.html
-- You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
+- Project must work when opening index.html
+- You are allowed to make pull requests that break the rules. We just won't merge it ;)
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling / code can be pretty, ugly or stupid, big or small as long as it works
@@ -24,7 +24,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
-- We are two programmers from Sweden [Richard](https://github.com/richie-south)
+  - We are two programmers from Sweden [Richard](https://github.com/richie-south)
   and [Benny](https://github.com/BennyCarlsson). We are doing this because we love open
   source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open source.
 - Why are you not using digitalocean?
