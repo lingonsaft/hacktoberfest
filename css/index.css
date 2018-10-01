@@ -62,6 +62,7 @@ nav ul li a:hover {
 
 div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
+}  
 
 .contribution-rules-item.dont {
   border-bottom: 1px solid black;
