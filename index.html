@@ -12,7 +12,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <title>Hacktoberfest</title>
 </head>
@@ -41,34 +40,14 @@
     </div>
   </nav>
 
-  <a href="https://github.com/lingonsaft/hacktoberfest"><img style="position: absolute; top: 0; right: 0; border: 0;"
-      src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
-  <!--navbar-->
-  <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background-color:#d6ac00;">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-		<a class="navbar-brand" href="./index.html">Hacktoberfest</a>
-	  <!-- Navbar links -->
-	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="./helpful-material.html">Helpful Material</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./contributors.html">Contributors</a>
-	      </li> 
-	    </ul>
-	  </div>
-	</nav>
 <div class="container-fluid">
   <div id="header">
   	<center>
   		<br>
     <h1>Hacktoberfest 2018</h1> <a href="https://github.com/lingonsaft/hacktoberfest"><h4>(Github repo)</h4></a>
     <h5>This is a beginner friendly project to help you get started with your hacktoberfest. If you don't know where to start
-      feel free to watch the videos and read the contribution rules. Happy hacking
-      <3 </h5>
+      feel free to watch the videos and read the contribution rules. Happy hacking <img src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" style="width:30px">
+    </h5>
     </center>
   </div>
   <br><br>
@@ -104,45 +83,51 @@
        </div>
     	</center>
     <br>
-      <div id="contribution-rules" data-aos="fade-up">
+    <div class="row">
+    	<div class="col-md-1"></div>
+
+      <div id="contribution-rules" data-aos="fade-up" class="mb-5 col-md-10">
         <h3>Contribution Rules</h3>
-        <ul>
-          <li class="contribution-rules-item do">
-            Project must work when opening index.html
+        <ul class="list-group">
+          <li class="contribution-rules-item do list-group-item">
+            <span class="glyphicon glyphicon-check"></span> Project must work when opening index.html
+    <br>
           </li>
-          <li class="contribution-rules-item do">
+          <li class="contribution-rules-item do list-group-item">
             You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
           </li>
-          <li class="contribution-rules-item dont">
+          <li class="contribution-rules-item dont list-group-item">
             Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
           </li>
-          <li class="contribution-rules-item dont">
+          <li class="contribution-rules-item dont list-group-item">
             Do NOT remove Videos, Rules, FAQ or any other helpful content.
           </li>
-          <li class="contribution-rules-item do">Styling / code can be pretty, ugly or stupid, big or small as long as
+          <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or stupid, big or small as long as
             it
             works</li>
-          <li class="contribution-rules-item do">Add your name to the contributers.html file</li>
+          <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
         </ul>
       </div>
-    
+    </div>
+    <br><br>
       <div class="faq">
+      	<h3 class="center">FAQ</h3>
         <div class="row">
-          <div class="card border-primary mb-3" style="max-width: 30%; margin: 1%" data-aos="flip-left">
+          <div class="card border-primary faq" style="margin: 1%" data-aos="flip-left">
             <div class="card-header">Who can contribute?</div>
             <div class="card-body">
               <p class="card-text">Anyone with a github account and signed up for
                 <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a> 😄</p>
             </div>
           </div>
-          <div class="card border-primary mb-3" style="max-width: 30%; margin: 1%" data-aos="flip-right">
+          <div class="card border-primary faq" style=" margin: 1%" data-aos="flip-right">
             <div class="card-header">Are you getting paid for this?</div>
             <div class="card-body">
               <p class="card-text">Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame
                 and glory.</p>
             </div>
           </div>
-          <div class="card border-primary mb-3" style="max-width: 30%; margin: 1%" data-aos="flip-up">
+          <div class="card border-primary faq" style="margin: 1%" data-aos="flip-up">
             <div class="card-header">Who are you and why are you doing this?</div>
             <div class="card-body">
               <p class="card-text">We are two programmers from Sweden <a href="https://github.com/richie-south" target="_blank">Richard</a>
@@ -151,7 +136,7 @@
                 Hacktoberfest and Open source.</p>
             </div>
           </div>
-          <div class="card border-primary mb-3" style="max-width: 30%; margin: 1%" data-aos="flip-down">
+          <div class="card border-primary faq" style="margin: 1%" data-aos="flip-down">
             <div class="card-header">Why are you not using digitalocean?</div>
             <div class="card-body">
               <p class="card-text">Because we only know javascript and suck at servers. We use <a href="https://zeit.co/now"
@@ -159,7 +144,7 @@
                 instead.</p>
             </div>
           </div>
-          <div class="card border-primary mb-3" style="max-width: 30%; margin: 1%"  data-aos="fade-up-left">
+          <div class="card border-primary faq" style="margin: 1%"  data-aos="fade-up-left">
             <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
                 target="_blank">CodeCardCodingCards</a> kickstarter?</div>
             <div class="card-body">
@@ -175,13 +160,13 @@
     <a href="https://www.instagram.com/lingonsaftofficial/" target="_blank"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
     <a href="https://twitter.com/lingonsaft1" target="_blank"><img src="./images/svg/twitter.svg"/></a>
   </div>
-
+ 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/social-links.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();
   </script>
 </body>
-
 </html>
