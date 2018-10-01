@@ -27,6 +27,10 @@ body {
   font-size: 20px;
 }
 
+#tips{
+  border-radius: 5px;
+}
+
 div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
@@ -34,6 +38,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 #contribution-rules{ 
   background-color: #fff;
   padding:30px; 
+  border-radius: 5px;
 }
 .do{
   color:green;
