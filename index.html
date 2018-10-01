@@ -18,103 +18,118 @@
                 <a href="./contributors.html" class="contr"><i class="fas fa-code"></i> Contributors</a>
         </nav>
 
-      <a href="https://github.com/lingonsaft/hacktoberfest">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-          src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+      <!-- <a href="https://github.com/lingonsaft/hacktoberfest">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+          src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a> -->
 
     </header>
 
 
-    <div id="welcome-section" class="intro"> 
-        <h1>Hacktoberfest 2018 <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
-        <h2>This is a beginner friendly project to help you get started with your hacktoberfest. If you don't know where to start
-        feel free to watch the videos and read the contribution rules. Happy hacking
-        </h2>
-    </div>
+    <main class="container"> 
+        <header class="banner">
+          <h1 class="banner__heading"><span class="title">Hacktoberfest</span><span class="year">2018</span></h1>
+          <h2 class="repository"><a href="https://github.com/lingonsaft/hacktoberfest"><i class="fab fa-github"></i> Github Repository</a></h2>
+          <h2 class="banner__description">This is a beginner friendly project to help you get started with
+              your hacktoberfest. If you don't know where to start feel free to
+              watch the videos and read the contribution rules. Happy hacking !
+          </h2> 
+        </header>
+    </main>
+
   <div id="content">
-    <div id="explainer-video">
-      <div class="tips">
-        <p>Here are some tips on what to do!</p>
+    <div id="">
+      <section class="tips">
+        <p class="tips__header">Here are some tips on what to do !</p>
         <ul>
-          <li>Style this page.</li>
-          <li>Add your own projects to the Helpful Material page.</li>
-          <li>Add helpful links/guides to the Helpful Material page.</li>
-          <li>Update readme.md</li>
+          <li><i class="fas fa-arrow-right"></i> Style this page.</li>
+          <li><i class="fas fa-arrow-right"></i> Add your own projects to the Helpful Material page.</li>
+          <li><i class="fas fa-arrow-right"></i> Add helpful links/guides to the Helpful Material page.</li>
+          <li><i class="fas fa-arrow-right"></i> Update readme.md</li>
         </ul>
+        <p class="tips__footer"> Or checkout the <a href="https://github.com/lingonsaft/hacktoberfest/issues">github issues</a> for what to
+          do <i class="fas fa-smile"></i></p> 
+      </section>
 
-        <p>Or checkout the <a href="https://github.com/lingonsaft/hacktoberfest/issues">github issues</a> for what to
-          do :)</p>
-      </div>
+      <section class="tutorials">
+          <div class="explainer">
+            <div>
+              <iframe class="explainer__video" src="https://www.youtube.com/embed/OsAFX_ZbgaE" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+            </div>  
+            <h3 class="explainer__title">Hacktoberfest Intro</h3>
+                  
+          </div>
+          <div class="explainer">
+            <div>
+              <iframe class="explainer__video" src="https://www.youtube.com/embed/DIj2q02gvKs" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+            </div>  
+            <h3 class="explainer__title">How to pull request [Overview]</h3>
 
-      <h3>Hacktoberfest Intro</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OsAFX_ZbgaE" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    </div>
-    <div id="other-videos">
-      <h3>How to pull request [Overview]</h3>
-      <iframe width="280" height="175" src="https://www.youtube.com/embed/DIj2q02gvKs" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    </div>
-    <div id="other-videos">
-        <h3>How to solve merge conflict</h3>
-        <iframe width="280" height="175" src="https://www.youtube.com/embed/zOx5PJTY8CI" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe>
-      </div>
-    <div id="contribution-rules">
-      <h3>The rules of Contribution for the hacktoberfest</h3>
-      <ul>
-        <li class="contribution-rules-item do">
+          </div>
+          <div class="explainer">
+            <div>
+              <iframe class="explainer__video" src="https://www.youtube.com/embed/zOx5PJTY8CI" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+            </div>  
+            <h3 class="explainer__title">How to solve merge conflict</h3>
+             
+          </div>
+      </section>
+    <section class="contribution">
+      <h3 class="contribution__heading">The rules of Contribution for the hacktoberfest</h3>
+      <ul class="contribution__rules">
+        <li class="contribution__rules__item do"> 
           Project must work when opening index.html
         </li>
-        <li class="contribution-rules-item do">
+        <li class="contribution__rules__item do"> 
           You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
         </li>
-        <li class="contribution-rules-item dont">
+        <li class="contribution__rules__item dont"> 
           Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
         </li>
-        <li class="contribution-rules-item dont">
+        <li class="contribution__rules__item dont"> 
           Do NOT remove Videos, Rules, FAQ or any other helpful content.
         </li>
-        <li class="contribution-rules-item do">Styling / code can be pretty, ugly or stupid, big or small as long as it works</li>
-        <li class="contribution-rules-item do">Add your name to the contributers.html file</li>
+        <li class="contribution__rules__item do">Styling / code can be pretty, ugly or stupid, big or small as long as it works</li>
+        <li class="contribution__rules__item do">Add your name to the contributers.html file</li>
       </ul>
     </div>
-    
-      <div id="rules">
+  </section>
 
-      </div>
+  <section class="faqs">
 
-  </div>
+    <h3 class="faqs__head">FAQ</h3>
+    <details class="faq">
+       <summary class="faq__question">Who can contribute?</summary>
+        <p class="faq__answer">Anyone with a github account and signed up for <a href="https://hacktoberfest.digitalocean.com">Hacktoberfest<</p>
+    </details>
+    <details  class="faq">
+       <summary class="faq__question">Are you getting paid for this?</summary>
+        <p class="faq__answer">Sadly No, but we think we should. This is 100% unofficial and we do it for fun, fame and glory.</p>
+    </details>
+    <details class="faq">
+       <summary class="faq__question">Who are you and why are you doing this?</summary>
+        <p class="faq__answer">We are two programmers from Sweden Richard and Benny. We are doing this because we love open source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open source.</p>
+    </details>
+    <details class="faq">
+      <summary class="faq__question">Why are you not using Digitalocean?</summary>
+       <p class="faq__answer">Because we only know javascript and suck at servers. We use now instead.</p>
+    </details>
+    <details class="faq">
+       <summary class="faq__question">Are you not the guys from that failed CodeCardCodingCards kickstarter?</summary>
+        <p class="faq__answer">Yes..</p>
+    </details>
+  </section>
 
-      <h3>FAQ</h3>
-      <details open>
-         <summary>Who can contribute?</summary>
-          <p>Anyone with a github account and signed up for <a href="https://hacktoberfest.digitalocean.com">Hacktoberfest<</p>
-      </details>
-      <details>
-         <summary>Are you getting paid for this?</summary>
-          <p>Sadly No, but we think we should. This is 100% unofficial and we do it for fun, fame and glory.</p>
-      </details>
-      <details>
-         <summary>Who are you and why are you doing this?</summary>
-          <p>We are two programmers from Sweden Richard and Benny. We are doing this because we love open source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open source.</p>
-      </details>
-      <details>
-        <summary>Why are you not using Digitalocean?</summary>
-         <p>Because we only know javascript and suck at servers. We use now instead.</p>
-      </details>
-      <details>
-         <summary>Are you not the guys from that failed CodeCardCodingCards kickstarter?</summary>
-          <p>Yes..</p>
-      </details>
+  <footer class="footer">
+    <h3 class="footer__head" >Social Links</h3>
+    <a href="https://github.com/lingonsaft"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+    <a href="https://www.youtube.com/lingonsaft/"><i class="fab fa-youtube"></i></a>&nbsp;&nbsp;
+    <a href="https://www.instagram.com/lingonsaftofficial/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+    <a href="https://twitter.com/lingonsaft1"><i class="fab fa-twitter"></i></a>
+  </footer>
 
-  <div id="footer">
-    <h3>Social Links</h3>
-    <a href="https://github.com/lingonsaft"><img src="./images/git_logo.png" width="30" height="30" ></a>&nbsp;&nbsp;
-    <a href="https://www.youtube.com/lingonsaft/"><img src="./images/you_logo.png" width="30" height="30"/></a>&nbsp;&nbsp;
-    <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/insta_logo.jpg" width="30" height="30"/></a>&nbsp;&nbsp;
-    <a href="https://twitter.com/lingonsaft1"><img src="./images/twi_logo.png" width="30" height="30"/></a>
-  </div>
   <script src="./scripts/index.js"></script>
 </body>
 

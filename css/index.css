@@ -11,45 +11,33 @@ body {
   
 }
 
-.intro {
-  top: 0;
-  min-height: 55vh;
-  padding-top: 23vh;
-}
-
-.intro h2 {
-  color: green;
-  text-align: center;
-}
-
-
-
 /* Styles for navbar element. */
 
 #navbar {
   box-sizing: border-box;
   display:flex;
   align-items:center;
-  height:3rem;
+  height:3.5rem;
   margin:0rem;
   padding-left:1rem;
-  color:whitesmoke;
+  color:white;
   background-color:#001;
 }
 
 nav a{
   text-decoration:none;
-  font-size:1rem;
+  font-size:1.2rem;
   font-weight: 300;
   display:inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color:whitesmoke;
+  color:white;
   margin:0rem 0.5rem;
 }
 
 
 nav a:hover{
+  font-weight: bold;
   border-bottom:2px solid white;
 }
 
@@ -62,41 +50,298 @@ nav a:hover{
   margin-right: 2rem;
 }
 
-/* */
+/* Styles for hacktoberfest banner */
 
+.banner {
+  grid-column: 1 / -1;
+  display:grid;
+  grid-template-columns: repeat(16,1fr);
+  color:white;
+  margin:0;
+  padding:3rem 0rem;
+  background-color:hsla(300, 100%, 25%,0.9);
+}
+
+
+.banner__heading,
+.banner__description {
+  box-sizing: border-box;
+  padding:2rem 1.5rem 0rem 1.5rem;
+  padding-bottom: 0.50rem;
+  grid-column: 1 / -1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin:0rem;
+  font-size:3.2rem;
+  text-transform: uppercase;
+}
+
+.repository{
+  box-sizing: border-box;
+  padding:0rem 3rem 0rem 3rem;
+  padding-bottom: 0.50rem;
+  grid-column: 1 / -1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin:0rem;
+  font-size:2rem;
+  text-transform: uppercase;
+}
+
+.repository a {
+  color:#002;
+  text-decoration: none;
+}
+
+.title, .year{
+  display:block;
+}
+
+.title{
+  letter-spacing: 4px;
+}
+
+
+.banner__description{
+  font-weight: 300;
+  text-transform: unset;
+  padding:0rem 3rem 2rem 3rem;
+  font-size:1.4rem;
+}
+
+
+/* styles for tips */
+p {
+  margin:0;
+}
 
 .tips {
-  font-size: 20px;
+  margin:0;
+  padding:4rem 3rem;
+  box-sizing: border-box;
+  background-color:#001;
+  color:white;  
 }
 
 
-.contribution-rules-item.dont {
-  border-bottom: 1px solid black;
-  padding: 4px;
-  margin-bottom: 4px;
-  background-color: lightcoral;
+.tips__header {
+  padding:1rem;
+  margin:0.5rem;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color:dodgerblue;
+  border-radius: 0.5rem;
+  margin-bottom:1rem;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 85% 100%);
 }
 
-.contribution-rules-item.do {
-  border-bottom: 1px solid black;
-  padding: 4px;
-  margin-bottom: 4px;
-  background-color: lightgreen;
+.tips__footer{
+  padding:1rem;
+  margin:0.5rem;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color:dodgerblue;
+  border-radius: 0.5rem;
+  margin-top:1rem;
+  clip-path: polygon(0 100%, 0 0, 85% 0, 100% 100%);
 }
 
-details{
-  max-width: 600px;
-  margin: 0 auto 15px;
-  background-color: white;
-  padding: 5px 10px;
-  box-shadow: 0 4px 8px 0 rgba(55,92,192,.08),0 0 1px 0 rgba(18,32,73,.08);
-  text-align: left;
+.tips__footer a {
+  color:purple;
+  padding:0rem 0.5rem;
+  font-weight: bolder;
 }
-summary{
+
+.fa-smile {
+  color:yellow;
+}
+
+.tips ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  display:grid;
+  padding:0;
+  margin:0rem 0.5rem;
+  grid-gap:1rem;
+  grid-template-columns: repeat(16,1fr);
+}
+
+.tips ul li {
+  padding:0.75rem;
+  display: inline-block;
+  grid-column:1 / 10;
+  background-color:white;
+  color:black;
+  font-size:1.1rem;
+  border-bottom:5px solid blue;
+  letter-spacing: 2px;
+  border-radius: 0.20rem;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(16,1fr);
+}
+
+.flex-container{
+  display:flex;
+  justify-content: center;
+}
+
+/* styles for tutorials */
+
+.tutorials { 
+    box-sizing: border-box;
+    display:grid;
+    margin:0;
+    padding:4rem 2rem;
+    background-color: white;
+    grid-gap:1.25rem;
+    grid-template-rows: 10rem 10rem;
+    grid-auto-rows: 10rem;
+    grid-template-columns: repeat(15,1fr);
+}
+
+
+iframe {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  border:1px solid black;
+  border-radius: 0.125rem;
+  background-color:white;
+}
+
+
+.explainer {
+  grid-column: span 5;
+  grid-row:span 2;
+  display:grid;
+  padding:1rem;
+  grid-template-columns: 1fr;
+  border-radius: 0.125rem;
+  grid-template-rows:5fr 1fr;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.75);
+}
+
+.explainer__title{
+   font-size:1.3rem;
+   text-transform: uppercase;
+   font-weight: 300;
+   font-family: 'Raleway', sans-serif;
+   letter-spacing: 2px;
+   border-radius: 0.125rem;
+   padding:0.80rem;
+   background-color:#001;
+   color:white;
+   margin:0rem;
+   margin-top:1rem;
+}
+
+.explainer__video{
+  box-shadow: 0px -1px 3px 1px rgba(255,255,255,0.75);
+}
+
+
+/* styles for footer section */
+
+
+.footer{
+  padding:2rem;
+  text-align: center;
+  background-color:#000007;
+}
+
+.footer a {
+  font-size:2rem;
+  color:white;
+  padding:0 0.5rem;
+  text-decoration: none;
+}
+
+
+
+.footer__head{
+  font-size:1.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+
+/* styles for contribution  */
+
+.contribution{
+  background-color:palevioletred; 
+  padding:3rem 2rem;
+}
+
+.contribution__rules {
+  padding:0;
+  list-style-type:none;
+}
+.contribution__heading {
+  margin:0;
   font-weight: bold;
-  font-size: 18px;
-  text-align: left;
+  color:white;
+  font-size:1.5rem;
 }
-summary:hover{
-  cursor: pointer;
+
+.contribution__rules__item {
+  font-size:1.2rem;
+  padding:0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dont {
+  background-color:rgba(255, 0, 0,0.5);
+  border-bottom:1px solid white;
+  color:white;
+}
+
+.do{
+  background-color:rgba(34, 139, 34,0.5);
+  border-bottom:1px solid white;
+  color:white;
+}
+
+
+/* Styles for FAQ Section  */
+
+.faqs {
+  background-color:teal;
+  padding:3rem 2rem 4rem 2rem;
+  font-size:1.5rem;
+}
+
+.faqs__head {
+  font-size:1.7rem;
+  color:whitesmoke;
+  padding:0;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.faq{
+  padding:0.25rem;
+}
+
+.faq__question {
+  color:white;
+  padding:0.5rem;
+  background-color:#005;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+.faq__answer {
+  color:violet;
+  background-color: white;
+  padding:0.50rem 1.50rem;
+  border-bottom-right-radius: 0.5rem;
 }
