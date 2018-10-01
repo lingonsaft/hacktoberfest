@@ -1,10 +1,131 @@
 body {
-  font-size: 16px;
-  color: black;
-  line-height: 1.6;
-  background-color: mistyrose;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    background-color: mistyrose;
 }
 
+<<<<<<< HEAD
+#navbar {
+  padding: 8px;
+  background-color: #FF0844;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navbar a {
+  margin-left: 6px;
+  color: white;
+  font-size: 18px;
+}
+
+.content{
+  margin-top: 10%;
+}
+
+.content-header_title{
+ text-align: center;
+ margin-bottom: 10%;
+}
+
+.card-contributor{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+.card-cmp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-link{
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1.2%;
+    width: 100%;
+    height: auto;  
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons a{
+  margin: 2rem;
+  align-self: center;
+}
+
+.copy {
+    padding-left: 50%;
+}
+
+.fa {
+    background: #b0aaaa;
+    color: #333;
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    border-radius: 50%;
+    ;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 1px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+.fa-github:hover {
+    background: #333;
+    color: white;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.fa-instagram:hover {
+    background: #125688;
+    color: white;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+=======
 .copy {
   padding-left: 50%;
 }
@@ -62,3 +183,4 @@ body {
 .jumbotron .container {
   max-width: 40rem;
 }
+>>>>>>> upstream/master
