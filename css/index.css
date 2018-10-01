@@ -1,10 +1,15 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 
 body {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
   margin:0;
+
   background-color: #e0e5ed;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b6bfce' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-family: 'Montserrat', sans-serif;
@@ -65,8 +70,18 @@ body {
   background-color: #FF0844;
   color: white;
    text-align: right;
+
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b6bfce' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+
 }
 
+
+.navbar {
+  background: linear-gradient(to left, #FF0844, #FF4563);
+}
 .copy {
   padding-left: 50%;
 }
@@ -127,6 +142,10 @@ body {
   font-size: 20px;
 }
 
+#tips{
+  border-radius: 5px;
+}
+
 div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }  
@@ -138,11 +157,18 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   background-color: lightcoral;
 }
 
+
 .contribution-rules-item.do {
   border-bottom: 1px solid black;
   padding: 4px;
   margin-bottom: 4px;
   background-color: lightgreen;
+
+#contribution-rules{ 
+  background-color: #fff;
+  padding:30px; 
+  border-radius: 5px;
+
 }
 
 details{
@@ -165,6 +191,7 @@ summary:hover{
 .container {
   margin-top: 2rem;
 }
+
 #footer {
   border-top: 2px solid #555555;
   margin: 2rem 0 0 0;
@@ -179,3 +206,16 @@ summary:hover{
   width: 4rem;
   height: auto;
 }
+
+
+
+.container-fluid a {
+  text-decoration: none;
+  color: #FF0844;
+}
+
+.container-fluid a:hover {
+  text-decoration: none;
+  color: #cc0636;
+}
+
