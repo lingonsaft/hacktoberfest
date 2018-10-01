@@ -77,12 +77,10 @@ nav ul li a:hover {
 }
 
 #footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   padding-bottom: 1.2%;
   width: 100%;
-  height: 30px;
   background-color: #FF0844;
   color: white;
    text-align: right;
@@ -103,11 +101,11 @@ nav ul li a:hover {
   text-decoration: none;
   margin: 4px 1px;
   -webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--o-transform: scale(0.8);
--webkit-transition-duration: 0.5s;
--moz-transition-duration: 0.5s;
--o-transition-duration: 0.5s;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
 
 .fa-github:hover {
@@ -197,6 +195,7 @@ summary:hover {
 .container {
   margin-top: 2rem;
 }
+
 #footer {
   border-top: 2px solid #555555;
   margin: 2rem 0 0 0;
