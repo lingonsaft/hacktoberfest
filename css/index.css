@@ -15,15 +15,12 @@ body {
 #other-videos{ display:inline-block;margin-right:30px; }
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-bottom: 1.2%;
+  margin-top: 20px;
+  padding: 30px;
   width: 100%;
-  height: 30px;
-  background-color: #FF0844;
-  color: white;
-   text-align: right;
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
 }
 
 .hacktoberfest-title {
@@ -142,8 +139,12 @@ summary:hover{
   text-align: center;
 
 }
+/* Footer */
+#footer {
+  padding: 30px;
+}
 
 #footer a img {
-  width: 4rem;
+  width: 4px;
   height: auto;
 }
