@@ -12,18 +12,3 @@ body {
 .guides {
   margin-bottom: 3rem;
 }
-
-.navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563)
-}
-
-
-.container a {
-  text-decoration: none;
-  color: #FF0844;
-}
-
-.container a:hover {
-  text-decoration: none;
-  color: #cc0636;
-}
