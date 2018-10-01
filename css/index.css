@@ -3,18 +3,14 @@ body {
   color: #444;
   line-height: 1.6;
   background-color: #EEEEEE;
+  margin:0;
 }
 
-#navbar {
-  padding: 8px;
-  background-color: #FF0844;
-}
-
-#navbar a {
-  margin-left: 6px;
-  color: white;
-  font-size: 18px;
-}
+#navbar{ background-color:#f4d142; }
+#navbar a{ color:maroon; font-weight:bold; }
+.color1{color:#000e7c;}
+.center{ text-align:center; }
+#other-videos{ display:inline-block;margin-right:30px; }
 
 .faq-question {
   background-color: lightgray;
