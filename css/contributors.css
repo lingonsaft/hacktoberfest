@@ -1,13 +1,13 @@
 body {
   font-size: 16px;
-  color: #444;
+  color: black;
   line-height: 1.6;
   background-color: mistyrose;
 }
 
 #navbar {
   padding: 8px;
-  background-color:lavenderblush;
+  background-color:black;
 }
 
 #navbar a {
