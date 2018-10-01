@@ -6,15 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/contributors.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Hacktoberfest - contributors</title>
 </head>
 
 <body>
-  <div id="navbar">
-    <a href="./index.html">Home</a>
-    <a href="./helpful-material.html">Helpful Material</a>
-    <a href="./contributors.html">Contributors</a>
-  </div>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="./index.html">Home</a></li>
+            <li><a href="./helpful-material.html">Helpful Material</a></li>
+            <li class="active"><a href="./contributors.html">Contributors</a></li>
+          </ul>
+        </div>
+      </nav>
   <div id="header">
       <h1>Contributors <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
       <h3>Add yourself to the list if you contribute</h3>
@@ -26,12 +38,46 @@
       <li><a href="https://github.com/HackedByMKN/">MKN</a></li>
     </ul>
   </div>
-  <div id="footer">
-    <a href="https://github.com/lingonsaft">Github</a>
-    <a href="https://www.youtube.com/lingonsaft/">Youtube</a>
-    <a href="https://www.instagram.com/lingonsaftofficial/">Instagram</a>
-    <a href="https://twitter.com/lingonsaft1">Twitter</a>
-  </div>
+
+  <footer class="page-footer font-small cyan darken-3" style="position: relative;">
+      <center>
+        <!-- Footer Elements -->
+        <div class="container" >
+          
+          <!-- Grid row-->
+          <div class="row">
+            
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+                
+                <!-- github -->
+                <a class="fb-ic" href="https://github.com/lingonsaft" >
+                  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic" href="https://twitter.com/lingonsaft1">
+                  <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic" href="https://www.youtube.com/lingonsaft/">
+                  <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic" href="https://www.instagram.com/lingonsaftofficial/">
+                  <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+          </div>
+          <!-- Grid row-->
+          
+        </div>
+        <!-- Footer Elements -->
+      </center>
+    </footer>
 
   <script src="./scripts/contributors.js"></script>
 </body>
