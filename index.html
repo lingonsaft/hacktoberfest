@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -12,7 +13,10 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <title>Hacktoberfest</title>
 </head>
@@ -30,7 +34,7 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./helpful-material.html">Helpful Material</a>
@@ -42,6 +46,7 @@
     </div>
   </nav>
   <!--Navbar-->
+
 
   <!--Main content-->
   <div class="container-fluid">
@@ -159,9 +164,38 @@
             works</li>
           <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
         </ul>
+
       </div>
+    </center>
+  <br>
+  <div class="row">
+    <div class="col-md-1"></div>
+
+    <div id="contribution-rules" data-aos="fade-up" class="mb-5 col-md-10">
+      <h3>Contribution Rules</h3>
+      <ul class="list-group">
+        <li class="contribution-rules-item do list-group-item">
+          <span class="glyphicon glyphicon-check"></span> Project must work when opening index.html
+  <br>
+        </li>
+        <li class="contribution-rules-item do list-group-item">
+          You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
+        </li>
+        <li class="contribution-rules-item dont list-group-item">
+          Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+        </li>
+        <li class="contribution-rules-item dont list-group-item">
+          Do NOT remove Videos, Rules, FAQ or any other helpful content.
+        </li>
+        <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or stupid, big or small as long as
+          it
+          works</li>
+        <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
+      </ul>
     </div>
+
     <br><br>
+
     <div class="faq">
       <h3 class="center">FAQ</h3>
       <div class="row">
@@ -196,18 +230,20 @@
               instead.</p>
           </div>
         </div>
-        <div class="card border-primary faq" style="margin: 1%" data-aos="fade-up-left">
-          <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
-              target="_blank">CodeCardCodingCards</a> kickstarter?</div>
-          <div class="card-body">
-            <p class="card-text">yes...</p>
-          </div>
+
+          <div class="card border-primary faq" style="margin: 1%"  data-aos="fade-up-left" data-aos-anchor-placement="top-bottom">
+            <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
+                target="_blank">CodeCardCodingCards</a> kickstarter?</div>
+            <div class="card-body">
+              <p class="card-text">yes...</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
+
   <!--Main content-->
-  
+
   <footer id="footer">
     <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
     <div class="social-icons">
@@ -217,9 +253,12 @@
       <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg" /></a>
     </div>
   </footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
   <script src="./scripts/index.js"></script>
   <script src="./scripts/social-links.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
