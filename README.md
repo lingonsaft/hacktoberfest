@@ -18,7 +18,6 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Add your name to the contributers.html file
 
 # FAQ
-
 - Who can contribute?
   - Anyone with a github account and signed up for [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
