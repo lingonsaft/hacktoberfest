@@ -11,9 +11,16 @@ body {
 }
 
 #navbar a {
+  color: white;
   margin-left: 6px;
-  color:purple;
   font-size: 18px;
+  text-decoration:none;
+  padding: 12px 16px;
+  text-align:center;
+}
+
+#navbar a:hover {
+  background-color: #DB093D;
 }
 
 #footer {
