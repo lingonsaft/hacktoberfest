@@ -1,0 +1,19 @@
+body {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  
+  font-family:Arial, Helvetica, sans-serif;
+  background-image: url(Hacktoberfest17-Blog-01.png);
+}
+
+#navbar {
+  padding: 8px;
+  background-color: #FF0844;
+}
+
+#navbar a {
+  margin-left: 6px;
+  color: white;
+  font-size: 18px;
+}
