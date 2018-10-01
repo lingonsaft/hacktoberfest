@@ -19,15 +19,18 @@ body {
 }
 
 nav ul {
- 
+  list-style-type: none;
   text-align: center;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 0;
   background-color: blue;
 }
 
 nav ul li {
-
+  list-style-type: none;
   display: inline-block;
   margin: 55px;
   margin-bottom: 15px;
@@ -53,21 +56,12 @@ nav ul li a:hover {
   font-size: 18px;
 }
 
-div#content div#explainer-video div#tips {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  align-items: center;
-}
-
-div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
-  list-style-type: none;
-}
-
 .tips {
   font-size: 20px;
 }
 
+div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+  list-style-type: none;
 
 .contribution-rules-item.dont {
   border-bottom: 1px solid black;
