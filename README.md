@@ -8,7 +8,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
-# Kontribution rules
+# Contribution rules
 
 - Project must work when openening index.html
 - You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
