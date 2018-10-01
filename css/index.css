@@ -93,6 +93,10 @@ nav a:hover{
   text-decoration: none;
 }
 
+.repository a:hover {
+  color:wheat;
+  text-decoration: none;
+}
 .title, .year{
   display:block;
 }
@@ -269,6 +273,7 @@ iframe {
   font-size:1.4rem;
   text-transform: uppercase;
   font-weight: 300;
+  color:white;
   letter-spacing: 3px;
 }
 
@@ -343,5 +348,6 @@ iframe {
   color:violet;
   background-color: white;
   padding:0.50rem 1.50rem;
+  text-decoration: none;
   border-bottom-right-radius: 0.5rem;
 }
