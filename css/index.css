@@ -1,13 +1,53 @@
 body {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  background-color: #EEEEEE;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #e0e5ed;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b6bfce' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: arial;
+  padding-top: 15px;
 }
 
-#navbar {
-  padding: 8px;
-  background-color: #FF0844;
+.intro {
+  top: 0;
+  min-height: 55vh;
+  padding-top: 23vh;
+}
+
+.intro h2 {
+  color: green;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  background-color: blue;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+.header{
+  margin-top: 100px;
 }
 
 #navbar a {
@@ -16,13 +56,13 @@ body {
   font-size: 18px;
 }
 
-.faq-question {
-  background-color: lightgray;
+.tips {
+  font-size: 20px;
 }
 
-.faq-answer {
-  border-bottom: 1px solid lightgray;
-}
+div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+  list-style-type: none;
+}  
 
 .contribution-rules-item.dont {
   border-bottom: 1px solid black;
@@ -36,4 +76,21 @@ body {
   padding: 4px;
   margin-bottom: 4px;
   background-color: lightgreen;
+}
+
+details{
+  max-width: 600px;
+  margin: 0 auto 15px;
+  background-color: white;
+  padding: 5px 10px;
+  box-shadow: 0 4px 8px 0 rgba(55,92,192,.08),0 0 1px 0 rgba(18,32,73,.08);
+  text-align: left;
+}
+summary{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+summary:hover{
+  cursor: pointer;
 }
