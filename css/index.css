@@ -26,6 +26,15 @@ body {
    text-align: right;
 }
 
+.hacktoberfest-title {
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 30px;
+  background-color: #FFF;
+  width: 80%;
+  border-radius: 10px;
+}
+
 .copy {
   padding-left: 50%;
 }
