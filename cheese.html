@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+  <link rel="stylesheet" href="./css/cheese.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+  <title>Hacktoberfest - Cheese</title>
+</head>
+
+<body id="cheese-body">
+  <!-- Background Photo by Katrin Leinfellner on Unsplash -->
+    <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
+
+    <img id="sublogo" src="./images/lingon-saft.png" />
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Hacktoberfest  - by Lingonsaft</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/helpful-material">Helpful Material</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contributors">Contributors</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/cheese">Cheese!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="jumbotron text-center" id="cheesetron">
+    <div class="container" id="cheese-container">
+      <h1 class="jumbotron-heading">Welcome to CHEESEtoberfest!</h1>
+      <h2 class="lead text-muted">
+        <!-- Button to click for a random cheese to appear -->
+        <button onclick="cheeseAppearance()" class="btn btn-lg" id="click-for-cheese" name="button">click for cheese</button>
+      </h2>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Roquefort</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+        <h1>Cheese Rolling</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <<div class="row">
+      <div class="col-md-6">
+        <h1>Look at that cheese pull!</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>And more!!!!</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AMKDZ23DZaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-3 offset-3">
+      <h1>Cheese Pleasing Me!</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UWGnXkacSa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+    <!-- end of cheese row -->
+  </div>
+
+  <footer id="footer">
+    <h3>Social Links</h3>
+    <div class="social-icons">
+      <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" ></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
+      <br /><a href="https://icons8.com">Icon pack by Icons8</a>
+    </div>
+  </footer>
+
+  <script src="./scripts/cheese.js"></script>
+  <script>
+      scrollFunction = () => {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+      }
+      window.onscroll = () => {scrollFunction()};
+      topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  <script src="./scripts/social-links.js"></script>
+  <script src="./scripts/scroll.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
