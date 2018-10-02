@@ -75,14 +75,28 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a {
   text-decoration: none;
-  color: #FF0844;
+  color: #FFF;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #FFF;
 }
 
 .container-fluid a:hover {
   text-decoration: none;
-  color: #cc0636;
+  color: #FFF;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #FFF;
 }
 
+#github-repo {
+  color: #FF0844;
+  -webkit-text-stroke-width: 0px;
+}
+
+#github-repo h4:hover {
+  text-decoration: none;
+  color: #cc0000;
+  -webkit-text-stroke-width: 0px;
+}
 
 #myBtn {
   display: none;
