@@ -24,7 +24,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/your-username/hacktoberfest.git
+git clone https://github.com/lingonsaft/hacktoberfest.git
 cd hacktoberfest
 ```
 
