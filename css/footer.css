@@ -1,0 +1,42 @@
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(204, 6, 54, 0.5);
+    color: white;
+    text-shadow:
+    -.3px -.3px 0 #000,  
+     .3px -.3px 0 #000,
+     -.3px .3px 0 #000,
+      .3px .3px 0 #000;
+    text-align: center;
+}
+
+#footer h3 {
+    padding: 5px;
+}
+
+.social-icons {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+.social-icons > a img {
+   transition: all .2s ease-in-out; 
+  }
+
+  .social-icons > a img:hover {
+    transform: scale(1.1); 
+}
+
+#footer h3 span:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.footer-active .social-icons {
+    display: block;
+}
