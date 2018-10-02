@@ -61,5 +61,7 @@ git push origin my-new-branch
 - how many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 
-* We will do our best to merge as much as possible from everyone. However time is limited and the merge conflicts are horrible <3
+ 
+
+###### *We will do our best to merge as much as possible from everyone. However time is limited and the merge conflicts are horrible <3*
 
