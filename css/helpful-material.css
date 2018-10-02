@@ -40,3 +40,10 @@ body {
   padding: 0;
   border-radius: 34px; 
 }
+
+
+a.guides-links{
+  display: inline-block;
+  margin-bottom: 80px
+}
+
