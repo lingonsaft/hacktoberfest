@@ -129,3 +129,9 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .logo-image {
   max-width: 100%;
 }
+
+/* Intro text */
+.summary-text {
+  width: 780px;
+  max-width: 100%;
+}
