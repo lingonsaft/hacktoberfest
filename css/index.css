@@ -23,6 +23,18 @@ body {
 }
 
 
+@media (min-width: 1160px) {
+    div.container-fluid {
+        padding: 0px 16%;
+    }
+}
+
+@media (max-width: 1159px) {
+    div.container-fluid {
+        padding: auto;
+    }
+}
+
 .navbar {
   background: linear-gradient(to left, #FF0844, #FF4563);
 }
@@ -30,7 +42,7 @@ body {
   padding-left: 50%;
 }
 
-.faq{ width:90%;margin-left:10%; margin-bottom: 50px;}
+.faq{ width:100%; margin-bottom: 50px; padding: 0px 16px; }
 .faq-question {
   background-color: lightgray;
 }
@@ -46,10 +58,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
 
-#contribution-rules{ 
+#contribution-rules {
   background-color: #fff;
-  padding:30px; 
+  padding:30px;
   border-radius: 5px;
+  margin: 0px 15px;
+  margin-top: 70px;
 }
 .do{
   color:green;
@@ -65,7 +79,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{ 
+.card-header{
   padding:3px;
   padding-left:20px;
   font-weight:bold;
