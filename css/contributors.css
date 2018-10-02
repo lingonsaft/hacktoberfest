@@ -62,3 +62,27 @@ body {
 .jumbotron .container {
   max-width: 40rem;
 }
+
+#sublogo{
+  position: absolute;
+  top: 16px;
+  left: 197px;
+  right: 0px;
+  float: left;
+  z-index: 10;
+  width: 97px;
+  height: 22px;
+  opacity: 0;
+}
+
+#sublogo:hover{
+  position: absolute;
+  top: 16px;
+  left: 197px;
+  right: 0px;
+  float: left;
+  z-index: 10;
+  width: 97px;
+  height: 255px;
+  opacity: 100;
+}
