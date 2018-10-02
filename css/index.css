@@ -29,7 +29,13 @@ body {
   padding-left: 50%;
 }
 
-.faq{ width:90%;margin-left:10%; margin-bottom: 50px;}
+.faq{ 
+  margin-bottom: 50px;
+  overflow: hidden;
+  background: white;
+  padding: 30px;
+}
+
 .faq-question {
   background-color: lightgray;
 }
@@ -64,6 +70,9 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
+.card {
+  margin-bottom:15px;
+}
 .card-header{ 
   padding:3px;
   padding-left:20px;
