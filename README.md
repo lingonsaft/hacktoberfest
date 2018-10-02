@@ -32,7 +32,7 @@ git clone https://github.com/your-username/hacktoberfest.git.git
 ```markdown
 git checkout -b my-new-branch
 ```
-- Add your Name, and Github Adress to contributors.html file
+- Add your contribution
 - Commit and push
 
 ```markdown
