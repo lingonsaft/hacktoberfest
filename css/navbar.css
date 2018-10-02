@@ -5,13 +5,26 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.nav-link:hover {
-  color: whitesmoke;
-  font-size: 100%;
-  transform: translate3d(0px, 16px);
-  border-bottom: 2px solid whitesmoke;
-  padding: 6px 10px 2px;
-  transition: all 125ms ease-in-out
+.left-to-right {
+  position: relative;
+}
+
+.left-to-right:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.left-to-right:hover:after {
+  width: 100%;
+}
+
+.left-to-right:after {
+    border-bottom: 1px solid #ffffff;
 }
 
 .hacktoberfest-image {
