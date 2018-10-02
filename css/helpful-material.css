@@ -17,16 +17,16 @@ body {
   background: linear-gradient(to left, #FF0844, #FF4563)
 }
 
-
 .container a {
   text-decoration: none;
   color: #FF0844;
 }
 
-.container a:hover {
-  text-decoration: none;
-  color: #cc0636;
-}
+  .container a:hover {
+    text-decoration: none;
+    color: #cc0636;
+  }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -41,4 +41,7 @@ body {
   border-radius: 34px;
 }
 
-
+a.guides-links{
+  display: inline-block;
+  margin-bottom: 80px
+}
