@@ -40,3 +40,9 @@
 .footer-active .social-icons {
     display: block;
 }
+
+.hacktoberfest-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+} 
