@@ -86,18 +86,18 @@ function do_it(a, c) {
 
 function disco() {
     if (flag == 0) {
-        r = ran(1, r);
-        g = ran(2, g);
-        b = ran(3, b);
+        r = ran(10, r);
+        g = ran(20, g);
+        b = ran(30, b);
         hex(1, r)
         hex(2, g)
         hex(3, b)
         document.body.style.background = "#" + t[1] + o[1] + t[2] + o[2] + t[3] + o[3]
         flag = 50
     } else {
-        r = do_it(1, r)
-        g = do_it(2, g)
-        b = do_it(3, b)
+        r = do_it(10, r)
+        g = do_it(20, g)
+        b = do_it(30, b)
         hex(1, r)
         hex(2, g)
         hex(3, b)
@@ -105,7 +105,7 @@ function disco() {
         flag--
     }
 
-    setTimeout('disco()', 50)
+    setTimeout('disco()', 10)
 }
 
 document.getElementById('disco').addEventListener('click', (event) => {
