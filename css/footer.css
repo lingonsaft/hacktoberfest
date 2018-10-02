@@ -1,12 +1,12 @@
 #footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(204, 6, 54, 0.5);
     color: white;
     text-shadow:
-    -.3px -.3px 0 #000,  
+    -.3px -.3px 0 #000,
      .3px -.3px 0 #000,
      -.3px .3px 0 #000,
       .3px .3px 0 #000;
@@ -24,11 +24,12 @@
 
 
 .social-icons > a img {
-   transition: all .2s ease-in-out; 
+   transition: all .2s ease-in-out;
   }
 
   .social-icons > a img:hover {
-    transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 #footer h3 span:hover {
@@ -40,4 +41,4 @@
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
-} 
+}
