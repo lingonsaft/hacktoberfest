@@ -100,3 +100,23 @@ body {
   border-radius: 34px; 
   
 }
+.contributors .card-text{
+  border: 0 solid #f6f6f6;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(54, 54, 54, 0.8);
+  padding-bottom: 29px;
+  position: relative;
+}
+.contributors span{
+  font-size: 22px;
+
+}
+.contributors .card-text img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  /* border-radius: 4px; */
+
+}
