@@ -3,8 +3,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(204, 6, 54, 0.5);
     color: white;
+    text-shadow:
+    -.3px -.3px 0 #000,  
+     .3px -.3px 0 #000,
+     -.3px .3px 0 #000,
+      .3px .3px 0 #000;
     text-align: center;
 }
 
@@ -14,7 +19,17 @@
 
 .social-icons {
     padding: 5px;
+    margin-bottom: 10px;
     display: none;
+}
+
+
+.social-icons > a img {
+   transition: all .2s ease-in-out; 
+  }
+
+  .social-icons > a img:hover {
+    transform: scale(1.1); 
 }
 
 #footer h3 span:hover {
