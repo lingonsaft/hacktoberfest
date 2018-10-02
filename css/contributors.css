@@ -3,6 +3,11 @@ body {
   color: black;
   line-height: 1.6;
   background-color: mistyrose;
+  padding-bottom: 120px;
+}
+
+.album {
+  padding-top: 0;
 }
 
 .copy {
@@ -39,23 +44,24 @@ body {
 }
 
 .jumbotron {
+  max-height: 250px;
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
 }
 
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
 
-  .jumbotron-heading {
-    font-weight: 300;
-  }
+.jumbotron-heading {
+  font-weight: 300;
+}
 
-  .jumbotron .container {
-    max-width: 40rem;
-  }
+.jumbotron .container {
+  max-width: 40rem;
+}
 
 @media (min-width: 768px) {
   .jumbotron {
@@ -76,17 +82,17 @@ body {
   opacity: 0;
 }
 
-  #sublogo:hover{
-    position: absolute;
-    top: 16px;
-    left: 197px;
-    right: 0px;
-    float: left;
-    z-index: 10;
-    width: 97px;
-    height: 255px;
-    opacity: 100; 
-  }
+#sublogo:hover{
+  position: absolute;
+  top: 16px;
+  left: 197px;
+  right: 0px;
+  float: left;
+  z-index: 10;
+  width: 97px;
+  height: 255px;
+  opacity: 100; 
+}
 
 #myBtn {
   display: none;
