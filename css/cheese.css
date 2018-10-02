@@ -48,6 +48,22 @@
   background-color: #fff;
   border: 10px double #21ffff;
 }
+
+#cheesetron-0 {
+  background-image: url("../images/paneer.jpg");
+  background-size: cover;
+}
+#cheesetron-1 {
+  background-image: url("../images/gouda.jpg");
+  background-size: cover;
+}
+#cheesetron-2 {
+  background-image: url("../images/roquefort.jpg");
+  background-size: cover;
+}
+#cheesetron-3 {
+  background-image: url("../images/monster.jpg");
+}
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
