@@ -8,12 +8,14 @@
 .nav-link:hover {
   color: whitesmoke;
   font-size: 100%;
-  transform: translate3d(0px, 16px);
+  -webkit-transform: translate3d(0px, 16px);
+          transform: translate3d(0px, 16px);
   border-bottom: 2px solid whitesmoke;
   padding: 6px 10px 2px;
   transition: all 125ms ease-in-out
 }
 
-/* .logo-image {
- margin-bottom: 20px;
-} */
+.navbar {
+  background: linear-gradient(to left, #FF0844, #FF4563);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
