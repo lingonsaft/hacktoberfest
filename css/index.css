@@ -30,7 +30,9 @@ body {
   padding-left: 50%;
 }
 
-.faq{ width:90%;margin-left:10%; margin-bottom: 50px;}
+.faq{ width:90%;margin-left:10%; margin-bottom: 50px;
+  margin: 1%;
+}
 .faq-question {
   background-color: lightgray;
 }
