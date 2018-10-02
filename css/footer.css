@@ -26,10 +26,13 @@
 .social-icon {
     color: white;
     font-size: 250%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .social-icon:hover {
     color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
 }
 
 .social-icons > a img {
