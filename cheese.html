@@ -75,27 +75,33 @@
   </div>
 
   <footer id="footer">
-    <h3><span id="toggle-social-btn">Social Links</span></h3>
-    <div class="social-icons row justify-content-center">
-      <div class="col">
-        <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" ></a>
-      </div>
-      <div class="col">
-        <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>
-      </div>
-      <div class="col">
-        <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>
-      </div>
-      <div class="col">
-        <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
-      </div>
+    <h3>Social Links</h3>
+    <div class="social-icons">
+      <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" ></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
+      <br /><a href="https://icons8.com">Icon pack by Icons8</a>
     </div>
   </footer>
 
   <script src="./scripts/cheese.js"></script>
+  <script>
+      scrollFunction = () => {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+      } else {
+          document.getElementById("myBtn").style.display = "none";
+      }
+      }
+      window.onscroll = () => {scrollFunction()};
+      topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   <script src="./scripts/social-links.js"></script>
   <script src="./scripts/scroll.js"></script>
-
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
