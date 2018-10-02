@@ -20,6 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="./css/index.css" />
@@ -32,8 +33,12 @@
 
 <body>
   <!--Navbar-->
+
+  <button onclick="topFunction()" class="btn btn-primary" id="myBtn" title="Go to top"><i class="fas fa-chevron-up" style="font-size: 25px;"></i></button>
+
   <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"
       alt="circled-chevron-up icon" /></button>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="/">Hacktoberfest</a>
 
@@ -45,6 +50,14 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
+
+          <a class="nav-link left-to-right" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link left-to-right" href="./helpful-material.html">Helpful Material</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link left-to-right" href="./contributors.html">Contributors</a>
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
@@ -52,9 +65,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contributors">Contributors</a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="twist" href="#">The twist</a>
+          <a class="nav-link left-to-right" id="twist" href="#">The twist</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./potato.html">potato</a>
@@ -84,6 +98,10 @@
             feel free to watch the videos and read the contribution rules. Happy hacking <img  id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
               alt="heart icon" width="30px">
           </h5>
+
+        
+          <a type="button" class="btn btn-primary" href="https://hacktoberfest.digitalocean.com/details" target="_blank" style="color:white">Start Hacking <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Fire_Emoji.png?9898922749706957214" style="width:30px;"></a>
+
 
           <a class="btn btn-primary" style=" background-image: radial-gradient(circle, #fed500,orange,red); color: #FFF; "href="https://hacktoberfest.digitalocean.com/details" target="_blank"><strong>Start Hacking</strong> <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Fire_Emoji.png?9898922749706957214"
               width="30px"></a>
@@ -266,10 +284,16 @@
   </div>
 
   <!--Main content-->
-
+  <br><br><br>
   <footer id="footer">
 
     <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
+
+    <div class="social-icons">
+      <a href="https://github.com/lingonsaft"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/lingonsaft/"><i class="fab fa-youtube"></i></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/lingonsaftofficial/"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+      <a href="https://twitter.com/lingonsaft1"><i class="fab fa-twitter"></i></a>
     <div class="social-icons row justify-content-center">
       <div class="col">
         <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" alt="github" /></a>
@@ -283,6 +307,7 @@
       <div class="col">
         <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg" alt="twitter" /></a>
       </div>
+
     </div>
 
   </footer>
