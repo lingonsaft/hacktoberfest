@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
-  background-color:mistyrose;
+  background-color: mistyrose;
 }
 
 .copy {
@@ -14,13 +14,12 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563)
+  background: linear-gradient(to left, #ff0844, #ff4563);
 }
-
 
 .container a {
   text-decoration: none;
-  color: #FF0844;
+  color: #ff0844;
 }
 
 .container a:hover {
@@ -38,12 +37,5 @@ body {
   width: 51px;
   height: 50px;
   padding: 0;
-  border-radius: 34px; 
+  border-radius: 34px;
 }
-
-
-a.guides-links{
-  display: inline-block;
-  margin-bottom: 80px
-}
-
