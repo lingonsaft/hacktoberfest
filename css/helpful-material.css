@@ -27,3 +27,8 @@ body {
   text-decoration: none;
   color: #cc0636;
 }
+
+a.guides-links{
+  display: inline-block;
+  margin-bottom: 80px
+}
