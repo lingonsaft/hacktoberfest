@@ -1,5 +1,5 @@
 #footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -11,6 +11,7 @@
      -.3px .3px 0 #000,
       .3px .3px 0 #000;
     text-align: center;
+    backdrop-filter: blur(5px);
 }
 
 #footer h3 {
