@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/navbar.css">
@@ -14,11 +21,12 @@
   <title>Hacktoberfest</title>
 </head>
 <body>
-
+  <!--Navbar-->
+  <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Hacktoberfest</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="./index.html">Hacktoberfest</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -33,81 +41,158 @@
         <li class="nav-item">
           <a class="nav-link" href="./contributors.html">Contributors</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="twist" href="#">The twist</a>
+        </li>
       </ul>
 
     </div>
   </nav>
+  <!--Navbar-->
+  <!--Main content-->
+  <div class="container-fluid">
+    <div id="header">
+      <center>
+        <br>
+          <h1>Hacktoberfest 2018</h1> 
+          <a href="https://github.com/lingonsaft/hacktoberfest" class="navbar-brand">
+            <h4>(Github repo)</h4>
+          </a>
+          <p  id="stats">Hacktoberfest</p>
+          <h5>This is a beginner friendly project to help you get started with your hacktoberfest. If you don't know
+            where to start
+            feel free to watch the videos and read the contribution rules. Happy hacking <img src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
+              style="width:30px">
+          </h5>
+        
+          <a type="button" class="btn btn-primary" href="https://hacktoberfest.digitalocean.com/details" target="_blank">Start Hacking <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Fire_Emoji.png?9898922749706957214"
+              style="width:30px"></a>
+          
+        </center>
+    </div>
 
-<div class="container">
-  <div id="header">
-  	<center>
-  		<br>
-    <h1>Hacktoberfest 2018</h1> <a href="https://github.com/lingonsaft/hacktoberfest"><h4>(Github repo)</h4></a>
-    <h5>This is a beginner friendly project to help you get started with your hacktoberfest. If you don't know where to start
-      feel free to watch the videos and read the contribution rules. Happy hacking <img src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" style="width:30px" alt="heart">
-    </h5>
-    </center>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="center">Hacktoberfest Intro</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OsAFX_ZbgaE" frameborder="0" allow="autoplay; encrypted-media"
-      allowfullscreen></iframe>
+    <br>
+    <br>
+
+    <div class="countdown-timer">
+      <center>
+        <h2>Time left of Hacktoberfest 2018:</h2>
+        <ul>
+          <li><span id="days"></span> DAYS</li>
+          <li><span id="hours"></span> HOURS</li>
+          <li><span id="minutes"></span> MINUTES</li>
+          <li><span id="seconds"></span> SECONDS</li>
+        </ul>
+        <h4>Hurry up and make your pull requests!</h4>
+      </center>
+      </div>
+
+    <br>
+    <br>
+    
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="card text-center mb-3">
+          <div class="card-header">Hacktoberfest Intro</div>
+          <div class="card-img-top">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OsAFX_ZbgaE" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Get Started with Hacktoberfest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card text-center mb-3">
+          <div class="card-header">How to Pull request [Overview]</div>
+          <div class="card-img-top">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DIj2q02gvKs" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Get Started with Hacktoberfest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div>
-    <div id="tips" class="col-md-6" style="background-color:#fff;padding:60px 60px;">
-      <h5>Here are some tips on what to do!</h5>
-      <ul>
-        <li>Style this page.</li>
-        <li>Add your own projects to the Helpful Material page.</li>
-        <li>Add helpful links/guides to the Helpful Material page.</li>
-        <li>Update readme.md</li>
-      </ul>
-      <p>Or checkout the <a href="https://github.com/lingonsaft/hacktoberfest/issues">github issues</a> for what to
-        do :)</p>
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="card text-center mb-3">
+          <div class="card-header">How to solve merge conflicts</div>
+          <div class="card-img-top">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zOx5PJTY8CI" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Get Started with Hacktoberfest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <img src="./images/hacktoberfest.JPG" alt="Hacktoberfest 2018" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Here are some tips on what to do!</h5>
+            <p class="card-text">
+              <ul>
+                <li>Style this page.</li>
+                <li>Add your own projects to the Helpful Material page.</li>
+                <li>Add helpful links/guides to the Helpful Material page.</li>
+                <li>Update readme.md</li>
+              </ul>
+            </p>
+            <p class="card-text">Or checkout the <a href="https://github.com/lingonsaft/hacktoberfest/issues">github issues</a> for what to do :)</p>
+          </div>
+        </div>
+      </div>
+    
     </div>
-  </div>
-  <br><br>
-  <center>
-    <div id="other-videos">
-      <h4>How to pull request [Overview]</h4>
-      <iframe width="320" height="200" src="https://www.youtube.com/embed/DIj2q02gvKs" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
-    </div>
-    <div id="other-videos">
-      <h4>How to solve merge conflict</h4>
-      <iframe width="320" height="200" src="https://www.youtube.com/embed/zOx5PJTY8CI" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+
+      <div id="contribution-rules" data-aos="fade-up" class="mb-5 col-md-10">
+        <h3>Contribution Rules</h3>
+        <ul class="list-group">
+          <li class="contribution-rules-item do list-group-item">
+            <span class="glyphicon glyphicon-check"></span> Project must work when opening index.html
+            <br>
+          </li>
+          <li class="contribution-rules-item do list-group-item">
+            You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
+          </li>
+          <li class="contribution-rules-item dont list-group-item">
+            Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+          </li>
+          <li class="contribution-rules-item dont list-group-item">
+            Do NOT remove Videos, Rules, FAQ or any other helpful content.
+          </li>
+          <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or stupid, big or
+            small as long as
+            it
+            works</li>
+          <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
+        </ul>
+
       </div>
     </center>
   <br>
-  <div class="row">
-    <div class="col-md-1"></div>
+  
+    <br><br>
 
-    <div id="contribution-rules" data-aos="fade-up" class="mb-5 col-md-10">
-      <h3>Contribution Rules</h3>
-      <ul class="list-group">
-        <li class="contribution-rules-item do list-group-item">
-          <span class="glyphicon glyphicon-check"></span> Project must work when opening index.html
-  <br>
-        </li>
-        <li class="contribution-rules-item do list-group-item">
-          You are allowed to make pull requests that breaks the rules. We just won't merge it ;)
-        </li>
-        <li class="contribution-rules-item dont list-group-item">
-          Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
-        </li>
-        <li class="contribution-rules-item dont list-group-item">
-          Do NOT remove Videos, Rules, FAQ or any other helpful content.
-        </li>
-        <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or stupid, big or small as long as
-          it
-          works</li>
-        <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
-      </ul>
-    </div>
-  </div>
-  <br><br>
     <div class="faq">
       <h3 class="center">FAQ</h3>
       <div class="row">
@@ -142,16 +227,22 @@
               instead.</p>
           </div>
         </div>
-        <div class="card border-primary faq" style="margin: 1%"  data-aos="fade-up-left">
-          <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
-              target="_blank">CodeCardCodingCards</a> kickstarter?</div>
-          <div class="card-body">
-            <p class="card-text">yes...</p>
-          </div>
+
+          <div class="card border-primary faq" style="margin: 1%"  data-aos="fade-up-left" data-aos-anchor-placement="top-bottom">
+            <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
+                target="_blank">CodeCardCodingCards</a> kickstarter?</div>
+            <div class="card-body">
+              <p class="card-text">yes...</p>
+            </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="hacktoberfest-image">
+    <img class="logo-image" src="https://hacktoberfest.digitalocean.com/assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png" alt="">
+  </div>
+
+  <!--Main content-->
 
   <footer id="footer">
     <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
@@ -160,18 +251,41 @@
       <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg" alt="youtube"/></a>&nbsp;&nbsp;
       <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg" alt="instagram"/></a>&nbsp;&nbsp;
       <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg" alt="twitter"/></a>
+      <br /><a href="https://icons8.com">Icon pack by Icons8</a>
     </div>
+    
   </footer>
 
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/stats.js"></script>
   <script src="./scripts/social-links.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script>
+    scrollFunction = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+    window.onscroll = () => {scrollFunction()};
+    topFunction = () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <script src="./scripts/countdown.js"></script>
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="register.ks</script>
   <script>
-      AOS.init();
+    AOS.init();
   </script>
 </body>
+
 </html>
