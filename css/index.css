@@ -55,6 +55,40 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   border-radius: 5px;
 }
 
+#header {
+  background: #eee;
+  width: 70%;
+  padding: 21px 13px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#header:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 500px) {
+  #header {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.2em
+  }
+}
+
+#github {
+  border-radius: 10px;
+  padding: 13px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #cccccc
+}
+
+i {
+  color: #444;
+  margin: 0 5px
+}
+
 .do{
   color:green;
 }
