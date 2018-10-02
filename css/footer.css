@@ -3,19 +3,15 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(204, 6, 54, 0.5);
+    background: linear-gradient(to left, #FF0844, #FF4563);
     color: white;
-    text-shadow:
-    -.3px -.3px 0 #000,
-     .3px -.3px 0 #000,
-     -.3px .3px 0 #000,
-      .3px .3px 0 #000;
     text-align: center;
-    backdrop-filter: blur(5px);
+    min-height: 100%;
 }
 
 #footer h3 {
     padding: 5px;
+    height: 25px;
 }
 
 .social-icons {
