@@ -99,3 +99,11 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: bold;
   font-size: 3rem;
 }
+
+.margin {
+    margin: 1%
+}
+
+.width-30 {
+    width:30px;
+}
