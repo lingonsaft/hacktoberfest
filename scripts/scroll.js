@@ -4,9 +4,10 @@ scrollFunction = () => {
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
-    }
-    window.onscroll = () => {scrollFunction()};
-    topFunction = () => {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+}
+
+window.onscroll = () => {scrollFunction()};
+topFunction = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
