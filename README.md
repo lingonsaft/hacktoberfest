@@ -16,7 +16,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling / code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributers.html file
-- Add images 
+- Add images
 
 ## Getting Started
 
@@ -25,6 +25,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 
 ```terminal
 git clone https://github.com/lingonsaft/hacktoberfest.git
+cd hacktoberfest
 ```
 
 - Create a new branch
