@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
@@ -20,10 +19,10 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar {
   background: linear-gradient(to left, #FF0844, #FF4563);
 }
+
 .copy {
   padding-left: 50%;
 }
@@ -32,6 +31,7 @@ body {
 .faq-question {
   background-color: lightgray;
 }
+
 .tips {
   font-size: 20px;
 }
@@ -49,12 +49,15 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding:30px;
   border-radius: 5px;
 }
+
 .do{
   color:green;
 }
+
 .dont{
   color:red;
 }
+
 .fork_image {
   position: absolute;
   top: 0;
@@ -68,21 +71,20 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding-left:20px;
   font-weight:bold;
  }
+
 .container {
   margin-top: 2rem;
 }
 
+  .container-fluid a {
+    text-decoration: none;
+    color: #FF0844;
+  }
 
-.container-fluid a {
-  text-decoration: none;
-  color: #FF0844;
-}
-
-.container-fluid a:hover {
-  text-decoration: none;
-  color: #cc0636;
-}
-
+    .container-fluid a:hover {
+      text-decoration: none;
+      color: #cc0636;
+    }
 
 #myBtn {
   display: none;
@@ -97,21 +99,21 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding: 0;
   border-radius: 34px;
 }
+
 .countdown-timer ul {
   padding: 0;
 }
+  .countdown-timer li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+  }
+    .countdown-timer li span {
+      display: block;
+      font-weight: bold;
+      font-size: 3rem;
+    }
 
-.countdown-timer li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 1em;
-}
-.countdown-timer li span {
-  display: block;
-  font-weight: bold;
-  font-size: 3rem;
-}
 .logo-image {
   max-width: 100%;
 }
-
