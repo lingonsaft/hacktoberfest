@@ -4,6 +4,7 @@ let statsObj = {
     pr: 0,
     stars: 0,
     issues:0,
+    contribut:0
 }
 
 const reqObj = [
@@ -12,6 +13,7 @@ const reqObj = [
     ['https://api.github.com/repos/lingonsaft/hacktoberfest/pulls', 'pr'],
     ['https://api.github.com/repos/lingonsaft/hacktoberfest/issues', 'issues'],
     ['https://api.github.com/repos/lingonsaft/hacktoberfest/stargazers', 'stars'],
+    ['https://api.github.com/repos/lingonsaft/hacktoberfest/stats/contributors', 'contribut'],
 ]
 
 const getData = (url, key) => {
@@ -30,7 +32,7 @@ const getData = (url, key) => {
         })
         .then(json => {            
             statsObj[key] += json.length
-            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars                   
+            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + 'Contributors: ' + statsObj.contribut                 
         })
 }
 
