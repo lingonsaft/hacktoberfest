@@ -20,7 +20,6 @@
 .social-icons {
     padding: 5px;
     margin-bottom: 10px;
-    display: none;
 }
 
 
@@ -35,10 +34,6 @@
 #footer h3 span:hover {
     cursor: pointer;
     cursor: hand;
-}
-
-.footer-active .social-icons {
-    display: block;
 }
 
 .hacktoberfest-image {
