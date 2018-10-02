@@ -13,3 +13,13 @@
   padding: 6px 10px 2px;
   transition: all 125ms ease-in-out
 }
+
+.hacktoberfest-image {
+  display: flex;
+  justify-content: center;
+} 
+
+/* .logo-image {
+ margin-bottom: 20px;
+} */
+
