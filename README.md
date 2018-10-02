@@ -1,6 +1,6 @@
 # Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/))
 
-This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down bellow and read the contribution rules. Happy hacking <3
+This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down below and read the contribution rules. Happy hacking <3
 
 # Videos
 
@@ -59,3 +59,9 @@ git push origin my-new-branch
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - yes..
 - how many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
+
+
+ 
+
+###### *We will do our best to merge as much as possible from everyone. However time is limited and the merge conflicts are horrible <3*
+
