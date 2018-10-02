@@ -2,10 +2,8 @@
 
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
@@ -46,9 +44,9 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
 
-#contribution-rules{ 
+#contribution-rules{
   background-color: #fff;
-  padding:30px; 
+  padding:30px;
   border-radius: 5px;
 }
 
@@ -68,7 +66,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{ 
+.card-header{
   padding:3px;
   padding-left:20px;
   font-weight:bold;
@@ -99,7 +97,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   width: 51px;
   height: 50px;
   padding: 0;
-  border-radius: 34px; 
+  border-radius: 34px;
 }
 
 .countdown-timer ul {
@@ -115,3 +113,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
       font-weight: bold;
       font-size: 3rem;
     }
+
+.logo-image {
+  max-width: 100%;
+}

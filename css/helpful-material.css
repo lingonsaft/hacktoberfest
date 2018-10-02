@@ -10,7 +10,7 @@ body {
 }
 
 .guides {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .navbar {
@@ -38,7 +38,7 @@ body {
   width: 51px;
   height: 50px;
   padding: 0;
-  border-radius: 34px; 
+  border-radius: 34px;
 }
 
 a.guides-links{
