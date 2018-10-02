@@ -105,7 +105,7 @@ function disco() {
         flag--
     }
 
-    setTimeout('disco()', 0)
+    setTimeout('disco()', 50)
 }
 
 document.getElementById('disco').addEventListener('click', (event) => {
