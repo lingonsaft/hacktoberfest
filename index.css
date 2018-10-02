@@ -1,0 +1,61 @@
+@font-face { font-family: proxima-nova; src: url('css/ProximaNovaRegular.woff'); }
+
+body {
+  color: #444;
+  line-height: 1.6;
+  background-color: #EEEEEE;
+  font: 100;
+}
+
+#navbar {
+  padding: 8px;
+  background-color: #FF0844;
+}
+  
+footer, .navbar-brand {
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center; 
+  line-height: 1.3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  padding: 28px 0;
+}
+
+footer a {
+  padding: 1em;
+}
+
+#navbar a {
+  margin-left: 6px;
+  color: white;
+  font-size: 18px;
+}
+
+.faq-question {
+  background-color: lightgray;
+}
+
+.faq-answer {
+  border-bottom: 1px solid lightgray;
+}
+
+.contribution-rules-item.dont {
+  border-bottom: 1px solid black;
+  padding: 4px;
+  margin-bottom: 4px;
+  background-color: lightcoral;
+}
+
+.contribution-rules-item.do {
+  border-bottom: 1px solid black;
+  padding: 4px;
+  margin-bottom: 4px;
+  background-color: lightgreen;
+}
