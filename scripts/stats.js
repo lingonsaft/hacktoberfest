@@ -18,7 +18,7 @@ const reqObj = [
 
 const getData = (url, key) => {
     fetch(url)
-        .then(r => {            
+        .then(r => {
             if (r.headers.get('Link')) {
                 r.headers.get('Link').split(',').forEach(link => {
                     if (link.includes('next')) {
@@ -30,20 +30,17 @@ const getData = (url, key) => {
             }
             return r.json()
         })
-        .then(json => {            
+        .then(json => {
             statsObj[key] += json.length
-            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + 'Contributors: ' + statsObj.contribut                 
+            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + ' Contributors: ' + statsObj.contribut                 
         })
 }
 
 reqObj.forEach(rq => {
     getData(rq[0], rq[1])
 })
-setInterval(() => { 
+setInterval(() => {
     reqObj.forEach(rq => {
         getData(rq[0], rq[1])
     })
  }, 600000)
-
-
-
