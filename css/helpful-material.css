@@ -10,7 +10,7 @@ body {
 }
 
 .guides {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .navbar {
@@ -41,9 +41,4 @@ body {
   border-radius: 34px;
 }
 
-
-a.guides-links{
-  display: inline-block;
-  margin-bottom: 80px
-}
 
