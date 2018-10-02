@@ -3,7 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(204, 6, 54, 0.5);
+    background-color: rgba(88, 127, 153, 0.5);
     color: white;
     text-shadow:
     -.3px -.3px 0 #000,  
@@ -34,7 +34,6 @@
 
 #footer h3 span:hover {
     cursor: pointer;
-    cursor: hand;
 }
 
 .footer-active .social-icons {
