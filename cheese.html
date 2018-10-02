@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/contributors.css">
+  <link rel="stylesheet" href="./css/cheese.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
   <title>Hacktoberfest - Cheese</title>
 </head>
 
-<body>
+<body id="cheese-body">
+  <!-- Background Photo by Katrin Leinfellner on Unsplash -->
     <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
 
     <img id="sublogo" src="./images/lingon-saft.png" />
@@ -45,25 +47,33 @@
 
 
   <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Welcome to CHEESEtoberfest! <a>Click for cheese</a></h1>
-      <h3 class="lead text-muted">Add yourself to the list if you contribute</h3>
+    <div class="container" id="cheese-container">
+      <h1 class="jumbotron-heading">Welcome to CHEESEtoberfest!</h1>
+      <h2 class="lead text-muted">
+        <!-- Button to click for a random cheese to appear -->
+        <button onclick="cheeseAppearance()" class="btn btn-lg" id="click-for-cheese" name="button">click for cheese</button>
+      </h2>
     </div>
   </section>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>cheese</h1>
+      <div class="col-md-6">
+        <h1>Roquefort</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div class="col-md-4">
-        <h1>cheese</h1>
-      </div>
-      <div class="col-md-4">
-        <h1>cheese</h1>
+      <div class="col-md-6">
+        <h1>Cheese Rolling</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
-    <!-- end of chese row -->
+    <div class="row">
+      <div class="col-md-3 offset-3">
+        <h1>Look at that cheese pull!</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- end of cheese row -->
   </div>
 
 
@@ -79,7 +89,7 @@
     </div>
   </footer>
 
-  <script src="./scripts/contributors.js"></script>
+  <script src="./scripts/cheese.js"></script>
   <script src="./scripts/social-links.js"></script>
   <script>
       scrollFunction = () => {
