@@ -3,8 +3,8 @@
 }
 
 .spinCard{
-  -webkit-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+  -webkit-animation:spin 4s linear reverse infinite;
+  animation:spin 4s linear reverse infinite;
 }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
