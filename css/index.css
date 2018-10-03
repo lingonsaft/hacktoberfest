@@ -51,3 +51,8 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .container {
   margin-top: 2rem;
 }
+foot{
+  border-top: #444;
+  background-color: #fff;
+  height: 30px;
+}
