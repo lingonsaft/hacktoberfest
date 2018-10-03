@@ -1,11 +1,13 @@
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 ::selection {
-  background-color: #111;
+  background-color: #4835f7;
   color: #fff;
 }
 * {
@@ -15,11 +17,18 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-html,h1,h2,h3,h4,h5,h6 {
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #fff;
   line-height: 1.6;
 }
-html,body {
+html,
+body {
   background-color: #111;
 }
 body {
@@ -35,7 +44,7 @@ body {
   min-height: 100vh;
   padding: 0 0 1.5rem;
   position: relative;
-  font-family: 'Inconsolata',monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 16px;
 }
 
@@ -57,7 +66,7 @@ a {
 #backToTop svg {
   width: auto;
   height: 40px;
-  opacity: .6;
+  opacity: 0.6;
 }
 #backToTop:hover svg {
   opacity: 1;
@@ -84,7 +93,7 @@ a {
   justify-content: space-between;
 }
 .header__logo .st0 {
-  fill: #1CEEC8;
+  fill: #1ceec8;
 }
 .top-nav--secondary {
   display: -webkit-box;
@@ -103,11 +112,12 @@ a {
 }
 .top-nav--secondary a {
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
   padding: 1rem;
   text-decoration: none;
 }
-.top-nav--secondary a.active,.top-nav--secondary a:hover {
+.top-nav--secondary a.active,
+.top-nav--secondary a:hover {
   opacity: 1;
 }
 
@@ -119,7 +129,7 @@ a {
   padding-bottom: 200px;
 }
 .container h1 a {
-  opacity: .6;
+  opacity: 0.6;
 }
 .container h1 a:hover {
   opacity: 1;
@@ -129,7 +139,7 @@ a {
   font-size: 1.125rem;
   line-height: 40px;
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .card {
@@ -141,19 +151,19 @@ a {
   width: 330px;
   position: relative;
   cursor: pointer;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   padding: 8px;
   margin-top: 0;
   margin-bottom: 20px;
   left: -8px;
-  opacity: 1!important;
-  font-size: 1rem!important;
+  opacity: 1 !important;
+  font-size: 1rem !important;
 }
 .card-item:hover {
-  background-color: rgba(255,255,255,.06);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 .card-item::before {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -164,7 +174,7 @@ a {
   width: 50px;
   float: left;
   margin-right: 15px;
-  border: 1px solid rgba(255,255,255,.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 4px;
 }
 
