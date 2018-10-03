@@ -9,11 +9,18 @@
     color: white;
     text-align: center;
     z-index: 1000;
+    padding-bottom: 1rem;
 }
 
 #footer h3 {
     padding: 5px;
     height: 25px;
+    margin-bottom: 2rem;
+}
+
+#footer h3 span:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 .footer-icon {
@@ -22,7 +29,6 @@
 
 .social-icons {
     padding: 5px;
-    margin: 0 0 0 10px;
 }
 
 .social-icons > a img {
@@ -32,11 +38,6 @@
   .social-icons > a img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-}
-
-#footer h3 span:hover {
-    cursor: pointer;
-    cursor: hand;
 }
 
 .hacktoberfest-image {
