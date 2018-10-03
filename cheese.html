@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+
+  <!-- Github follow button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   <link rel="stylesheet" href="./css/cheese.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
   <title>Hacktoberfest - Cheese</title>
 </head>
 
@@ -26,8 +28,9 @@
 
     <img id="sublogo" src="./images/lingon-saft.png" />
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">Hacktoberfest  - by Lingonsaft</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">Hacktoberfest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -42,10 +45,17 @@
         <li class="nav-item">
           <a class="nav-link" href="/contributors">Contributors</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="twist" href="#">The twist</a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link" href="/cheese">Cheese!</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tools" href="/tools">Tools</a>
+        </li>
       </ul>
+
     </div>
   </nav>
 
@@ -63,40 +73,51 @@
     <div class="row">
       <div class="col-md-6">
         <h1>Roquefort</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="col-md-6">
         <h1>Cheese Rolling</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <<div class="row">
       <div class="col-md-6">
         <h1>Look at that cheese pull!</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     <div class="row">
       <div class="col-md-6">
         <h1>And more!!!!</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AMKDZ23DZaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/AMKDZ23DZaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-md-3 offset-3">
       <h1>Cheese Pleasing Me!</h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/UWGnXkacSa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/UWGnXkacSa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
     <!-- end of cheese row -->
   </div>
 
   <footer id="footer">
-    <h3>Social Links</h3>
-    <div class="social-icons">
-      <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" ></a>&nbsp;&nbsp;
-      <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>&nbsp;&nbsp;
-      <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
-      <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
-      <br /><a href="https://icons8.com">Icon pack by Icons8</a>
+    <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
+    <div class="social-icons row justify-content-center">
+      <div class="col">
+        <a class="github-button" href="https://github.com/lingonsaft" data-size="large" aria-label="Follow @lingonsaft on GitHub">
+          Follow @lingonsaft
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg" alt="youtube" /></a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg" alt="instagram" /></a>
+      </div>
+      <div class="col">
+        <a href="https://twitter.com/lingonsaft1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+          data-show-count="false">Follow @lingonsaft1</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </footer>
 
