@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Github follow button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
     <link rel="stylesheet" href="./css/helpful-material.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -15,7 +19,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="./index.html">Hacktoberfest</a>
+    <a class="navbar-brand" href="/">Hacktoberfest</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,19 +28,22 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./helpful-material.html">Helpful Material</a>
+                <a class="nav-link" href="/helpful-material">Helpful Material</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contributors.html">Contributors</a>
+                <a class="nav-link" href="/contributors">Contributors</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="twist" href="#">The twist</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/cheese">Cheese!</a>
+            </li>
             <li class="nav-item active">
-                <a class="nav-link" id="tools" href="./tools.html">Tools</a>
+                <a class="nav-link" id="tools" href="/tools">Tools</a>
             </li>
         </ul>
 
@@ -79,6 +86,11 @@
                 <td>Has some powerful plugins</td>
             </tr>
             <tr>
+                <td><a href="https://code.visualstudio.com/download">Visual Studio Code</a></td>
+                <td>Light weight Text Editor</td>
+                <td>100+ powerful plugins with Git and Version Control Capabilities</td>
+            </tr>
+            <tr>
                 <td><a href="http://www.aptana.com/">Aptana</a></td>
                 <td>Web Development IDE</td>
                 <td>Powerful open source web development IDE</td>
@@ -111,15 +123,27 @@
     </div>
 </div>
 
-<footer id="footer">
-    <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
-    <div class="social-icons">
-        <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg"></a>&nbsp;&nbsp;
-        <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>&nbsp;&nbsp;
-        <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
-    </div>
-</footer>
+    <footer id="footer">
+        <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
+        <div class="social-icons row justify-content-center">
+            <div class="col">
+                <a class="github-button" href="https://github.com/lingonsaft" data-size="large" aria-label="Follow @lingonsaft on GitHub">
+                    Follow @lingonsaft
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg" alt="youtube" /></a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg" alt="instagram" /></a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com/lingonsaft1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+                    data-show-count="false">Follow @lingonsaft1</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </footer>
 
 <script src="./scripts/helpful-material.js"></script>
 <script src="./scripts/social-links.js"></script>
