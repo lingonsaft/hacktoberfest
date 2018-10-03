@@ -1,5 +1,12 @@
 
 
+.spinCard{
+  -webkit-animation:spin 4s linear reverse infinite;
+  animation:spin 4s linear reverse infinite;
+}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 #cheese-body {
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
   font-size: 16px;

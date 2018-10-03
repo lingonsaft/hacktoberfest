@@ -1,4 +1,9 @@
-
+let t = document.getElementById('twist').addEventListener('click', () => {
+    let cards = document.querySelectorAll('.spin')    
+    cards.forEach(card => {
+        card.classList.toggle('spinCard');
+    })
+}, false)
 
 // function to change the background of the <section> part of cheese.html when the user clicks 'click for cheese' btn
 function cheeseAppearance(){
