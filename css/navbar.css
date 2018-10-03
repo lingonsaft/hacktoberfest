@@ -20,6 +20,17 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.waveynav {
+  background-image: none;
+  background-color: #0D0221!important;
+  color: #111111;
+}
+
 .navbar-nav {
   width: 100%;
+}
+
+.waveystrike {
+  color: #0D0221;
+  font-family: 'Qucksand';
 }

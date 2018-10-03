@@ -48,7 +48,7 @@
   <!--Navbar-->
   <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"
       alt="circled-chevron-up icon" /></button>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="/">Hacktoberfest</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
@@ -79,6 +79,9 @@
         <li class="nav-item">
           <a class="nav-link" id="tools" href="./tools.html">Tools</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="wavey-btn" href="#">Wavey</a>
+        </li>
         <li class="nav-item ml-lg-auto">
           <a class="nav-link" id="invert-btn" href="#">Invert</a>
         </li>
@@ -86,7 +89,7 @@
           <a class="nav-link" href="/tools">Tools</a>
         </li>
       </ul>
-      <h5 style="color:#FF174B;"><strike>:.|:;</strike></h5>
+      <h5 style="color:#FF174B;"><strike id='strike'>:.|:;</strike></h5>
     </div>
   </nav>
   <!-- End Navbar-->
@@ -108,8 +111,7 @@
             alt="heart icon" width="30px">
         </h5>
 
-        <a class="btn-youtube" style=" background-image: radial-gradient(circle, #fed500,orange,red); color: #FFF; "
-          href="https://hacktoberfest.digitalocean.com/details" target="_blank"><strong>Start Hacking</strong> <img src="./images/Fire_Emoji-min.png"
+        <a id='btn-hacking' class="btn-youtube" href="https://hacktoberfest.digitalocean.com/details" target="_blank"><strong>Start Hacking</strong> <img src="./images/Fire_Emoji-min.png"
             width="30px"></a>
       </center>
     </div>
@@ -129,7 +131,7 @@
         <h4>Hurry up and make your pull requests!</h4><br>
         <h5>Subscribe to our YouTube channel:</h5>
         <div class="ytSubscribeContainer">
-          <a target="_blank" class="btn-youtube" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg?sub_confirmation=1"><img
+          <a target="_blank" id='btn-youtube' class="btn-youtube" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg?sub_confirmation=1"><img
               src="./images/you_logo_transparent.png"></i>&nbsp;Subscribe</a>
         </div>
       </center>
