@@ -62,20 +62,6 @@
   padding: 100px;
 }
 
-.cheesetron-1 {
-  padding: 100px;
-  background-image: url("../images/gouda.jpg");
-  background-size: cover;
-}
-.cheesetron-2 {
-  padding: 100px;
-  background-image: url("../images/roquefort.jpg");
-  background-size: cover;
-}
-.cheesetron-3 {
-  padding: 100px;
-  background-image: url("../images/monster.jpg");
-}
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
