@@ -39,6 +39,11 @@ body {
   font-size: 16px;
 }
 
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+
 a {
   color: #fff;
   text-decoration: none;
