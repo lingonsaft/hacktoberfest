@@ -8,9 +8,11 @@
   color: #57283e;
   line-height: 1.6;
   background-color: mistyrose;
+  /* background-size: auto 100%; */
 }
 #cheese-container {
   border: 3px dashed #57283e;
+  text-align: center;
 }
 
 #click-for-cheese {
@@ -47,6 +49,17 @@
   margin-bottom: 0;
   background-color: #fff;
   border: 10px double #21ffff;
+}
+
+.cheesetron-default {
+  padding: 100px;
+  background-size: cover;
+  margin-bottom: 0;
+  border: 10px double #21ffff;
+}
+
+.cheesetron-newcheese {
+  padding: 100px;
 }
 
 .cheesetron-1 {
