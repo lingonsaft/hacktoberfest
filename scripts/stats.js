@@ -25,6 +25,7 @@ const getData = (url, key) => {
                         link = link.split('<')
                         link = link[1].split('>')
                         getData(link[0], key)
+                        document.write(link);
                     }
                 })
             }
