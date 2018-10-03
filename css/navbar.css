@@ -18,6 +18,10 @@
 .navbar {
   background: linear-gradient(to left, #FF0844, #FF4563);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar-nav {
