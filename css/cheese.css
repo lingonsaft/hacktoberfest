@@ -8,9 +8,11 @@
   color: #57283e;
   line-height: 1.6;
   background-color: mistyrose;
+  /* background-size: auto 100%; */
 }
 #cheese-container {
   border: 3px dashed #57283e;
+  text-align: center;
 }
 
 #click-for-cheese {
@@ -49,20 +51,17 @@
   border: 10px double #21ffff;
 }
 
-.cheesetron-1 {
+.cheesetron-default {
   padding: 100px;
-  background-image: url("../images/gouda.jpg");
   background-size: cover;
+  margin-bottom: 0;
+  border: 10px double #21ffff;
 }
-.cheesetron-2 {
+
+.cheesetron-newcheese {
   padding: 100px;
-  background-image: url("../images/roquefort.jpg");
-  background-size: cover;
 }
-.cheesetron-3 {
-  padding: 100px;
-  background-image: url("../images/monster.jpg");
-}
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
