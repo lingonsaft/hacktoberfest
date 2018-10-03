@@ -203,3 +203,6 @@ a {
   width: auto;
   height: 40px;
 }
+body > .container, body > .container-fluid {
+	padding-top: 60px;	
+}
