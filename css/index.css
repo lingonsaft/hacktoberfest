@@ -22,6 +22,7 @@ body {
   font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   overflow-x: hidden;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
@@ -78,7 +79,9 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .card {
   margin: 1%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   border: 0;
 }
@@ -136,6 +139,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-family: sans-serif;
   font-size: 20px;
   text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(rgb(247, 109, 45)),to(red));
   background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
   color: black;
   border-radius: 0;
@@ -145,7 +149,16 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   z-index: 1;
 }
 .btn-youtube:hover {
-  animation: animate 8s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+@-webkit-keyframes animate{
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 400%;
+  }
 }
 @keyframes animate{
   0%{
@@ -158,16 +171,20 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .btn-youtube:before{
   content: '';
   z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(yellow),to(red));
   background: linear-gradient(90deg, red,orange,yellow,red);
   background-size: 400%;
   border-radius: 0;
   opacity: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .btn-youtube:hover::before{
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   opacity: 1;
-  animation: animate 8s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
 }
 .ytSubscribeContainer{
   margin-top: 25px;
@@ -183,6 +200,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 /* Start Hacking Button Animation  */
 .btn-primary {
+  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(rgb(247, 109, 45)),to(red));
   background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
   border: 1px solid red;
   padding: 10px 20px;
@@ -190,7 +208,8 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   z-index: 1;
 }
 .btn-primary:hover {
-  animation: animate 8s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
 }
 @keyframes animate{
   0%{
@@ -203,14 +222,43 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .btn-primary:before{
   content: '';
   z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(yellow),to(red));
   background: linear-gradient(90deg, red,orange,yellow,red);
   background-size: 400%;
   border-radius: 0;
   opacity: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .btn-primary:hover::before{
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   opacity: 1;
-  animation: animate 8s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+.social-widget{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ff0844;
+  opacity: 0.3;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+
+}
+.social-widget:hover{
+  opacity: 1;
+
+}
+
+.social-widget .col{
+  background-color: #ff0844;
+  padding: 10px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.social-widget .col:hover{
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
