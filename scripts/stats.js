@@ -32,7 +32,7 @@ const getData = (url, key) => {
         })
         .then(json => {
             statsObj[key] += json.length
-            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + ' Contributors: ' + statsObj.contribut                 
+            document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + statsObj.pr + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + ' Contributors: ' + statsObj.contribut
         })
 }
 
