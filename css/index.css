@@ -17,6 +17,11 @@ body {
   font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   overflow-x: hidden;
+  transition: 1s ease-in-out;
+}
+
+.broccoli-green {
+  background-color: #A5D6A7;
 }
 
 html [type=button] {
@@ -123,4 +128,17 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .logo-image {
   max-width: 100%;
+}
+
+.btn-youtube {
+  background: red;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid red;
+  padding: 10px 20px;
+}
+.btn-youtube:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
 }
