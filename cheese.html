@@ -9,6 +9,9 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+
+  <!-- Github follow button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
   
   <link rel="stylesheet" href="./css/cheese.css">
   <link rel="stylesheet" href="./css/navbar.css">
@@ -26,8 +29,9 @@
 
     <img id="sublogo" src="./images/lingon-saft.png" />
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">Hacktoberfest  - by Lingonsaft</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">Hacktoberfest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -42,10 +46,17 @@
         <li class="nav-item">
           <a class="nav-link" href="/contributors">Contributors</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="twist" href="#">The twist</a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link" href="/cheese">Cheese!</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tools" href="/tools">Tools</a>
+        </li>
       </ul>
+
     </div>
   </nav>
 
@@ -90,13 +101,24 @@
   </div>
 
   <footer id="footer">
-    <h3>Social Links</h3>
-    <div class="social-icons">
-      <a href="https://github.com/lingonsaft"><img src="./images/svg/github.svg" ></a>&nbsp;&nbsp;
-      <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg"/></a>&nbsp;&nbsp;
-      <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg"/></a>&nbsp;&nbsp;
-      <a href="https://twitter.com/lingonsaft1"><img src="./images/svg/twitter.svg"/></a>
-      <br /><a href="https://icons8.com">Icon pack by Icons8</a>
+    <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
+    <div class="social-icons row justify-content-center">
+      <div class="col">
+        <a class="github-button" href="https://github.com/lingonsaft" data-size="large" aria-label="Follow @lingonsaft on GitHub">
+          Follow @lingonsaft
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg" alt="youtube" /></a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg" alt="instagram" /></a>
+      </div>
+      <div class="col">
+        <a href="https://twitter.com/lingonsaft1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+          data-show-count="false">Follow @lingonsaft1</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </footer>
 
