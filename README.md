@@ -16,6 +16,7 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling / code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributers.html file
+- Add images
 - Try to keep pull requests small to minimize merge conflicts
 
 ## Getting Started
