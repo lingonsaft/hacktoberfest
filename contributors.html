@@ -70,6 +70,7 @@
         <p class="card-item"><a href="https://github.com/sreehari1997">SREEHARI K.V</a></p>
         <p class="card-item"><a href="https://github.com/PatricNox">PatricNox</a></p>
         <p class="card-item"><a href="https://github.com/sarveshggn">Sarvesh Joshi</a></p>
+        <p class="card-item"><a href="https://github.com/spverma536">Piyush Verma</a></p>
         <p class="card-item"><a href="https://github.com/AdamWatts">Adam Watts</a></p>
         <p class="card-item"><a href="https://github.com/jgalianoz">Manuel Galindez</a></p>
         <p class="card-item"><a href="https://github.com/SithumRavishara">Sithum Ravishara</a></p>
@@ -88,6 +89,7 @@
         <p class="card-item"><a href="https://github.com/zwe-munhtun">Zwe Mun Htun</a></p>
         <p class="card-item"><a href="https://github.com/Evie-Skinner18">Evie</a></p>
         <p class="card-item"><a href="https://github.com/gsvendsen">Gustav Svendsen</a></p>
+        <p class="card-item"><a href="https://github.com/erhuz">Benjamin Fransson</a></p>
         <p class="card-item"><a href="https://github.com/94151">Muskan Jain</a></p>
         <p class="card-item"><a href="https://github.com/Cyclia">Cyclia</a></p>
         <p class="card-item"><a href="https://github.com/vs4vijay">vs4vijay</a></p>
@@ -105,12 +107,16 @@
         <p class="card-item"><a href="https://github.com/lazycipher">lazycipher</a></p>
         <p class="card-item"><a href="https://github.com/t04glovern">Nathan Glover</a></p>
         <p class="card-item"><a href="https://github.com/mufti1">Mufti Ismi</a></p>
+        <p class="card-item"><a href="https://github.com/saideepd">Saideep Dicholkar</a></p>
         <p class="card-item"><a href="https://github.com/ApoTheOne">Anurag</a></p>
         <p class="card-item"><a href="https://github.com/JosephMeli">Joseph Meli</a></p>
         <p class="card-item"><a href="https://github.com/devnic13">Devnic13</a></p>
         <p class="card-item"><a href="https://github.com/abhaymaniyar">Abhay Maniyar</a></p>
         <p class="card-item"><a href="https://github.com/aswinshenoy">Ashwin S Shenoy</a></p>
-
+        <p class="card-item"><a href="https://github.com/felipedf">Felipe D Ferreira</a></p>
+        <p class="card-item"><a href="https://github.com/cassadab">Brady Cassada</a></p>
+        <p class="card-item"><a href="https://github.com/evanwaltersdev">Evan Walters</a></p>
+        <p class="card-item"><a href="https://github.com/nzer0nz">Nonthawat Duangchai</a></p>
       </div>
     </div>
   </main>
@@ -163,40 +169,7 @@
       con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
     })
   </script>
-  <script>
-    window.onscroll = function () { scrollFunc() };
-    function scrollFunc() {
-      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        document.getElementById('backToTop').style.display = "block";
-      } else {
-        document.getElementById('backToTop').style.display = "none";
-      }
-    }
-    document.getElementsByTagName('button')[0].onclick = function () {
-      scrollTo(document.documentElement, 0, 1250);
-    }
-    function scrollTo(element, to, duration) {
-      var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
-      var animateScroll = function () {
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if (currentTime < duration) {
-          setTimeout(animateScroll, increment);
-        }
-      };
-      animateScroll();
-    }
-    Math.easeInOutQuad = function (t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t - 2) - 1) + b;
-    };
-  </script>
+  <script src="./scripts/scroll.js"></script>
 </body>
 
 </html>
