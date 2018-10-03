@@ -3,12 +3,13 @@
     left: 0;
     bottom: 0;
     width: 100vw;
-    /* height: 100px; */
-    background: linear-gradient(to left, #FF0844, #FF4563);
+   margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,0.6);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     text-align: center;
-    z-index: 1000;
+ 
 }
 
 #footer h3 {
@@ -18,15 +19,18 @@
 
 .footer-icon {
     color: #fff;
+    display:flex;
   }
 
 .social-icons {
     padding: 5px;
-    margin: 0 0 0 10px;
+     margin-left: auto;
+    margin-right: auto;
 }
 
 .social-icons > a img {
    transition: all .2s ease-in-out;
+   
   }
 
   .social-icons > a img:hover {
