@@ -1,6 +1,11 @@
-* {
-  font-family: 'Supermercado One', cursive;
+
+
+.spinCard{
+  -webkit-animation:spin 4s linear reverse infinite;
+  animation:spin 4s linear reverse infinite;
 }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #cheese-body {
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
@@ -26,9 +31,6 @@
     list-style-type: none;
 }
 
-.navbar {
-  background: linear-gradient(to left, #ff9a56, #FF4563)
-}
 
 
 .container a {
