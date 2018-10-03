@@ -4,7 +4,6 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-
 document.getElementById('invert-btn').onclick = (e) => {
   e.preventDefault();
   if (document.body.classList.contains('inverted')) {
