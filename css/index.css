@@ -20,6 +20,10 @@ body {
   transition: 1s ease-in-out;
 }
 
+.center {
+  text-align: center;
+}
+
 .broccoli-green {
   background-color: #A5D6A7;
 }
