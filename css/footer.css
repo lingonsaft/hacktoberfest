@@ -1,18 +1,21 @@
 #footer {
     position: fixed;
     left: 0;
-    bottom: 0;
-    width: 100vw;
-    /* height: 100px; */
-    background: linear-gradient(to left, #FF0844, #FF4563);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
+    bottom: 28%;
+    width: 5%;
+    height: 50%;
+    background-color: rgba(255, 153, 171, 0.8);
+    color: #ff2050;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
-    z-index: 1000;
+    font-size: 12px;
 }
 
 #footer h3 {
+    margin-top: 20px;
     padding: 5px;
+    font-size: 1.3em;
     height: 25px;
 }
 
@@ -21,11 +24,19 @@
   }
 
 .social-icons {
-    padding: 5px;
+    padding: 5px 10px ;
+    margin-bottom: 10px;
     margin: 0 0 0 10px;
+}
+.social-icons a:last-child{
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 10px;
+    color: #ef2f5c;
 }
 
 .social-icons > a img {
+    margin: 5px 0;
    transition: all .2s ease-in-out;
   }
 
