@@ -1,4 +1,8 @@
 body{
-    background-image: url('https://i.imgur.com/yiQAjPU.jpg');
+  background-image:
+  linear-gradient(
+    45deg, 
+    white, grey
+  );
 
   }
