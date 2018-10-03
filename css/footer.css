@@ -1,5 +1,5 @@
 #footer {
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -8,7 +8,6 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     text-align: center;
-    min-height: 100%;
 }
 
 #footer h3 {
@@ -16,11 +15,14 @@
     height: 25px;
 }
 
+.footer-icon {
+    color: #333;
+  }
+
 .social-icons {
     padding: 5px;
     margin-bottom: 10px;
 }
-
 
 .social-icons > a img {
    transition: all .2s ease-in-out;
