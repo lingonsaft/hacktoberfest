@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to left, #dd083e, #c0344c);
+    background: linear-gradient(to left, #FF0844, #FF4563);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     text-align: center;
@@ -26,6 +26,7 @@
 .social-icon {
     color: white;
     font-size: 250%;
+    padding-top: 5px;
     padding-right: 3%;
     padding-left: 3%;
 }
