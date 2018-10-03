@@ -57,8 +57,8 @@ git push origin my-new-branch
 - Why are you not using digitalocean?
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
-  - yes..
-- how many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
+  - Yes..
+- How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 
  
