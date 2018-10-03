@@ -61,6 +61,11 @@ git push origin my-new-branch
 - How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 
+# Technologies Used
+
+Basic HTML,CSS and JavaScript were used.
+If you are familiar with it, you can easily make some commits which may earn you a Hacktoberfest T-Shirt. :)
+
  
 
 ###### *We will do our best to merge as much as possible from everyone. However time is limited and the merge conflicts are horrible <3*
