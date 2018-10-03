@@ -1,17 +1,19 @@
 #footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 28%;
     width: 5%;
-    height: 80%;
+    height: 50%;
     background-color: rgba(255, 153, 171, 0.8);
     color: #ff2050;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
     font-size: 12px;
 }
 
 #footer h3 {
+    margin-top: 20px;
     padding: 5px;
     font-size: 1.3em;
 }
