@@ -13,19 +13,24 @@ body {
   margin-bottom: 4rem;
 }
 
-.navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563)
+.os {
+  text-align: center;
+  font-weight: bold;
+  margin: 8px;
 }
 
+.container {
+  margin: 2rem 0 8rem;
+}
 .container a {
   text-decoration: none;
   color: #FF0844;
 }
 
-  .container a:hover {
-    text-decoration: none;
-    color: #cc0636;
-  }
+.container a:hover {
+  text-decoration: none;
+  color: #cc0636;
+}
 
 #myBtn {
   display: none;
