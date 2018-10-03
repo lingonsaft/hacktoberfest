@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-size: 16px;
@@ -20,11 +22,17 @@ body {
   font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   overflow-x: hidden;
+  transition: 1s ease-in-out;
 }
 
-.navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563);
+.broccoli-green {
+  background-color: #A5D6A7;
 }
+
+html [type=button] {
+  -webkit-appearance: none !important;
+}
+
 .copy {
   padding-left: 50%;
 }
@@ -33,6 +41,7 @@ body {
 .faq-question {
   background-color: lightgray;
 }
+
 .tips {
   font-size: 20px;
 }
@@ -50,12 +59,15 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding:30px;
   border-radius: 5px;
 }
+
 .do{
   color:green;
 }
+
 .dont{
   color:red;
 }
+
 .fork_image {
   position: absolute;
   top: 0;
@@ -69,9 +81,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding-left:20px;
   font-weight:bold;
  }
-.container {
-  margin-top: 2rem;
-}
 
 .container-fluid a {
   text-decoration: none;
@@ -82,7 +91,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   text-decoration: none;
   color: #cc0636;
 }
-
 
 #myBtn {
   display: none;
@@ -97,18 +105,105 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   padding: 0;
   border-radius: 34px;
 }
+
 .countdown-timer ul {
   padding: 0;
 }
+  .countdown-timer li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+  }
+    .countdown-timer li span {
+      display: block;
+      font-weight: bold;
+      font-size: 3rem;
+    }
 
-.countdown-timer li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 1em;
+.logo-image {
+  max-width: 100%;
 }
-.countdown-timer li span {
-  display: block;
-  font-weight: bold;
-  font-size: 3rem;
-}
+/* Youtube Subscribe Styling */
 
+.btn-youtube {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
+  color: black;
+  border-radius: 0;
+  border: 1px solid red;
+  padding: 10px 20px;
+  background-size: 400%;
+  z-index: 1;
+}
+.btn-youtube:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate{
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 400%;
+  }
+}
+.btn-youtube:before{
+  content: '';
+  z-index: -1;
+  background: linear-gradient(90deg, red,orange,yellow,red);
+  background-size: 400%;
+  border-radius: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.btn-youtube:hover::before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+.ytSubscribeContainer{
+  margin-top: 25px;
+}
+.ytSubscribeContainer a{
+  color: white;
+}
+.ytSubscribeContainer a:hover{
+  color: white;
+}
+.yt-logo{
+  background: url("../images/you_logo.png");
+}
+/* Start Hacking Button Animation  */
+.btn-primary {
+  background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
+  border: 1px solid red;
+  padding: 10px 20px;
+  background-size: 400%;
+  z-index: 1;
+}
+.btn-primary:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate{
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 400%;
+  }
+}
+.btn-primary:before{
+  content: '';
+  z-index: -1;
+  background: linear-gradient(90deg, red,orange,yellow,red);
+  background-size: 400%;
+  border-radius: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.btn-primary:hover::before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
