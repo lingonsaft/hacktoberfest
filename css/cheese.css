@@ -1,6 +1,4 @@
-* {
-  font-family: 'Supermercado One', cursive;
-}
+
 
 #cheese-body {
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
@@ -26,9 +24,6 @@
     list-style-type: none;
 }
 
-.navbar {
-  background: linear-gradient(to left, #ff9a56, #FF4563)
-}
 
 
 .container a {
