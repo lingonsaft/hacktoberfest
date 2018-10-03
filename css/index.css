@@ -142,8 +142,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   text-decoration: none;
   background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
   color: black;
-  border-radius: 0;
-  border: 1px solid red;
+  border-radius: 5px;
   padding: 10px 20px;
   background-size: 400%;
   z-index: 1;
@@ -186,3 +185,13 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   background: url("../images/you_logo.png");
 }
 /* Youtube Subscribe Styling End  */
+
+/* Button Hover */
+.test {
+  background-image: radial-gradient(circle, #fed500,orange,red); 
+  opacity: 0.8;
+}
+
+.test:hover {
+  opacity: 1;
+}
