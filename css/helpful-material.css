@@ -1,3 +1,6 @@
+* {
+  outline: none!important;
+}
 body {
   font-size: 16px;
   color: #444;
@@ -5,10 +8,85 @@ body {
   background-color:mistyrose;
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Sailec-Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+h1,h2,h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+
 .copy {
   padding-left: 50%;
 }
 
 .guides {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.os {
+  text-align: center;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto 8rem;
+}
+.container a {
+  text-decoration: none;
+  color: #FF0844;
+}
+
+.container a:hover {
+  text-decoration: none;
+  color: #cc0636;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  /* padding: 15px; */
+  width: 51px;
+  height: 50px;
+  padding: 0;
+  border-radius: 34px;
+}
+
+a.guides-links{
+  display: inline-block;
+  margin-bottom: 80px
+}
+
+.list {
+  padding-left: 40px;
+}
+.list-item {
+  display: list-item;
+  list-style-type: circle;
+}
+
+#footer {
+  padding: 10px 0;
+}
+.footer__socials-link {
+  margin: 0 10px;
+}
+.footer__socials-link svg {
+  height: 35px;
+  width: auto;
 }

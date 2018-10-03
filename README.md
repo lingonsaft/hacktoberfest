@@ -1,6 +1,6 @@
 # Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/))
 
-This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down bellow and read the contribution rules. Happy hacking <3
+This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down below and read the contribution rules. Happy hacking <3
 
 # Videos
 
@@ -16,7 +16,33 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling / code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributers.html file
-- Add images 
+- Try to keep pull requests small to minimize merge conflicts
+
+## Getting Started
+
+- Fork this repo (button on top)
+- Clone on your local machine
+
+```terminal
+git clone https://github.com/lingonsaft/hacktoberfest.git
+cd hacktoberfest
+```
+
+- Create a new branch
+
+```markdown
+git checkout -b my-new-branch
+```
+- Add your contribution
+- Commit and push
+
+```markdown
+git add .
+git commit -m "your-commit-msg"
+git push origin my-new-branch
+```
+
+- Create a new pull request from your forked repository
 
 # FAQ
 
@@ -31,5 +57,11 @@ This is a beginner friendly project to help you get started with your [hacktober
 - Why are you not using digitalocean?
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
-  - yes..
-- how many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
+  - Yes..
+- How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
+
+
+ 
+
+###### *We will do our best to merge as much as possible from everyone. However time is limited and the merge conflicts are horrible <3*
+
