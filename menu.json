@@ -33,5 +33,15 @@
         "text": "Invert",
         "href": "#",
         "id": "invert-btn"
+    },
+    "Fireworks": {
+        "text": "Fireworks",
+        "href": "/fireworks",
+        "id": "fireworks"
+    },
+    "Learn": {
+        "text": "Learn!",
+        "href": "/wow",
+        "id": "learn"
     }
 }
