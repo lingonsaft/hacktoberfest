@@ -89,19 +89,15 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight:bold;
  }
 
-.container {
-  margin-top: 2rem;
+.container-fluid a {
+  text-decoration: none;
+  color: #FF0844;
 }
 
-  .container-fluid a {
-    text-decoration: none;
-    color: #FF0844;
-  }
-
-    .container-fluid a:hover {
-      text-decoration: none;
-      color: #cc0636;
-    }
+.container-fluid a:hover {
+  text-decoration: none;
+  color: #cc0636;
+}
 
 #myBtn {
   display: none;
