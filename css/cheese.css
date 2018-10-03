@@ -1,6 +1,4 @@
-* {
-  font-family: 'Supermercado One', cursive;
-}
+
 
 .spinCard{
   -webkit-animation:spin 4s linear reverse infinite;
@@ -33,9 +31,6 @@
     list-style-type: none;
 }
 
-.navbar {
-  background: linear-gradient(to left, #ff9a56, #FF4563)
-}
 
 
 .container a {
