@@ -3,12 +3,12 @@
     left: 0;
     bottom: 0;
     width: 100vw;
-   margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     background-color: rgba(0,0,0,0.6);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     color: white;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 #footer h3 {
@@ -31,9 +31,9 @@
 .social-icons > a img {
    transition: all .2s ease-in-out;
    
-  }
+}
 
-  .social-icons > a img:hover {
+.social-icons > a img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }

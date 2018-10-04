@@ -72,6 +72,7 @@ div#content div#contribution-rules ul li {
 }
 
 #contribution-rules {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-color: #fff;
   padding: 30px;
   border-radius: 5px;
@@ -154,6 +155,10 @@ div#content div#contribution-rules ul li {
   display: block;
   font-weight: bold;
   font-size: 3rem;
+}
+
+.hacktoberfest-image {
+  margin: auto;
 }
 
 .logo-image {
