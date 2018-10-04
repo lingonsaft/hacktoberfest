@@ -2,6 +2,7 @@
 Owner: Lingonsaft.
 Site: https://hacktoberfest.lingonsaft.com/
 Twitter: https://twitter.com/lingonsaft1
+Instagram: https://www.instagram.com/lingonsaftofficial/
 							
 /* THANKS */
 To all contributors!
