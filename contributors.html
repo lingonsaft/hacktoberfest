@@ -39,7 +39,7 @@
   </header>
   <main>
     <div class="container">
-        
+
       <h1>Contributors <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
       <p>Add yourself to the list if you contribute.</p>
       <div class="card">
@@ -112,10 +112,14 @@
         <p class="card-item"><a href="https://github.com/abhaymaniyar">Abhay Maniyar</a></p>
         <p class="card-item"><a href="https://github.com/aswinshenoy">Ashwin S Shenoy</a></p>
         <p class="card-item"><a href="https://github.com/felipedf">Felipe D Ferreira</a></p>
+        <p class="card-item"><a href="https://github.com/nosesdive">Noppadol Sukprapa</a></p>
         <p class="card-item"><a href="https://github.com/cassadab">Brady Cassada</a></p>
         <p class="card-item"><a href="https://github.com/evanwaltersdev">Evan Walters</a></p>
         <p class="card-item"><a href="https://github.com/nzer0nz">Nonthawat Duangchai</a></p>
-		<p class="card-item"><a href="https://github.com/Etone">Etone</a></p>
+		    <p class="card-item"><a href="https://github.com/Etone">Etone</a></p>
+        <p class="card-item"><a href="https://github.com/gargarchit">Archit</a></p>
+        <p class="card-item"><a href="https://github.com/westwick">westwick</a></p>
+        <p class="card-item"><a href="https://github.com/jakewtaylor">Jake Taylor</a></p>
       </div>
     </div>
   </main>
@@ -134,15 +138,22 @@
             <path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z "></path>
           </g>
 
-        </svg>
-    </button>
-    <script>
-        let contributors = document.querySelectorAll('.card-item a')
-        contributors.forEach(con => {
-            console.log(con.href)
-            con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
-        })
-    </script>
+  <button id="backToTop" type="button" title="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.189 511.189">
+      <g fill="#fff">
+        <path d="M364.858 157.935l-98.59-145.28c-8.547-12.586-22.158-12.331-30.25.526l-90.88 144.228c-8.093 12.857-2.56 23.381 12.302 23.381h26.639v50.148c0 15.7 12.742 28.445 28.445 28.445h85.333c15.73 0 28.445-12.743 28.445-28.445V180.79h27.008c14.875 0 20.109-10.269 11.547-22.855M51.115 338.627H19.641C5.774 338.627 0 328.502 0 318.702c0-10.097 7.225-19.91 19.641-19.91h106.226c12.43 0 19.655 9.813 19.655 19.91 0 9.8-5.773 19.925-19.655 19.925h-31.46v144.91c0 14.45-9.23 22.528-21.646 22.528s-21.646-8.079-21.646-22.527v-144.91zM300.559 401.561c0-34.93-18.19-66.417-54.273-66.417-36.096 0-54.286 31.487-54.286 66.417 0 35.214 17.621 66.389 54.286 66.389s54.273-31.175 54.273-66.389m-153.587 0c0-60.046 40.406-106.253 99.314-106.253 58.013 0 99.3 47.658 99.3 106.253 0 59.748-40.121 106.254-99.3 106.254-58.61 0-99.314-46.506-99.314-106.254M406.983 398.091h29.453c18.177 0 29.71-13.284 29.71-30.592 0-17.338-11.534-30.62-29.71-30.62h-29.453v61.212zm-43.32-76.786c0-13.582 8.092-22.5 22.542-22.5h51.073c42.453 0 73.912 27.691 73.912 68.978 0 42.14-32.611 68.422-72.164 68.422h-32.042v47.346c0 14.435-9.23 22.528-21.633 22.528-12.445 0-21.688-8.093-21.688-22.528V321.305z" />
+      </g>
+    </svg>
+  </button>
+
+  <script>
+
+    let contributors = document.querySelectorAll('.card-item a')
+    contributors.forEach(con => {
+      console.log(con.href)
+      con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
+    })
+  </script>
   <script src="./scripts/scroll.js"></script>
 </body>
 
