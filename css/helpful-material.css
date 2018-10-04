@@ -40,8 +40,7 @@ h3 {
 
 .container {
   max-width: 1100px;
-  margin: 0 auto 8rem;
-  padding-top: 5rem;
+  margin: 5rem auto 8rem;
 }
 .container a {
   text-decoration: none;
