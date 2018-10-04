@@ -1,3 +1,28 @@
 body {
-  background-image: linear-gradient(45deg, white, lightblue);
+  background-image: url('../images/potato-bg.jpeg');
+}
+.potato{
+  display: flex;
+  justify-content: center;
+}
+.potato-text{
+  color: whitesmoke;
+  text-align: center;
+}
+.btn-potato{
+  background-color: fuchsia;
+  padding: 15px 25px;
+  color: whitesmoke;
+  cursor: pointer;
+  border-color: violet;
+  transition: all ease 3s;
+  font-size: 18px;
+  border-radius: 0;
+}
+.btn-potato:hover{
+  background-color: rgb(205, 151, 90);
+  border-color: rgb(205, 151, 90);
+  font-weight: bold;
+  padding: 55px 15px;
+  border-radius: 40px; 
 }
