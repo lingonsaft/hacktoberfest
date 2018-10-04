@@ -45,6 +45,8 @@ git push origin my-new-branch
 ```
 
 - Create a new pull request from your forked repository
+- Delete the branch you created after your pull request is merged or closed.
+- If you are still facing some issues in creating a pull request then you can view a more detailed contribution guide [here](https://github.com/firstcontributions/first-contributions) and try making a your first pull request on the same.
 
 # FAQ
 
