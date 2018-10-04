@@ -20,7 +20,7 @@
   top: 0;
   width: 100vw;
   z-index: 9999;
-  background: #4096ee !important;
+  background: #ff8a5b !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: 1s ease-in-out;
 }
