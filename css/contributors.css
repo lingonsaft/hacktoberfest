@@ -78,7 +78,12 @@ a {
 }
 
 .header {
-  margin: 1.5rem 3rem 1.5rem;
+  position: fixed;
+  padding: 1.5rem 3rem 1.5rem;
+  background: #111;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .top-nav {
   display: -webkit-box;
@@ -127,7 +132,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 110px auto 0 auto;
   max-width: 1100px;
   padding-left: 1rem;
   padding-right: 1rem;
