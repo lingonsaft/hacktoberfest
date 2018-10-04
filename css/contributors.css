@@ -203,3 +203,14 @@ a {
   width: auto;
   height: 40px;
 }
+.easter-egg{
+  display: flex;
+  justify-content: center;
+}
+.easter-egg:hover{
+  display: flex;
+  justify-content: right;
+}
+.easter-egg img{
+  height: 40px;
+}
