@@ -2,7 +2,7 @@
   background-color: #ff0844;
 }
 .navbar.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .nav-link:hover {
@@ -12,14 +12,34 @@
   transform: translate3d(0px, 16px);
   border-bottom: 2px solid whitesmoke;
   padding: 6px 10px 2px;
-  transition: all 125ms ease-in-out
+  transition: all 125ms ease-in-out;
 }
 
 .navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+  background: #4096ee !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 1s ease-in-out;
 }
 
 .navbar-nav {
   width: 100%;
+}
+
+#twist:hover {
+  border-bottom: 0;
+  animation: rotate-btn 0.5s ease-in 1;
+  -webkit-animation: rotate-btn 0.5s ease-in 1;
+}
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
