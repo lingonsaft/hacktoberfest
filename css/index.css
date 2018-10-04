@@ -309,3 +309,14 @@ div#content div#contribution-rules ul li {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
+
+.hiddenDiv {
+    display: none;
+}
+
+.hoverOverMe:hover + div {
+	font-family:sans-serif;
+    display: block;
+}
+
+
