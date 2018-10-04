@@ -33,7 +33,7 @@
   border-bottom: 0;
   animation: rotate-btn 0.5s ease-in 1;
   -webkit-animation: rotate-btn 0.5s ease-in 1;
-} 
+}
 
 @keyframes rotate-btn {
   0% {
