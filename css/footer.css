@@ -9,6 +9,7 @@
     color: white;
     text-align: center;
     z-index: 1000;
+    transition: 1s ease-in-out;
 }
 
 #footer h3 {
@@ -63,4 +64,15 @@
 }
 #backToTop:hover svg {
     opacity: 1;
+}
+
+#footer {
+  padding: 10px 0;
+}
+.footer__socials-link {
+  margin: 0 10px;
+}
+.footer__socials-link svg {
+  height: 35px;
+  width: auto;
 }
