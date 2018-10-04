@@ -89,6 +89,10 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight:bold;
  }
 
+.container-fluid {
+  transition: 1s ease-in-out;
+}
+
 .container-fluid a {
   text-decoration: none;
   color: #FF0844;
