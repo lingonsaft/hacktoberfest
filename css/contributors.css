@@ -78,7 +78,12 @@ a {
 }
 
 .header {
-  margin: 1.5rem 3rem 1.5rem;
+  position: fixed;
+  padding: 1.5rem 3rem 1.5rem;
+  background: #111;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .top-nav {
   display: -webkit-box;
@@ -127,7 +132,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 110px auto 0 auto;
   max-width: 1100px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -202,4 +207,45 @@ a {
 .footer__socials-link svg {
   width: auto;
   height: 40px;
+}
+.heart{
+  position: relative;
+  width: 100px;
+  height: 90px;
+  float: left;
+}
+.heart:before,
+.heart:after{
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #fc2e5a;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+       -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+.heart:after{
+  left: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+       -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
 }
