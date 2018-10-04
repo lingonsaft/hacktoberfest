@@ -16,28 +16,6 @@
     height: 25px;
 }
 
-.footer-icon {
-    color: #fff;
-    display:flex;
-  }
-
-.social-icons {
-    padding: 5px;
-     margin-left: auto;
-    margin-right: auto;
-
-}
-
-.social-icons > a img {
-   transition: all .2s ease-in-out;
-   
-  }
-
-  .social-icons > a img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-}
-
 #footer h3 span:hover {
     cursor: pointer;
     cursor: hand;
@@ -79,4 +57,11 @@
 .footer__socials-link svg {
   height: 35px;
   width: auto;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
+
+.footer__socials-link svg:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+ }
