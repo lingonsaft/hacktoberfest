@@ -79,14 +79,3 @@ a.guides-links{
   display: list-item;
   list-style-type: circle;
 }
-
-#footer {
-  padding: 10px 0;
-}
-.footer__socials-link {
-  margin: 0 10px;
-}
-.footer__socials-link svg {
-  height: 35px;
-  width: auto;
-}
