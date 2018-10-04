@@ -17,9 +17,10 @@
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 9999;
-  background: linear-gradient(to left, #ff0844, #ff4563);
+  background: #4096ee !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: 1s ease-in-out;
 }

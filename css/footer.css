@@ -3,9 +3,10 @@
     left: 0;
     bottom: 0;
     width: 100vw;
+    /* height: 100px; */
+    background: #4096ee;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0,0,0,0.6);
     color: white;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -37,7 +38,6 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
-
 #footer h3 span:hover {
     cursor: pointer;
     cursor: hand;
@@ -79,4 +79,11 @@
 .footer__socials-link svg {
   height: 35px;
   width: auto;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
+
+.footer__socials-link svg:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+ }
