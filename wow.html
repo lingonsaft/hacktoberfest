@@ -20,10 +20,11 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
+  <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="./index.html">Hacktoberfest</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -32,14 +33,17 @@
         <li class="nav-item">
           <a class="nav-link" href="./index.html">Home</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="./helpful-material.html">Helpful Material</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./contributors.html">Contributors</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="./wow.html">Learn Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tools" href="./tools.html">Tools</a>
         </li>
       </ul>
 
@@ -47,35 +51,39 @@
   </nav>
 
 
-      <div class="container jumbotron">
-          <h1 class="display-4">Learn Here now.</h1>
-          <p class="lead">Learn all about the technologies that you can use to help build this site.</p>
-          <hr class="my-4">
-          <p>Some of the videos below are from the opensource organization called freecodecamp</p>
-          <button class="btn btn-primary">
-          <a class="" href="https://www.freecodecamp.org/">Check them out!</a>
-          </button>
-        </div>
-        
-        <hr />
-        <div class=" magic">
-            <div class="row">
-              <div class="col-md">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/3Zv_l8FHVs8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-md">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/r1xBCi5SOjw" frameborder="0" allow="autoplay; encrypted-media" allowfullscree></iframe>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Eps1paAaLC8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-sm">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VuN8qwZoego" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  </div>
-            </div>
-          </div>
-        </div>
+  <div class="container jumbotron">
+    <h1 class="display-4">Learn Here now.</h1>
+    <p class="lead">Learn all about the technologies that you can use to help build this site.</p>
+    <hr class="my-4">
+    <p>Some of the videos below are from the opensource organization called freecodecamp</p>
+    <button class="btn btn-primary">
+      <a class="" href="https://www.freecodecamp.org/">Check them out!</a>
+    </button>
+  </div>
+
+  <hr />
+  <div class=" magic">
+    <div class="row">
+      <div class="col-md">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3Zv_l8FHVs8" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-md">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r1xBCi5SOjw" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscree></iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eps1paAaLC8" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-sm">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VuN8qwZoego" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe> </div>
+    </div>
+  </div>
+  </div>
 
 
   <footer id="footer">
@@ -103,25 +111,27 @@
   <script src="./scripts/helpful-material.js"></script>
   <script src="./scripts/social-links.js"></script>
   <script>
-      scrollFunction = () => {
+    scrollFunction = () => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtn").style.display = "block";
       } else {
-          document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtn").style.display = "none";
       }
-      }
-      window.onscroll = () => {scrollFunction()};
-      topFunction = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    }
+    window.onscroll = () => { scrollFunction() };
+    topFunction = () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-      AOS.init();
+    AOS.init();
   </script>
 
 </body>

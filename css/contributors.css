@@ -49,12 +49,13 @@ body {
 }
 
 canvas {
-	cursor: crosshair;
-	display: block;
+  cursor: crosshair;
+  display: block;
 }
 
 a {
-  color: #fff;
+  /* color: #fff; */
+  color: black;
   text-decoration: none;
 }
 #backToTop {
@@ -153,7 +154,10 @@ a {
 }
 .card-item {
   display: inline-block;
-  width: 330px;
+  /* background-color: lightblue; */
+  background-color: #1ceec8;
+  color: black !important;
+  width: 400px;
   position: relative;
   cursor: pointer;
   border-radius: 0.4rem;
@@ -165,7 +169,8 @@ a {
   font-size: 1rem !important;
 }
 .card-item:hover {
-  background-color: rgba(255, 255, 255, 0.06);
+  /* background-color: rgba(255, 255, 255, 0.06); */
+  background-color: rgb(245, 114, 15);
 }
 .card-item::before {
   content: "";
