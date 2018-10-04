@@ -11,6 +11,7 @@
     color: white;
     text-align: center;
     z-index: 1000;
+    transition: 1s ease-in-out;
 }
 
 #footer h3 {
