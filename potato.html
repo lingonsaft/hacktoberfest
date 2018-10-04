@@ -2,11 +2,31 @@
 <html>
 <head>
 <title>Potatos!</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css">
+    #potatoes {position: absolute; top: 33%; left: 25%; display: none; }
+  </style>
 </head>
 <body>
 
 <h1>This is an easter egg!</h1>
 <p>How can we make this way better?</p>
+<img id="potatoes" src="https://media.giphy.com/media/menw2PSZ2vUzu/giphy.gif" />
 
+<script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+<script>
+    var egg = new Egg();
+egg
+  .addCode("up,up,down,down,left,right,left,right,b,a", function() {
+    jQuery('#potatoes').fadeIn(500, function() {
+      window.setTimeout(function() { jQuery('#potatoes').hide(); }, 5000);
+    });
+  })
+  .addHook(function(){
+    console.log("Hook called for: " + this.activeEgg.keys);
+    console.log(this.activeEgg.metadata);
+  }).listen();
+    
+</script>
 </body>
 </html>
