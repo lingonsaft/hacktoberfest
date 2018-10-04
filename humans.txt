@@ -1,0 +1,7 @@
+/* TEAM */
+Owner: Lingonsaft.
+Site: https://hacktoberfest.lingonsaft.com/
+Twitter: https://twitter.com/lingonsaft1
+							
+/* THANKS */
+To all contributors!
