@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
-.spinCard{
-  -webkit-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+.spinCard {
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 * {
   outline: none!important;
@@ -18,16 +27,17 @@ html {
 }
 
 body {
-  font-size: 16px;
   color: #000;
   line-height: 1.9;
   margin:0;
   background-color: #FEFEFE;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
-  margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
+}
+.h1-hover:hover {
+  cursor: url("../images/NinjaDuck_min.jpg"), pointer;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -172,10 +182,10 @@ a,a:hover {
 }
 
 .broccoli-green {
-  background-color: #A5D6A7;
+  background-color: #a5d6a7;
 }
 
-html [type=button] {
+html [type="button"] {
   -webkit-appearance: none !important;
 }
 
@@ -183,7 +193,11 @@ html [type=button] {
   padding-left: 50%;
 }
 
-.faq{ width:90%;margin-left:10%; margin-bottom: 50px;}
+.faq {
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
 .faq-question {
   background-color: lightgray;
 }
@@ -192,26 +206,27 @@ html [type=button] {
   font-size: 20px;
 }
 
-#tips{
+#tips {
   border-radius: 5px;
 }
 
-div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+div#content div#contribution-rules ul,
+div#content div#contribution-rules ul li {
   list-style-type: none;
 }
 
-#contribution-rules{
+#contribution-rules {
   background-color: #fff;
-  padding:30px;
+  padding: 30px;
   border-radius: 5px;
 }
 
-.do{
-  color:green;
+.do {
+  color: green;
 }
 
-.dont{
-  color:red;
+.dont {
+  color: red;
 }
 
 .fork_image {
@@ -222,15 +237,22 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{
-  padding:3px;
-  padding-left:20px;
-  font-weight:bold;
- }
+.card {
+  margin: 1%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 0;
+}
+
+.card-header {
+  padding: 3px;
+  padding-left: 20px;
+  font-weight: bold;
+}
 
 .container-fluid a {
   text-decoration: none;
-  color: #FF0844;
+  color: #ff0844;
 }
 
 .container-fluid a:hover {
@@ -255,6 +277,16 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .countdown-timer ul {
   padding: 0;
 }
+.countdown-timer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+}
+.countdown-timer li span {
+  display: block;
+  font-weight: bold;
+  font-size: 3rem;
+}
   .countdown-timer li {
     display: inline-block;
     list-style-type: none;
@@ -273,13 +305,16 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .logo-image {
   max-width: 100%;
 }
+.logo-image:hover {
+  cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
+}
 /* Youtube Subscribe Styling */
 
 .btn-youtube {
   font-family: sans-serif;
   font-size: 20px;
   text-decoration: none;
-  background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
+  background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
   color: black;
   border-radius: 0;
   border: 1px solid red;
@@ -290,38 +325,72 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .btn-youtube:hover {
   animation: animate 8s linear infinite;
 }
-@keyframes animate{
-  0%{
-      background-position: 0%;
+@keyframes animate {
+  0% {
+    background-position: 0%;
   }
-  100%{
-      background-position: 400%;
+  100% {
+    background-position: 400%;
   }
 }
-.btn-youtube:before{
-  content: '';
+.btn-youtube:before {
+  content: "";
   z-index: -1;
-  background: linear-gradient(90deg, red,orange,yellow,red);
+  background: linear-gradient(90deg, red, orange, yellow, red);
   background-size: 400%;
   border-radius: 0;
   opacity: 0;
   transition: 0.5s;
 }
-.btn-youtube:hover::before{
+.btn-youtube:hover::before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
 }
-.ytSubscribeContainer{
+.ytSubscribeContainer {
   margin-top: 25px;
 }
-.ytSubscribeContainer a{
+.ytSubscribeContainer a {
   color: white;
 }
-.ytSubscribeContainer a:hover{
+.ytSubscribeContainer a:hover {
   color: white;
 }
-.yt-logo{
+.yt-logo {
   background: url("../images/you_logo.png");
 }
+/* Start Hacking Button Animation  */
+.btn-primary {
+  background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
+  border: 1px solid red;
+  padding: 10px 20px;
+  background-size: 400%;
+  z-index: 1;
+}
+.btn-primary:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(90deg, red, orange, yellow, red);
+  background-size: 400%;
+  border-radius: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.btn-primary:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
 /* Youtube Subscribe Styling End  */
