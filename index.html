@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74296045-6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-74296045-6');
@@ -39,82 +42,100 @@
     <link rel="stylesheet" href="./css/terminal.css" />
     <title>!!HACKTOBERFEST!!</title>
     <style>
-    .iconAni{
-        width: 45%;
-        height: 25%;
-        filter: brightness(10%);
-        top:-100px;
-        position: relative;
-        
-    animation-name: example;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    }
-    
-    @keyframes example {
-    0%   {left:0px; top:-100px;}
-    25%  {left:-1100px; top:-100px;}
-    50%  {left:-1100px; top:300px;}
-    75%  {left:0px; top:300px;}
-    100% {left:0px; top:-100px;}
-    }
-    .iconAni:hover{
-        /*opacity: .6;*/
-        filter: brightness(100%)
-    }
-    #bg:target{
-        display: block;
-    }
+        .iconAni {
+            width: 45%;
+            height: 25%;
+            filter: brightness(10%);
+            top: -100px;
+            position: relative;
 
-    #bg:target ~ .box{
-       top: 150px;
-       transition: all .3s;
-       transition-delay: .2s;
-    }
-    #bg{
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 8);
-        position: fixed;
-        display: none;  
-    }
+            animation-name: example;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
 
-    .box{
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    margin-left: -360px;
-    left: 60%;
-    top: 10%;
-    }
+        @keyframes example {
+            0% {
+                left: 0px;
+                top: -100px;
+            }
+            25% {
+                left: -1100px;
+                top: -100px;
+            }
+            50% {
+                left: -1100px;
+                top: 300px;
+            }
+            75% {
+                left: 0px;
+                top: 300px;
+            }
+            100% {
+                left: 0px;
+                top: -100px;
+            }
+        }
 
-    .box img{
-    width: 100%;
-    position: absolute;
-    }
+        .iconAni:hover {
+            /*opacity: .6;*/
+            filter: brightness(100%)
+        }
 
-    #close{
-    color:#fff;
-    font-family: 'Arial';
-    text-decoration: none;
-    font-size: 35px;
-    position: absolute;
-    background-color: #000;
-    width: 30px;
-    height: 40px;
-    text-align: center;
-    right: 0;
-    padding-bottom: 50px;
-    }
+        #bg:target {
+            display: block;
+        }
 
-    #close:hover{
-    opacity: .6;
-    }
+        #bg:target~.box {
+            top: 150px;
+            transition: all .3s;
+            transition-delay: .2s;
+        }
+
+        #bg {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 8);
+            position: fixed;
+            display: none;
+        }
+
+        .box {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            margin-left: -360px;
+            left: 60%;
+            top: 10%;
+        }
+
+        .box img {
+            width: 100%;
+            position: absolute;
+        }
+
+        #close {
+            color: #fff;
+            font-family: 'Arial';
+            text-decoration: none;
+            font-size: 35px;
+            position: absolute;
+            background-color: #000;
+            width: 30px;
+            height: 40px;
+            text-align: center;
+            right: 0;
+            padding-bottom: 50px;
+        }
+
+        #close:hover {
+            opacity: .6;
+        }
     </style>
 </head>
 <link rel="shortcut icon" href="./images/sh_icon_min.png" />
@@ -135,8 +156,7 @@
             alt="circled-chevron-up icon" /></button>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navbar">
         <a class="navbar-brand" href="/">Hacktoberfest</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"> <a class="nav-link" href="/">Home</a> </li>
@@ -146,7 +166,7 @@
                 <li class="nav-item"> <a class="nav-link" id="twist" href="#">The twist</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="./potato.html">Potato</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="./cheese.html">Cheese!</a> </li>
-              <li class="nav-item "><a class="nav-link" id="learn" href="/Fireworks">Fireworks</a></li>
+                <li class="nav-item "><a class="nav-link" id="learn" href="/Fireworks">Fireworks</a></li>
                 <li class="nav-item"> <a class="nav-link" href="./wow.html">Learn!</a> </li>
                 <li class="nav-item"> <a class="nav-link" id="tools" href="./tools.html">Tools</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="./gifheaven.html">Gif heaven!</a> </li>
@@ -163,40 +183,28 @@
     <!--Main content-->
     <div class="container-fluid">
         <div id="header">
-            <center>
-                <br>
-                <h1>Hacktoberfest <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
-                        alt="heart icon" width="30px"> 2018</h1> <a class="github-button" href="https://github.com/lingonsaft/hacktoberfest"
-                    data-size="large" data-icon="octicon-star" aria-label="Star lingonsaft/hacktoberfest on GitHub">
-                    Star on GitHub
+            <div class="hero-cont">
+                <h1 class="h1-hacktober">Hacktoberfest <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" alt="heart icon" width="30px"> 2018 with <a href="https://hacktoberfest.digitalocean.com" style="color:white;">Digital Ocean</a></h1>
+                <a class="github-button" href="https://github.com/lingonsaft/hacktoberfest" data-size="large" data-icon="octicon-star" aria-label="Star lingonsaft/hacktoberfest on GitHub">
+                  Star on GitHub
                 </a>
                 <p id="stats">Hacktoberfest</p>
-                <h5>THIS is a BEGINNER friendly project to help you get started with your hacktoberfest. If you don't
-                    know
-                    where to start
-                    feel free to watch the videos and read the contribution rules. Happy hacking <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
-                        alt="heart icon" width="30px">
-                </h5> <a class="btn-youtube" style="border-radius: 25px; box-shadow: 5px 5px 10px grey; background-image: radial-gradient(circle, #fed500,orange,red); color: #FFF; "
-                    href="https://hacktoberfest.digitalocean.com/details" target="_blank"><strong>Start Hacking</strong>
-                    <img src="./images/Fire_Emoji-min.png" width="30px"></a>
-            </center>
-                <h1>Hacktoberfest <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" alt="heart icon" width="30px"> 2018 with <a href="https://hacktoberfest.digitalocean.com" style="color:white;">Digital Ocean</a></h1> <a class="github-button" href="https://github.com/lingonsaft/hacktoberfest" data-size="large" data-icon="octicon-star" aria-label="Star lingonsaft/hacktoberfest on GitHub">
-
-          Star on GitHub
-        </a>
-                <p id="stats">Hacktoberfest</p>
                 <h5>THIS is a BEGINNER friendly project to help you get started with your Hacktoberfest. If you don't know
-          where to start
-          feel free to watch the videos and read the contribution rules. Happy hacking <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
-            alt="heart icon" width="30px">
-        </h5> <a class="btn-youtube" style="border-radius: 25px; box-shadow: 5px 5px 10px grey; background-image: radial-gradient(circle, #fed500,orange,red); color: #FFF; " href="https://hacktoberfest.digitalocean.com/details" target="_blank"><strong>Start Hacking</strong> <img src="./images/Fire_Emoji-min.png"
-            width="30px"></a> </center>
+              where to start
+              feel free to watch the videos and read the contribution rules. Happy hacking <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
+                alt="heart icon" width="30px">
+                </h5>
+                    <a class="btn-youtube" style="border-radius: 25px; box-shadow: 5px 5px 10px grey; background-image: radial-gradient(circle, #fed500,orange,red); color: #FFF; " href="https://hacktoberfest.digitalocean.com/details" target="_blank">
+                        <strong>Start Hacking</strong> <img src="./images/Fire_Emoji-min.png"width="30px">
+                    </a>
+                </div>
         </div>
         <br />
         <br />
         <div class="countdown-timer">
             <a class="hoverOverMe">Don't come<br> closer!!!</a>
-            <div class="hiddenDiv"><img src="./images/disappointed.jpg" width="200px" height="200px"></img></div>
+            <div class="hiddenDiv"><img src="./images/disappointed.jpg" width="200px" height="200px"></img>
+            </div>
             <center>
                 <h2>Time left of Hacktoberfest 2018:</h2>
                 <ul>
@@ -209,11 +217,9 @@
                 <br>
                 <h5>Subscribe to our YouTube channel:</h5>
                 <div class="ytSubscribeContainer">
-                    <a target="_blank" class="btn-youtube" style="border-radius: 25px; box-shadow: 5px 5px 10px grey;"
-                        href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg?sub_confirmation=1"><img src="./images/you_logo_transparent.png"></i>&nbsp;Subscribe</a>
+                    <a target="_blank" class="btn-youtube" style="border-radius: 25px; box-shadow: 5px 5px 10px grey;" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg?sub_confirmation=1"><img src="./images/you_logo_transparent.png"></i>&nbsp;Subscribe</a>
                 </div>
-                <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" alt="heart icon"
-                    width="30px">
+                <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png" alt="heart icon" width="30px">
             </center>
         </div>
         <br />
@@ -224,8 +230,7 @@
                     <div class="card-header">Hacktoberfest Intro</div>
                     <div class="card-img-top">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OsAFX_ZbgaE"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OsAFX_ZbgaE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Get Started with Hacktoberfest</p>
@@ -257,8 +262,7 @@
                     <div class="card-header">How to Pull request [Overview]</div>
                     <div class="card-img-top">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DIj2q02gvKs"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DIj2q02gvKs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Get Started with Hacktoberfest</p>
@@ -271,8 +275,7 @@
                     <div class="card-header">How to solve merge conflicts</div>
                     <div class="card-img-top">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zOx5PJTY8CI"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zOx5PJTY8CI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Get Started with Hacktoberfest</p>
@@ -286,17 +289,12 @@
             <div id="contribution-rules" data-aos="fade-up" class="mb-5 col-md-10">
                 <h3>Contribution Rules</h3>
                 <ul class="list-group">
-                    <li class="contribution-rules-item do list-group-item"> <span class="glyphicon glyphicon-check"></span>
-                        Project must work when opening index.html
+                    <li class="contribution-rules-item do list-group-item"> <span class="glyphicon glyphicon-check"></span> Project must work when opening index.html
                         <br> </li>
-                    <li class="contribution-rules-item do list-group-item"> You are allowed to make pull requests that
-                        break the rules. We just won't merge it ;) </li>
-                    <li class="contribution-rules-item dont list-group-item"> Do NOT add any build steps e.g npm
-                        install (we want to keep this a simple static site) </li>
-                    <li class="contribution-rules-item dont list-group-item"> Do NOT remove Videos, Rules, FAQ or any
-                        other helpful content. </li>
-                    <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or
-                        stupid, big or small as long as it works</li>
+                    <li class="contribution-rules-item do list-group-item"> You are allowed to make pull requests that break the rules. We just won't merge it ;) </li>
+                    <li class="contribution-rules-item dont list-group-item"> Do NOT add any build steps e.g npm install (we want to keep this a simple static site) </li>
+                    <li class="contribution-rules-item dont list-group-item"> Do NOT remove Videos, Rules, FAQ or any other helpful content. </li>
+                    <li class="contribution-rules-item do list-group-item">Styling / code can be pretty, ugly or stupid, big or small as long as it works</li>
                     <li class="contribution-rules-item do list-group-item">Add your name to the contributers.html file</li>
                 </ul>
             </div>
@@ -309,41 +307,36 @@
                     <div class="card border-primary faq" data-aos="flip-left">
                         <div class="card-header">Who can contribute?</div>
                         <div class="card-body">
-                            <p class="card-text">Anyone with a github account and signed up for <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
-                                😄</p>
+                            <p class="card-text">Anyone with a github account and signed up for <a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a> 😄
+                            </p>
                         </div>
                     </div>
                     <div class="card border-primary faq" data-aos="flip-right">
                         <div class="card-header">Are you getting paid for this?</div>
                         <div class="card-body">
-                            <p class="card-text">Sadly no. But we think we should. This is 100% unofficial and we do it
-                                for fun, fame and glory.</p>
+                            <p class="card-text">Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.</p>
                         </div>
                     </div>
                     <div class="card border-primary faq" data-aos="flip-up">
                         <div class="card-header">Who are you and why are you doing this?</div>
                         <div class="card-body">
-                            <p class="card-text">We are two programmers from Sweden <a href="https://github.com/richie-south"
-                                    target="_blank">Richard</a> and <a href="https://github.com/BennyCarlsson" target="_blank">Benny</a>.
-                                We are doing this because we love open source and Hacktoberfest. We want to make it
-                                easier for people to get started with Hacktoberfest and Open source.</p>
+                            <p class="card-text">We are two programmers from Sweden <a href="https://github.com/richie-south" target="_blank">Richard</a> and <a href="https://github.com/BennyCarlsson" target="_blank">Benny</a>. We are doing this because we love open source
+                                and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open source.</p>
                         </div>
                     </div>
                     <div class="card border-primary faq" data-aos="flip-down">
                         <div class="card-header">Why are you not using digitalocean?</div>
                         <div class="card-body">
-                            <p class="card-text">Because we only know javascript and suck at servers. We use <a href="https://zeit.co/now"
-                                    target="_blank">now</a> instead.</p>
+                            <p class="card-text">Because we only know javascript and suck at servers. We use <a href="https://zeit.co/now" target="_blank">now</a> instead.</p>
                         </div>
                     </div>
                     <div class="card border-primary faq" data-aos="fade-up-left" data-aos-anchor-placement="top-bottom">
-                        <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards"
-                                target="_blank">CodeCardCodingCards</a> kickstarter? </div>
+                        <div class="card-header">Are you not the guys from that failed <a href="https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards" target="_blank">CodeCardCodingCards</a> kickstarter? </div>
                         <div class="card-body">
                             <p class="card-text">yes...</p>
                         </div>
                     </div>
-                    <div class="card border-primary faq" data-aos="flip-left" >
+                    <div class="card border-primary faq" data-aos="flip-left">
                         <div class="card-header">Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ? </div>
                         <div class="card-body">
                             <p class="card-text">Nope.</p>
@@ -351,11 +344,13 @@
                     </div>
                 </div>
             </div>
-            <div class="hacktoberfest-image">
-                <a href="https://hacktoberfest.digitalocean.com/"><img class="logo-image" src="./images/hacktoberfest-logo-min.png"
-                        alt="logo"></a>
+            <div class="row himage">
+                <div class="hacktoberfest-image">
+                    <a href="https://hacktoberfest.digitalocean.com/"><img class="logo-image" src="./images/hacktoberfest-logo-min.png"
+                            alt="logo"></a>
+                </div>
             </div>
-            <a href="#bg"><img class="iconAni" src="./images/iconAni.png"></a>
+
             <div id="bg">
                 <div class="box">
                     <img src="./images/ani.jpg">
@@ -391,14 +386,12 @@
             <script src="./scripts/countdown.js"></script>
             <script src="./scripts/easter_egg.js"></script>
             <!-- Latest compiled JavaScript -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script type="application/javascript" charset="utf-8" src="register.js"></script>
             <script type="application/javascript" charset="utf-8" src="sw.js"></script>
-            <script type="application/javascript"  src="scripts/explosion.js"></script>
+            <script type="application/javascript" src="scripts/explosion.js"></script>
             <script>
                 AOS.init();
             </script>
