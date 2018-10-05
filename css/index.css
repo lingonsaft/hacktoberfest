@@ -165,18 +165,28 @@ a,a:hover {
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
-  border-left: 1px solid rgba(0,0,0,.125);
+  text-align: center;
+  margin: 10px 0;
 }
 .single-tips span {
   display: block;
 }
 .single-tips .no {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
-  line-height: 1;
+  line-height: .6;
   color: #FF0844;
   margin-bottom: 15px;
 }
+
+.single-tips .no::after {
+  content: '-';
+  text-align: center;
+  display: block;
+  margin: 0;
+  height: 10px;
+}
+
 .single-tips .tip-text {
   font-size: 92.5%;
 }
@@ -394,3 +404,17 @@ div#content div#contribution-rules ul li {
 }
 
 /* Youtube Subscribe Styling End  */
+@media (min-width: 992px) {
+  .single-tips .tip {
+    border-left: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+  }
+  
+  .single-tips .tip:first-child {
+    border: none;
+  }
+  .single-tips .no {
+    font-size: 40px;
+    text-align: center;
+  }
+}
