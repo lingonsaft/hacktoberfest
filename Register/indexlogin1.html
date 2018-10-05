@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+body{
+  font-family:Arial,sans-serif;
+background-image:url("http://localhost:8080/Register/_ban2.jpeg_.png");
+}
+  
+ .container {
+    padding: 16px;
+   
+}
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+   display: inline-block;
+   border:none
+    background: white;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: white;
+    outline: none;
+}
+
+.cancelbtn {
+    width: 10%;
+    padding: 10px 12px;
+    background-color: peachpuff;
+}
+.loginbtn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+
+a {
+ color: dodgerblue;
+}
+.login {
+    
+    text-align: center;
+}
+</style>
+</head>
+<body align="center">
+
+<form name="f" action="login1" method="post">
+  <div class="container">
+    <h1 align="center">Login form</h1>
+    <p>Please fill in this form to login</p>
+    
+   <b>Username</b><br/>
+    <input type="text" placeholder="Enter username" name="user" required><br/>
+
+    <b>Password</b><br/>
+    <input type="password" placeholder="Enter Password" name="psw" required><br/>
+
+   
+    <button type="submit" class="loginbtn"><font size=4>Login</font></button><br/><br/>
+        <input type="checkbox" checked="checked" name="remember"><b> Remember me</b>
+      </div>
+  <div class="container" >
+      <button type="button"  class ="cancelbtn">Cancel</button><br/><br/>
+     <span class="psw" width=200><font size=4>Forgot <a href="#">password?</font></a></span>
+    </div>
+</form>
+</body>
+</html>
+
+
+
+
