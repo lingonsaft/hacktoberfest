@@ -16,7 +16,7 @@
 
 .column{
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     width: auto;
     align-self: center;
 }
