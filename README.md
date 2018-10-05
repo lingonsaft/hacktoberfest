@@ -46,7 +46,7 @@ git push origin my-new-branch
 
 - Create a new pull request from your forked repository
 
-# FAQ
+# FAQs
 
 - Who can contribute?
   - Anyone with a github account and signed up for [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
