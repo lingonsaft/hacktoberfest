@@ -1,13 +1,14 @@
 .terminal,
 .terminal * {
+    transition: 0s ease-in-out;
     position: relative;
     font-family: monospace;
     background: black;
     text-decoration: none;
     color: green;
-    box-shadow: none;
     border: none;
-    border-radius: 0;
+    border-radius: 0 !important; /* Because style="" *sigh* */
+    box-shadow: none !important;
 }
 
 .terminal [class~="bg-primary"],
