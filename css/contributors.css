@@ -90,6 +90,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 0.2rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
