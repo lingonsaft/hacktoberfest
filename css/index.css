@@ -37,6 +37,10 @@ body {
   transition: 1s ease-in-out;
 }
 
+#header {
+  padding:20px;
+}
+
 .broccoli-green {
   background-color: #a5d6a7;
 }
@@ -364,6 +368,3 @@ div#content div#contribution-rules ul li {
 	font-family:sans-serif;
     display: block;
 }
-
-
-
