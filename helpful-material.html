@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+  <!-- Script for dropdown menu -->
+  <script>
+		window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+				gtag('config', 'UA-74296045-6');
+
+		function toggleDropDown() {
+    	document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
+		}
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,22 +58,27 @@
         <li class="nav-item">
           <a class="nav-link" href="./contributors.html">Contributors</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="twist" href="#">The twist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./cheese.html">Cheese!</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" id="tools" href="./tools.html">Tools</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" id="learn" href="./wow.html">Learn!</a>
-        </li>
+        <li class="nav-item dropdown">
+  			<a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleDropDown()">Others</a>
+  			<div class="dropdown-menu-others" id="dropdownMenu" aria-labelledby="dropdownMenuLink">
+  			  <a href="https://cultofthepartyparrot.com/" class="dropdown-item">PARROTS?!</a>
+  			  <a href="#" class="dropdown-item">The twist</a>
+  			  <a href="./potato.html" class="dropdown-item">Potato</a>
+  			  <a href="./cheese.html" class="dropdown-item">Cheese!</a>
+  			  <a href="./Fireworks.html" class="dropdown-item">Fireworks</a>
+  			  <a href="./wow.html" class="dropdown-item">Learn!</a>
+  			  <a href="./tools.html" class="dropdown-item">Tools</a>
+  			  <a href="./gifheaven.html" class="dropdown-item">Gif heaven!</a>
+  			  <a href="./trylearnhowtoprogram.html" class="dropdown-item">Program for newcomers to learn!</a>
+  			  <a href="./values.html" class="dropdown-item">Values</a>
+  			  <a href="./snek.html" class="dropdown-item">SNEK!</a>
+  			  <a href="./canoi.html" class="dropdown-item">Canoi</a>
+  			</div>
+  		  </li>
       </ul>
     </div>
   </nav>
-    
+
     <div class="heart"></div>
 
       <div id="content" class="container">
