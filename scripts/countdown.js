@@ -5,8 +5,8 @@ const hour = minute * 60
 const day = hour * 24
 
 setInterval(() => {
-  let dateNow = new Date().getTime()
-  let timeLeft = endOfHackathon - dateNow
+  let dateNow = new Date().getTime()	//calculating current date
+  let timeLeft = endOfHackathon - dateNow  //calculating time left
 
   document.getElementById('days').innerText = Math.floor(timeLeft / (day))
   document.getElementById('hours').innerText = Math.floor((timeLeft % (day)) / (hour))
