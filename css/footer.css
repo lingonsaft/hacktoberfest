@@ -45,6 +45,7 @@
 }
 
 #backToTop {
+    margin-bottom: 20px;
     display: none;
     position: fixed;
     bottom: 50px;
