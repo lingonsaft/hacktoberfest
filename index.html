@@ -9,8 +9,12 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-74296045-6');
-    </script>
+				gtag('config', 'UA-74296045-6');
+				
+		function toggleDropDown() {
+    	document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
+		}
+  </script>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,8 +82,8 @@
 			<a class="nav-link" href="/contributors">Contributors</a>
 		  </li>
 		  <li class="nav-item dropdown">
-			<a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleDropDown()">Others</a>
+			<div class="dropdown-menu-others" id="dropdownMenu" aria-labelledby="dropdownMenuLink">
 			  <a href="https://cultofthepartyparrot.com/" class="dropdown-item">PARROTS?!</a>
 			  <a href="#" class="dropdown-item">The twist</a>
 			  <a href="/potato" class="dropdown-item">Potato</a>
