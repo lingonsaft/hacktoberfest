@@ -57,6 +57,10 @@
     background-color: #FF0844;
     padding: 4px 10px 10px;
     z-index: 1001;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 #backToTop svg {
     width: 25px;
