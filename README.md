@@ -2,7 +2,7 @@
 
 This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down below and read the contribution rules. Happy hacking <3 !!
 
-ps. star and share this repository if you had fun! :* 
+ps. star and share this repository if you had fun! :*
 
 # Videos
 
@@ -60,10 +60,12 @@ git push origin my-new-branch
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
+- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+  - Nope.
 - How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 
- 
+
 
 ###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible <3*
 
