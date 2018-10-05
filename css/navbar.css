@@ -1,190 +1,57 @@
-.bg-primary {
-    background-color: #ff0844;
-}
-
-.navbar.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    border-bottom: 3px solid #fff;
-    transform: scaleX(0);
-    transition: 0.3s ease-in;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-#twist::after {
-    content: "";
-    border-bottom: 0;
-}
-
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 9999;
-    background: #ff8a5b !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    transition: 1s ease-in-out;
+  padding: .5rem 2rem;
 }
-
 .navbar-nav {
-    width: 100%;
+  width: 100%;
 }
-
-#twist:hover {
-    border-bottom: 0;
-    animation: rotate-btn 0.5s ease-in 1;
-    -webkit-animation: rotate-btn 0.5s ease-in 1;
+.navbar-brand {
+  line-height: 1;
+  margin-right: 1rem;
 }
-
-@keyframes rotate-btn {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
+.navbar-brand svg {
+  height: 37px;
+  width: auto;
+  vertical-align: middle;
 }
-
-.iconAni {
-    width: 45%;
-    height: 25%;
-    filter: brightness(10%);
-    top: -100px;
-    position: relative;
-
-    animation-name: example;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+.navbar-light .navbar-nav .nav-link {
+  color: #444;
+  position: relative;
+  padding: 0;
+  margin: 0 10px!important; 
 }
-
-@keyframes example {
-    0% {
-        left: 0px;
-        top: -100px;
-    }
-
-    25% {
-        left: -1100px;
-        top: -100px;
-    }
-
-    50% {
-        left: -1100px;
-        top: 300px;
-    }
-
-    75% {
-        left: 0px;
-        top: 300px;
-    }
-
-    100% {
-        left: 0px;
-        top: -100px;
-    }
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #FF0844;
+  font-weight: 700;
 }
-
-.iconAni:hover {
-    /*opacity: .6;*/
-    filter: brightness(100%)
+.navbar-light .navbar-nav .dropdown.show>.nav-link {
+  color: #FF0844;
 }
-
-#bg:target {
-    display: block;
+.navbar-light .navbar-nav .nav-link::before {
+  background-color: currentColor;
+  bottom: -1px;
+  content: "";
+  height: 1px;
+  left: auto;
+  right: 0;
+  position: absolute;
+  -webkit-transition: width .2s ease-in-out;
+  -o-transition: width .2s ease-in-out;
+  transition: width .2s ease-in-out;
+  width: 0;
 }
-
-#bg:target~.box {
-    top: 150px;
-    transition: all .3s;
-    transition-delay: .2s;
+.navbar-light .navbar-nav .nav-social::before {
+  content: none;
 }
-
-#bg {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 8);
-    position: fixed;
-    display: none;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FF0844;
 }
-
-.box {
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    margin-left: -360px;
-    left: 60%;
-    top: 10%;
+.navbar-light .navbar-nav .nav-link:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
-
-.box img {
-    width: 100%;
-    position: absolute;
+.nav-link svg {
+  width: auto;
+  height: 25px;
+  vertical-align: text-top;
 }
-
-#close {
-    color: #fff;
-    font-family: 'Arial';
-    text-decoration: none;
-    font-size: 35px;
-    position: absolute;
-    background-color: #000;
-    width: 30px;
-    height: 40px;
-    text-align: center;
-    right: 0;
-    padding-bottom: 50px;
-}
-
-#close:hover {
-    opacity: .6;
-}
-
-.nav-link-drop {
-    color: #ff8a5b;
-    padding-left: 1em;
-}
-
-.nav-link-drop:hover {
-    color: #ff8a5b;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.dropdown-toggle {
-    color: rgba(255, 255, 255, .5);
-}
-
-
-.dropdown-toggle:hover {
-    color: rgba(255, 255, 255, .8);
-    text-decoration: none;
-}
-
-.drop {
-    padding: 8px 15px;
-}
-
- .dropdown-menu{
-      /*background-color: black;*/
-          min-width: 18rem;
-    } 
