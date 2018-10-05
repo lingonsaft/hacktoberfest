@@ -60,7 +60,9 @@ git push origin my-new-branch
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- how many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+  - Nope.
+- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
   - 5
 - How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
