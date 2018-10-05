@@ -1,0 +1,20 @@
+.correct {
+  background-color: #00C851;
+  color: #fff;
+}
+.incorrect {
+  background-color: #CC0000;
+  color: #fff;
+}
+#originalInput {
+  font-size:4em;
+  font-weight:bold;
+  font-family:monospace;
+}
+#output {
+
+}
+.error {
+  color: red;
+  size: .89em;
+}
