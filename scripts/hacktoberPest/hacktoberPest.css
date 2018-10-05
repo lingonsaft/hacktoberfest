@@ -2,7 +2,7 @@
 
 html,
 body {
-    background-color: #ff7518;
+    background-color: #EE7600;
     font-family: Eater;
 }
 
@@ -11,6 +11,7 @@ h1 {
 }
 
 div{
+    opacity: .2;
     display: block;
     width: 300px;
     margin: auto;
