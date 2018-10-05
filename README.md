@@ -46,7 +46,7 @@ git push origin my-new-branch
 
 - Create a new pull request from your forked repository
 
-# FAQ
+# FAQs
 
 - Who can contribute?
   - Anyone with a github account and signed up for [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
@@ -62,6 +62,8 @@ git push origin my-new-branch
   - Yes...
 - Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
+- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+  - 5
 - How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 

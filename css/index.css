@@ -131,6 +131,8 @@ div#content div#contribution-rules ul li {
 
 #header{
   background-color: #FF8A5B;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 #myBtn {
