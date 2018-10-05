@@ -55,3 +55,10 @@
   height: 25px;
   vertical-align: text-top;
 }
+.dropdown-menu-others {
+  display: none;
+}
+.show-dropdown {
+  display: block;
+}
+
