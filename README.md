@@ -54,7 +54,7 @@ git push origin my-new-branch
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
   - We are two programmers from Sweden [Richard](https://github.com/richie-south)
-  and [Benny](https://github.com/BennyCarlsson). We are doing this because we love open
+  and [Benny](https://github.com/BennyCarlsson) [mkaur7999](https://github.com/mkaur7999). We are doing this because we love open
   source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open source.
 - Why are you not using digitalocean?
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
