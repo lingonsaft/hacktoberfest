@@ -64,7 +64,6 @@ git push origin my-new-branch
   - Nope.
 - How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
   - 5
-- How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
 
 
 
