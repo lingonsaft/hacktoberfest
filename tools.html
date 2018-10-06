@@ -14,31 +14,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <title>Hacktoberfest - Tools</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="/">Hacktoberfest</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/helpful-material.html">Helpful Material</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/contributors.html">Contributors</a> </li>
-                <li class="nav-item"> <a class="nav-link" id="twist" href="#">The twist</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="./potato.html">Potato</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="./cheese.html">Cheese!</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/wow.html">Learn!</a> </li>
-                <li class="nav-item active"> <a class="nav-link" id="tools" href="./tools.html">Tools</a> </li>
-                <li class="nav-item ml-lg-auto"> <a class="nav-link" id="invert-btn" href="#">Invert</a> </li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Hacktoberfest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto" id="menu">
+            <!-- Menu -->
+        </ul>
+    </div>
     </nav>
+    <br>
     <div class="container">
         <div id="header">
             <h1>Tools</h1>
             <p class="ml-3">This space is intended to give new tools to beginners to start there Hacktoberfest.</p>
         </div>
+
         <div id="content">
             <h2 class="mt-4">Text Editors</h2>
             <table class="table table-bordered table-sm">
@@ -53,15 +53,54 @@
                         <td colspan="2"></td>
                     </tr>
                     <tr>
+                        <td>
+                            <a href="https://www.sublimetext.com/">Sublime Text</a>
+                        </td>
+                        <td>
+                            A cross-platform source code editor
+                        </td>
+                        <td>
+                            Supports many languages, functions can be added with plugins
+                        </td>
+
                         <td> <a href="https://www.sublimetext.com/">Sublime Text</a> </td>
                         <td> A cross-platform source code editor </td>
                         <td> Supports many languages, functions can be added with plugins </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://www.atom.io/">Atom</a> </td>
+                        <td> The hackable text editor </td>
+                        <td> Open-source, cross-platform editor, designed to be deeply customizable </td>
+                        <td> <a href = "https://atom.io/">Atom</a> </td>
+                        <td> Hackable, Cross-platform, open source editor</td>
+                        <td> Has support for plugins written in Node.js, and embedded Git Control and is developed by GitHub.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://code.visualstudio.com/download">Visual Studio Code</a></td>
+                        <td>Light weight Text Editor</td>
+                        <td>100+ powerful plugins with Git and Version Control Capabilities</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><a href="http://brackets.io/">Brackets</a></td>
+                        <td>Good multi-purpose text editor</td>
+                        <td>Bit like N++, but more beautiful, simple and multi-platform</td>
                     </tr>
                     <tr>
                         <td class="os">Windows</td>
                         <td colspan="2"></td>
                     </tr>
                     <tr>
+                        <td>
+                            <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>
+                        </td>
+                        <td>
+                            Powerful JavaSript IDE
+                        </td>
+                        <td>
+                            Paid program but free for students
+                        </td>
+
                         <td> <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> </td>
                         <td> Powerful JavaSript IDE </td>
                         <td> Paid program but free for students </td>
@@ -77,9 +116,15 @@
                         <td>100+ powerful plugins with Git and Version Control Capabilities</td>
                     </tr>
                     <tr>
+
                         <td><a href="http://www.aptana.com/">Aptana</a></td>
                         <td>Web Development IDE</td>
                         <td>Powerful open source web development IDE</td>
+                    </tr>
+					<tr>
+                        <td><a href="https://atom.io/">Atom</a></td>
+                        <td>A hackable text editor</td>
+                        <td>Cross-platform and open source</td>
                     </tr>
                     <tr>
                         <td class="os">MacOS</td>
@@ -91,6 +136,43 @@
                         <td>100+ powerful plugins with Git and Version Control Capabilities</td>
                     </tr>
                 </tbody>
+            </table>
+
+                        <td><a href="https://macromates.com/">TextMate</a></td>
+                        <td>Light weight Text Editor for MacOS</td>
+                        <td>Powerful and customizable text editor with support for a huge list of programming languages and developed as open source.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.vim.org/">Vim</a></td>
+                        <td>Light weight text editor that can run on unix terminal</td>
+                        <td>Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X. </td>
+                    </tr>
+                </tbody>
+            </table>git
+            <h2 class="mt-4">FTP Clients</h2>
+            <table class="table table-bordered table-sm">
+                <thead>
+                        <th>Name</th>
+                        <th>Purpose</th>
+                        <th>Notes</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="os">Windows</td>
+                            <td colspan="2"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td><a href="https://winscp.net/">WinSCP</a></td>
+                            <td>Free, open source ftp client</td>
+                            <td>Has support for PuTTY</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://filezilla-project.org/">FileZilla</a></td>
+                            <td>The free FTP solution for both client and server</td>
+                            <td>Most popular</td>
+                        </tr>
+                    </tbody>
             </table>
             <h2 class="mt-4">GIT</h2>
             <table class="table table-bordered table-sm">
@@ -109,6 +191,21 @@
                         <td>GIT GUI</td>
                         <td>Good for beginners</td>
                     </tr>
+					          <tr>
+                        <td><a href="https://www.gitkraken.com/">GitKraken</a></td>
+                        <td>GUI for GIT</td>
+                        <td>Fancy GIT GUI for Windows, Mac and Linux. Free to Use</td>
+                    </tr>
+					          <tr>
+                        <td><a href="http://dahlbyk.github.io/posh-git/">posh-git</a></td>
+                        <td>A PowerShell environment for Git</td>
+                        <td>PoshGit provides a better way to interact with git on Windows using Powershell. With Tab Completion (yay!).</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://desktop.github.com/">Github Desktop</a></td>
+                        <td>GIT GUI</td>
+                        <td>Good for beginners/intermediate user.</td>
+                    </tr>
                     <tr>
                         <td class="os">MacOS</td>
                         <td colspan="2"></td>
@@ -122,6 +219,17 @@
                         <td><a href="https://git-fork.com/">Fork</a></td>
                         <td>GIT Gui Client</td>
                         <td>a fast and friendly git client for Mac and Windows</td>
+                    </tr>
+                </tbody>
+            </table>
+					<tr>
+                        <td><a href="https://www.gitkraken.com/">GitKraken</a></td>
+                        <td>GUI for GIT</td>
+                        <td>Fancy GIT GUI for Windows, Mac and Linux. Free to Use</td>
+                    <tr>
+                        <td><a href="https://desktop.github.com/">Github Desktop</a></td>
+                        <td>GIT GUI</td>
+                        <td>Good for beginners/intermediate user.</td>
                     </tr>
                 </tbody>
             </table>
@@ -146,6 +254,41 @@
             </table>
             <br>
             <br>
+            <br>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h3><span id="toggle-social-btn">Social Links <i class="fa fa-arrow-up"></i></span></h3>
+        <div class="social-icons row justify-content-center">
+            <div class="col">
+                <a class="github-button" href="https://github.com/lingonsaft" data-size="large" aria-label="Follow @lingonsaft on GitHub">
+                    Follow @lingonsaft
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/lingonsaft/"><img src="./images/svg/youtube.svg" alt="youtube" /></a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/lingonsaftofficial/"><img src="./images/svg/instagram.svg" alt="instagram" /></a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com/lingonsaft1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+                    data-show-count="false">Follow @lingonsaft1</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+<script src="./scripts/helpful-material.js"></script>
+<script src="./scripts/social-links.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
             <br> </div>
 
     </div>
@@ -190,6 +333,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
