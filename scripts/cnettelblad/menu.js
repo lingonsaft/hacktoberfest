@@ -1,8 +1,26 @@
+/**
+ * This would be the clusterf**k that handles the menu, enjoy refactorin!
+ * 
+ * @author https://github.com/cnettelblad
+ * @license http://www.wtfpl.net/
+ */
+
+/**
+ * Fetch the menu.json file so we know what we're lookin for !
+ * 
+ * @return {promise}
+ */
 async function fetchMenu() {
     return fetch('./menu.json')
         .then(r => r.json())
 }
 
+/**
+ * Now this.. This gonna need some refactoring, but it builds the html for the menu!
+ * 
+ * @param {obj} obj
+ * @return {void}
+ */
 async function buildMenuHTML(obj = {}) {
     var html = ''
     let keys = Object.keys(obj)
@@ -18,14 +36,12 @@ async function buildMenuHTML(obj = {}) {
         // Now lets add attributes
         if (item.hasOwnProperty('attr')) {
             Object.entries(item.attr).forEach(([key, attr]) => {
-                console.log('Adding: '+ key + '=' + attr)
                 html += ' ' + key + '="' + attr + '"'
             })
         } 
 
         // We still need an ID for our event handling
         if (!item.hasOwnProperty('attr') || !item.attr.id) {
-            console.log('Adding ID..')
             html += 'id="nav-' + keys[i].toLowerCase() + '"'
         }
 
@@ -39,6 +55,11 @@ async function buildMenuHTML(obj = {}) {
     return document.getElementById('menu').innerHTML = html
 }
 
+/**
+ * Handles promise from our fetch and calls respective functions with the response obj.
+ * 
+ * @return {void-ish-promise}
+ */
 async function buildMenu() {
     return fetchMenu()
         .then(r => {
@@ -47,6 +68,13 @@ async function buildMenu() {
         })
 }
 
+/**
+ * Function to handle the click events on our menu.
+ * 
+ * @param {event} e
+ * @param {object} item
+ * @return {void}
+ */
 function handleClick(e, item) {
     let targetLink = e.target
     let activeLink = document.querySelector('li.active')
@@ -76,8 +104,13 @@ function handleClick(e, item) {
     setContent(targetLink.dataset.page)
 }
 
+/**
+ * Builds some listeners for our menu options
+ * 
+ * @param {object} items
+ * @return {void}
+ */
 function addListeners(items = {}) {
-    console.log(items)
     let i = 0
     let keys = Object.keys(items)
     Object.entries(items).forEach(([items, item]) => {
