@@ -1,15 +1,18 @@
 {
     "Home": {
         "text": "Home",
-        "href": "/"
+        "href": "/",
+        "id": "home"
     },
     "Helpful-Material": {
         "text": "Helpful Material",
-        "href": "/helpful-material"
+        "href": "/helpful-material",
+        "id": "helpful-material"
     },
     "Contributors": {
         "text": "Contributors",
-        "href": "/contributors"
+        "href": "/contributors",
+        "id": "contributors"
     },
     "The-Twist": {
         "text": "The Twist",
@@ -18,11 +21,13 @@
     },
     "Potato": {
         "text": "Potato",
-        "href": "/potato"
+        "href": "/potato",
+        "id": "potato"
     },
     "Cheese": {
         "text": "Cheese!", 
-        "href": "/cheese"
+        "href": "/cheese",
+        "id": "cheese"
     },
     "Tools": {
         "text": "Tools",

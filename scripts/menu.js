@@ -11,14 +11,40 @@ class menu {
     buildMenuHTML(obj = {}) {
         var html = ''
         var path = window.location.pathname.split('/')
-        var currentPage = path[path.length-1] === '' ? '/' : path[path.length-1]
+        var currentPage = path[path.length - 1] === '' ? '/' : path[path.length - 1]
 
-        Object.entries(obj).forEach(([key, item]) => {
+        Object.entries(obj).forEach(([key, item], index) => {
             let isCurrent = (currentPage === item.href ? true : false)
-            
-            html += '<li class="nav-item' + (isCurrent ? ' active' : '') + '">'
-            html += '<a class="nav-link" href="' + item.href + '"' + (item.id ? ' id="'+ item.id + '"': '') + '>' + item.text + '</a>'
-            html += '</li>'
+            if (index < 3) {
+                html = html.concat(`
+                    <li class="nav-item ${isCurrent ? 'active' : ''}">
+                        <a class="nav-link" href="${item.href}">${item.text}</a>
+                    </li>
+                `);
+            }
+
+            // Add opening tags for dropdown-menu items
+            if (index === 3) {
+                html = html.concat(`
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Others
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-others" aria-labelledby="navbar-drop">
+                `);
+            }
+
+            // Add dropdown-menu items
+            if (index >= 3) {
+                html = html.concat(`
+                    <a class="dropdown-item" href="${item.href}" item="${item.id}">${item.text}</a>
+                `);
+            }
+
+            // Add closing tags for dropdown-menu items
+            if (index === Object.entries(obj).length) {
+                html = html.concat('</div></li>')
+            }
         })
         return document.getElementById('menu').innerHTML = html
     }
