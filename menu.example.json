@@ -1,0 +1,19 @@
+{
+    "_comment": {
+        "about": "This is an example file, below you will find some basic documentation of how to add your page",
+        "important": "The key for your page must be unique (ExamplePage in this example) - Extensions are not needed on file names",
+        "text": "Required: You must add a \"text\" key - otherwise your page will not be generated into the menu as this is the text that will be displayed",
+        "page": "Optional: The name of your html file inside public/html, REQUIRED if you want to load your own HTML.",
+        "attr": "Optional: Everything here is looped through and generated as key=\"value\" inside the <a>-element (Eg: \"background\": \"blue\" would be background=\"blue\"",
+        "css": "Optional: An array of stylesheets."
+    },
+    "ExamplePage": {
+        "text": "My Cool Page",
+        "page": "home",
+        "attr": {
+            "id": "myCoolPage",
+            "data-value": 1
+        },
+        "css": ["mystyle-1", "mystyle-2", "hacktoberfest"]
+    }
+}

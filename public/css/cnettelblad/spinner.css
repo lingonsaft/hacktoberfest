@@ -1,0 +1,36 @@
+.loading-spinner {
+    border-radius: 100%;
+    border-right: 3px solid #aaa;
+
+    position: absolute;
+
+    /* Position the spinner */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    /* Size of the spinner */
+    height: 100px;
+    width: 100px;
+    
+    margin: auto;
+    display: block;
+
+    -webkit-animation: spinner 900ms linear infinite;
+    -moz-animation: spinner 900ms linear infinite;
+    animation: spinner 900ms linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg) }
+    100% { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes spinner {
+    0% { -moz-transform: rotate(0deg) }
+    100% { -moz-transform: rotate(360deg) }
+}
+@keyframes spinner {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
