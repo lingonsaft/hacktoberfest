@@ -117,7 +117,9 @@ a,a:hover {
   color: #FF0844;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
-
+#intro_video {
+    display: block
+}
 .single-faq {
   border: 1px solid rgba(0,0,0,.125);
   padding: 1rem;
