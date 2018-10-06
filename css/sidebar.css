@@ -4,13 +4,14 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 9999;
 }
 
 /* Style the icon bar links */
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
