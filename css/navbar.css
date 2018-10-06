@@ -99,3 +99,9 @@ nav {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+@media only screen and (max-width: 768px) {
+  .index .jumbotron h1 {
+    font-size: 250%;
+    font-weight: 700;
+  }
+}
