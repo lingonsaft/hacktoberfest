@@ -273,9 +273,3 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
       line-height: 45px;
     }
 
-.logo-image {
-  max-width: 100%;
-}
-.logo-image:hover {
-  cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
-}
