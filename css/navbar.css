@@ -20,8 +20,8 @@ nav{
 .navbar-light .navbar-nav .nav-link {
   color: #444;
   position: relative;
-  padding: 0;
-  margin: 0 10px!important; 
+  padding: 10px;
+  margin: 0 10px!important;
 }
 .navbar-light .navbar-nav .active>.nav-link {
   color: #FF0844;
@@ -63,4 +63,35 @@ nav{
   width: auto;
   height: 25px;
   vertical-align: text-top;
+}
+.dropdown-menu-others {
+  display: none;
+  position: relative;
+  box-shadow: none;
+}
+.show-dropdown {
+  display: block;
+}
+@media only screen and (min-width: 991px) {
+  .dropdown-menu-others {
+    position: absolute;
+    background: white;
+    -webkit-box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
+    box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
+    transition: all 500ms ease;
+  }
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
