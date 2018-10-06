@@ -20,8 +20,8 @@ nav{
 .navbar-light .navbar-nav .nav-link {
   color: #444;
   position: relative;
-  padding: 0;
-  margin: 0 10px!important; 
+  padding: 10px;
+  margin: 0 10px!important;
 }
 .navbar-light .navbar-nav .active>.nav-link {
   color: #FF0844;
@@ -45,6 +45,11 @@ nav{
 }
 .navbar-light .navbar-nav .nav-social::before {
   content: none;
+}
+.navbar-light .navbar-nav .nav-social:hover {
+  content: none;
+  transition: 0.3s;
+  transform: scale(1.2);
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(0, 0, 0);
@@ -78,3 +83,15 @@ nav{
   }
 }
 
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
