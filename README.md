@@ -1,8 +1,11 @@
 # Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/))
 
-This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down below and read the contribution rules. Happy hacking <3 !!
+This is a beginner-friendly project to help you get started with your 
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't 
+know where to start, feel free to watch the videos linked below, and 
+read the contribution rules. Happy hacking <3 !!
 
-ps. star and share this repository if you had fun! :*
+P.S.: Star and share this repository, if you had fun! :*
 
 # Videos
 
@@ -46,10 +49,11 @@ git push origin my-new-branch
 
 - Create a new pull request from your forked repository
 
-# FAQ
+# FAQs
 
 - Who can contribute?
-  - Anyone with a github account and signed up for [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
+  - Anyone with a github account and who is signed up for 
+[hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
@@ -60,10 +64,12 @@ git push origin my-new-branch
   - Because we only know javascript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- how many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
-  - 5
-- How many times have you taken Hacktoberfest and how many times have you got Hacktoberfest T-shirt?
-
+- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+  - Nope.
+- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+  - 5 
+- How do I track my progress to get a awesome shirt from Hacktoberfest 2018?
+  - go to : https://hacktoberfest.digitalocean.com/stats/username 
 
 
 

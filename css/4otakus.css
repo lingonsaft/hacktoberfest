@@ -1,0 +1,103 @@
+body{
+
+	font-family: Helvetica, sans-serif;
+	background-color: grey;
+}
+
+a:link, a:visited{
+
+	text-decoration: none;
+}
+a:hover{
+
+	text-decoration: underline;
+}
+
+#wrap{
+
+	width: 920px;
+	margin: auto;
+	padding: 10px 20px;
+	background: #000000;
+	overflow: hidden;
+}
+.logo{
+
+	width: 60px;
+	height: 60px;
+}
+.titulo{
+
+	color: white;
+	float: right;
+	padding-right: 300px;
+	margin: 10px;
+}
+.menuPrincipal{
+
+	list-style: none;
+	margin-top: 18px;
+	padding-left: 300px;
+
+}
+header nav ul li{
+
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 18px;
+}
+header nav ul li a{
+
+	color: white;
+}	
+#conteudo{
+
+	margin-top: 40px;
+	float: left;
+	width: 610px;
+	padding: 10px;
+
+}
+.borda{
+
+	border-width: 3px;
+	border-style: solid;
+	border-color: #6A5ACD;
+	margin-bottom: 10px; 
+}
+.name{
+
+	float: right;
+	color: #6A5ACD;
+	padding-right: 180px;
+	font-size: 17px;
+	margin-top: 10px;
+	font-weight: bolder;
+
+}
+.proLado{
+
+	float: right;
+	width: 300px;
+	padding-right: 40px;
+	margin: 10px;
+}
+.sectionImagens{
+
+	width: 200px;
+}
+#sidebar{
+
+	margin-top: 40px;
+	float: right;
+	width: 280px;
+}
+
+aside ol li a{
+
+	color: grey;
+}
+.cor{
+
+	color: white;
+}
