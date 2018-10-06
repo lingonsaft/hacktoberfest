@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Udacity Site Header</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <style>
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+
+      margin: 0;
+      padding: 0;
+      background: #ddd;
+    }
+    header {
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      color: #697681;
+
+      background: white;
+      height: 85px;
+      padding: 15px;
+    }
+    
+    .flex-container {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .vertical-centerer {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-content {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo {
+      width: 200px;
+      display: inline-block;
+      margin: 10px 0px;
+    }
+    .menu {
+      list-style: none;
+      list-style-type: none;
+    }
+    .menu > li {
+      display: inline;
+      margin-left: 37.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="vertical-centerer flex-container">
+      <div class="flex-container space-between header-content">
+        <div>
+          <span>
+           
+          </span>
+        </div>
+        <div>
+          <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+</body>
+</html>
