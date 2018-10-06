@@ -45,6 +45,10 @@
 }
 
 #backToTop {
+<<<<<<< HEAD
+=======
+    margin-bottom: 20px;
+>>>>>>> upstream/master
     display: none;
     position: fixed;
     bottom: 50px;
