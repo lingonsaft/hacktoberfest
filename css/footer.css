@@ -1,82 +1,99 @@
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-   margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0,0,0,0.6);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
-    text-align: center;
-}
-
-#footer h3 {
-    padding: 5px;
-    height: 25px;
-}
-
-.footer-icon {
-    color: #fff;
-    display:flex;
-  }
-
-.social-icons {
-    padding: 5px;
-     margin-left: auto;
-    margin-right: auto;
-
-}
-
-.social-icons > a img {
-   transition: all .2s ease-in-out;
-   
-  }
-
-  .social-icons > a img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-}
-
-#footer h3 span:hover {
-    cursor: pointer;
-    cursor: hand;
-}
-
-.hacktoberfest-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-
 #backToTop {
-    position: fixed;
-    bottom: 90px;
-    right: 50px;
-    z-index: 999;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    background: transparent;
-    padding: 5px;
-    z-index: 1001;
+  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff0844;
+  padding: 4px 10px 10px;
+  z-index: 1001;
 }
 #backToTop svg {
-    width: auto;
-    height: 40px;
-    opacity: .6;
+  width: 25px;
+  height: auto;
+  opacity: 0.6;
 }
 #backToTop:hover svg {
-    opacity: 1;
+  opacity: 1;
 }
 
+/* Footer */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #ff0844;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
 #footer {
-  padding: 10px 0;
+  background: #ff0844 !important;
 }
-.footer__socials-link {
-  margin: 0 10px;
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
-.footer__socials-link svg {
-  height: 35px;
-  width: auto;
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li {
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff;
+}
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

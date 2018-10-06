@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
 .spinCard {
   -webkit-animation: spin 4s linear infinite;
@@ -17,31 +18,174 @@
   }
 }
 
+* {
+  outline: none!important;
+}
+
 html {
   overflow-x: hidden;
 }
 
 body {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  margin: 0;
-  background-color: #f8f8f8;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b6bfce' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  margin: 0;
+  color: #000;
+  line-height: 1.9;
+  margin:0;
+  background-color: #FEFEFE;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: .75px;
   overflow-x: hidden;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+}
+.h1-hover:hover {
+  cursor: url("../images/NinjaDuck_min.jpg"), pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.5;
+}
+
+a,a:hover {
+  color: #FF0844;
+}
+
+.content {
+  margin-top: 80px;
+}
+.index .jumbotron {
+  padding: 4rem 0;
+  background-color: #ffeff3;
+}
+.index .jumbotron:first-child {
+  padding: 8.5rem 0;
+}
+.index .jumbotron-transparent {
+  background-color: transparent;
+}
+.index .jumbotron h1 {
+  font-size: 302.5%;
+  font-weight: 700;
+}
+.index .jumbotron h1 span {
+  font-weight: 400;
+  color: #555;
+}
+.index .jumbotron h2 {
+  font-size: 2.5rem;
+}
+.index .jumbotron p.lead {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+  font-size: 112.5%;
+  font-weight: normal;
+}
+
+.index .btn {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: .5rem .75rem .5rem 2.5rem;
+  border-radius: 2rem;
+  margin: 0 .3rem;
+}
+.index .btn svg {
+  position: absolute;
+  left: .4em;
+  top: .2em;
+  width: auto;
+  height: 30px;
+}
+.index .btn-danger {
+  color: #fff;
+  background-color: #FF0844;
+}
+.index .btn-danger:hover {
+  color: #fff;
+}
+.index .btn-outline-danger:hover {
+  color: #fff;
+}
+
+.video {
+  cursor: pointer;
+}
+.modal .close {
+  margin-bottom: 1rem;
+}
+.video .card:hover {
+  color: #FF0844;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.single-faq {
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 1rem;
+  border-radius: 4px;
+}
+.single-faq h5 {
+  font-weight: 500;
+  font-size: 112.5%;
+}
+.single-faq p {
+  font-size: 87.5%;
+  margin-bottom: 0;
+}
+
+.single-rules {
+  margin-bottom: 1.75rem;
+  font-size: 92.5%;
+  vertical-align: middle;
+  position: relative;
+}
+.single-rules svg {
+  width: 1.8rem;
+  height: auto;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.single-rules span {
+  display: block;
+  margin-left: 3rem;
+}
+.rules-img {
+  text-align: center;
+  padding: 4rem 0;
+}
+.rules-img img {
+  width: auto;
+  height: 350px;
+}
+
+.single-tips .tip {
+  position: relative;
+  vertical-align: middle;
+  border-left: 1px solid rgba(0,0,0,.125);
+}
+.single-tips span {
+  display: block;
+}
+.single-tips .no {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: #FF0844;
+  margin-bottom: 15px;
+}
+.single-tips .tip-text {
+  font-size: 92.5%;
 }
 
 .broccoli-green {
   background-color: #a5d6a7;
 }
 
-html [type='button'] {
+html [type="button"] {
   -webkit-appearance: none !important;
 }
 
@@ -95,12 +239,8 @@ div#content div#contribution-rules ul li {
 
 .card {
   margin: 1%;
-
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 0;
 }
 
@@ -108,14 +248,6 @@ div#content div#contribution-rules ul li {
   padding: 3px;
   padding-left: 20px;
   font-weight: bold;
-}
-
-.container-fluid {
-  margin-top: 100px;
-}
-
-.container-fluid {
-  transition: 1s ease-in-out;
 }
 
 .container-fluid a {
@@ -155,9 +287,26 @@ div#content div#contribution-rules ul li {
   font-weight: bold;
   font-size: 3rem;
 }
+  .countdown-timer li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+    margin: 10px;
+    height: 110px;
+    max-width: 120px;
+    border-radius: 4px;
+  }
+    .countdown-timer li span {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 45px;
+    }
 
 .logo-image {
   max-width: 100%;
+}
+.logo-image:hover {
+  cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
 }
 /* Youtube Subscribe Styling */
 
@@ -165,10 +314,7 @@ div#content div#contribution-rules ul li {
   font-family: sans-serif;
   font-size: 20px;
   text-decoration: none;
-
-  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(rgb(247, 109, 45)),to(red));
-  background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
-
+  background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
   color: black;
   border-radius: 0;
   border: 1px solid red;
@@ -177,16 +323,7 @@ div#content div#contribution-rules ul li {
   z-index: 1;
 }
 .btn-youtube:hover {
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
-}
-@-webkit-keyframes animate{
-  0%{
-      background-position: 0%;
-  }
-  100%{
-      background-position: 400%;
-  }
+  animation: animate 8s linear infinite;
 }
 @keyframes animate {
   0% {
@@ -197,26 +334,18 @@ div#content div#contribution-rules ul li {
   }
 }
 .btn-youtube:before {
-  content: '';
+  content: "";
   z-index: -1;
-
-  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(yellow),to(red));
-  background: linear-gradient(90deg, red,orange,yellow,red);
-
+  background: linear-gradient(90deg, red, orange, yellow, red);
   background-size: 400%;
   border-radius: 0;
   opacity: 0;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
-.btn-youtube:hover::before{
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-
+.btn-youtube:hover::before {
+  filter: blur(20px);
   opacity: 1;
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
 }
 .ytSubscribeContainer {
   margin-top: 25px;
@@ -228,22 +357,18 @@ div#content div#contribution-rules ul li {
   color: white;
 }
 .yt-logo {
-  background: url('../images/you_logo.png');
+  background: url("../images/you_logo.png");
 }
 /* Start Hacking Button Animation  */
 .btn-primary {
-
-  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(rgb(247, 109, 45)),to(red));
-  background: linear-gradient(90deg, red,orange,rgb(247, 109, 45),red);
-
+  background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
   border: 1px solid red;
   padding: 10px 20px;
   background-size: 400%;
   z-index: 1;
 }
 .btn-primary:hover {
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
 }
 @keyframes animate {
   0% {
@@ -254,49 +379,18 @@ div#content div#contribution-rules ul li {
   }
 }
 .btn-primary:before {
-  content: '';
+  content: "";
   z-index: -1;
-
-  background: -webkit-gradient(linear, left top, right top, from(red),color-stop(orange),color-stop(yellow),to(red));
-  background: linear-gradient(90deg, red,orange,yellow,red);
-
+  background: linear-gradient(90deg, red, orange, yellow, red);
   background-size: 400%;
   border-radius: 0;
   opacity: 0;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
-.btn-primary:hover::before{
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-
+.btn-primary:hover::before {
+  filter: blur(20px);
   opacity: 1;
-  -webkit-animation: animate 8s linear infinite;
-          animation: animate 8s linear infinite;
-}
-.social-widget{
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background-color: #ff0844;
-  opacity: 0.3;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-
-}
-.social-widget:hover{
-  opacity: 1;
-
+  animation: animate 8s linear infinite;
 }
 
-.social-widget .col{
-  background-color: #ff0844;
-  padding: 10px;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.social-widget .col:hover{
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
-}
+/* Youtube Subscribe Styling End  */
