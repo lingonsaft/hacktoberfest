@@ -1,15 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  background: url('../images/snek-pattern.png') repeat;
+}
+
+h1,
+.snek-points {
+  font-family: 'Pacifico', cursive;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #e9269e !important;
+  text-shadow: 4px 4px rgb(43, 43, 43);
+}
+
 h5 {
-    color: #FF174B,
+  color: #ff174b;
 }
 
 g {
-    fill: #FF174B,
+  fill: #ff174b;
 }
 
-.dropdown-toggle{
-    color: rgba(255,255,255,.5);
+.dropdown-toggle {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.snek-play{
-    margin: 10px;
+.snek {
+  background: #ffffffdc;
+  border: 5px solid #e9269e !important;
+}
+
+.snek-points {
+  font-size: 6em !important;
+  color: #e9269e !important;
+  text-shadow: 4px 4px rgb(43, 43, 43);
+}
+
+.social-widget {
+  position: absolute;
+  bottom: 0;
+}
+
+.social-widget > div {
+  padding-bottom: 8px;
+}
+
+.snek-play {
+  border: none;
+  background: yellow !important;
+  border-radius: 10px;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+}
+
+.snek-play:hover {
+  border: none;
+  background: rgb(197, 197, 8) !important;
+  color: rgb(41, 41, 41);
 }
