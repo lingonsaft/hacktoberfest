@@ -1,8 +1,11 @@
 # Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/))
 
-This is a beginner friendly project to help you get started with your [hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't know where to start feel free to watch the videos down below and read the contribution rules. Happy hacking <3 !!
+This is a beginner-friendly project to help you get started with your 
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't 
+know where to start, feel free to watch the videos linked below, and 
+read the contribution rules. Happy hacking <3 !!
 
-ps. star and share this repository if you had fun! :*
+P.S.: Star and share this repository, if you had fun! :*
 
 # Videos
 
@@ -49,7 +52,8 @@ git push origin my-new-branch
 # FAQs
 
 - Who can contribute?
-  - Anyone with a github account and signed up for [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
+  - Anyone with a github account and who is signed up for 
+[hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
