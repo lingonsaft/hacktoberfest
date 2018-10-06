@@ -6,13 +6,6 @@
   animation:spin 4s linear infinite;
 }
 
-<<<<<<< HEAD
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-* {
-  outline: none!important;
-=======
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -24,7 +17,6 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
->>>>>>> upstream/master
 }
 
 * {
@@ -47,13 +39,10 @@ body {
   overflow-x: hidden;
   transition: 1s ease-in-out;
 }
-<<<<<<< HEAD
-=======
 
 .h1-hover:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), pointer;
 }
->>>>>>> upstream/master
 
 h1,
 h2,
@@ -236,16 +225,12 @@ html [type=button] {
   padding-left: 50%;
 }
 
-<<<<<<< HEAD
-.faq{ width:90%;margin-left:10%; margin-bottom: 50px;}
-=======
 .faq {
   width: 90%;
   margin-left: 10%;
   margin-bottom: 50px;
 }
 
->>>>>>> upstream/master
 .faq-question {
   background-color: lightgray;
 }
@@ -306,8 +291,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   color: #cc0636;
 }
 
-<<<<<<< HEAD
-=======
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -335,43 +318,21 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   border-radius: 34px;
 }
 
->>>>>>> upstream/master
 .countdown-timer ul {
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 .countdown-timer li {
   display: inline-block;
   list-style-type: none;
   padding: 1em;
 }
 
->>>>>>> upstream/master
 .countdown-timer li span {
   display: block;
   font-weight: bold;
   font-size: 3rem;
 }
-<<<<<<< HEAD
-  .countdown-timer li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 1em;
-    margin: 10px;
-    height: 110px;
-    max-width: 120px;
-    border-radius: 4px;
-  }
-    .countdown-timer li span {
-      display: block;
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 45px;
-    }
-
-=======
 
 .countdown-timer li {
   display: inline-block;
@@ -514,4 +475,3 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 /* Youtube Subscribe Styling End  */
->>>>>>> upstream/master
