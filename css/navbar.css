@@ -64,22 +64,3 @@ nav{
   height: 25px;
   vertical-align: text-top;
 }
-.dropdown-menu-others {
-  display: none;
-  position: relative;
-  box-shadow: none;
-}
-.show-dropdown {
-  display: block;
-}
-@media only screen and (min-width: 991px) {
-  .dropdown-menu-others {
-    position: absolute;
-    background: white;
-    -webkit-box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
-    box-shadow: 13px 11px 48px 0px rgba(0,0,0,0.55);
-    transition: all 500ms ease;
-  }
-}
-
