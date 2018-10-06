@@ -30,8 +30,6 @@ h6 {
 html,
 body {
   background-color: #111;
-}
-body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,6 +44,10 @@ body {
   position: relative;
   font-family: "Inconsolata", monospace;
   font-size: 16px;
+}
+
+.container {
+  padding-top: 70px;
 }
 
 canvas {
