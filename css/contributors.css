@@ -58,6 +58,24 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.top_line {
+  text-align: center;
+}
+h1 > .gitlink {
+  color: #1ceec8;
+  text-decoration: none;
+  text-align: center !important;
+  font-size: 24px;
+}
+h1 > .gitlink:hover {
+  text-decoration: none;
+  color: #f5720f;
+}
+.tagline {
+  text-align: center;
+}
+
 #backToTop {
   position: fixed;
   bottom: 50px;
@@ -86,7 +104,9 @@ a {
   width: 100%;
   z-index: 1;
 }
-.top-nav {
+/* below is for older version of nav bar; replaced
+  with newer blue one */
+/* .top-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,11 +122,11 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.header__logo .st0 {
+} */
+/* .header__logo .st0 {
   fill: #1ceec8;
-}
-.top-nav--secondary {
+} */
+/* .top-nav--secondary {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,10 +150,21 @@ a {
 .top-nav--secondary a.active,
 .top-nav--secondary a:hover {
   opacity: 1;
+} */
+.dropdown-menu {
+  background-color: #62a7f5;
 }
 
+.dropdown-menu a {
+  color: white;
+  font-size: 16px;
+}
+.dropdown-menu a:hover {
+  color: #ff0844;
+}
 .container {
   margin: 110px auto 0 auto;
+  background-color: black;
   max-width: 1100px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -155,10 +186,18 @@ a {
 
 .card {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  background-color: black;
+  display: grid;
+  grid-column: 1/5;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
 }
+/* added grid to keep columns neat; widened card item
+for longer names */
 .card-item {
-  display: inline-block;
+  display: grid;
   /* background-color: lightblue; */
   background-color: #1ceec8;
   color: black !important;
@@ -193,7 +232,8 @@ a {
   padding: 4px;
 }
 
-.footer {
+/* Footer.css takes care of the footer now */
+/* .footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -212,15 +252,16 @@ a {
 .footer__socials-link svg {
   width: auto;
   height: 40px;
-}
-.heart{
+} */
+
+.heart {
   position: relative;
   width: 100px;
   height: 90px;
   float: left;
 }
 .heart:before,
-.heart:after{
+.heart:after {
   position: absolute;
   content: "";
   left: 50px;
@@ -231,26 +272,26 @@ a {
   -moz-border-radius: 50px 50px 0 0;
   border-radius: 50px 50px 0 0;
   -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -webkit-transform-origin: 0 100%;
-     -moz-transform-origin: 0 100%;
-      -ms-transform-origin: 0 100%;
-       -o-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
 }
-.heart:after{
+.heart:after {
   left: 0;
   -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   -webkit-transform-origin: 100% 100%;
-     -moz-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
-       -o-transform-origin: 100% 100%;
-          transform-origin :100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
