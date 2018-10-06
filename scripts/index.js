@@ -5,8 +5,6 @@ let t = document.getElementById('twist').addEventListener('click', () => {
     })
 }, false)
 
-let l = document.getElementById('love').addEventListener('click', () => {
-  let body = document.querySelector('body');
-  document.querySelector("#header h1").innerHTML = "Broccoli Egg";
-  body.classList.toggle("broccoli-green");
+let l = document.getElementById("title").addEventListener('click', () => {
+  document.getElementById("title").innerHTML = "Broccoli Egg!";
 }, false)
