@@ -11,6 +11,7 @@
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -29,50 +30,64 @@ html {
 body {
   color: #000;
   line-height: 1.9;
-  margin:0;
+  margin: 0;
   background-color: #FEFEFE;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
   overflow-x: hidden;
   transition: 1s ease-in-out;
 }
+
 .h1-hover:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), pointer;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 
-a,a:hover {
+a,
+a:hover {
   color: #FF0844;
 }
 
 .content {
   margin-top: 80px;
 }
+
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
 }
+
 .index .jumbotron:first-child {
   padding: 8.5rem 0;
 }
+
 .index .jumbotron-transparent {
   background-color: transparent;
 }
+
 .index .jumbotron h1 {
   font-size: 302.5%;
   font-weight: 700;
 }
+
 .index .jumbotron h1 span {
   font-weight: 400;
   color: #555;
 }
+
 .index .jumbotron h2 {
   font-size: 2.5rem;
 }
+
 .index .jumbotron p.lead {
   max-width: 48rem;
   margin-bottom: 2rem;
@@ -89,6 +104,7 @@ a,a:hover {
   border-radius: 2rem;
   margin: 0 .3rem;
 }
+
 .index .btn svg {
   position: absolute;
   left: .4em;
@@ -96,13 +112,16 @@ a,a:hover {
   width: auto;
   height: 30px;
 }
+
 .index .btn-danger {
   color: #fff;
   background-color: #FF0844;
 }
+
 .index .btn-danger:hover {
   color: #fff;
 }
+
 .index .btn-outline-danger:hover {
   color: #fff;
 }
@@ -110,23 +129,27 @@ a,a:hover {
 .video {
   cursor: pointer;
 }
+
 .modal .close {
   margin-bottom: 1rem;
 }
+
 .video .card:hover {
   color: #FF0844;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
 }
 
 .single-faq {
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, .125);
   padding: 1rem;
   border-radius: 4px;
 }
+
 .single-faq h5 {
   font-weight: 500;
   font-size: 112.5%;
 }
+
 .single-faq p {
   font-size: 87.5%;
   margin-bottom: 0;
@@ -138,6 +161,7 @@ a,a:hover {
   vertical-align: middle;
   position: relative;
 }
+
 .single-rules svg {
   width: 1.8rem;
   height: auto;
@@ -149,14 +173,17 @@ a,a:hover {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .single-rules span {
   display: block;
   margin-left: 3rem;
 }
+
 .rules-img {
   text-align: center;
   padding: 4rem 0;
 }
+
 .rules-img img {
   width: auto;
   height: 350px;
@@ -165,11 +192,13 @@ a,a:hover {
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
-  border-left: 1px solid rgba(0,0,0,.125);
+  border-left: 1px solid rgba(0, 0, 0, .125);
 }
+
 .single-tips span {
   display: block;
 }
+
 .single-tips .no {
   font-size: 24px;
   font-weight: 600;
@@ -177,6 +206,7 @@ a,a:hover {
   color: #FF0844;
   margin-bottom: 15px;
 }
+
 .single-tips .tip-text {
   font-size: 92.5%;
 }
@@ -198,6 +228,7 @@ html [type="button"] {
   margin-left: 10%;
   margin-bottom: 50px;
 }
+
 .faq-question {
   background-color: lightgray;
 }
@@ -260,6 +291,19 @@ div#content div#contribution-rules ul li {
   color: #cc0636;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  text-decoration: none;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -277,37 +321,43 @@ div#content div#contribution-rules ul li {
 .countdown-timer ul {
   padding: 0;
 }
+
 .countdown-timer li {
   display: inline-block;
   list-style-type: none;
   padding: 1em;
 }
+
 .countdown-timer li span {
   display: block;
   font-weight: bold;
   font-size: 3rem;
 }
-  .countdown-timer li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 1em;
-    margin: 10px;
-    height: 110px;
-    max-width: 120px;
-    border-radius: 4px;
-  }
-    .countdown-timer li span {
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 45px;
-    }
+
+.countdown-timer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+  margin: 10px;
+  height: 110px;
+  max-width: 120px;
+  border-radius: 4px;
+}
+
+.countdown-timer li span {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 45px;
+}
 
 .logo-image {
   max-width: 100%;
 }
+
 .logo-image:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
 }
+
 /* Youtube Subscribe Styling */
 
 .btn-youtube {
@@ -322,9 +372,11 @@ div#content div#contribution-rules ul li {
   background-size: 400%;
   z-index: 1;
 }
+
 .btn-youtube:hover {
   animation: animate 8s linear infinite;
 }
+
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -333,6 +385,7 @@ div#content div#contribution-rules ul li {
     background-position: 400%;
   }
 }
+
 .btn-youtube:before {
   content: "";
   z-index: -1;
@@ -342,24 +395,31 @@ div#content div#contribution-rules ul li {
   opacity: 0;
   transition: 0.5s;
 }
+
 .btn-youtube:hover::before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+
 .ytSubscribeContainer {
   margin-top: 25px;
 }
+
 .ytSubscribeContainer a {
   color: white;
 }
+
 .ytSubscribeContainer a:hover {
   color: white;
 }
+
 .yt-logo {
   background: url("../images/you_logo.png");
 }
+
 /* Start Hacking Button Animation  */
+
 .btn-primary {
   background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
   border: 1px solid red;
@@ -367,9 +427,11 @@ div#content div#contribution-rules ul li {
   background-size: 400%;
   z-index: 1;
 }
+
 .btn-primary:hover {
   animation: animate 8s linear infinite;
 }
+
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -378,6 +440,7 @@ div#content div#contribution-rules ul li {
     background-position: 400%;
   }
 }
+
 .btn-primary:before {
   content: "";
   z-index: -1;
@@ -387,6 +450,7 @@ div#content div#contribution-rules ul li {
   opacity: 0;
   transition: 0.5s;
 }
+
 .btn-primary:hover::before {
   filter: blur(20px);
   opacity: 1;
@@ -394,19 +458,20 @@ div#content div#contribution-rules ul li {
 }
 
 
-#love{
+#love {
   animation-duration: 1s;
   animation-name: zoomeffect;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
 
-@keyframes zoomeffect{
-  from{
+@keyframes zoomeffect {
+  from {
     transform: scale(1.5);
   }
-  to{
+  to {
     transform: scale(1);
   }
 }
+
 /* Youtube Subscribe Styling End  */
