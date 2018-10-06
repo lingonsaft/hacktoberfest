@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
-.spinCard {
-  -webkit-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+.spinCard{
+  -webkit-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -28,12 +28,14 @@ html {
 }
 
 body {
+  font-size: 16px;
   color: #000;
   line-height: 1.9;
   margin: 0;
   background-color: #FEFEFE;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
+  margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
 }
@@ -212,10 +214,10 @@ a:hover {
 }
 
 .broccoli-green {
-  background-color: #a5d6a7;
+  background-color: #A5D6A7;
 }
 
-html [type="button"] {
+html [type=button] {
   -webkit-appearance: none !important;
 }
 
@@ -237,27 +239,26 @@ html [type="button"] {
   font-size: 20px;
 }
 
-#tips {
+#tips{
   border-radius: 5px;
 }
 
-div#content div#contribution-rules ul,
-div#content div#contribution-rules ul li {
+div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
 
-#contribution-rules {
+#contribution-rules{
   background-color: #fff;
-  padding: 30px;
+  padding:30px;
   border-radius: 5px;
 }
 
-.do {
-  color: green;
+.do{
+  color:green;
 }
 
-.dont {
-  color: red;
+.dont{
+  color:red;
 }
 
 .fork_image {
@@ -268,6 +269,11 @@ div#content div#contribution-rules ul li {
   margin-top: 61px;
 }
 
+.card-header{
+  padding:3px;
+  padding-left:20px;
+  font-weight:bold;
+}
 .card {
   margin: 1%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -275,15 +281,9 @@ div#content div#contribution-rules ul li {
   border: 0;
 }
 
-.card-header {
-  padding: 3px;
-  padding-left: 20px;
-  font-weight: bold;
-}
-
 .container-fluid a {
   text-decoration: none;
-  color: #ff0844;
+  color: #FF0844;
 }
 
 .container-fluid a:hover {
@@ -292,9 +292,6 @@ div#content div#contribution-rules ul li {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
