@@ -59,7 +59,6 @@ function handleClick(e, item) {
         item.css.forEach(stylesheet => {
             loadStylesheet('./css/'+item.css)
         })
-        
     }
 
     let title = document.querySelector('head > title')
@@ -68,8 +67,8 @@ function handleClick(e, item) {
     } else {
         title = 'HACKTOBERFEST | ' + item.page
     }
-    
-    if (item.page === '#') {
+
+    if (!item.page) {
         return
     }
 

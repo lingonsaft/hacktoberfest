@@ -1,5 +1,8 @@
 async function fetchContent(page = '') {
-    return fetch('./public/html/' + page + '.html')
+    // Avoid double .html extensions
+    page = page.replace('.html', '')
+    page += '.html'
+    return fetch('./public/html/' + page)
         .then(r => r.text())
 }
 
@@ -9,6 +12,9 @@ async function builContentHTML(html = '') {
 }
 
 async function loadStylesheet(path = '') {
+    // Avoid double .css extensions
+    path = path.replace('.css', '')
+    path += '.css'
     let presentSheet = document.head.querySelector('link[href*="'+path+'"]')
     if (presentSheet === null) {
         var link = document.createElement( "link" )

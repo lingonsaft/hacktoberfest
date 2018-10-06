@@ -1,47 +1,47 @@
 {
     "Home": {
         "text": "Home",
-        "href": "/"
+        "page": "home"
     },
     "Helpful-Material": {
         "text": "Helpful Material",
-        "href": "/helpful-material"
+        "page": "helpful-material",
+        "css": ["helpful-material.css"]
     },
     "Contributors": {
         "text": "Contributors",
-        "href": "/contributors"
+        "page": "contributors",
+        "css": ["contributors.css"]
     },
     "The-Twist": {
         "text": "The Twist",
-        "href": "#",
         "id": "twist"
     },
     "Potato": {
         "text": "Potato",
-        "href": "/potato"
+        "page": "potato"
     },
     "Cheese": {
         "text": "Cheese!", 
-        "href": "/cheese"
+        "page": "cheese"
     },
     "Tools": {
         "text": "Tools",
-        "href": "/tools",
+        "page": "tools",
         "id": "tools"
     },
     "Invert": {
         "text": "Invert",
-        "href": "#",
         "id": "invert-btn"
     },
     "Fireworks": {
         "text": "Fireworks",
-        "href": "/fireworks",
+        "page": "fireworks",
         "id": "fireworks"
     },
     "Learn": {
         "text": "Learn!",
-        "href": "/wow",
+        "page": "wow",
         "id": "learn"
     }
 }
