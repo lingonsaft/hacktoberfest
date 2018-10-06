@@ -1,5 +1,6 @@
 .navbar {
   padding: 0.5rem 2rem;
+
 }
 nav {
   background-color: black;
@@ -71,6 +72,10 @@ nav {
 .show-dropdown {
   display: block;
 }
+.content,
+.modal {
+  padding: 2vw 3vw;
+}
 @media only screen and (min-width: 991px) {
   .dropdown-menu-others {
     position: absolute;
@@ -95,4 +100,10 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+@media only screen and (max-width: 768px) {
+  .index .jumbotron h1 {
+    font-size: 250%;
+    font-weight: 700;
+  }
 }
