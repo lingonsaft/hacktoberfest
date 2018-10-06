@@ -46,6 +46,29 @@ git push origin my-new-branch
 
 - Create a new pull request from your forked repository
 
+## Avoid Conflicts (Syncing your fork)
+
+You want to avoid conflicts as chanses are other PR's will be merged when you're working on your branch/fork.   
+An easy way to do so, is to add an 'upstream' for your git repo.
+
+```terminal
+git remote add upstream https://github.com/lingonsaft/hacktoberfest
+``` 
+
+You can verify that the new remote has been added by typing
+```terminal
+git remote -v
+```
+
+To pull any new changes from your parent repo simply run
+```terminal
+git merge upstream/master
+```
+
+This will give you any eventual conflicts and allows you to easily solve them in your repo. It's a good idea to use it frequently inbetween your own commits to make sure that your repo is up to date with it's parent.
+
+For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
+
 # FAQs
 
 - Who can contribute?
