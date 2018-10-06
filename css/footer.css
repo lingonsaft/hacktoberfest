@@ -45,10 +45,6 @@
 }
 
 #backToTop {
-<<<<<<< HEAD
-=======
-    margin-bottom: 20px;
->>>>>>> upstream/master
     display: none;
     position: fixed;
     bottom: 50px;
@@ -58,7 +54,7 @@
     border-radius: 50%;
     border: none;
     background-color: #FF0844;
-    padding: 4px 10px 10px;
+    padding: 6px 10px 10px;
     z-index: 1001;
 }
 #backToTop svg {
