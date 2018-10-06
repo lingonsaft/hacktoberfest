@@ -4,7 +4,7 @@
 const canvas = document.querySelector('.snek')
 canvas.width = 400
 canvas.height = 300
-canvas.style.border = '2px solid red'
+canvas.style.border = '2px solid #FF0844'
 canvas.style.width = '800px'
 canvas.style.height = '600px'
 canvas.style.margin = '0 auto'
@@ -31,8 +31,8 @@ button.style.display = 'none'
  * @type {HTMLDivElement}
  */
 const points = document.querySelector('.snek-points')
-points.style.fontSize = '30px'
-points.style.color = 'green'
+points.style.fontSize = '50px'
+points.style.color = '#FF0844'
 
 points.innerHTML = 0
 
