@@ -77,7 +77,7 @@
     },
     "Plainpage": {
       "text": "Plain Page",
-      "href": "/plainpage",
+      "href": "/plain_page",
       "id": "Plainpage"
     },
     "Snek": {
@@ -95,10 +95,10 @@
       "href": "/values",
       "id": "Values"
     },
-    "Wow": {
-      "text": "Wow",
-      "href": "/wow",
-      "id": "Wow"
+    "Try-Learn": {
+      "text": "Try Learn How to Program",
+      "href": "/trylearnhowtoprogram",
+      "id": "Trylearnhowtoprogram"
     }
   }
 }
