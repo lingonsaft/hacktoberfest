@@ -1,5 +1,9 @@
 .navbar {
   padding: .5rem 2rem;
+
+}
+nav{
+  background-color: black;
 }
 .navbar-nav {
   width: 100%;
@@ -42,8 +46,13 @@
 .navbar-light .navbar-nav .nav-social::before {
   content: none;
 }
+.navbar-light .navbar-nav .nav-social:hover {
+  content: none;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #FF0844;
+  color: rgb(0, 0, 0);
 }
 .navbar-light .navbar-nav .nav-link:hover::before {
   left: 0;
