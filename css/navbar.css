@@ -20,8 +20,8 @@ nav{
 .navbar-light .navbar-nav .nav-link {
   color: #444;
   position: relative;
-  padding: 0;
-  margin: 0 10px!important; 
+  padding: 10px;
+  margin: 0 10px!important;
 }
 .navbar-light .navbar-nav .active>.nav-link {
   color: #FF0844;
@@ -83,3 +83,15 @@ nav{
   }
 }
 
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -11,37 +11,39 @@
         "text": "Contributors",
         "href": "/contributors"
     },
-    "The-Twist": {
-        "text": "The Twist",
-        "href": "#",
-        "id": "twist"
-    },
-    "Potato": {
-        "text": "Potato",
-        "href": "/potato"
-    },
-    "Cheese": {
-        "text": "Cheese!", 
-        "href": "/cheese"
-    },
-    "Tools": {
-        "text": "Tools",
-        "href": "/tools",
-        "id": "tools"
-    },
-    "Invert": {
-        "text": "Invert",
-        "href": "#",
-        "id": "invert-btn"
-    },
-    "Fireworks": {
-        "text": "Fireworks",
-        "href": "/fireworks",
-        "id": "fireworks"
-    },
-    "Learn": {
-        "text": "Learn!",
-        "href": "/wow",
-        "id": "learn"
+    "Others": {
+      "The-Twist": {
+          "text": "The Twist",
+          "href": "#",
+          "id": "twist"
+      },
+      "Potato": {
+          "text": "Potato",
+          "href": "/potato"
+      },
+      "Cheese": {
+          "text": "Cheese!",
+          "href": "/cheese"
+      },
+      "Tools": {
+          "text": "Tools",
+          "href": "/tools",
+          "id": "tools"
+      },
+      "Invert": {
+          "text": "Invert",
+          "href": "#",
+          "id": "invert-btn"
+      },
+      "Fireworks": {
+          "text": "Fireworks",
+          "href": "/fireworks",
+          "id": "fireworks"
+      },
+      "Learn": {
+          "text": "Learn!",
+          "href": "/wow",
+          "id": "learn"
+      }
     }
 }
