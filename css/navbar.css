@@ -1,6 +1,7 @@
 .navbar {
   padding: .5rem 2rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 .navbar-nav {
   width: 100%;
@@ -13,6 +14,11 @@
 }
 .navbar-nav {
   width: 100%;
+=======
+}
+.navbar-nav {
+  width: 100%;
+>>>>>>> c32e5b90b5dbb5726b22f3a708ab224b27ec667f
 }
 .navbar-brand {
   line-height: 1;
@@ -98,6 +104,7 @@
 <<<<<<< HEAD
 =======
 }
+<<<<<<< HEAD
 .dropdown-menu-others {
   display: none;
   position: relative;
@@ -118,3 +125,5 @@
 >>>>>>> upstream/master
 }
 
+=======
+>>>>>>> c32e5b90b5dbb5726b22f3a708ab224b27ec667f
