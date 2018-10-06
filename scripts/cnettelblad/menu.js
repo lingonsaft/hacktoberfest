@@ -5,14 +5,36 @@ async function fetchMenu() {
 
 async function buildMenuHTML(obj = {}) {
     var html = ''
-    var path = window.location.pathname.split('/')
+    let keys = Object.keys(obj)
+    let i = 0
 
     Object.entries(obj).forEach(([key, item]) => {
         let isHome = (item.page === 'home' ? true : false)
         
         html += '<li class="nav-item' + (isHome ? ' active' : '') + '">'
-        html += '<a class="nav-link" data-page="' + item.page + '" id="' + (item.id ? item.id : 'nav-' + item.page) + '" href="#">' + item.text + '</a>'
+        html += '<a class="nav-link" '
+        html += (item.hasOwnProperty('page') ? 'data-page="' + item.page + '" ' : '') + '"href="#"'
+
+        // Now lets add attributes
+        if (item.hasOwnProperty('attr')) {
+            Object.entries(item.attr).forEach(([key, attr]) => {
+                console.log('Adding: '+ key + '=' + attr)
+                html += ' ' + key + '="' + attr + '"'
+            })
+        } 
+
+        // We still need an ID for our event handling
+        if (!item.hasOwnProperty('attr') || !item.attr.id) {
+            console.log('Adding ID..')
+            html += 'id="nav-' + keys[i].toLowerCase() + '"'
+        }
+
+        html += ' href="#">'
+        html += item.text
+        html += '</a>'
         html += '</li>'
+
+        i++
     })
     return document.getElementById('menu').innerHTML = html
 }
@@ -42,7 +64,7 @@ function handleClick(e, item) {
 
     let title = document.querySelector('head > title')
     if (item.hasOwnProperty('title')) {
-        title.innerHTML = title
+        title.innerHTML = item.title
     } else {
         title = 'HACKTOBERFEST | ' + item.page
     }
@@ -57,14 +79,17 @@ function handleClick(e, item) {
 
 function addListeners(items = {}) {
     console.log(items)
+    let i = 0
+    let keys = Object.keys(items)
     Object.entries(items).forEach(([items, item]) => {
-        let element = document.querySelector('a#'+item.id)
-
-        if (element === null) {
-            element = document.querySelector('a#nav-'+item.page)
+        let element
+        if (item.hasOwnProperty('attr') && item.attr.id) {
+            element = document.querySelector('a#'+item.attr.id)
+        } else {
+            element = document.querySelector('a#nav-'+keys[i].toLowerCase())
         }
-
         element.addEventListener('click', e => handleClick(e, item))
+        i++
     })
 }
 
