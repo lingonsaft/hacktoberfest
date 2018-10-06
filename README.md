@@ -67,8 +67,9 @@ git push origin my-new-branch
 - Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
 - How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
-  - 5
-
+  - 5 
+- How do I track my progress to get a awesome shirt from Hacktoberfest 2018?
+  - go to : https://hacktoberfest.digitalocean.com/stats/username 
 
 
 

@@ -42,6 +42,11 @@
 .navbar-light .navbar-nav .nav-social::before {
   content: none;
 }
+.navbar-light .navbar-nav .nav-social:hover {
+  content: none;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
 .navbar-light .navbar-nav .nav-link:hover {
   color: #FF0844;
 }
