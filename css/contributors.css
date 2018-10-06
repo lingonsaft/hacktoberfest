@@ -26,9 +26,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 html,
 body {
+<<<<<<< HEAD
   background-color: #fff;
 }
 body {
+=======
+  background-color: #111;
+>>>>>>> upstream/master
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,6 +47,10 @@ body {
   position: relative;
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
+}
+
+.container {
+  padding-top: 70px;
 }
 
 canvas {
