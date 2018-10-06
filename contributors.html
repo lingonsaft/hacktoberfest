@@ -2,173 +2,216 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="./css/contributors.css">
-    <title>Hacktoberfest - Contributors</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74296045-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+				gtag('config', 'UA-74296045-6');
+				
+		function toggleDropDown() {
+    	document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
+		}
+  </script>
+
+	<!--Stats Script-->
+	<script src="scripts/stats.js"></script>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<meta name="description" content="This is a static website serving as a beginner friendly project to help developers get started with hacktoberfest-Gateway to open source.">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	  crossorigin="anonymous"></script>
+	<!-- Github follow button -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<link rel="stylesheet" href="./css/contributors.css" />
+	<link rel="stylesheet" href="./css/navbar.css" />
+	<link rel="stylesheet" href="./css/footer.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/explosion.css" />
+	<link rel="stylesheet" href="./css/terminal.css" />
+	<title>Hacktoberfest 2018 - Contributors</title>
 </head>
 
 <body>
-  <header class="header" role="banner">
-    <nav class="top-nav">
-      <a href="./index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
-          y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img"
-          aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px">
-          <title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
-          <style type="text/css">
-            .st0 {
-              fill: #FFFFFF;
-            }
-          </style>
-          <path class="st0" d="M0.7,0.7v298.7h298.7V0.7H0.7z M197.8,271.4l-32-32v-95.6l-31.4,31.4v79l-17.3,17.3L99.8,254V70.4L95,65.6  L73,87.7L61.7,76.5l47.8-47.8l0.1,0.1l0,0l1.9,1.8l22.8,22.8V136l31.4-31.4V70.2L150,54.4l25.8-25.8l24.7,24.7v169.1l12.1,12.1  l14.7-14.7l11.1,11.1L197.8,271.4z"></path>
-        </svg>
-      </a>
-      <ul class="top-nav--secondary" id="menu">
+  <!--
+		__  __              __    __          __                 ____             __
+	  / / / /____ _ _____ / /__ / /_ ____   / /_   ___   _____ / __/___   _____ / /_
+	  / /_/ // __ `// ___// //_// __// __ \ / __ \ / _ \ / ___// /_ / _ \ / ___// __/
+	/ __  // /_/ // /__ / ,<  / /_ / /_/ // /_/ //  __// /   / __//  __/(__  )/ /_
+	/_/ /_/ \__,_/ \___//_/|_| \__/ \____//_.___/ \___//_/   /_/   \___//____/ \__/
+												i just want a t-shirt at this point
+	-->
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <a class="navbar-brand" href="/">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img" aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px"><title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
+      <style type="text/css">
+      .st0{fill:#FF0844;}
+      </style>
+      <path class="st0" d="M0.7,0.7v298.7h298.7V0.7H0.7z M197.8,271.4l-32-32v-95.6l-31.4,31.4v79l-17.3,17.3L99.8,254V70.4L95,65.6  L73,87.7L61.7,76.5l47.8-47.8l0.1,0.1l0,0l1.9,1.8l22.8,22.8V136l31.4-31.4V70.2L150,54.4l25.8-25.8l24.7,24.7v169.1l12.1,12.1  l14.7-14.7l11.1,11.1L197.8,271.4z"></path>
+    </svg>
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto" id="menu">
         <!-- Menu -->
       </ul>
-    </nav>
-  </header>
-
+    </div>
+  </nav>
+  <div class="content">
     <div class="container">
-      <div class="heart"></div>
-      <h1>Contributors <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
-      <p>Add yourself to the list if you contribute.</p>
-      <div class="card">
-	      <p class="card-item"><a href="https://github.com/raspals">Raspal Seni</a></p>
-        <p class="card-item"><a href="https://github.com/chamow97">Chandramowli J</a></p>
-        <p class="card-item"><a href="https://github.com/dwikychandra21">Dwiky Chandra</a></p>
-        <p class="card-item"><a href="https://github.com/kosijer">Nebojša Kosijer</a></p>
-        <p class="card-item"><a href="https://github.com/alx168">alx168</a></p>
-        <p class="card-item"><a href="https://github.com/AntonStrand">Anton Strand</a></p>
-	    	<p class="card-item"><a href="https://github.com/dwikychandra21">Dwiky Chandra</a></p>
-        <p class="card-item"><a href="https://github.com/n00d13">n00d13</a></p>
-        <p class="card-item"><a href="https://github.com/sn149">sn149</a></p>
-        <p class="card-item"><a href="https://github.com/CodinMaster">Apoorv Lathey</a></p>
-        <p class="card-item"><a href="https://github.com/araanbranco">Araan branco</a></p>
-        <p class="card-item"><a href="https://github.com/richie-south">richie-south</a></p>
-        <p class="card-item"><a href="https://github.com/sarahperea">Sarah Perea</a></p>
-        <p class="card-item"><a href="https://github.com/BennyCarlsson">BennyCarlsson</a></p>
-        <p class="card-item"><a href="https://github.com/pvn6396">Pavan Choudhary</a></p>
-        <p class="card-item"><a href="https://github.com/amrs-tech">Ahamed Musthafa</a></p>
-        <p class="card-item"><a href="https://github.com/HackedByMKN">MKN</a></p>
-        <p class="card-item"><a href="https://github.com/leighayanid">Leigh Dinaya</a></p>
-        <p class="card-item"><a href="https://github.com/sigiasd">Sigiasd</a></p>
-        <p class="card-item"><a href="https://github.com/karengeerts">Karen Geerts</a></p>
-        <p class="card-item"><a href="https://github.com/hacksdump">Harshit Maurya</a></p>
-        <p class="card-item"><a href="https://github.com/hariprasetia">hariprasetia</a></p>
-        <p class="card-item"><a href="https://github.com/jlapitan">jlapitan</a></p>
-        <p class="card-item"><a href="https://github.com/MattCrl">MattCrl</a></p>
-        <p class="card-item"><a href="https://github.com/nishanbajracharya">Nishan Bajracharya</a></p>
-        <p class="card-item"><a href="https://github.com/CleverFool77">Lekhika Dugtal</a></p>
-        <p class="card-item"><a href="https://github.com/nprail">Noah Prail</a></p>
-        <p class="card-item"><a href="https://github.com/CCAtAlvis">Chinmay Chandak</a></p>
-        <p class="card-item"><a href="https://github.com/Charuka09">Charuka Herath</a></p>
-        <p class="card-item"><a href="https://github.com/jjlee050">Joseph Lee</a></p>
-        <p class="card-item"><a href="https://github.com/luizhdz">Luiz Hernandez</a></p>
-        <p class="card-item"><a href="https://github.com/Broccolai">Josh Taylor</a></p>
-        <p class="card-item"><a href="https://github.com/sreehari1997">SREEHARI K.V</a></p>
-        <p class="card-item"><a href="https://github.com/PatricNox">PatricNox</a></p>
-        <p class="card-item"><a href="https://github.com/sarveshggn">Sarvesh Joshi</a></p>
-        <p class="card-item"><a href="https://github.com/spverma536">Piyush Verma</a></p>
-        <p class="card-item"><a href="https://github.com/AdamWatts">Adam Watts</a></p>
-        <p class="card-item"><a href="https://github.com/jgalianoz">Manuel Galindez</a></p>
-        <p class="card-item"><a href="https://github.com/SithumRavishara">Sithum Ravishara</a></p>
-        <p class="card-item"><a href="https://github.com/exponov">Exponov</a></p>
-        <p class="card-item"><a href="https://github.com/LokeCarlsson">Loke Carlsson</a></p>
-        <p class="card-item"><a href="https://github.com/Jarleborn">Jarleborn</a></p>
-        <p class="card-item"><a href="https://github.com/ebysofyan">Eby Sofyan</a></p>
-        <p class="card-item"><a href="https://github.com/SithumRavishara">Sithum Ravishara</a></p>
-        <p class="card-item"><a href="https://github.com/djdany01">Daniel Pérez</a></p>
-        <p class="card-item"><a href="https://github.com/emorraa">Emanuele "Phreaker" Morra</a></p>
-        <p class="card-item"><a href="https://github.com/marcojesus">Marco Jesus</a></p>
-        <p class="card-item"><a href="https://github.com/Jarleborn">Jarleborn</a></p>
-        <p class="card-item"><a href="https://github.com/agoel00">Anmol Goel</a></p>
-        <p class="card-item"><a href="https://github.com/NikhilShrivastava">Nikhil Shrivastava</a></p>
-        <p class="card-item"><a href="https://github.com/zwe-munhtun">Zwe Mun Htun</a></p>
-        <p class="card-item"><a href="https://github.com/Evie-Skinner18">Evie</a></p>
-        <p class="card-item"><a href="https://github.com/gsvendsen">Gustav Svendsen</a></p>
-        <p class="card-item"><a href="https://github.com/erhuz">Benjamin Fransson</a></p>
-        <p class="card-item"><a href="https://github.com/94151">Muskan Jain</a></p>
-        <p class="card-item"><a href="https://github.com/Cyclia">Cyclia</a></p>
-        <p class="card-item"><a href="https://github.com/vs4vijay">vs4vijay</a></p>​
-        <p class="card-item"><a href="https://github.com/transmoral">transmoral</a></p>​
-        <p class="card-item"><a href="https://github.com/KSSBro">KSSBro</a></p>
-        <p class="card-item"><a href="https://github.com/haych8">Haych8</a></p>
-        <p class="card-item"><a href="https://github.com/webhead3">NotArland</a></p>
-        <p class="card-item"><a href="https://github.com/HarveyD">Harvey</a></p>
-        <p class="card-item"><a href="https://github.com/Aliecake">Lauren Eggers</a></p>
-        <p class="card-item"><a href="https://github.com/bucks14">bucks14</a></p>
-        <p class="card-item"><a href="https://github.com/3daddict">Michael Salvati</a></p>
-        <p class="card-item"><a href="https://github.com/James-Bovis">James Bovis</a></p>
-        <p class="card-item"><a href="https://github.com/zitro">Zitro</a></p>
-        <p class="card-item"><a href="https://github.com/GravitySalad">GravitySalad</a></p>
-        <p class="card-item"><a href="https://github.com/Rsl1122">Rsl1122</a></p>
-        <p class="card-item"><a href="https://github.com/lazycipher">lazycipher</a></p>
-        <p class="card-item"><a href="https://github.com/t04glovern">Nathan Glover</a></p>
-        <p class="card-item"><a href="https://github.com/mufti1">Mufti Ismi</a></p>
-        <p class="card-item"><a href="https://github.com/saideepd">Saideep Dicholkar</a></p>
-        <p class="card-item"><a href="https://github.com/ApoTheOne">Anurag</a></p>
-        <p class="card-item"><a href="https://github.com/Myles2">Myles Brown</a></p>
-        <p class="card-item"><a href="https://github.com/JosephMeli">Joseph Meli</a></p>
-        <p class="card-item"><a href="https://github.com/devnic13">Devnic13</a></p>
-        <p class="card-item"><a href="https://github.com/abhaymaniyar">Abhay Maniyar</a></p>
-        <p class="card-item"><a href="https://github.com/NishtalaSowmya">Nishtala Sowmya</a></p>
-        <p class="card-item"><a href="https://github.com/aswinshenoy">Ashwin S Shenoy</a></p>
-        <p class="card-item"><a href="https://github.com/felipedf">Felipe D Ferreira</a></p>
-        <p class="card-item"><a href="https://github.com/nosesdive">Noppadol Sukprapa</a></p>
-        <p class="card-item"><a href="https://github.com/cassadab">Brady Cassada</a></p>
-        <p class="card-item"><a href="https://github.com/evanwaltersdev">Evan Walters</a></p>
-        <p class="card-item"><a href="https://github.com/nzer0nz">Nonthawat Duangchai</a></p>
-        <p class="card-item"><a href="https://github.com/CQW-Code">Chris Watkin</a></p>
-		    <p class="card-item"><a href="https://github.com/Etone">Etone</a></p>
-        <p class="card-item"><a href="https://github.com/hedglenrm">Ryan Hedglen</a></p>
-        <p class="card-item"><a href="https://github.com/Avicted">Avicted</a></p>
-        <p class="card-item"><a href="https://github.com/MitchB09">Mitch Bilensky</a></p>
-        <p class="card-item"><a href="https://github.com/Norech">Alexis Norech</a></p>
-        <p class="card-item"><a href="https://github.com/aslakhol">Aslak Hollund</a></p>
-        <p class="card-item"><a href="https://github.com/00aney">Ted Kim</a></p>
-        <p class="card-item"><a href="https://github.com/gargarchit">Archit</a></p>
-        <p class="card-item"><a href="https://github.com/westwick">westwick</a></p>
-		    <p class="card-item"><a href="https://github.com/jeremy850407">Jeremy850407</a></p>
-        <p class="card-item"><a href="https://github.com/titouancreach">Titouan</a></p>
-        <p class="card-item"><a href="https://github.com/pluppen">Pluppen</a></p>
-        <p class="card-item"><a href="https://github.com/kugys86">Daniel Kuprys</a></p>
-        <p class="card-item"><a href="https://github.com/haran19">haran</a></p>
-        <p class="card-item"><a href="https://github.com/jakewtaylor">Jake Taylor</a></p>
-        <p class="card-item"><a href="https://github.com/DCox2016">Dustin Cox</a></p>
-        <p class="card-item"><a href="https://github.com/marychew97">Mary Chew</a></p>
-        <p class="card-item"><a href="https://github.com/TheNoodleMoose">TheNoodleMoose</a></p>
-        <p class="card-item"><a href="https://github.com/patrick330602">patrick330602</a></p>
-        <p class="card-item"><a href="https://github.com/jackzmc">Jackz</a></p>
-        <p class="card-item"><a href="https://github.com/DantrazTrev">Dantraz Trevizion</a></p>
-        <p class="card-item"><a href="https://github.com/AdmAlexus">AdmAlexus</a></p>
-        <p class="card-item" style="font-family:'Comic Sans MS';"><a href="https://github.com/martinrabensteiner">martinrabensteiner</a></p>
-        <p class="card-item"><a href="https://github.com/leofls">Leandro Ferreira</a></p>
-        <p class="card-item"><a href="https://github.com/pratik97">pratik97</a></p>
-        <p class="card-item"><a href="https://github.com/zangiboy">Zangi Boy</a></p>
-        <p class="card-item"><a href="https://github.com/canoi12">Canoi</a></p>
-        <p class="card-item"><a href="https://github.com/oleaalarsen">oleaalarsen</a></p>
-        <p class="card-item"><a href="https://github.com/ktan114">Kevin Tan</a></p>
-        <p class="card-item"><a href="https://github.com/thaynnara007">Thaynnara Gonçalves</a></p>
-        <p class="card-item"><a href="https://github.com/bjellesma">bjellesma</a></p>
-        <p class="card-item"><a href="https://github.com/ngengesenior">Ngenge Senior</a></p>
-        <p class="card-item"><a href="https://github.com/qToastii">Toastii</a></p>
-        <p class="card-item"><a href="https://github.com/csleong98">Chee Seng Leong</a></p>
-        <p class="card-item"><a href="https://github.com/KushagraGoel">KushagraGoel</a></p>
-        <p class="card-item"><a href="https://github.com/viveksdf">viveksdf</a></p>
-	      <p class="card-item"><a href="https://github.com/qToastii">Toastii</a></p>
-        <p class="card-item"><a href="https://github.com/Poeschl">Markus Pöschl</a></p>
-        <p class="card-item"><a href="https://github.com/silvericarus">silvericarus</a></p>
-        <p class="card-item"><a href="https://github.com/afro-code">LashDJ</a></p>
-        <p class="card-item"><a href="https://github.com/cnettelblad">Carl Nettelblad</a></p>
-        <p class="card-item"><a href="https://github.com/vaibhavsingh1993">Vaibhav Singh</a></p>
+      <div class="text-center mt-5 mb-5">
+        <h1>Contributors</h1>
+        <p>Add yourself to the list if you contribute.</p>
+      </div>
+      <div class="box mx-auto">
+        <p class="box-item"><a href="https://github.com/alx168">alx168</a></p>
+        <p class="box-item"><a href="https://github.com/AntonStrand">Anton Strand</a></p>
+        <p class="box-item"><a href="https://github.com/dwikychandra21">Dwiky Chandra</a></p>
+        <p class="box-item"><a href="https://github.com/n00d13">n00d13</a></p>
+        <p class="box-item"><a href="https://github.com/sn149">sn149</a></p>
+        <p class="box-item"><a href="https://github.com/CodinMaster">Apoorv Lathey</a></p>
+        <p class="box-item"><a href="https://github.com/araanbranco">Araan branco</a></p>
+        <p class="box-item"><a href="https://github.com/richie-south">richie-south</a></p>
+        <p class="box-item"><a href="https://github.com/sarahperea">Sarah Perea</a></p>
+        <p class="box-item"><a href="https://github.com/BennyCarlsson">BennyCarlsson</a></p>
+        <p class="box-item"><a href="https://github.com/pvn6396">Pavan Choudhary</a></p>
+        <p class="box-item"><a href="https://github.com/amrs-tech">Ahamed Musthafa</a></p>
+        <p class="box-item"><a href="https://github.com/HackedByMKN">MKN</a></p>
+        <p class="box-item"><a href="https://github.com/leighayanid">Leigh Dinaya</a></p>
+        <p class="box-item"><a href="https://github.com/sigiasd">Sigiasd</a></p>
+        <p class="box-item"><a href="https://github.com/karengeerts">Karen Geerts</a></p>
+        <p class="box-item"><a href="https://github.com/hacksdump">Harshit Maurya</a></p>
+        <p class="box-item"><a href="https://github.com/hariprasetia">hariprasetia</a></p>
+        <p class="box-item"><a href="https://github.com/jlapitan">jlapitan</a></p>
+        <p class="box-item"><a href="https://github.com/MattCrl">MattCrl</a></p>
+        <p class="box-item"><a href="https://github.com/nishanbajracharya">Nishan Bajracharya</a></p>
+        <p class="box-item"><a href="https://github.com/CleverFool77">Lekhika Dugtal</a></p>
+        <p class="box-item"><a href="https://github.com/nprail">Noah Prail</a></p>
+        <p class="box-item"><a href="https://github.com/CCAtAlvis">Chinmay Chandak</a></p>
+        <p class="box-item"><a href="https://github.com/Charuka09">Charuka Herath</a></p>
+        <p class="box-item"><a href="https://github.com/jjlee050">Joseph Lee</a></p>
+        <p class="box-item"><a href="https://github.com/luizhdz">Luiz Hernandez</a></p>
+        <p class="box-item"><a href="https://github.com/Broccolai">Josh Taylor</a></p>
+        <p class="box-item"><a href="https://github.com/sreehari1997">SREEHARI K.V</a></p>
+        <p class="box-item"><a href="https://github.com/PatricNox">PatricNox</a></p>
+        <p class="box-item"><a href="https://github.com/sarveshggn">Sarvesh Joshi</a></p>
+        <p class="box-item"><a href="https://github.com/spverma536">Piyush Verma</a></p>
+        <p class="box-item"><a href="https://github.com/AdamWatts">Adam Watts</a></p>
+        <p class="box-item"><a href="https://github.com/jgalianoz">Manuel Galindez</a></p>
+        <p class="box-item"><a href="https://github.com/SithumRavishara">Sithum Ravishara</a></p>
+        <p class="box-item"><a href="https://github.com/exponov">Exponov</a></p>
+        <p class="box-item"><a href="https://github.com/LokeCarlsson">Loke Carlsson</a></p>
+        <p class="box-item"><a href="https://github.com/ebysofyan">Eby Sofyan</a></p>
+        <p class="box-item"><a href="https://github.com/SithumRavishara">Sithum Ravishara</a></p>
+        <p class="box-item"><a href="https://github.com/djdany01">Daniel Pérez</a></p>
+        <p class="box-item"><a href="https://github.com/emorraa">Emanuele "Phreaker" Morra</a></p>
+        <p class="box-item"><a href="https://github.com/marcojesus">Marco Jesus</a></p>
+        <p class="box-item"><a href="https://github.com/Jarleborn">Jarleborn</a></p>
+        <p class="box-item"><a href="https://github.com/agoel00">Anmol Goel</a></p>
+        <p class="box-item"><a href="https://github.com/NikhilShrivastava">Nikhil Shrivastava</a></p>
+        <p class="box-item"><a href="https://github.com/zwe-munhtun">Zwe Mun Htun</a></p>
+        <p class="box-item"><a href="https://github.com/Evie-Skinner18">Evie</a></p>
+        <p class="box-item"><a href="https://github.com/gsvendsen">Gustav Svendsen</a></p>
+        <p class="box-item"><a href="https://github.com/erhuz">Benjamin Fransson</a></p>
+        <p class="box-item"><a href="https://github.com/94151">Muskan Jain</a></p>
+        <p class="box-item"><a href="https://github.com/Cyclia">Cyclia</a></p>
+        <p class="box-item"><a href="https://github.com/vs4vijay">vs4vijay</a></p>​
+        <p class="box-item"><a href="https://github.com/transmoral">transmoral</a></p>​
+        <p class="box-item"><a href="https://github.com/KSSBro">KSSBro</a></p>
+        <p class="box-item"><a href="https://github.com/haych8">Haych8</a></p>
+        <p class="box-item"><a href="https://github.com/webhead3">NotArland</a></p>
+        <p class="box-item"><a href="https://github.com/HarveyD">Harvey</a></p>
+        <p class="box-item"><a href="https://github.com/Aliecake">Lauren Eggers</a></p>
+        <p class="box-item"><a href="https://github.com/bucks14">bucks14</a></p>
+        <p class="box-item"><a href="https://github.com/3daddict">Michael Salvati</a></p>
+        <p class="box-item"><a href="https://github.com/James-Bovis">James Bovis</a></p>
+        <p class="box-item"><a href="https://github.com/zitro">Zitro</a></p>
+        <p class="box-item"><a href="https://github.com/GravitySalad">GravitySalad</a></p>
+        <p class="box-item"><a href="https://github.com/Rsl1122">Rsl1122</a></p>
+        <p class="box-item"><a href="https://github.com/lazycipher">lazycipher</a></p>
+        <p class="box-item"><a href="https://github.com/t04glovern">Nathan Glover</a></p>
+        <p class="box-item"><a href="https://github.com/mufti1">Mufti Ismi</a></p>
+        <p class="box-item"><a href="https://github.com/saideepd">Saideep Dicholkar</a></p>
+        <p class="box-item"><a href="https://github.com/ApoTheOne">Anurag</a></p>
+        <p class="box-item"><a href="https://github.com/Myles2">Myles Brown</a></p>
+        <p class="box-item"><a href="https://github.com/JosephMeli">Joseph Meli</a></p>
+        <p class="box-item"><a href="https://github.com/devnic13">Devnic13</a></p>
+        <p class="box-item"><a href="https://github.com/abhaymaniyar">Abhay Maniyar</a></p>
+        <p class="box-item"><a href="https://github.com/NishtalaSowmya">Nishtala Sowmya</a></p>
+        <p class="box-item"><a href="https://github.com/aswinshenoy">Ashwin S Shenoy</a></p>
+        <p class="box-item"><a href="https://github.com/felipedf">Felipe D Ferreira</a></p>
+        <p class="box-item"><a href="https://github.com/nosesdive">Noppadol Sukprapa</a></p>
+        <p class="box-item"><a href="https://github.com/cassadab">Brady Cassada</a></p>
+        <p class="box-item"><a href="https://github.com/evanwaltersdev">Evan Walters</a></p>
+        <p class="box-item"><a href="https://github.com/nzer0nz">Nonthawat Duangchai</a></p>
+        <p class="box-item"><a href="https://github.com/CQW-Code">Chris Watkin</a></p>
+        <p class="box-item"><a href="https://github.com/Etone">Etone</a></p>
+        <p class="box-item"><a href="https://github.com/hedglenrm">Ryan Hedglen</a></p>
+        <p class="box-item"><a href="https://github.com/Avicted">Avicted</a></p>
+        <p class="box-item"><a href="https://github.com/MitchB09">Mitch Bilensky</a></p>
+        <p class="box-item"><a href="https://github.com/Norech">Alexis Norech</a></p>
+        <p class="box-item"><a href="https://github.com/aslakhol">Aslak Hollund</a></p>
+        <p class="box-item"><a href="https://github.com/00aney">Ted Kim</a></p>
+        <p class="box-item"><a href="https://github.com/gargarchit">Archit</a></p>
+        <p class="box-item"><a href="https://github.com/westwick">westwick</a></p>
+        <p class="box-item"><a href="https://github.com/jeremy850407">Jeremy850407</a></p>
+        <p class="box-item"><a href="https://github.com/titouancreach">Titouan</a></p>
+        <p class="box-item"><a href="https://github.com/pluppen">Pluppen</a></p>
+        <p class="box-item"><a href="https://github.com/kugys86">Daniel Kuprys</a></p>
+        <p class="box-item"><a href="https://github.com/haran19">haran</a></p>
+        <p class="box-item"><a href="https://github.com/jakewtaylor">Jake Taylor</a></p>
+        <p class="box-item"><a href="https://github.com/DCox2016">Dustin Cox</a></p>
+        <p class="box-item"><a href="https://github.com/marychew97">Mary Chew</a></p>
+        <p class="box-item"><a href="https://github.com/TheNoodleMoose">TheNoodleMoose</a></p>
+        <p class="box-item"><a href="https://github.com/patrick330602">patrick330602</a></p>
+        <p class="box-item"><a href="https://github.com/jackzmc">Jackz</a></p>
+        <p class="box-item"><a href="https://github.com/DantrazTrev">Dantraz Trevizion</a></p>
+        <p class="box-item"><a href="https://github.com/AdmAlexus">AdmAlexus</a></p>
+        <p class="box-item" style="font-family:'Comic Sans MS';"><a href="https://github.com/martinrabensteiner">martinrabensteiner</a></p>
+        <p class="box-item"><a href="https://github.com/leofls">Leandro Ferreira</a></p>
+        <p class="box-item"><a href="https://github.com/pratik97">pratik97</a></p>
+        <p class="box-item"><a href="https://github.com/zangiboy">Zangi Boy</a></p>
+        <p class="box-item"><a href="https://github.com/canoi12">Canoi</a></p>
+        <p class="box-item"><a href="https://github.com/oleaalarsen">oleaalarsen</a></p>
+        <p class="box-item"><a href="https://github.com/ktan114">Kevin Tan</a></p>
+        <p class="box-item"><a href="https://github.com/thaynnara007">Thaynnara Gonçalves</a></p>
+        <p class="box-item"><a href="https://github.com/bjellesma">bjellesma</a></p>
+        <p class="box-item"><a href="https://github.com/ngengesenior">Ngenge Senior</a></p>
+        <p class="box-item"><a href="https://github.com/qToastii">Toastii</a></p>
+        <p class="box-item"><a href="https://github.com/csleong98">Chee Seng Leong</a></p>
+        <p class="box-item"><a href="https://github.com/KushagraGoel">KushagraGoel</a></p>
+        <p class="box-item"><a href="https://github.com/viveksdf">viveksdf</a></p>
+        <p class="box-item"><a href="https://github.com/qToastii">Toastii</a></p>
+        <p class="box-item"><a href="https://github.com/Poeschl">Markus Pöschl</a></p>
+        <p class="box-item"><a href="https://github.com/silvericarus">silvericarus</a></p>
       </div>
     </div>
+  </div>
 
     <button id="backToTop" type="button" title="Back to Top">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
@@ -176,42 +219,16 @@
       </svg>  
     </button>
 
-    <footer class="footer container" role="contentinfo">
-      <p class="footer__socials">
-        <a href="https://github.com/lingonsaft" class="footer__socials-link">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32" style="fill:#fff;">
-            <g id="surface1">
-              <path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path>
-            </g>
-          </svg>
-        </a>
-        <a href="https://www.youtube.com/lingonsaft/" class="footer__socials-link">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="fill:#fff;">
-            <g id="surface1">
-              <path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z "></path>
-            </g>
-          </svg>
-        </a>
-      </p>
-    </footer>
+    <script>
+      let contributors = document.querySelectorAll('.box-item a')
+      contributors.forEach(con => {
+        console.log(con.href)
+        con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
+      })
+    </script>
+    <script src="./scripts/scroll.js"></script>
 
     <script src="./scripts/menu.js"></script>
-    <script>
-      let contributors = document.querySelectorAll('.card-item a')
-      contributors.forEach(con => {
-        console.log(con.href)
-        con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
-      })
-    </script>
-    <script src="./scripts/scroll.js"></script>
-    <script>
-      let contributors = document.querySelectorAll('.card-item a')
-      contributors.forEach(con => {
-        console.log(con.href)
-        con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '" />'
-      })
-    </script>
-    <script src="./scripts/scroll.js"></script>
 </body>
 
 </html>
