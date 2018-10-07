@@ -5,11 +5,50 @@ body {
 h4.hero-heading
 {
      font-weight:700;
-     color:#FF0844;
+     color:white;
 }
+<!--#FF0844-->
 
 h1.hero-heading
 {
      font-weight:900;
-     color:#FF0844;
+     color:white;
 }
+p{
+  color: white;
+}
+nav{
+  color: white;
+}
+ul{
+  color: white;
+}
+li{
+  color: white;
+}
+tr{
+  color: white;
+}
+th{
+  color: white
+}
+h2{
+  color: white;
+}
+h3{
+  color: white;
+}
+h5{
+  color: white;
+}
+h6{
+  color: white;
+}
+.section-hero{
+  color: white;
+}
+caption{
+  color:white;
+}
+a:link{color:white;}
+a:visited{color:cyan;}
