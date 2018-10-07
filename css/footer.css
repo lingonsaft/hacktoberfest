@@ -24,11 +24,11 @@
     padding: 5px;
 }
 
-.social-icons > a img {
+.social-icons> a img {
    transition: all .2s ease-in-out;
   }
 
-  .social-icons > a img:hover {
+  .social-icons> a img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
