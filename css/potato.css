@@ -1,23 +1,65 @@
-body {
-  background-image: linear-gradient(45deg, white, lightblue);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+h1{
+	text-align: center; 
+	margin-bottom: 2rem; 
+	padding-top: 120px;
 }
 
-h4.hero-heading
-{
-     font-weight:700;
-     color:#FFF;
+h4, h3{
+	margin-bottom: 1.2rem;
 }
 
-h1.hero-heading
-{
-     font-weight:900;
-     color:#FFF;
+thead tr{
+   border-bottom: 3px solid #fff;
 }
 
-td, th {
-    padding: 0.5em 2em;
+tbody{
+	background-color: #ffdde5;
+}
+
+th{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: left;
+    background: #ffb5c8;
+    color: #fff;
+}
+
+th:not(:last-child), td:not(:last-child){
+	border-right: 2px solid #fff;
+}
+
+tbody tr:not(:last-child){
+	border-bottom: 2px solid #fff;
+}
+
+tbody tr td:first-child{
+	text-align: center;
+}
+
+td{
+	padding: 20px;
+	font-size: 15px;
+}
+
+.col-lg-6{
+	margin-bottom: 30px;
+}
+
+.shadow{
+	padding: 10px 15px;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: 10px;
+}
+
+.values .row:last-child{
+	margin-bottom: 30px;
+}
+
+.get-help, .categories{
+    padding: 2rem 0;
+}
+
+.get-help{
+	background-color: #ffeff3;
 }
