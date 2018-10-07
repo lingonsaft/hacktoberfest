@@ -5,6 +5,14 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 9999;
+  width: 70px;
+  transition-property: width;
+  transition-duration: 1.5s;
+  transition-delay: 0.25s;
+}
+
+.icon-bar:hover {
+  width: 120px;
 }
 
 /* Style the icon bar links */
