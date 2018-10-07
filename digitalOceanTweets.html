@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	  <script src="jquery-3.3.1/jquery.min.js"></script>
+	  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" href="android-chrome-192x192.png"> -->
+
+      <title>Tweets from DigitalOcean</title>
+
+      <script>
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+          return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+  </head>
+  <body>
+
+<!-- Help taken from : https://gist.github.com/NathanKleekamp/d6258730c622c4cdb1ca27ef5dac1c73 -->
+    <!-- =================================================================== -->
+    <div class="container" id="twitter-timeline" >
+    <h3 class="text-muted" style="font-family: Helvetica">Twitter API Call: </h3>
+
+      <a href="https://twitter.com/{screen_name}"> Tweets by @{screen_name}
+      </a>
+    </div>
+    <script>
+          // Instantiate your widget
+          (function() {
+            // See https://dev.twitter.com/web/javascript/creating-widgets#create-timeline
+            var dataSource = {
+              sourceType: 'profile',
+              screenName: 'DigitalOcean'
+            };
+            // Your HTML element's ID
+            var target = document.getElementById('twitter-timeline');
+            // See https://dev.twitter.com/web/embedded-timelines/parameters
+            var options = {
+              chrome: 'nofooter',
+              height: 800,
+              width: 600
+            };
+            twttr.ready(function(twttr) {
+              twttr.widgets.createTimeline(dataSource, target, options);
+            });
+          })()
+      </script>
+  </body>
+</html>
