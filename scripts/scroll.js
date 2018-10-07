@@ -1,6 +1,6 @@
 window.onscroll = function() {scrollFunc()};
 function scrollFunc() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop> 150 || document.documentElement.scrollTop> 150) {
     document.getElementById('backToTop').style.display = "block";
     } else {
     document.getElementById('backToTop').style.display = "none";
