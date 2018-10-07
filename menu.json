@@ -99,7 +99,11 @@
       "text": "Flappy Game",
       "href": "/Flappy",
       "id": "Flappy"
+    },
+    "Stay Dry": {
+      "text": "Stay Dry",
+      "href": "/dry",
+      "id": "dry"
     }
-
   }
 }
