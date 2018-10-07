@@ -544,7 +544,67 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
     transform: scale(1);
   }
 }
+span.first {
+    -webkit-animation: color_change 3s infinite alternate;
+	-moz-animation: color_change 3s infinite alternate;
+	-ms-animation: color_change 3s infinite alternate;
+	-o-animation: color_change 3s infinite alternate;
+	animation: color_change 3s infinite alternate;
+	-webkit-animation-delay: 2s;
+  }
+	  
 
+  span.second {
+    -webkit-animation: color_change 3s infinite alternate;
+	-moz-animation: color_change 3s infinite alternate;
+	-ms-animation: color_change 3s infinite alternate;
+	-o-animation: color_change 3s infinite alternate;
+	animation: color_change 3s infinite alternate;
+	-webkit-animation-delay: 3s;
+  }
+	  
+  span.third {
+    -webkit-animation: color_change 3s infinite alternate;
+	-moz-animation: color_change 3s infinite alternate;
+	-ms-animation: color_change 3s infinite alternate;
+	-o-animation: color_change 3s infinite alternate;
+	animation: color_change 3s infinite alternate;
+	-webkit-animation-delay: 4s;
+  }
+span.fourth {
+    -webkit-animation: color_change 3s infinite alternate;
+	-moz-animation: color_change 3s infinite alternate;
+	-ms-animation: color_change 3s infinite alternate;
+	-o-animation: color_change 3s infinite alternate;
+	animation: color_change 3s infinite alternate;
+	-webkit-animation-delay: 5s;
+  }
+   @-webkit-keyframes color_change {
+  0% { color: #AA4465; }
+ 33% { color: #FFA69E; }
+ 66% { color: #93E1D8; }
+ 100% {color: #DDFFF7;}
+}
+	@-moz-keyframes color_change {
+  0% { color: #AA4465; }
+ 33% { color: #FFA69E; }
+ 66% { color: #93E1D8; }
+ 100% {color: #DDFFF7;}
+}
+	  
+@-ms-keyframes color_change {
+  0% { color: #AA4465; }
+ 33% { color: #FFA69E; }
+ 66% { color: #93E1D8; }
+ 100% {color: #DDFFF7;}
+}
+
+@-o-keyframes color_change {
+  0% { color: #AA4465; }
+ 33% { color: #FFA69E; }
+ 66% { color: #93E1D8; }
+ 100% {color: #DDFFF7;}
+}
 /* Youtube Subscribe Styling End  */
 
 
