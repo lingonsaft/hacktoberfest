@@ -72,7 +72,8 @@
     },
     "Plainpage": {
       "text": "Plain Page",
-      "href": "plainpage.html",
+      "href": "plain_page.html",
+      "href": "/plain_page",
       "id": "Plainpage"
     },
     "Snek": {
@@ -99,6 +100,11 @@
       "text": "Flappy Game",
       "href": "Flappy.html",
       "id": "Flappy"
+    },
+    "Stay Dry": {
+      "text": "Stay Dry",
+      "href": "/dry",
+      "id": "dry"
     }
   }
 }

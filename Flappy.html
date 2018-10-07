@@ -9,7 +9,7 @@
 	/_/ /_/ \__,_/ \___//_/|_| \__/ \____//_.___/ \___//_/   /_/   \___//____/ \__/
 												i just want a t-shirt at this point
 	-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 canvas {
     border:1px solid #d3d3d3;
@@ -76,7 +76,7 @@ function component(width, height, color, x, y, type) {
     }
     this.hitBottom = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
-        if (this.y > rockbottom) {
+        if (this.y> rockbottom) {
             this.y = rockbottom;
             this.gravitySpeed = 0;
         }
@@ -91,7 +91,7 @@ function component(width, height, color, x, y, type) {
         var othertop = otherobj.y;
         var otherbottom = otherobj.y + (otherobj.height);
         var crash = true;
-        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+        if ((mybottom < othertop) || (mytop> otherbottom) || (myright < otherleft) || (myleft> otherright)) {
             crash = false;
         }
         return crash;
