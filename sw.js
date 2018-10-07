@@ -60,7 +60,7 @@ self.addEventListener('fetch', (event) => {
 						});
 					return response;
 				}
-			).catch(function (err){
+			).catch((err) => {
 				caches.match(request).then((response) => {
 					if (response) {
 						return response;
