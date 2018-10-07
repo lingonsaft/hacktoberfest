@@ -6,7 +6,7 @@ function Character(name, profession, gender, age, strength, hp) {
   this.strength = strength;
   this.hp = hp;
   this.isAlive = function(){
-    if(this.hp > 0){
+    if(this.hp> 0){
       console.log("Alive");
     }
     else{
