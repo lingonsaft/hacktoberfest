@@ -476,3 +476,14 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 .index .twist-btn{
   margin-top: 20px;
 }
+
+#twist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #FF0844;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: .75rem 4rem .75rem 4rem;
+  border-radius: 2rem;
+}
