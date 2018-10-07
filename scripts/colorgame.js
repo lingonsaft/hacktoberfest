@@ -37,6 +37,7 @@ resetButton.addEventListener("click", function() {
     resetBackgroundColors();
     document.querySelector(".selected").style.backgroundColor = "steelblue";
     genPickColors(numSquares);
+    resetButton.textContent = "New Colors";
 })
 
 for (var i = 0; i < colors.length; i++) {
@@ -91,8 +92,10 @@ function genPickColors(num) {
 }
 
 function resetBackgroundColors() {
-    document.querySelector(".selected").style.backgroundColor = "white";
+    document.querySelector(".selected").style.backgroundColor = "";
+    document.querySelector(".selected").style.color = "";
     document.querySelector("h1").style.backgroundColor = "steelblue";
+    resetButton.textContent = "New Colors";
     messageDisplay.textContent = "";
     // document.querySelector(".selected").style.backgroundColor = "steelblue";
 }
