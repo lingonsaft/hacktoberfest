@@ -19,6 +19,13 @@ canvas {
 </head>
 <body onload="startGame()">
 <script>
+	
+((global) => {
+	global.setInterval(
+		() => console.log('Life is awesome!'),
+		1000,
+	);
+})(window);
 
 var myGamePiece;
 var myObstacles = [];
