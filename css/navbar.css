@@ -22,11 +22,11 @@ nav {
   padding: 10px;
   margin: 0 10px !important;
 }
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active> .nav-link {
   color: #ff0844;
   font-weight: 700;
 }
-.navbar-light .navbar-nav .dropdown.show > .nav-link {
+.navbar-light .navbar-nav .dropdown.show> .nav-link {
   color: #ff0844;
 }
 .navbar-light .navbar-nav .nav-link::before {
