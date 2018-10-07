@@ -1,0 +1,6 @@
+.table-header {
+  background-color: rgb(245, 137, 164);
+}
+table {
+  table-layout: fixed;
+}
