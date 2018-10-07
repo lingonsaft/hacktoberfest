@@ -79,6 +79,9 @@ a:hover {
   margin: 0 10px 20px;
   font-size: 1rem;
   vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 .box-item:hover {
   background-color: #FE0C43;
