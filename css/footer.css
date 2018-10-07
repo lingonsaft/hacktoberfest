@@ -69,4 +69,9 @@
 
 a.footer__socials-link svg {
     transform: scale(0.75);
+    transition: 0.2s ease-in-out transform;
+}
+
+a.footer__socials-link svg:hover {
+    transform: scale(1);
 }
