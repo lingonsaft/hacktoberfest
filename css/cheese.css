@@ -15,11 +15,11 @@
   background-color: mistyrose;
 }
 #cheese-container {
-  border: 3px dashed #57283e;
+  border: 3px dashed #00f9d0;
 }
 
 #click-for-cheese {
-    color: #ff9a56;
+    color: #2dc0da;
     background-color: #57283e;
 }
 
@@ -122,3 +122,4 @@
   border-radius: 34px;
   background-color: #57283e;
 }
+
