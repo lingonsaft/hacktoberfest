@@ -1,14 +1,15 @@
 #footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100vw;
     /* height: 100px; */
     background: linear-gradient(to left, #FF0844, #FF4563);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
+    box-shadow: 0 -25px 40px -20px #8e092a45;
+    color: black !important;
     text-align: center;
     z-index: 1000;
+    padding: 20px;
 }
 
 #footer h3 {
@@ -64,4 +65,8 @@
 }
 #backToTop:hover svg {
     opacity: 1;
+}
+
+a.footer__socials-link svg {
+    transform: scale(0.75);
 }
