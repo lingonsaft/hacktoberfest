@@ -252,6 +252,8 @@ a:hover {
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
+  text-align: center;
+  margin: 10px 0;
   border-left: 1px solid rgba(0, 0, 0, .125);
 }
 
@@ -260,11 +262,19 @@ a:hover {
 }
 
 .single-tips .no {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
-  line-height: 1;
+  line-height: .6;
   color: #FF0844;
   margin-bottom: 15px;
+}
+
+.single-tips .no::after {
+  content: '-';
+  text-align: center;
+  display: block;
+  margin: 0;
+  height: 10px;
 }
 
 .single-tips .tip-text {
@@ -531,9 +541,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 /* Youtube Subscribe Styling End  */
 
-.index .twist-btn{
-  margin-top: 20px;
-}
+
 
 #twist {
   margin-top: 50px;
@@ -544,4 +552,22 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: 600;
   padding: .75rem 4rem .75rem 4rem;
   border-radius: 2rem;
+}
+
+@media (min-width: 992px) {
+  .single-tips .tip {
+    border-left: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+  }
+  
+  .single-tips .tip:first-child {
+    border: none;
+  }
+  .single-tips .no {
+    font-size: 40px;
+    text-align: center;
+  }
+
+.index .twist-btn{
+  margin-top: 20px;
 }
