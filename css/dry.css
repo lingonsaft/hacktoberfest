@@ -1,0 +1,10 @@
+.dry-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dry-game {
+  border-radius: 5px;
+  margin-top: 100px;
+  cursor: pointer;
+}
