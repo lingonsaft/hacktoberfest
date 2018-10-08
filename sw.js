@@ -46,7 +46,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
 	let request = event.request;
 	event.respondWith (
-			fetch(fetchRequest).then(
+			fetch(request).then(
 				(response) => {
 					//check valid response basic means we do NOT cache 3rd party responses
 					if(!response || response.status !== 200 || response.type !== 'basic') {
@@ -60,7 +60,7 @@ self.addEventListener('fetch', (event) => {
 						});
 					return response;
 				}
-			).catch(function (err){
+			).catch((err) => {
 				caches.match(request).then((response) => {
 					if (response) {
 						return response;

@@ -3,3 +3,4 @@
 .idea/hacktoberfest.iml
 .idea/modules.xml
 .idea/misc.xml
+*.sublime-workspace
