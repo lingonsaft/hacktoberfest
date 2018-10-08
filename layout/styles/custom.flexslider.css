@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Custom Flexslider CSS => For FlexSlider v2.6.1
+*/
+
+/* Browser Resets
+--------------------------------------------------------------------------------------------------------------- */
+.flex-container a:hover, .flex-slider a:hover{outline:none;}
+.slides, .slides > li, .flex-direction-nav{margin:0; padding:0; list-style:none;}
+.flex-direction-nav a{font-family:"FontAwesome";}
+
+
+/* Necessary Styles
+--------------------------------------------------------------------------------------------------------------- */
+.flexslider{display:block; position:relative; margin:0; padding:0;}
+.flexslider .slides{display:block; width:100%; overflow:hidden;}
+.flexslider .slides > li{display:none; -webkit-backface-visibility:hidden;}/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides a{text-decoration:none; outline:none;}
+.flexslider .slides a img{border:none;}
+.flexslider .slides img{display:block; max-width:100%; margin:0 auto;}
+/* Modern Clear fix for the .slides element */
+.slides::before, .slides::after{display:table; content:"";}
+.slides, .slides::after{clear:both;}
+
+
+/* Default Theme
+--------------------------------------------------------------------------------------------------------------- */
+.flex-viewport{max-height:2000px; transition:all 1s ease;}
+.loading .flex-viewport{max-height:300px;}
+.flexslider.carousel .slides li{margin-right:20px;}/* Must be the same as in the javascript */
+
+/* Direction Nav */
+.flex-direction-nav{display:block; position:absolute; bottom:-150px;}
+.flex-direction-nav li{display:inline-block; margin-right:20px; font-size:16px; text-transform:uppercase;}
+.flex-direction-nav li:last-child{margin-right:0;}
+.flex-direction-nav li::after{margin-left:20px; content:"|";}
+.flex-direction-nav li:last-child::after{margin-left:0; content:"";}
+.flex-direction-nav a{cursor:pointer; text-decoration:none;}
+.flex-direction-nav a.flex-next::before{}
+.flex-direction-nav .flex-prev{}
+.flex-direction-nav .flex-next{}
+.flex-direction-nav li::after, .flexslider .flex-prev, .flexslider .flex-next{opacity:.5;}
+.flexslider .flex-prev:hover, .flexslider .flex-next:hover{opacity:1;}
+.flex-direction-nav .flex-disabled{cursor:default;}
+.flex-direction-nav .flex-disabled:hover{opacity:.5;}
