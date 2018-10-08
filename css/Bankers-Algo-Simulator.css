@@ -1,0 +1,73 @@
+body{
+  height:100%;
+  width:99%;
+}
+
+button{
+  border-color: black;
+  padding: 7px;
+  border-radius: 15px;
+  background-color: orange;
+}
+
+td, th{
+  padding: 5px;
+  background-color: skyblue;
+}
+
+input{
+  padding: 8px;
+  border-radius: 15px;
+  border-color: black;
+}
+
+.wrapper{
+  padding:10px;
+}
+
+.tables{
+  padding-bottom:8%;
+}
+
+.allocation{
+  width:23%;
+  float:left;
+}
+
+.max{
+  width:23%;
+  float:left;
+}
+
+.need{
+  width:23%;
+  float:left;
+}
+
+.available{
+  width:23%;
+  float:left;
+}
+
+.input{
+  padding:20px;
+}
+
+.seq{
+  padding-top:3%;
+}
+
+.comparison{
+  padding-top: 10%;
+  padding-left: 7%;
+}
+
+.cname{
+  color: white;
+  text-decoration: none;
+}
+
+.cname:hover{
+  color:black;
+  font-size: 24px;
+}

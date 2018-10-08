@@ -90,6 +90,7 @@
 
 .content {
   margin-left: 0;
+
 }
 /*End hover for social media sidebar*/
 
@@ -581,7 +582,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
     border-left: 1px solid rgba(0,0,0,.125);
     margin: 0;
   }
-  
+
   .single-tips .tip:first-child {
     border: none;
   }
