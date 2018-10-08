@@ -8,19 +8,31 @@
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #cheese-body {
-  background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
+  /*background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
   font-size: 16px;
   color: #57283e;
   line-height: 1.6;
   background-color: mistyrose;
+  background-size: cover;*/
+
+  background: url("../images/katrin-leinfellner-571533-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+
+  font-size: 16px;
+  color: #57283e;
 }
 #cheese-container {
   border: 3px dashed #57283e;
+  padding-top: 5%;
 }
 
 #click-for-cheese {
     color: #ff9a56;
     background-color: #57283e;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .copy {
@@ -52,19 +64,23 @@
 }
 
 .cheesetron-1 {
+  text-align: center;
   padding: 100px;
   background-image: url("../images/gouda.jpg");
   background-size: cover;
 }
 .cheesetron-2 {
+  text-align: center;
   padding: 100px;
   background-image: url("../images/roquefort.jpg");
   background-size: cover;
 }
 .cheesetron-3 {
+  text-align: center;
   padding: 100px;
   background-image: url("../images/monster.jpg");
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);

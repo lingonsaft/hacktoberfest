@@ -1,137 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	    <meta http-equiv="Pragma" content="no-cache" />
+	    <meta http-equiv="Expires" content="0" />
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	    <!-- Github follow button -->
+	    <script async defer src="https://buttons.github.io/buttons.js"></script>
+	    <link rel="stylesheet" href="./css/cheese.css">
+	    <link rel="stylesheet" href="./css/navbar.css">
+	    <link rel="stylesheet" href="./css/footer.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <title>Hacktoberfest - Cheese</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <!-- Github follow button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <link rel="stylesheet" href="./css/cheese.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hacktoberfest - Cheese</title>
-</head>
+	<body id="cheese-body">
+		<button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button> <img id="sublogo" src="./images/lingon-saft.png" />
+		<!-- Background Photo by Katrin Leinfellner on Unsplash -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" href="index.html">Hacktoberfest</a>
+			
+			<div class = "collapse navbar-collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"> <a class="nav-link" href="index.html"> Home </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="helpful-material.html"> Helpful-Material </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="contributors.html"> Contributors </a> </li>
+					<li class="nav-item"> <a class="nav-link" id="twist" href="#"> The twist </a> </li>
+					<li class="nav-item active"> <a class="nav-link" href="cheese.html"> Cheese! </a> </li>
+					<li class="nav-item active"> <a class="nav-link" href="wow.html"> Learn! </a> </li>
+					<li class="nav-item"> <a class="nav-link" id="tools" href="tools.html"> Tools </a> </li>
+					<li class="nav-item"> <a class="nav-link" id="learn" href="Fireworks.html"> Fireworks </a> </li>
+					<li class="nav-item ml-lg-auto"> <a class="nav-link" id="invert-btn" href="#">Invert</a> </li>
+				</ul>
+			</div>
+		</nav>
 
-<body id="cheese-body">
+		<section class="jumbotron text-center" id="cheesetron">
+			<div class="container" id="cheese-container">
+				<h1 class="jumbotron-heading">Welcome to CHEESEtoberfest!</h1>
+				<button class="button" onclick="alert('You must really love cheese!');">CHEESE!</button>
+				<h2 class="lead text-muted">
+					<button onclick="cheeseAppearance()" class="btn btn-lg" id="click-for-cheese" name="button">click for cheese</button>
+				</h2>
+			</div>
+		</section>
 
-  <!-- Background Photo by Katrin Leinfellner on Unsplash -->
-    <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+	                <h1>Roquefort</h1>
+	                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            	</div>
 
-    <img id="sublogo" src="./images/lingon-saft.png" />
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">Hacktoberfest</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            	 <div class="col-md-6">
+	                <h1>Cheese Rolling</h1>
+	                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	            </div>
+			</div>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/helpful-material">Helpful Material</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contributors">Contributors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="twist" href="#">The twist</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/cheese">Cheese!</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="/wow">Learn!</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" id="tools" href="/tools">Tools</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" id="learn" href="/Fireworks">Fireworks</a>
-      </li>
-      </ul>
+			<div class="row">
+				<div class="col-md-6">
+	                <h1>Look at that cheese pull!</h1>
+	                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	            </div>
 
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <h1>And more!!!!</h1>
+	                    <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/AMKDZ23DZaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	                </div>
+	            </div>
 
-    <!-- Background Photo by Katrin Leinfellner on Unsplash -->
-    <button onclick="topFunction()" class="btn btn-danger" id="myBtn" title="Go to top"><img src="https://png.icons8.com/ios/50/000000/circled-chevron-up.png"></button> <img id="sublogo" src="./images/lingon-saft.png" />
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="/">Hacktoberfest</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/helpful-material.html">Helpful Material</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/contributors.html">Contributors</a> </li>
-                <li class="nav-item"> <a class="nav-link" id="twist" href="#">The twist</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="./potato.html">Potato</a> </li>
-                <li class="nav-item active"> <a class="nav-link" href="./cheese.html">Cheese!</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="/wow.html">Learn!</a> </li>
-                <li class="nav-item"> <a class="nav-link" id="tools" href="./tools.html">Tools</a> </li>
-                <li class="nav-item ml-lg-auto"> <a class="nav-link" id="invert-btn" href="#">Invert</a> </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="jumbotron text-center" id="cheesetron">
-        <div class="container" id="cheese-container">
-            <h1 class="jumbotron-heading">Welcome to CHEESEtoberfest!</h1>
-            <button class="button" onclick="alert('You must really love cheese!');">CHEESE!</button>
-            <h2 class="lead text-muted">
-        <!-- Button to click for a random cheese to appear -->
-        <button onclick="cheeseAppearance()" class="btn btn-lg" id="click-for-cheese" name="button">click for cheese</button>
-      </h2> </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Roquefort</h1>
-                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/Om6fN3sUJhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-6">
-                <h1>Cheese Rolling</h1>
-                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/dtvG9XDtjv4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </div>
-        <<div class="row">
-            <div class="col-md-6">
-                <h1>Look at that cheese pull!</h1>
-                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/pU_VoyWfLfY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>And more!!!!</h1>
-                    <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/AMKDZ23DZaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-3 offset-3">
-                <h1>Cheese Pleasing Me!</h1>
-                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/UWGnXkacSa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-    </div>
-    <!-- end of cheese row -->
-    </div>
- <footer id="footer">
-            <div class="footer__socials">
-                <a href="https://github.com/lingonsaft" class="footer__socials-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32" style="fill:#fff;">
+	             <div class="col-md-3 offset-3">
+	                <h1>Cheese Pleasing Me!</h1>
+	                <iframe class="spin" width="560" height="315" src="https://www.youtube.com/embed/UWGnXkacSa4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	            </div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="footer__socials">
+				<a href="https://github.com/lingonsaft" class="footer__socials-link">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32" style="fill:#fff;">
                         <g id="surface1">
                             <path style=" fill-rule:evenodd;" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path>
                         </g>
                     </svg>
-                </a>
-                <a href="https://www.youtube.com/lingonsaft/" class="footer__socials-link">
+				</a>
+
+				 <a href="https://www.youtube.com/lingonsaft/" class="footer__socials-link">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="fill:#fff;">
                         <g id="surface1">
                             <path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z "></path>
                         </g>
                     </svg>
                 </a>
+
                 <a href="https://www.instagram.com/lingonsaftofficial/" class="footer__socials-link">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32" style="fill:#fff;">
                         <g id="surface1">
@@ -139,6 +106,7 @@
                         </g>
                     </svg>
                 </a>
+
                 <a href="https://twitter.com/lingonsaft1" class="footer__socials-link">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 32 32" style="fill:#fff;">
                         <g id="surface1">
@@ -146,42 +114,45 @@
                         </g>
                     </svg>
                 </a>
-            </div>
-        </footer>
-    <button id="backToTop" type="button" title="Back to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.189 511.189">
-            <g fill="#ff0844">
-                <path d="M364.858 157.935l-98.59-145.28c-8.547-12.586-22.158-12.331-30.25.526l-90.88 144.228c-8.093 12.857-2.56 23.381 12.302 23.381h26.639v50.148c0 15.7 12.742 28.445 28.445 28.445h85.333c15.73 0 28.445-12.743 28.445-28.445V180.79h27.008c14.875 0 20.109-10.269 11.547-22.855M51.115 338.627H19.641C5.774 338.627 0 328.502 0 318.702c0-10.097 7.225-19.91 19.641-19.91h106.226c12.43 0 19.655 9.813 19.655 19.91 0 9.8-5.773 19.925-19.655 19.925h-31.46v144.91c0 14.45-9.23 22.528-21.646 22.528s-21.646-8.079-21.646-22.527v-144.91zM300.559 401.561c0-34.93-18.19-66.417-54.273-66.417-36.096 0-54.286 31.487-54.286 66.417 0 35.214 17.621 66.389 54.286 66.389s54.273-31.175 54.273-66.389m-153.587 0c0-60.046 40.406-106.253 99.314-106.253 58.013 0 99.3 47.658 99.3 106.253 0 59.748-40.121 106.254-99.3 106.254-58.61 0-99.314-46.506-99.314-106.254M406.983 398.091h29.453c18.177 0 29.71-13.284 29.71-30.592 0-17.338-11.534-30.62-29.71-30.62h-29.453v61.212zm-43.32-76.786c0-13.582 8.092-22.5 22.542-22.5h51.073c42.453 0 73.912 27.691 73.912 68.978 0 42.14-32.611 68.422-72.164 68.422h-32.042v47.346c0 14.435-9.23 22.528-21.633 22.528-12.445 0-21.688-8.093-21.688-22.528V321.305z" />
-            </g>
-        </svg>
-    </button>
-    <script src="./scripts/cheese.js"></script>
-    <script>
-        scrollFunction = () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            }
-            else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-        window.onscroll = () => {
-            scrollFunction()
-        };
-        topFunction = () => {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="./scripts/social-links.js"></script>
-    <script src="./scripts/scroll.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+			</div>
+		</footer>
 
+		<button id="backToTop" type="button" title="Back to Top">
+	        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.189 511.189">
+	            <g fill="#ff0844">
+	                <path d="M364.858 157.935l-98.59-145.28c-8.547-12.586-22.158-12.331-30.25.526l-90.88 144.228c-8.093 12.857-2.56 23.381 12.302 23.381h26.639v50.148c0 15.7 12.742 28.445 28.445 28.445h85.333c15.73 0 28.445-12.743 28.445-28.445V180.79h27.008c14.875 0 20.109-10.269 11.547-22.855M51.115 338.627H19.641C5.774 338.627 0 328.502 0 318.702c0-10.097 7.225-19.91 19.641-19.91h106.226c12.43 0 19.655 9.813 19.655 19.91 0 9.8-5.773 19.925-19.655 19.925h-31.46v144.91c0 14.45-9.23 22.528-21.646 22.528s-21.646-8.079-21.646-22.527v-144.91zM300.559 401.561c0-34.93-18.19-66.417-54.273-66.417-36.096 0-54.286 31.487-54.286 66.417 0 35.214 17.621 66.389 54.286 66.389s54.273-31.175 54.273-66.389m-153.587 0c0-60.046 40.406-106.253 99.314-106.253 58.013 0 99.3 47.658 99.3 106.253 0 59.748-40.121 106.254-99.3 106.254-58.61 0-99.314-46.506-99.314-106.254M406.983 398.091h29.453c18.177 0 29.71-13.284 29.71-30.592 0-17.338-11.534-30.62-29.71-30.62h-29.453v61.212zm-43.32-76.786c0-13.582 8.092-22.5 22.542-22.5h51.073c42.453 0 73.912 27.691 73.912 68.978 0 42.14-32.611 68.422-72.164 68.422h-32.042v47.346c0 14.435-9.23 22.528-21.633 22.528-12.445 0-21.688-8.093-21.688-22.528V321.305z" />
+	            </g>
+	        </svg>
+	    </button>
+
+	    <script src="./scripts/cheese.js"></script>
+
+	    <script>
+	        scrollFunction = () => {
+	            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	                document.getElementById("myBtn").style.display = "block";
+	            }
+	            else {
+	                document.getElementById("myBtn").style.display = "none";
+	            }
+	        }
+	        window.onscroll = () => {
+	            scrollFunction()
+	        };
+	        topFunction = () => {
+	            document.body.scrollTop = 0;
+	            document.documentElement.scrollTop = 0;
+	        }
+	    </script>
+
+	    <script src="./scripts/social-links.js"></script>
+	    <script src="./scripts/scroll.js"></script>
+	    <!-- Latest compiled JavaScript -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	    <script>
+	        AOS.init();
+	    </script>
+	</body>
 </html>
