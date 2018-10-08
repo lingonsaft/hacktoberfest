@@ -179,6 +179,10 @@ a:hover {
   background-color: #FF0844;
 }
 
+.btn-subscribe > svg {
+  margin-left: 2px;
+}
+
 .index .btn-danger:hover {
   color: #fff;
 }
