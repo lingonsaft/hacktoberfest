@@ -62,9 +62,6 @@ nav {
   width: auto;
   height: 25px;
   vertical-align: text-top;
-<<<<<<< HEAD
-}
-=======
 }
 .dropdown-menu-others {
   display: none;
@@ -99,4 +96,3 @@ nav {
 .dropdown:hover .dropdown-content {
   display: block;
 }
->>>>>>> upstream/master
