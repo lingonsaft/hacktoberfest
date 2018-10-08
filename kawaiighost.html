@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kawaii Ghost</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        #app-cover {
+            position: relative;
+            transform: scale(2);
+        }
+
+        .square {
+            position: relative;
+            height: 140px;
+            width: 140px;
+            box-shadow: inset 0 0 0 10px #464852;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .square span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+        }
+
+            .square span:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-top: 10px solid #fff;
+                animation: animate 2s linear infinite;
+            }
+
+        @keyframes animate {
+            0% {
+                left: -100%;
+            }
+
+            25% {
+                left: 0;
+            }
+
+            50%,100% {
+                left: 100%;
+            }
+        }
+
+        .square span:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .square span:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        .square span:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .square span:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        .square span:nth-child(1):before {
+            animation-delay: 0s;
+        }
+
+        .square span:nth-child(2):before {
+            animation-delay: 0.5s;
+        }
+
+        .square span:nth-child(3):before {
+            animation-delay: 1s;
+        }
+
+        .square span:nth-child(4):before {
+            animation-delay: 1.5s;
+        }
+
+        #ghost {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            width: 66px;
+            height: 66px;
+            margin: -37.5px auto 0 auto;
+            background-color: #ddd;
+            border-radius: 50% 50% 0 0;
+            animation: updown 2s ease 0s infinite forwards;
+        }
+
+        @keyframes updown {
+            0% {
+                margin-top: -37.5px;
+            }
+
+            25% {
+                margin-top: -50px;
+            }
+
+            50% {
+                margin-top: -37.5px;
+            }
+
+            75% {
+                margin-top: -50px;
+            }
+
+            100% {
+                margin-top: -37.5px;
+            }
+        }
+
+        #eyes {
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .eye {
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        #eyes, .eye {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+        }
+
+            .eye:first-child {
+                left: -14px;
+            }
+
+            .eye:last-child {
+                left: 14px;
+            }
+
+            .eye:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 4px;
+                width: 4px;
+                height: 4px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+        #mouth {
+            position: absolute;
+            top: 42px;
+            left: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            background-color: #333;
+            border-top-width: 0;
+            border-radius: 0 0 100% 100%;
+            margin: 0 auto;
+        }
+
+            #mouth:before, #mouth:after {
+                content: '';
+                position: absolute;
+                top: -3px;
+                width: 10px;
+                height: 6px;
+                background-color: red;
+                border-radius: 10px;
+            }
+
+            #mouth:before {
+                left: -15px;
+            }
+
+            #mouth:after {
+                right: -15px;
+            }
+
+        #legs {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            width: 22px;
+            height: 22px;
+            margin: 0 auto;
+            background-color: #ddd;
+            border-radius: 0 0 50% 50%;
+        }
+
+            #legs:before, #legs:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #ddd;
+                border-radius: 0 0 50% 50%;
+            }
+
+            #legs:before {
+                left: -22px;
+            }
+
+            #legs:after {
+                left: 22px;
+                box-shadow: inset -3px 0 0 0px #aaa;
+            }
+    </style>
+</head>
+<body>
+    <div id="app-cover">
+        <div class="square">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="ghost">
+            <div id="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+            <div id="mouth"></div>
+            <div id="legs"></div>
+        </div>
+    </div>
+</body>
+</html>
+<!--SOURCE: https://codepen.io/himalayasingh/pen/wYMNov -->
