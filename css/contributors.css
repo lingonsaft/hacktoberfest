@@ -64,7 +64,8 @@ a:hover {
 }
 .box {
   position: relative;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box-item {
   position: relative;
