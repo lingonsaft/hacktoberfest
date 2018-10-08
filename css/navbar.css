@@ -24,6 +24,7 @@ nav {
 }
 .navbar-light .navbar-nav .active> .nav-link {
   color: #ff0844;
+  border-bottom: 1px solid #ff0844;
   font-weight: 700;
 }
 .navbar-light .navbar-nav .dropdown.show> .nav-link {
