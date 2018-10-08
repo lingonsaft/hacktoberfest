@@ -91,8 +91,6 @@ For more information on syncing forks [read this article from Github](https://he
   - Because we only know JavaScript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
-  - Nope.
 - How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
