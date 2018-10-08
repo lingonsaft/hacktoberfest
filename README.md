@@ -79,7 +79,7 @@ For more information on syncing forks [read this article from Github](https://he
 # FAQs
 
 - Who can contribute?
-  - Anyone with a github account and who is signed up for.
+  - Anyone with a github account and who is signed up for
 [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
