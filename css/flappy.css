@@ -1,0 +1,21 @@
+canvas{
+  display: block;
+  margin: 30px auto;
+  box-shadow:20px 20px 50px 10px green; 
+}
+button{
+  margin: 0 auto;
+  display: block;
+  padding: 10px 30px;
+  border: 1px solid red;
+  color: red;
+}
+button:hover{
+  border: 3px solid red;
+}
+button:focus{
+  outline: none;
+}
+button:active{
+  outline: none;
+}
