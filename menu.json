@@ -1,28 +1,28 @@
 {
   "Home": {
     "text": "Home",
-    "href": "/"
+    "href": "index.html"
   },
   "Helpful-Material": {
     "text": "Helpful Material",
-    "href": "/helpful-material"
+    "href": "helpful-material.html"
   },
   "Contributors": {
     "text": "Contributors",
-    "href": "/contributors"
+    "href": "contributors.html"
   },
   "Others": {
     "Potato": {
       "text": "Potato",
-      "href": "/potato"
+      "href": "potato.html"
     },
     "Cheese": {
       "text": "Cheese!",
-      "href": "/cheese"
+      "href": "cheese.html"
     },
     "Tools": {
       "text": "Tools",
-      "href": "/tools",
+      "href": "tools.html",
       "id": "tools"
     },
     "Invert": {
@@ -32,72 +32,73 @@
     },
     "Fireworks": {
       "text": "Fireworks",
-      "href": "/Fireworks",
+      "href": "Fireworks.html",
       "id": "fireworks"
     },
     "Learn": {
       "text": "Learn!",
-      "href": "/wow",
+      "href": "wow.html",
       "id": "learn"
     },
     "4otakus": {
       "text": "4otakus",
-      "href": "/4otakus",
+      "href": "4otakus.html",
       "id": "4otakus"
     },
     "Bubble": {
       "text": "Bubble",
-      "href": "/bubble",
+      "href": "bubble.html",
       "id": "Bubble"
     },
     "Canoi": {
       "text": "Canoi",
-      "href": "/canoi",
+      "href": "canoi.html",
       "id": "Canoi"
     },
     "Colorgame": {
       "text": "Colorgame",
-      "href": "/colorgame",
+      "href": "colorgame.html",
       "id": "Colorgame"
     },
     "Foxy": {
       "text": "Foxy",
-      "href": "/foxy",
+      "href": "foxy.html",
       "id": "Foxy"
     },
     "Gifheaven": {
       "text": "Gif Heaven",
-      "href": "/gifheaven",
+      "href": "gifheaven.html",
       "id": "Gifheaven"
     },
     "Plainpage": {
       "text": "Plain Page",
+      "href": "plain_page.html",
       "href": "/plain_page",
       "id": "Plainpage"
     },
     "Snek": {
       "text": "Snek",
-      "href": "/snek",
+      "href": "snek.html",
       "id": "Snek"
     },
     "Spooky": {
       "text": "Spooky",
-      "href": "/spooky",
+      "href": "spooky.html",
       "id": "Spooky"
     },
     "Values": {
       "text": "Values",
-      "href": "/values",
+      "href": "values.html",
       "id": "Values"
     },
     "Wow": {
       "text": "Wow",
-      "href": "/wow",
+      "href": "wow.html",
       "id": "Wow"
     },
     "Flappy": {
       "text": "Flappy Game",
-      "href": "/Flappy",
+      "href": "Flappy.html",
       "id": "Flappy"
     },
     "Stay Dry": {
