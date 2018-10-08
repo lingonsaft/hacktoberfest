@@ -20,6 +20,7 @@ clock = pygame.time.Clock()
 while 1:
     clock.tick(60)
     pygame.draw.ellipse(screen, (r,g,b),(350,120,140,160),x)
+    pygame.draw.ellipse(screen, (r,g,b),(100,120,140,160),x)
     pygame.display.update()
     if x < 70:
         x+=1 
