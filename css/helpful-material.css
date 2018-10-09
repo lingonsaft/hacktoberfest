@@ -87,6 +87,13 @@ a.guides-links{
 .list {
   padding-left: 1.2rem;
 }
-.list-item a:hover {
+
+a.list-item {
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+a.list-item:hover {
   text-decoration: underline;
+  color: #a8050f;
 }
