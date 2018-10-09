@@ -47,7 +47,7 @@
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: white;
+  color: grey;
   font-size: 20px;
   width: 3.5rem;
   height: 3.5rem;
@@ -65,27 +65,27 @@
 
 .facebook {
   background: #3B5998;
-  color: white;
+  color: grey;
 }
 
 .twitter {
   background: #55ACEE;
-  color: white;
+  color: grey;
 }
 
 .insta {
   background: #dd4b39;
-  color: white;
+  color: grey;
 }
 
 .linkedin {
   background: #007bb5;
-  color: white;
+  color: grey;
 }
 
 .youtube {
   background: #bb0000;
-  color: white;
+  color: grey;
 }
 
 @media (max-width: 1240px) {
@@ -105,7 +105,7 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background-color: #FEFEFE;
+  background-color: #D3D3D3;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
   margin: 0;
@@ -138,7 +138,7 @@ a:hover {
 
 .index .jumbotron {
   padding: 4rem 0;
-  background-color: #ffeff3;
+  background-color: #FFFF99;
 }
 
 .index .jumbotron:first-child {
@@ -496,11 +496,11 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .ytSubscribeContainer a {
-  color: white;
+  color: grey;
 }
 
 .ytSubscribeContainer a:hover {
-  color: white;
+  color: grey;
 }
 
 .yt-logo {
@@ -571,7 +571,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #FF0844;
-  color: white;
+  color: grey;
   border-radius: 2rem;
   font-weight: 600;
   padding: .75rem 4rem .75rem 4rem;
