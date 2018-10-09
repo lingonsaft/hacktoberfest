@@ -3,25 +3,104 @@
 
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
+  -o-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    -o-transform: rotate3d(1, 1, 1, 360deg);
+    -moz-transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
   }
 }
+
+@keyframes twist {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
 
 * {
   outline: none!important;
 }
+
+/*Begin hover for social media sidebar*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon-bar a:hover {
+  width: 7rem;
+  background: #000;
+}
+
+.icon-bar a:hover i {
+  animation-name: twist;
+  animation-duration: 1s;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.insta {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+@media (max-width: 1240px) {
+    .content {
+        margin-left: 60px;
+    }
+}
+/*End hover for social media sidebar*/
+
 
 html {
   overflow-x: hidden;
@@ -57,6 +136,7 @@ h6 {
 a,
 a:hover {
   color: #FF0844;
+  transition: all 500ms ease-in-out;
 }
 
 .content {
@@ -66,6 +146,11 @@ a:hover {
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
+
+}
+.jumbotron:first-child {
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
 }
 
 .index .jumbotron:first-child {
@@ -120,6 +205,10 @@ a:hover {
   background-color: #FF0844;
 }
 
+.btn-subscribe > svg {
+  margin-left: 2px;
+}
+
 .index .btn-danger:hover {
   color: #fff;
 }
@@ -142,9 +231,14 @@ a:hover {
 }
 
 .single-faq {
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
   border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.single-faq:hover {
+    transform: scale(1.02);
 }
 
 .single-faq h5 {
@@ -173,6 +267,8 @@ a:hover {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -194,6 +290,8 @@ a:hover {
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
+  text-align: center;
+  margin: 10px 0;
   border-left: 1px solid rgba(0, 0, 0, .125);
 }
 
@@ -202,11 +300,19 @@ a:hover {
 }
 
 .single-tips .no {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
-  line-height: 1;
+  line-height: .6;
   color: #FF0844;
   margin-bottom: 15px;
+}
+
+.single-tips .no::after {
+  content: '-';
+  text-align: center;
+  display: block;
+  margin: 0;
+  height: 10px;
 }
 
 .single-tips .tip-text {
@@ -219,6 +325,8 @@ a:hover {
 
 html [type=button] {
   -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
 }
 
 .copy {
@@ -243,6 +351,18 @@ html [type=button] {
   border-radius: 5px;
 }
 
+#btnsh:hover{
+
+color: white;
+
+
+}
+#btnsh{
+
+color: black;
+
+
+}
 div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
@@ -288,6 +408,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a:hover {
   text-decoration: none;
+  transition: all 0.5s ease-out;
   color: #cc0636;
 }
 
@@ -298,6 +419,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .fa:hover {
+  transition: all 0.5s ease-out;
   text-decoration: none;
 }
 
@@ -345,6 +467,13 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: bold;
   font-size: 3rem;
   line-height: 45px;
+}
+
+#seconds {
+  animation-duration: 1s;
+  animation-name: zoomeffect;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .logo-image {
@@ -473,6 +602,38 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 /* Youtube Subscribe Styling End  */
 
+
+
+#twist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #FF0844;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: .75rem 4rem .75rem 4rem;
+  border-radius: 2rem;
+  outline : none;
+  border : none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .single-tips .tip {
+    border-left: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+  }
+
+  .single-tips .tip:first-child {
+    border: none;
+  }
+  .single-tips .no {
+    font-size: 40px;
+    text-align: center;
+  }
+
 .index .twist-btn{
   margin-top: 20px;
+}
 }

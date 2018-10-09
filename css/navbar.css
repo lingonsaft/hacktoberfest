@@ -22,11 +22,13 @@ nav {
   padding: 10px;
   margin: 0 10px !important;
 }
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active> .nav-link {
   color: #ff0844;
   font-weight: 700;
+  background-color:  #99b3ff;
 }
-.navbar-light .navbar-nav .dropdown.show > .nav-link {
+
+.navbar-light .navbar-nav .dropdown.show> .nav-link {
   color: #ff0844;
 }
 .navbar-light .navbar-nav .nav-link::before {
@@ -89,7 +91,7 @@ nav {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 80vh;
 }
 
