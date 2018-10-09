@@ -100,6 +100,7 @@ For more information on syncing forks [read this article from Github](https://he
 -What is the duration of Hacktoberfest 2018?
  - It is from 1st october to 31st october 2018...
 
+# Changelog
 
 
 ###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible <3*
