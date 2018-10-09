@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton|Roboto');
 
+body{
+    background: #000;
+}
+
 h1{
     font-size: 65px;
     font-weight: 100;
@@ -9,6 +13,13 @@ h1, h2, h3, h4, h5, h6{
     color: #f000ff;
     font-family: 'Monoton', cursive;
     font-weight: 100;
+}
+
+p{
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
 }
 
 a{
