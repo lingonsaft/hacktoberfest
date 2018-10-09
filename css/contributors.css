@@ -69,21 +69,33 @@ a:hover {
 }
 .box-item {
   position: relative;
-  display: inline-block;
-  float: left;
+  display: block;
   background-color: #FEEEF2;
   color: #444;
-  width: 250px;
+  width: 100%;
   cursor: pointer;
   border-radius: 0.4rem;
   padding: 15px 8px 15px 70px;
-  margin: 0 10px 20px;
+  margin: 10px;
   font-size: 1rem;
-  vertical-align: middle;
   text-overflow: ellipsis;
   overflow-x: hidden;
   white-space: nowrap;
 }
+
+@media (min-width: 768px) {
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .box-item {
+    width: calc(50% - 20px);
+  }
+}
+
 .box-item:hover {
   background-color: #FE0C43;
 }
