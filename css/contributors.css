@@ -98,6 +98,13 @@ a:hover {
   }
 }
 
+@media (min-width: 1100px) {
+
+  .box-item {
+    width: calc(25% - 20px);
+  }
+}
+
 .box-item:hover {
   background-color: #FE0C43;
   color: #fff;
