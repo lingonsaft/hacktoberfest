@@ -90,3 +90,23 @@ a.guides-links{
 .list-item a:hover {
   text-decoration: underline;
 }
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+     height: 45px; 
+    background: linear-gradient(to left, #FF0844, #FF4563);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+.footer__socials {
+  padding: 6px;
+  display: inline-block;
+
+}   
+.footer__socials a {
+  padding: 20px;
+}
