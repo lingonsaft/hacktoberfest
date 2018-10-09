@@ -9,25 +9,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 ::selection {
   background-color: #4835f7;
   color: #fff;
 }
+
 * {
   outline: none!important;
 }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat',sans-serif;
   line-height: 1.5;
 }
+
 html,
 body {
   background-color: #fff;
 }
+
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -51,10 +57,10 @@ canvas {
 }
 
 a {
-  /* color: #fff; */
   color: black;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -62,11 +68,13 @@ a:hover {
 .content {
   margin-top: 80px;
 }
+
 .box {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
+
 .box-item {
   position: relative;
   display: inline-block;
@@ -84,14 +92,17 @@ a:hover {
   overflow-x: hidden;
   white-space: nowrap;
 }
+
 .box-item:hover {
   background-color: #FE0C43;
 }
+
 .box-item::before {
   content: "";
   display: table;
   clear: both;
 }
+
 .box-item img {
   position: absolute;
   top: 2px;
@@ -101,6 +112,7 @@ a:hover {
   margin-right: 15px;
   padding: 4px;
 }
+
 .box-item:hover a {
   color: #fff;
 }
