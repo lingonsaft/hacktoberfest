@@ -22,6 +22,10 @@ nav {
   padding: 10px;
   margin: 0 10px !important;
 }
+.navbar-light .navbar-nav .active {
+  background-color: #ff0844;
+}
+
 .navbar-light .navbar-nav .active> .nav-link {
   color: #ff0844;
   font-weight: 700;
