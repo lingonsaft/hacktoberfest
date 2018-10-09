@@ -23,7 +23,7 @@ P.S. Star and share this repository, if you had fun!//enter
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributors.html file
-- Try to keep pull requests small to minimize merge conflicts
+- Try to keep pull requests small to minimize merge conflicts//good evening
 
 
 ## Getting Started
