@@ -13,7 +13,12 @@
     transform: rotate(360deg);
   }
 }
-
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
 .cheese-body {
  /* background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");*/
   font-size: 16px;
@@ -152,4 +157,8 @@ iframe {
   width: 460px;
   height: 215px;
   padding: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
 }
