@@ -1,0 +1,59 @@
+body{
+	text-align: center;
+}
+
+h1{
+	font-size: 50px;
+}
+
+
+#breakTime,#sessionTime{
+	display: inline-block;
+	padding: 10px 40px;
+}
+
+#breakTimeChoice,#sessionTimeChoice{
+	padding-top: 20;
+	font-size: 30px;
+}
+
+button,p{
+	display: inline-block;
+	margin: 20px;
+}
+
+#time{
+	border:black 3px solid;
+	width: 300px;
+	height: 300px;
+	margin:20px auto;
+	border-radius: 50%;
+}
+
+#timeDisplay{
+	padding-top: 15%;
+}
+
+.displayTitle{
+	font-size: 40px;
+}
+
+.displayTime{
+	font-size: 60px;
+}
+
+#start{
+	margin-top: 5px;
+}
+
+button{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+
+}
