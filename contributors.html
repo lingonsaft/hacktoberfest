@@ -13,6 +13,7 @@
     function toggleDropDown() {
       document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
     }
+    
   </script>
 
   <!--Stats Script-->
@@ -69,7 +70,7 @@
         <title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
         <style type="text/css">
           .st0 {
-            fill: #FF0844;
+            fill: #red;
           }
         </style>
         <path class="st0" d="M0.7,0.7v298.7h298.7V0.7H0.7z M197.8,271.4l-32-32v-95.6l-31.4,31.4v79l-17.3,17.3L99.8,254V70.4L95,65.6  L73,87.7L61.7,76.5l47.8-47.8l0.1,0.1l0,0l1.9,1.8l22.8,22.8V136l31.4-31.4V70.2L150,54.4l25.8-25.8l24.7,24.7v169.1l12.1,12.1  l14.7-14.7l11.1,11.1L197.8,271.4z"></path>
@@ -84,6 +85,10 @@
         <!-- Menu -->
       </ul>
     </div>
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </nav>
   <div class="content">
     <div class="container">
@@ -272,6 +277,8 @@
         <p class="box-item"><a href="https://github.com/jdemieville">JDemieville</a></p>
         <p class="box-item"><a href="https://github.com/vbhv007">Warley S S</a></p>
         <p class="box-item"><a href="https://github.com/eusoikonomou">Stathis Oikonomou</a></p>
+        <p class="box-item"><a href="https://github.com/viditvarshney">Vidit_Varshney[Mr.Coder]</a></p>
+        
         <!--
         Add here
         format : <p class="box-item"><a href="https://github.com/<your-username>">Your Name</a></p>
@@ -297,7 +304,15 @@
     contributors.forEach(con => {
       console.log(con.href)
       con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '">'
+
     })
+   
+    document.getElementById('searchform').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:yourdomainname ' + document.getElementById('test').value;
+        return false;
+    }
+      
+    
   </script>
   <script src="./scripts/scroll.js"></script>
 
