@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EZ-Timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        .brand-title {
+            color: white;
+        }
+
+        .big-icon {
+            font-size: 50px;
+            color: black;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body class="bg-danger">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse bg-dark">
+        <span class="navbar-brand mb-0 h1 text-white" target="_blank"><a class="text-white" href="http://www.zornwebdev.com" target="_blank">Zorn Web Dev</a></span>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <!-- Jumbotron for Timer -->
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Hacktoberfest!</h1>
+            <p class="lead">This is a simple timer to contribute to Open Source. I hope you enjoy!</p>
+            <p class="lead">Check out my portfolio and social media links below...</p>
+            <hr class="my-4">
+            <p id="timer-output">Timer: 0</p>
+            <button class="btn btn-success btn-lg" id="startButton" type="button">Start Timer</button>
+            <button class="btn btn-danger btn-lg" id="endButton" type="button">End Timer</button>
+            <br>
+            <a href="https://github.com/ericzorn93" target="_blank">
+                <i class="fab fa-github-square fa-large big-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ericzorn/" target="_blank">
+                <i class="fab fa-linkedin big-icon"></i>
+            </a>
+            <a href="http://www.zornwebdev.com" target="_blank">
+                <i class="fas fa-user big-icon"></i>
+            </a>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    
+
+    <script>
+        // HTML Elements
+        const timerOutput = document.querySelector('#timer-output');
+        const startButton = document.querySelector('#startButton');
+        const endButton = document.querySelector('#endButton');
+
+
+        let counter = 0;
+
+        startButton.addEventListener('click', () => {
+            setInterval(() => {
+                timerOutput.innerHTML = `Timer: ${counter}`;
+                counter+=1
+            }, 1000);
+        });
+
+
+        endButton.addEventListener('click', () => {
+            counter = 0;
+            timerOutput.innerHTML = `Timer: ${counter}`;
+        })
+    </script>
+</body>
+</html>
