@@ -79,7 +79,7 @@ For more information on syncing forks [read this article from Github](https://he
 # FAQs
 
 - Who can contribute?
-  - Anyone with a github account and who is signed up for.
+  - Anyone with a github account and who is signed up for
 [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
@@ -97,6 +97,8 @@ For more information on syncing forks [read this article from Github](https://he
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
   - go to : https://hacktoberfest.digitalocean.com/stats/username
+-What is the duration of Hacktoberfest 2018?
+ - It is from 1st october to 31st october 2018...
 
 
 
