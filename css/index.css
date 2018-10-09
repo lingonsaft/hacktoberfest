@@ -3,6 +3,8 @@
 
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
+  -o-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
 
@@ -15,6 +17,8 @@
 @keyframes spin {
   100% {
     -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    -o-transform: rotate3d(1, 1, 1, 360deg);
+    -moz-transform: rotate3d(1, 1, 1, 360deg);
     transform: rotate3d(1, 1, 1, 360deg);
   }
 }
@@ -38,6 +42,8 @@
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -260,6 +266,8 @@ a:hover {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -316,6 +324,8 @@ a:hover {
 
 html [type=button] {
   -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
 }
 
 .copy {
