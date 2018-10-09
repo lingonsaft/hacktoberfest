@@ -8,23 +8,23 @@
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
 @keyframes twist {
   from {
-    transform: rotateY(0deg);
+      transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+      transform: rotateY(360deg);
   }
 }
 
@@ -139,6 +139,11 @@ a:hover {
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
+
+}
+.jumbotron:first-child {
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
 }
 
 .index .jumbotron:first-child {
@@ -437,6 +442,13 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: bold;
   font-size: 3rem;
   line-height: 45px;
+}
+
+#seconds {
+  animation-duration: 1s;
+  animation-name: zoomeffect;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .logo-image {

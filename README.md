@@ -5,7 +5,7 @@ This is a beginner-friendly project to help you get started with your
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 
-P.S. Star and share this repository, if you had fun! :*
+P.S. Star and share this repository, if you had fun!
 
 
 # Videos
@@ -99,6 +99,8 @@ For more information on syncing forks [read this article from Github](https://he
   - go to : https://hacktoberfest.digitalocean.com/stats/username
 -What is the duration of Hacktoberfest 2018?
  - It is from 1st october to 31st october 2018...
+- What is the event for?
+   - For the open source community engagement
 
 
 
