@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/pomo_clock.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="scripts/pomo_clock.js"></script>
+  <title>Pomodoro Clock</title>
+</head>
+
+<body>
+<h1> Pomodoro Clock</h1>
+  <div id="timeChoice">
+<!-- break Time -->
+   <div id="breakTime">
+	 <div>
+		<h2>Break Length</h2>
+	 </div>
+	 <div id="breakTimeChoice">
+		<button id="breakMinus"> - </button>
+		<p id="breakDisplay"> 5 </p>
+		<button id="breakPlus"> + </button>
+	 </div>	
+   </div> 
+<!-- session Time -->
+  <div id="sessionTime">
+	<div>
+		<h2>Session Length</h2>
+	</div>
+	<div id="sessionTimeChoice">
+		<button id="sessionMinus"> - </button>
+		<p id="sessionDisplay"> 25 </p>
+		<button id="sessionPlus"> + </button>
+	</div>	
+  </div>
+	<!-- Start and Reset -->
+</div>
+
+	<div id="status">
+		<button id="start">Start</button>
+	</div>
+	<div id="time">
+	<div id="timeDisplay">
+		<h3 class="displayTitle">Session</h3>
+		<p class="displayTime"> 25 </p>
+	</div>
+	</div>
+</body>
+
+</html>
