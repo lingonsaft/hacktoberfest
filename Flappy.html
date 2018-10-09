@@ -11,13 +11,38 @@
 	-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+body {
+    background-color: black;
+}
 canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
+    border:3px dotted #ee0f0f;
+    background-color: #c4e7fc;
+    position: relative;
+    top: 120px;
+    left: 350px;
+
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 350px;
+    top: 10px;
+}
+h1 {
+    color: white;
+    position: relative;
+    top: -350px;
+    left: 350px;
 }
 </style>
 </head>
 <body onload="startGame()">
+    <h1>Jump The Box , Clear The Obstacle.</h1>
 <script>
 
 var myGamePiece;
@@ -25,7 +50,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "Blue", 10, 120);
+    myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
@@ -34,8 +59,8 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 580;
+        this.canvas.height = 370;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
