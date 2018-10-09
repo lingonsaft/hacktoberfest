@@ -15,7 +15,7 @@ P.S. Star and share this repository, if you had fun!
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
-# Contribution rules
+# Please note the rules
 
 - The project must work when opening index.html
 - You are allowed to make pull requests that break the rules. We just won't merge it ;)
