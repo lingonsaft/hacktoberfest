@@ -139,6 +139,11 @@ a:hover {
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
+
+}
+.jumbotron:first-child {
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
 }
 
 .index .jumbotron:first-child {
