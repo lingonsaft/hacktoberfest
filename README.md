@@ -78,28 +78,28 @@ For more information on syncing forks [read this article from Github](https://he
 
 # FAQs
 
-- Who can contribute?
+- **Who can contribute?
   - Anyone with a github account and who is signed up for
 [hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
-- Are you getting paid for this?
+- **Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
-- Who are you and why are you doing this?
+- **Who are you and why are you doing this?
   - We are two programmers from Sweden [Richard](https://github.com/richie-south)
   and [Benny](https://github.com/BennyCarlsson). We are doing this because we love Open
   Source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open Source.
-- Why are you not using digitalocean?
+-**Why are you not using digitalocean?
   - Because we only know JavaScript and suck at servers. We use [now](https://zeit.co/now) instead.
-- Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
+- **Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+- **Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
-- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+- **How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
   - 5
-- How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
+- **How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
   - go to : https://hacktoberfest.digitalocean.com/stats/ (Scroll down to Check Out Your Own Stats)
-- What is the duration of Hacktoberfest 2018?
+- **What is the duration of Hacktoberfest 2018?
   - It is from 1st october to 31st october 2018...
-- What is the event for?
+- **What is the event for?
   - For the open source community engagement
 
 
