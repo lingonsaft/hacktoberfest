@@ -32,7 +32,7 @@ P.S. Star and share this repository, if you had fun!
 - Clone on your local machine
 
 ```terminal
-git clone https://github.com/lingonsaft/hacktoberfest.git
+git clone https://github.com/{name_of_your_repo}/hacktoberfest.git
 cd hacktoberfest
 ```
 
