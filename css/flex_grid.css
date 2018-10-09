@@ -18,6 +18,8 @@ h1, h2, h3, h4, h5, h6{
 p{
     background: #000;
     color: #fff;
+    margin: 0;
+    padding: 10px 0;
 }
 
 a{
