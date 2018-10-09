@@ -323,6 +323,13 @@ a:hover {
   background-color: #A5D6A7;
 }
 
+.footer_bg_grad {
+background: rgb(206, 181, 188);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, rgb(255, 255, 255), #f8b9cb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgb(255, 255, 255), #f8b9cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 0.8rem;
+}
+
 html [type=button] {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
