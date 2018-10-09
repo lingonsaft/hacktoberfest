@@ -53,7 +53,7 @@ nav {
   transform: scale(1.2);
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(0, 0, 0);
+  color: #ff0844;
 }
 .navbar-light .navbar-nav .nav-link:hover::before {
   left: 0;
