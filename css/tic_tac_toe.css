@@ -1,0 +1,95 @@
+body{
+	text-align: center;
+}
+
+h1{
+	font-size: 70px;
+}
+
+td{
+	border: 2px black solid;
+	height:200px;
+	width: 200px;
+	text-align: center;
+	vertical-align: middle;
+	cursor:pointer;
+	font-size: 100px;
+	color: white;
+}
+
+table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	background-color: #4CAF50;
+	border-radius: 20px;
+}
+
+table tr:first-child td{
+	border-top: 0;
+}
+
+table tr:last-child td{
+	border-bottom: 0;
+}
+
+table tr td:last-child{
+	border-right: 0;
+}
+
+table tr td:first-child{
+	border-left: 0;
+}
+
+h4{
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color:orange;
+	letter-spacing: 1px;
+	font-size: inherit;
+	outline: none;
+	font-size: 50px;
+
+}
+
+
+button{
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color:steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	outline: none;
+	font-size: 50px;
+}
+
+button:hover{
+	color:white;
+	background-color: steelblue;
+	margin: 0 30px;
+}
+
+td {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.endgame{
+	display: none;
+	width: 400px;
+	top: 20px;
+	background-color: rgba(205, 133, 63, 0.7);
+	border-radius: 5px;
+	color: white;
+	font-size: 2em;
+	margin: 10px auto;
+}
