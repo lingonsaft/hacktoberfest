@@ -8,23 +8,23 @@
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
 @keyframes twist {
   from {
-    transform: rotateY(0deg);
+      transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+      transform: rotateY(360deg);
   }
 }
 
