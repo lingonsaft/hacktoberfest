@@ -231,7 +231,7 @@ a:hover {
 }
 
 .single-faq {
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
   border-radius: 4px;
   transition: all 0.3s;
