@@ -104,3 +104,11 @@ a:hover {
 .box-item:hover a {
   color: #fff;
 }
+
+.box-item.different-color {
+  background-color: #a7eded;
+}
+
+.box-item.different-color:hover {
+  background-color: #FE0C43;
+}
