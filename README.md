@@ -5,7 +5,7 @@ This is a beginner-friendly project to help you get started with your
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 
-P.S. Star and share this repository, if you had fun!
+P.S. Star and share this repository, if you had fun!//enter
 
 
 # Videos
@@ -23,7 +23,7 @@ P.S. Star and share this repository, if you had fun!
 - Do NOT remove Videos, Rules, FAQ or any other helpful content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributors.html file
-- Try to keep pull requests small to minimize merge conflicts
+- Try to keep pull requests small to minimize merge conflicts//good evening
 
 
 ## Getting Started
