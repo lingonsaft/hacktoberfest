@@ -15,14 +15,16 @@
 body {
     background-color: black;
 }
+
 canvas {
     border:3px dotted #ee0f0f;
     background-color: #c4e7fc;
     position: relative;
-    top: 120px;
-    left: 350px;
-
+	top: 120px;
+	margin: 0 auto;
+	display: block;
 }
+
 button {
     width: 100px;
     height: 50px;
@@ -30,14 +32,29 @@ button {
     font-size: 25px;
     font-weight: bold;
     position: relative;
-    left: 350px;
     top: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
+
+div {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 20px auto;
+	width: 580px;
+}
+
 h1 {
     color: white;
     position: relative;
     top: -350px;
     left: 350px;
+}
+
+#start-again {
+	display: none;
+	width: 450px;
 }
 </style>
 </head>
@@ -52,7 +69,7 @@ var myScore;
 function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "black", 320, 40, "text");
     myGameArea.start();
 }
 
@@ -77,11 +94,11 @@ function component(width, height, color, x, y, type) {
     this.width = width;
     this.height = height;
     this.speedX = 0;
-    this.speedY = 0;    
+    this.speedY = 0;
     this.x = x;
     this.y = y;
     this.gravity = 0;
-    this.gravitySpeed = 0;
+    this.gravitySpeed = 10;
     this.update = function() {
         ctx = myGameArea.context;
         if (this.type == "text") {
@@ -119,6 +136,7 @@ function component(width, height, color, x, y, type) {
         if ((mybottom < othertop) || (mytop> otherbottom) || (myright < otherleft) || (myleft> otherright)) {
             crash = false;
         }
+
         return crash;
     }
 }
@@ -127,8 +145,9 @@ function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
+        	document.getElementById("start-again").style.display = "block";
             return;
-        } 
+        }
     }
     myGameArea.clear();
     myGameArea.frameNo += 1;
@@ -161,8 +180,18 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
+function foolYou() {
+	startGame();
+
+	setTimeout(function() {
+		alert("Ha ha you can not restart :D");
+	}, 1000);
+}
 </script>
 <br>
+<div>
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Jump</button>
+<button id="start-again" onclick="foolYou()">Oh no you crashed, start again?</button>
+</div>
 </body>
 </html>
