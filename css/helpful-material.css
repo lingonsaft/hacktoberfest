@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+* {
+  outline: none!important;
+}
 body {
+  font-family: 'Source Sans Pro',sans-serif;
   font-size: 16px;
   color: #444;
   line-height: 1.6;
-  background-color:mistyrose;
+  background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+}
+h1,h2,h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
 }
 
 .copy {
@@ -13,19 +34,25 @@ body {
   margin-bottom: 4rem;
 }
 
-.navbar {
-  background: linear-gradient(to left, #FF0844, #FF4563)
+.os {
+  text-align: center;
+  font-weight: bold;
+  margin: 8px;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 5rem auto 8rem;
+}
 .container a {
   text-decoration: none;
   color: #FF0844;
 }
 
-  .container a:hover {
-    text-decoration: none;
-    color: #cc0636;
-  }
+.container a:hover {
+  text-decoration: none;
+  color: #cc0636;
+}
 
 #myBtn {
   display: none;
@@ -44,4 +71,22 @@ body {
 a.guides-links{
   display: inline-block;
   margin-bottom: 80px
+}
+
+.section-tree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section {
+  margin: 0 0 60px;
+  flex: 0 0 45%;
+}
+
+.list {
+  padding-left: 1.2rem;
+}
+.list-item a:hover {
+  text-decoration: underline;
 }
