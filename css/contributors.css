@@ -13,9 +13,9 @@
   background-color: #4835f7;
   color: #fff;
 }
-* {
+/* * {
   outline: none!important;
-}
+} */
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -67,11 +67,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
+
 .box-item {
   position: relative;
   display: block;
   background-color: #FEEEF2;
   color: #444;
+  font-weight: 600;
   width: 100%;
   cursor: pointer;
   border-radius: 0.4rem;
@@ -98,12 +100,15 @@ a:hover {
 
 .box-item:hover {
   background-color: #FE0C43;
+  color: #fff;
 }
+
 .box-item::before {
   content: "";
   display: table;
   clear: both;
 }
+
 .box-item img {
   position: absolute;
   top: 2px;
@@ -113,6 +118,7 @@ a:hover {
   margin-right: 15px;
   padding: 4px;
 }
+
 .box-item:hover a {
   color: #fff;
 }
