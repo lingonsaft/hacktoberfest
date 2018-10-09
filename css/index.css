@@ -3,6 +3,8 @@
 
 .spinCard{
   -webkit-animation:spin 4s linear infinite;
+  -o-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
 }
 
@@ -15,6 +17,8 @@
 @keyframes spin {
   100% {
     -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    -o-transform: rotate3d(1, 1, 1, 360deg);
+    -moz-transform: rotate3d(1, 1, 1, 360deg);
     transform: rotate3d(1, 1, 1, 360deg);
   }
 }
@@ -38,6 +42,8 @@
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -130,6 +136,7 @@ h6 {
 a,
 a:hover {
   color: #FF0844;
+  transition: all 500ms ease-in-out;
 }
 
 .content {
@@ -260,6 +267,8 @@ a:hover {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -316,6 +325,8 @@ a:hover {
 
 html [type=button] {
   -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
 }
 
 .copy {
@@ -385,6 +396,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a:hover {
   text-decoration: none;
+  transition: all 0.5s ease-out;
   color: #cc0636;
 }
 
@@ -395,6 +407,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .fa:hover {
+  transition: all 0.5s ease-out;
   text-decoration: none;
 }
 
@@ -588,6 +601,10 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: 600;
   padding: .75rem 4rem .75rem 4rem;
   border-radius: 2rem;
+  outline : none;
+  border : none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
