@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <title>Reaction Time Game</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    
+    <body>
+        
+        <div class="container">
+            
+            <div class="navbar navbar-expand-lg bg-light">
+                
+                <div class="navbar-brand">
+                    
+                    <div id="mySidenav" class="sidenav">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a class="dropdown-btn" href="#">About 
+                            <i class="fa fa-caret-down"></i>
+                          </a>
+                        
+                          <div class="dropdown-container">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                          </div>
+                          <a href="#">Services</a>
+                          <a href="#">Clients</a>
+                          <a href="https://gitter.im/Reaction-Timer/Lobby">Contact</a>
+                    </div>
+
+                    <div id="main">
+
+                          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+                    
+                    <a id="Logo" class="nav-link" href="">Reaction-Timer</a>
+                
+                </div>
+                
+                <ul class="navbar-nav">
+                    
+                    
+                    <li id="contact" class="nav-item">
+                        <a href="https://gitter.im/Reaction-Timer/Lobby"><i class="fa fa-fw fa-envelope"></i><span id="largerText">Contact</span></a>
+                        
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/viditvarshney"><img id="github" src="github.JPG"></a>
+                    </li>
+                
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/vidit.varshney222"><img  src="Capture.JPG"><span id="profile">Profile</span></a>
+                    </li>
+                
+                </ul>
+            
+            </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        <p class="bold">Your Time: <span id="timeTaken"></span></p>
+        
+        <p class="bold">Your Best Time: <span id="best"></span></p>
+        
+        <div id="shape"></div>
+
+        <canvas id="canvas1" width="500" height="900">
+        
+            <script type="text/javascript" src="script.js"></script>
+
+        </canvas>
+        
+    </body>
+
+
+</html>
