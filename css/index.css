@@ -94,10 +94,9 @@
   color: white;
 }
 
-@media (max-width: 1240px) {
-    .content {
-        margin-left: 60px;
-    }
+.content {
+  margin-left: 0;
+
 }
 /*End hover for social media sidebar*/
 
