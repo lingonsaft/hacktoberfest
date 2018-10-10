@@ -65,6 +65,11 @@ const menu = {
       'href': 'foxy.html',
       'id': 'Foxy'
     },
+	'cold-hacktomber': {
+      'text': 'cold-hacktomber',
+      'href': 'cold-hacktomber.html',
+      'id': 'cold-hacktomber'
+    },
     'Gifheaven': {
       'text': 'Gif Heaven',
       'href': 'gifheaven.html',
