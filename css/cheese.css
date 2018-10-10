@@ -48,6 +48,11 @@
   color: #cc0636;
 }
 
+.text-shadow {
+  color: #D95D39;
+  text-shadow: 1px 1px #F0A202;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
