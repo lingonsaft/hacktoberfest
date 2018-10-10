@@ -104,6 +104,11 @@ const menu = {
       'text': 'Stay Dry',
       'href': '/dry',
       'id': 'dry'
+    },
+    'Fancy CSS effects': {
+      'text': 'Fancy CSS',
+      'href': 'fancyCSS.html',
+      'id': 'fancy'
     }
   }
 }
