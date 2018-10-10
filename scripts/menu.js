@@ -11,6 +11,11 @@ const menu = {
     'text': 'Contributors',
     'href': 'contributors.html'
   },
+  'Tools': {
+      'text': 'Tools',
+      'href': 'tools.html',
+      'id': 'tools'
+  },
   'Others': {
     'Potato': {
       'text': 'Potato',
@@ -19,11 +24,6 @@ const menu = {
     'Cheese': {
       'text': 'Cheese!',
       'href': 'cheese.html'
-    },
-    'Tools': {
-      'text': 'Tools',
-      'href': 'tools.html',
-      'id': 'tools'
     },
     'Invert': {
       'text': 'Invert',
