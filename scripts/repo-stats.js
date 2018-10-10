@@ -1,8 +1,9 @@
 
 $(document).ready(function () {
 	$.ajaxSetup({
+	 
 	  headers : {
-		'Authorization' : 'token 375e956fbbba83452713fb2c72a3a5e0c6fd6871'
+		'Authorization' : 'token 3de97d9b0e1c8e74b264192173476306d2259782'
 	  }
 	});
 	//get issues non pull request
