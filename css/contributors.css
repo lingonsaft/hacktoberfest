@@ -135,3 +135,20 @@ a:hover {
 .box-item.different-color:hover {
   background-color: #FE0C43;
 }
+
+@keyframes rainbow {
+  0% {
+    background-color: #42d1f4;
+  }
+  50% {
+    background-color: #50f441;
+  }
+  100% {
+    background-color: #42d1f4;
+  }
+}
+
+.box-item.pro-color {
+  animation: rainbow 2s infinite;
+  color: black;
+}
