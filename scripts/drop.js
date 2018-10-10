@@ -12,7 +12,7 @@ function createRain() {
 		for (x = 0; x <= num_drops; x++) {
 			var dropLeft = randRange(i*10,i*10+10);
 			var dropTop = randRange(-1000,1400);
-			$('.rain').append('<div class="drop'+randRange(1,10)+'" id="drop'+drop_number+'">🥚</div>');
+			$('.rain').append('<div class="drop'+randRange(1,10)+'" id="drop'+drop_number+'>🥚</div>');
 			$('#drop'+drop_number).css('left',dropLeft+"%");
 			$('#drop'+drop_number).css('top',dropTop);
 			drop_number++;
