@@ -7,6 +7,8 @@ read the contribution rules. Happy hacking <3 !!
 
 P.S. Star and share this repository, if you had fun!
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
 
 
