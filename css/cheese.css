@@ -14,7 +14,15 @@
   }
 }
 
+<<<<<<< HEAD
 .cheese-body {
+=======
+body {
+  padding-bottom: 150px;
+}
+
+#cheese-body {
+>>>>>>> master
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
   font-size: 16px;
   color: #57283e;
