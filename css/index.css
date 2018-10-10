@@ -600,6 +600,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   cursor: pointer;
 }
 
+.video-border{
+  border: solid #FF0844 1px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius:  25px;
+}
+
 @media (min-width: 992px) {
   .single-tips .tip {
     border-left: 1px solid rgba(0,0,0,.125);
@@ -623,9 +629,5 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
     padding: 8.5rem 0;
-  }
-
-  .content {
-    margin-left: 60px;
   }
 }
