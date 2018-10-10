@@ -1,0 +1,229 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLIPP</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="GAME.css">	
+	<script type="text/javascript" src="GAME.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+
+</body>
+</html>
+--->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--
+    <link rel="stylesheet" type="text/css" href="GAME.css">	
+    --->
+	<!--
+	<script type="text/javascript" src="GAME.js"></script>
+	--->
+    <title>FLIPP</title>
+
+    <style>
+    	.dimensions{
+			width:200px;
+			height:180px;
+			
+		}
+		table{
+			margin: 0px auto;
+
+
+		}
+
+		body{
+			background-color: #222211;
+		}
+		td,tr{
+			margin: 5px;
+			padding: 0px;
+
+		}
+		#moves{
+			color: black;
+			font-size: xx-large;
+}
+    </style>
+
+    <script>
+    	var firstclick='none';
+var secondclick='none';
+var matchcount=0;
+var moves=0;
+var dict=
+		{
+			a:'./images/flipp-images/3.jpg',
+			b:'./images/flipp-images/4.jpg',
+			c:'./images/flipp-images/1.jpg',
+			d:'./images/flipp-images/3.jpg',
+			e:'./images/flipp-images/5.jpg',
+			f:'./images/flipp-images/4.jpg',
+			g:'./images/flipp-images/5.jpg',
+			h:'./images/flipp-images/1.jpg',
+			i:'./images/flipp-images/3.jpg',
+			j:'./images/flipp-images/2.jpg',
+			k:'./images/flipp-images/5.jpg',
+			l:'./images/flipp-images/3.jpg',
+			m:'./images/flipp-images/5.jpg',
+			n:'./images/flipp-images/1.jpg',
+			o:'./images/flipp-images/4.jpg',
+			p:'./images/flipp-images/4.jpg',
+			q:'./images/flipp-images/1.jpg',
+			r:'./images/flipp-images/2.jpg'
+		}
+function f1(id){
+
+	moves++;
+	document.getElementById('moves').innerHTML=moves;
+	if(firstclick=='none' && secondclick=='none')
+	{
+		
+		var x=document.getElementById(id);
+		
+		x.src=dict[id];
+		firstclick=id;
+
+	}
+
+	else if(firstclick!='none' && secondclick=='none')
+	{
+		var x=document.getElementById(id);
+		var y=document.getElementById(firstclick);
+		x.src=dict[id];
+		secondclick=id;
+		if(x.src==y.src)
+		{
+			
+			x.src="./images/flipp-images/matched.png";
+			y.src="./images/flipp-images/matched.png";
+			x.onclick="";
+			y.onclick="";
+			firstclick='none';
+	 		secondclick='none';
+	 		matchcount++;
+	 		console.log(matchcount);
+	 		if(matchcount==9)
+	 		{
+	 			
+	 			f2();
+	 		}
+
+		}
+	}
+
+	else if(firstclick!='none' && secondclick!='none')
+	{
+		var x=document.getElementById(firstclick);
+		var y=document.getElementById(secondclick);
+
+		x.src="./images/flipp-images/hackcover.png";
+		y.src="./images/flipp-images/hackcover.png";
+		firstclick=id;
+	 	secondclick='none';
+	 	var z=document.getElementById(firstclick);
+	 	z.src=dict[id];
+		
+	}
+	
+	
+}
+
+function f2(){
+	document.getElementById('oncorrect').style.backgroundColor="green";
+	 			document.getElementById('oncorrect2').style.backgroundColor="green";
+	 			document.getElementById('msg').innerHTML="SOLVED!!"
+	 			
+}
+
+
+    </script>
+  </head>
+  <body>
+    <div id="oncorrect" class="row" style="background-color: red;">
+
+	<div  class="col-sm-2">
+	
+	</div>
+
+	<div class="col-sm-5">
+	<h1 class="text-right " style="color:white;">FLIPP IT </h1>
+	</div>
+
+	<div class="col-sm-3">
+	<p class="h4 text-right" style="color: white;">MOVES: <span id="moves">0</span></p>
+	</div>
+
+	<div class="col-sm-2 text-center">
+		<button class="btn-info btn-sm "style="float: right;" onclick="history.go(0)">RESTART</button>
+	</div>
+
+</div>
+<div class="row">
+	<div class="col-sm-12">
+			<table class="table-bordered" >
+	
+					<tr>
+						<td><img onclick="f1(this.id)"  id="a"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="b"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="c"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="d"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="e"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="f"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+					</tr>
+
+					<tr>
+						<td><img onclick="f1(this.id)"  id="g"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="h"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="i"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="j"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="k"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="l"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+					</tr>
+
+					<tr>
+						<td><img onclick="f1(this.id)"  id="m"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="n"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="o"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="p"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="q"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+						<td><img onclick="f1(this.id)"  id="r"  src="./images/flipp-images/hackcover.png" class="dimensions"></td>
+					</tr>
+			</table>
+	</div>
+
+</div>
+
+<div class="row" >
+	<div class="col-sm-12 text-center" id="oncorrect2" >
+
+	<h1 id="msg" style="color: white;"></h1>
+	</div>
+	
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
