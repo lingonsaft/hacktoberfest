@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Trillium Media Design</title>
+<meta charset="utf-8">
+<link href="trillium.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+ <header>
+   <h1>&nbsp;Trillium Media Design</h1>
+ </header>
+   <nav>
+ <a href="index.html">Home</a> <a href="services.html">Services</a> <a href="contact.html">Contact</a>
+ </nav>
+ <main>
+   <h2>New Media and Web Design</h2>
+   <p><span class="company">Trillium Media Design</span> will bring your company&rsquo;s Web presence to the next level. 
+   We offer a comprehensive range of services:</p>
+   <ul>
+     <li>Website Design</li>
+     <li>Interactive Animation</li>
+     <li>E-Commerce Solutions</li>  	
+     <li class="feature">Usability Studies</li>
+     <li class="feature">Search Engine Optimization</li>
+   </ul>
+   <h2>Meeting Your Business Needs</h2>
+   <p>Our expert designers are creative and eager to work with you. <br>Take advantage of the power of Web 2.0!</p>
+  </main>
+  <footer>Copyright &copy; 2018 Awoo</footer>
+</div>
+  </body>
+</html>
+
+
+
+
+
