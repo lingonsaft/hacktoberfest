@@ -1,14 +1,33 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  font-family: sans-serif;
+}
+
+.box {
+  height: 100vh;
+  background: url(/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.h1--transparent {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 10em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  mix-blend-mode: overlay;
+  background: rgba(0, 0, 0, .5);
 }
 
 .radiant-button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 26%;
+  right: 16%;
   width: 200px;
   height: 60px;
   text-align: center;
@@ -51,14 +70,58 @@ body {
   border-radius: 40px;
   opacity: 0;
   transition: 0.5s;
-
 }
 
 .radiant-button:hover:before {
-
   filter: blur(20px);
   opacity: 1;
   animation: animate 5s linear infinite;
+}
+
+.fancy-div {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px #000000;
+  background: #fff0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: .5s;
+}
+
+.fancy-div:hover {
+  border-radius: 0;
+}
+
+.fancy-div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+}
+
+.fancy-div p {
+  margin: 0;
+  padding: 0;
+  color: #e29394;
+  font-size: 16px;
+  padding: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
 }
 
 ﻿
