@@ -56,7 +56,7 @@
 }
 
 .icon-bar a:hover {
-  width: 7rem;
+  /* width: 7rem; */
   background: #000;
 }
 
@@ -128,7 +128,7 @@ a:hover {
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .index .jumbotron {

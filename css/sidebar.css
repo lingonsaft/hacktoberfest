@@ -1,29 +1,25 @@
 .icon-bar {
   position: absolute;
-  top: 135px;
+  top: 120px;
   left: 0;
-  z-index: 9999;
   width: 100%;
   height: auto;
   transition-property: width;
   transition-duration: 1.5s;
   transition-delay: 0.25s;
-}
-
-.icon-bar:hover {
-  width: 120px;
+  text-align: center;
 }
 
 /* Style the icon bar links */
 .icon-bar a {
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: .25rem .5rem .25rem .5rem;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: .5rem 1rem;
 }
 
 .twitter {
@@ -76,6 +72,7 @@
     transition-property: width;
     transition-duration: 1.5s;
     transition-delay: 0.25s;
+    text-align: left;
   }
 
   .icon-bar a {
@@ -83,5 +80,9 @@
     width: 3.5rem;
     height: 3.5rem;
     padding: .5rem 1rem;
+  }
+
+  .icon-bar a:hover {
+    width: 120px;
   }
 }
