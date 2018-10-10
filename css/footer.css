@@ -82,3 +82,16 @@
     from{transform: rotate(0deg)}
     to{transform: rotate(360deg)}
 }
+.jumbotron {
+     padding: 0 0 !important;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0 !important;
+    background-color: #e9ecef;
+    border-radius: 0 !important;
+    padding-top: 2rem !important;
+    display: flex !important;
+    align-items: center !important;
+}
