@@ -399,11 +399,11 @@
       const allSelector = 'a.box-item'
       const highlightClass = 'different-color'
       const conArr = Array.from(document.querySelectorAll(allSelector))
-      const currentHilight = conArr.filter(a => a.classList.contains(highlightClass))[0]
+      const currentHilights = conArr.filter(a => a.classList.contains(highlightClass))
       const rest = conArr.filter(a => !a.classList.contains(highlightClass))
       const randomElement = (arr) => arr[Math.floor(arr.length * Math.random())]
       const newHilight = randomElement(rest)
-      currentHilight.classList.remove(highlightClass)
+      currentHilights.forEach(a => a.classList.remove(highlightClass))
       newHilight.classList.add(highlightClass)
     }
     setInterval(changeHighlightedContributor, 2500)
