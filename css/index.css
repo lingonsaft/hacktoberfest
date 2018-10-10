@@ -32,20 +32,18 @@
   }
 }
 
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
 
 * {
   outline: none!important;
-}
-
-/*Begin hover for social media sidebar*/
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .icon-bar a {
@@ -55,12 +53,10 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-  width: 3.5rem;
-  height: 3.5rem;
 }
 
 .icon-bar a:hover {
-  width: 7rem;
+  /* width: 7rem; */
   background: #000;
 }
 
@@ -93,14 +89,6 @@
   background: #bb0000;
   color: white;
 }
-
-@media (max-width: 1240px) {
-    .content {
-        margin-left: 60px;
-    }
-}
-/*End hover for social media sidebar*/
-
 
 html {
   overflow-x: hidden;
@@ -140,7 +128,7 @@ a:hover {
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .index .jumbotron {
@@ -154,7 +142,7 @@ a:hover {
 }
 
 .index .jumbotron:first-child {
-  padding: 8.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .index .jumbotron-transparent {
@@ -503,15 +491,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
-
 .btn-youtube:before {
   content: "";
   z-index: -1;
@@ -602,8 +581,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 /* Youtube Subscribe Styling End  */
 
-
-
 #twist {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -628,12 +605,23 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   .single-tips .tip:first-child {
     border: none;
   }
+
   .single-tips .no {
     font-size: 40px;
     text-align: center;
   }
 
-.index .twist-btn{
-  margin-top: 20px;
+  .index .twist-btn {
+    margin-top: 20px;
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .index .jumbotron:first-child {
+    padding: 8.5rem 0;
+  }
+
+  .content {
+    margin-left: 60px;
+  }
 }
