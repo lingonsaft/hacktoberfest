@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="height: 100%; background-image: url(https://i.ytimg.com/vi/TPeznVvney0/maxresdefault.jpg); background-size: cover">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Scared.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+        <a href="https://hacktoberfest.lingonsaft.com"><h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: white;">Hacktoberfest Ghostchaser</h1></a>
+        <img src="https://b.kisscc0.com/20180813/jye/kisscc0-casper-ghost-drawing-download-fantasmino-5b7151549f12c0.2647736815341530446516.png" style="position: absolute; height: 50px; width: 50px; top: 100px; left: 100px;" id="imHiding">
+    </main>
+
+    <script>    
+    //Script by: Sargon @ Stackoverflow
+        $("#imHiding").on('mouseover', function(){
+        var offset = $(this).offset();
+            var goX = Math.random() < 0.5 ? -1 : 1;
+            var goY = Math.random() < 0.5 ? -1 : 1;
+        $(this).css('top', offset.top + 30 * goY);
+        $(this).css('left', offset.left + 30 * goX);
+        });
+    </script>
+</body>
+</html>
