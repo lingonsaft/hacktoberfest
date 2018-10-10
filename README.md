@@ -109,3 +109,4 @@ For more information on syncing forks [read this article from Github](https://he
 
 
 ###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible <3*
+//comment added
