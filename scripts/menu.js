@@ -65,6 +65,11 @@ const menu = {
       'href': 'foxy.html',
       'id': 'Foxy'
     },
+	'cold-hacktomber': {
+      'text': 'cold-hacktomber',
+      'href': 'cold-hacktomber.html',
+      'id': 'cold-hacktomber'
+    },
     'Gifheaven': {
       'text': 'Gif Heaven',
       'href': 'gifheaven.html',
@@ -104,6 +109,11 @@ const menu = {
       'text': 'Stay Dry',
       'href': '/dry',
       'id': 'dry'
+    },
+    'Fancy CSS effects': {
+      'text': 'Fancy CSS',
+      'href': 'fancyCSS.html',
+      'id': 'fancy'
     }
   }
 }
@@ -127,6 +137,10 @@ function buildMenuHTML (obj = {}) {
       })
       html += '</div>'
     } else {
+      if (currentPage.indexOf('.html') == -1) {
+        currentPage = currentPage.concat('.html');
+      }
+
       let isCurrent = (currentPage === item.href)
 
       html += '<li class="nav-item' + (isCurrent ? ' active' : '') + '">'
