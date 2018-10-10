@@ -166,7 +166,7 @@
         <a href="#side-navigation--rules" class="side-navigtion__item" title="Rules"><span>Rules</span></a>
         <a href="#side-navigation--faqs" class="side-navigtion__item" title="FAQs"><span>FAQs</span></a>
     </div>
-    <div class="jumbotron jumbotron-transparent text-center" id="side-navigation--intro">
+    <div class="jumbotron jumbotron-transparent text-center side-nav-smooth-scrolling" id="side-navigation--intro">
         <div class="container-fluid">
             <h1>Hacktoberfest <span>2018</span></h1>
             <div id="stats"></div>
@@ -219,7 +219,7 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-transparent" id="side-navigation--videos">
+    <div class="jumbotron jumbotron-transparent side-nav-smooth-scrolling" id="side-navigation--videos">
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto text-center">
@@ -311,7 +311,7 @@
         </div>
     </div>
 
-    <div class="jumbotron" id="side-navigation--rules">
+    <div class="jumbotron side-nav-smooth-scrolling" id="side-navigation--rules">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -373,7 +373,7 @@
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-transparent" id="side-navigation--faqs">
+    <div class="jumbotron jumbotron-transparent side-nav-smooth-scrolling" id="side-navigation--faqs">
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto text-center">
@@ -538,9 +538,7 @@
 <script src="./scripts/iframe.js"></script>
 <!-- Latest compiled JavaScript -->
 
-<script src="./scripts/side-nav.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -548,6 +546,7 @@
 <script type="application/javascript" charset="utf-8" src="register.js"></script>
 <script type="application/javascript" charset="utf-8" src="sw.js"></script>
 
+<script src="./scripts/side-nav.js"></script>
 
 <script>
     AOS.init();
