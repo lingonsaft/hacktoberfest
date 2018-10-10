@@ -137,3 +137,6 @@ a:hover {
 .box-item.different-color:hover {
   background-color: #FE0C43;
 }
+.footer__socials a {
+  padding: 20px;
+}
