@@ -33,7 +33,7 @@ P.S. Star and share this repository, if you had fun!
 ## Getting Started
 
 - Fork this repo (button on top)
-- Clone on your local machine
+- Clone on your local machine (on the green button press the dropdown for the url)
 
 ```terminal
 git clone https://github.com/lingonsaft/hacktoberfest.git
