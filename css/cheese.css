@@ -13,21 +13,32 @@
     transform: rotate(360deg);
   }
 }
-
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
 .cheese-body {
-  background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
+ /* background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");*/
   font-size: 16px;
   color: #57283e;
   line-height: 1.6;
-  background-color: mistyrose;
+  background-color: #fff;
 }
 .cheese-container {
-  border: 3px dashed #00f9d0;
+ /* border: 3px dashed #00f9d0;*/
 }
 
 .click-for-cheese {
-  color: #2dc0da;
-  background-color: #57283e;
+  color: #fff;
+  background-color: #ff1a4e;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
 
 .copy {
@@ -54,11 +65,12 @@
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
+  
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
-  border: 10px double #21ffff;
+
+ /* border: 10px double #21ffff;*/
 }
 
 .cheesetron-1 {
@@ -77,8 +89,9 @@
 }
 @media (min-width: 768px) {
   .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -92,7 +105,9 @@
 
 .jumbotron .container {
   max-width: 40rem;
-  background-color: #ff9a56;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+  border-radius: 10px;
 }
 
 .sublogo {
@@ -132,4 +147,23 @@
   padding: 0;
   border-radius: 34px;
   background-color: #57283e;
+}
+.footer__socials a {
+  padding: 20px;
+}
+.button {
+ background-color: #007bff;
+ color: #fff;
+ border-radius: 20px;
+ padding: 5px;
+ border: none; 
+}
+iframe {
+  width: 460px;
+  height: 215px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
 }
