@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
 * {
-  outline: none!important;
+  outline: none !important;
 }
 body {
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   color: #444;
   line-height: 1.6;
   background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 h1 {
@@ -46,12 +52,7 @@ h3 {
 }
 .container a {
   text-decoration: none;
-  color: #FF0844;
-}
-
-.container a:hover {
-  text-decoration: none;
-  color: #cc0636;
+  color: #ff0844;
 }
 
 #myBtn {
@@ -68,9 +69,9 @@ h3 {
   border-radius: 34px;
 }
 
-a.guides-links{
+a.guides-links {
   display: inline-block;
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .section-tree {
@@ -95,28 +96,18 @@ a.list-item {
 
 a.list-item:hover {
   text-decoration: underline;
+}
 
+.jumbotron-transparent .container a:hover {
+  color: #ff0844;
+  transition: all 500ms ease-in-out;
+  text-decoration: underline;
 }
-#footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-     height: 45px; 
-    background: linear-gradient(to left, #FF0844, #FF4563);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
-    text-align: center;
-    z-index: 1000;
-}
-.footer__socials {
-  padding: 6px;
+
+.hvr-bob {
   display: inline-block;
-
-}   
-.footer__socials a {
-  padding: 20px;
-
-  color: #a8050f;
-
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
