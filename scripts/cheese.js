@@ -1,12 +1,12 @@
-let twistHandler = document.getElementById('twist').addEventListener('click', () => {
-    let cards = document.querySelectorAll('.spin');
+// let twistHandler = document.getElementById('twist').addEventListener('click', () => {
+//     let cards = document.querySelectorAll('.spin');
     
-    cards.forEach(card => card.classList.toggle('spinCard'));
-}, false);
+//     cards.forEach(card => card.classList.toggle('spinCard'));
+// }, false);
 
 // function to change the background of the <section> part of cheese.html when the user clicks 'click for cheese' btn
 function cheeseAppearance(){
-    const jumbotron = document.getElementById('cheesetron');
+    const jumbotron = document.getElementById('cheese1');
     const randomNum = Math.floor((Math.random() * 3) + 1);
 
     switch (randomNum) {

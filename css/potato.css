@@ -21,3 +21,6 @@ h1.hero-heading
 td, th {
     padding: 0.5em 2em;
 }
+ .footer__socials a {
+  padding: 20px;
+}
