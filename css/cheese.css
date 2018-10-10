@@ -59,6 +59,11 @@ h2 {
   color: #cc0636;
 }
 
+.text-shadow {
+  color: #D95D39;
+  text-shadow: 1px 1px #F0A202;
+}
+
 .jumbotron {
   
   padding-bottom: var(--jumbotron-padding-y);
