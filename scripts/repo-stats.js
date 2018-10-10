@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	$.ajaxSetup({
 	  headers : {
-		'Authorization' : 'token 50eb74c1c24ef3bbc02c5fd62433989432a8ab55'
+		'Authorization' : 'token 375e956fbbba83452713fb2c72a3a5e0c6fd6871'
 	  }
 	});
 	//get issues non pull request
