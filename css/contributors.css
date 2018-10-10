@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext");
 
 *,
 *::before,
@@ -20,8 +20,13 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
 html,
@@ -41,7 +46,7 @@ body {
   min-height: 100vh;
   padding: 0 0 1.5rem;
   position: relative;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -71,7 +76,7 @@ a:hover {
 .box-item {
   position: relative;
   display: block;
-  background-color: #FEEEF2;
+  background-color: #feeef2;
   color: #444;
   font-weight: 600;
   width: 100%;
@@ -85,8 +90,34 @@ a:hover {
   white-space: nowrap;
 }
 
-@media (min-width: 768px) {
+.jumbotron-transparent {
+  padding: 0;
+  margin-top: 4em;
+}
 
+.fa-twitter,
+.fa-instagram,
+.fa-youtube {
+  color: red;
+}
+
+#love {
+  animation-duration: 1s;
+  animation-name: zoomeffect;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes zoomeffect {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
   .box {
     display: flex;
     flex-wrap: wrap;
@@ -99,14 +130,13 @@ a:hover {
 }
 
 @media (min-width: 1100px) {
-
   .box-item {
     width: calc(25% - 20px);
   }
 }
 
 .box-item:hover {
-  background-color: #FE0C43;
+  background-color: #fe0c43;
   color: #fff;
 }
 
@@ -135,5 +165,10 @@ a:hover {
 }
 
 .box-item.different-color:hover {
-  background-color: #FE0C43;
+  background-color: #fe0c43;
+}
+
+.container a:hover {
+  color: #ff0844;
+  text-decoration: underline;
 }

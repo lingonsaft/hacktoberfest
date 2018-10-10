@@ -5,15 +5,17 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74296045-6"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
-    gtag('config', 'UA-74296045-6');
-    function toggleDropDown() {
-      document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
-    }
-  </script>
+gtag("config", "UA-74296045-6");
+function toggleDropDown() {
+  document.getElementById("dropdownMenu").classList.toggle("show-dropdown");
+}
+</script>
 
   <!--Stats Script-->
   <script src="scripts/stats.js"></script>
@@ -36,8 +38,9 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <!-- Github follow button -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <link rel="stylesheet" href="./css/contributors.css">
@@ -269,7 +272,7 @@
         <a class="box-item" href="https://github.com/vbhv007">Vaibhav Bhardwaj</a>
         <a class="box-item" href="https://github.com/SnowyMan">SnowyMan</a>
         <a class="box-item" href="https://github.com/bsdahl">Ben Dahl</a>
-        <a class="box-item different-color" href="https://github.com/atlas80b">Francesco Cipolla</a>
+        <a class="box-item" href="https://github.com/atlas80b">Francesco Cipolla</a>
         <a class="box-item" href="https://github.com/jdemieville">JDemieville</a>
         <a class="box-item" href="https://github.com/vbhv007">Warley S S</a>
         <a class="box-item" href="https://github.com/eusoikonomou">Stathis Oikonomou</a>
@@ -289,12 +292,36 @@
         <a class="box-item" href="https://github.com/TimBush">Tim Bush</a>
         <a class="box-item" href="https://github.com/brendanpettis">Brendan Pettis</a>
         <a class="box-item" href="https://github.com/vimm0">Sandesh Rana</a>
+        <a class="box-item" href="https://github.com/Rahul-Vijay">Rahul Vijay</a>
         <a class="box-item" href="https://github.com/theronj60">Theron Joe</a>
         <a class="box-item" href="https://github.com/kkotelczuk">Konrad Kotelczuk</a>
+
         <!--
         Add here
         format : <a class="box-item"> href="https://github.com/<your-username>">Your Name</a>
         -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="jumbotron-transparent">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 mx-auto text-center">
+          Follow us at
+          <a href="https://twitter.com/lingonsaft1" target="_blank" class="fab fa-fw fa-twitter fa-2x hvr-bob"></a>
+          <a href="https://www.instagram.com/lingonsaftofficial/" target="_blank" class="fab fa-fw fa-instagram fa-2x hvr-bob"></a>
+          <a href="https://youtube.com/lingonsaft" target="_blank" class="fab fa-fw fa-youtube fa-2x hvr-bob"></a>
+        </div>
+
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12 mx-auto text-center">
+          <p>Made with <img id="love" src="https://www.freeiconspng.com/uploads/blank-heart-love-hd-png-28.png"
+    alt="heart icon" width="25px">  &amp; <span style="font-size: 22px;">&lt;/&gt;</span></p>
+        </div>
       </div>
     </div>
   </div>
@@ -330,12 +357,15 @@
   </button>
 
     <script>
-      let contributors = document.querySelectorAll('a.box-item')
-      contributors.forEach(con => {
-        console.log(con.href)
-        con.innerHTML += '<img src="https://avatars.githubusercontent.com/' + con.href.split('https://github.com/')[1] + '">'
-      })
-    </script>
+    let contributors = document.querySelectorAll("a.box-item");
+contributors.forEach(con => {
+  console.log(con.href);
+  con.innerHTML +=
+    '<img src="https://avatars.githubusercontent.com/' +
+    con.href.split("https://github.com/")[1] +
+    '">';
+});
+</script>
     <script src="./scripts/scroll.js"></script>
 
   <script src="./scripts/menu.js"></script>
