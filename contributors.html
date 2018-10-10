@@ -388,7 +388,7 @@
   <script>
     let contributors = Array.from(document.querySelectorAll('a.box-item'))
     contributors.sort((a, b) => a.innerHTML.localeCompare(b.innerHTML))
-    contributors.foreach(a => parentElement.appendChild(a))
+    contributors.forEach(a => a.parentElement.appendChild(a))
     contributors.forEach(con => {
       console.log(con.href)
       con.innerHTML += `<img src="https://avatars.githubusercontent.com/${con.href.split('https://github.com/')[1]}">`
