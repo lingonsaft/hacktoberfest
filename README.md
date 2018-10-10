@@ -104,6 +104,7 @@ For more information on syncing forks [read this article from Github](https://he
 - What is the event for?
   - For the open source community engagement
 
+# Changelog
 
 
 ###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible <3*
