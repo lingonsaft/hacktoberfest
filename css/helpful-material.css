@@ -123,3 +123,16 @@ a.list-item:hover {
 .container a.hvr-bob:hover {
   text-decoration: underline;
 }
+
+#accordionHacktober .card .btn-link{
+  text-decoration: none;
+  color: #FF0844;
+}
+
+#accordionHacktober .card .card-header{
+  background-color: #FFF;
+}
+
+#accordionHacktober .card {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
