@@ -1,11 +1,5 @@
 
 $(document).ready(function () {
-	$.ajaxSetup({
-	 
-	  headers : {
-		'Authorization' : 'token 3de97d9b0e1c8e74b264192173476306d2259782'
-	  }
-	});
 	//get issues non pull request
 	$.getJSON("https://api.github.com/repos/lingonsaft/hacktoberfest", function(json){
 		$.getJSON('https://api.github.com/search/issues?q=lingonsaft/hacktoberfest+state:open', getOpenPR);
