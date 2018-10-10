@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Molle:400italic&subset=latin,latin-ext);
+body{
+background-color: hsla(0,0%,0%,1);
+margin: 0px;
+overflow: hidden;
+font-family: 'Molle', cursive;
+}
+h2{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate( -50%, -50%);
+  font-size:3em;
+  color:hsla(255, 255%, 255%, .1);
+}
+ 
