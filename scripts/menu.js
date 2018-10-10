@@ -127,6 +127,10 @@ function buildMenuHTML (obj = {}) {
       })
       html += '</div>'
     } else {
+      if (currentPage.indexOf('.html') == -1) {
+        currentPage = currentPage.concat('.html');
+      }
+
       let isCurrent = (currentPage === item.href)
 
       html += '<li class="nav-item' + (isCurrent ? ' active' : '') + '">'
