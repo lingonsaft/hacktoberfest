@@ -1,0 +1,660 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Turn Down for What</title>
+    <meta name="description" content="Just something silly">
+    <style>
+body {
+  background-color: #ff385f;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+
+.tranquil {
+  font-size: 10px;
+  position: relative;
+  left: -1.5em;
+  display: flex;
+  align-items: flex-end;
+  width: max-content;
+  height: 35.5em;
+  z-index: 0;
+}
+.tranquil::after {
+  content: "";
+  position: absolute;
+  left: -7.1875em;
+  width: 140%;
+  height: 0.5em;
+  border-radius: 0.5em;
+  background-color: #24003e;
+  z-index: 2;
+}
+
+.tranquil__cat {
+  position: relative;
+  width: 24.9375em;
+  height: 15.25em;
+}
+
+.tranquil__catHead {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  border-radius: 15.25em;
+  background-color: #31005b;
+  display: flex;
+  align-items: center;
+  box-shadow: 2.8125em 0 #ffd239;
+}
+
+.tranquil__catEar {
+  position: absolute;
+  top: -4.3125em;
+  left: 7.5em;
+  width: 5.625em;
+  height: 5.625em;
+  background-color: #24003e;
+  border-top-right-radius: 50%;
+  transform: rotate(-52deg) skewX(-30deg) scale(1, 0.866);
+  z-index: -1;
+}
+.tranquil__catEar::before, .tranquil__catEar::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.tranquil__catEar::before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+}
+.tranquil__catEar::after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.tranquil__catEar--isRight {
+  left: 13.75em;
+  background-color: #31005b;
+  z-index: 1;
+}
+
+.tranquil__catEye {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 3.25em;
+  margin-right: 0.9375em;
+  width: 5.625em;
+  height: 2.8125em;
+  background-color: #fed339;
+  border-radius: 0 0 2.8125em 2.8125em;
+}
+.tranquil__catEye::before {
+  content: "";
+  display: block;
+  width: 3.9375em;
+  height: 1.96875em;
+  border-radius: 0 0 1.96875em 1.96875em;
+  background-color: #080017;
+}
+
+.tranquil__catNose {
+  position: absolute;
+  left: 8.375em;
+  bottom: 6.25em;
+  width: 1.8125em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: #f986e1;
+}
+
+.tranquil__catWhiskers {
+  position: absolute;
+  bottom: 6.375em;
+  left: -3.9375em;
+  width: 7.25em;
+  height: 0.125em;
+  background-color: #ffffff;
+}
+.tranquil__catWhiskers::before {
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  left: -1.4375em;
+  width: 8.75em;
+  height: inherit;
+  background: inherit;
+  transform: rotate(10deg);
+}
+
+.tranquil__catWhiskers--isRight {
+  left: unset;
+  right: 1.25em;
+  transform: scaleX(-1);
+}
+
+.tranquil__catLeg {
+  position: absolute;
+  bottom: 0;
+  left: -2.625em;
+  width: 8.5em;
+  height: 5.375em;
+  border-radius: 5.375em;
+  background-color: #24003e;
+}
+
+.tranquil__catLeg--isBack {
+  left: unset;
+  right: -10.9375em;
+  width: 24.375em;
+}
+
+.tranquil__catEyeBall {
+  position: absolute;
+  bottom: 0;
+  left: 2.3125em;
+  width: 7.8125em;
+  height: 7.8125em;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.tranquil__catEyeBall::after {
+  content: "";
+  position: absolute;
+  right: 2.125em;
+  top: 2em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #080017;
+  box-shadow: 0 0 0 1.25em #ffac50;
+}
+
+.tranquil__catBody {
+  position: absolute;
+  bottom: 0;
+  left: 14.125em;
+  width: 22em;
+  height: 35.25em;
+  border-radius: 22em 22em 0 0;
+  background-color: #24003e;
+  z-index: -1;
+}
+
+.tranquil__catTail {
+  position: absolute;
+  top: -0.25em;
+  right: calc(-12.8125em - 2.375em);
+  width: 12.8125em;
+  height: 13.375em;
+  border-radius: 12.8125em 12.8125em 0 0;
+  color: #24003e;
+  border: 3.875em solid;
+  box-sizing: border-box;
+  border-bottom: 0;
+}
+.tranquil__catTail::before {
+  content: "";
+  position: absolute;
+  right: -3.875em;
+  bottom: -1.9375em;
+  width: 3.875em;
+  height: 3.875em;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.tranquil__catTail::after {
+  content: "";
+  position: absolute;
+  bottom: -22.125em;
+  left: calc((-3.875em * 2) - 1.75em);
+  width: calc((3.875em * 2) + 1.75em);
+  height: 22.5em;
+  border: 3.875em solid;
+  border-radius: 0 0 5.9375em 0;
+  border-left: 0;
+  border-top: 0;
+  box-sizing: border-box;
+}
+
+.tranquil__pumpkin {
+  position: relative;
+  width: 17.25em;
+  height: 13.875em;
+  margin-left: 10.8125em;
+  z-index: 1;
+}
+
+.tranquil__pumpkinBody {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  border-radius: 13.875em;
+  background-color: #ff5e54;
+  box-shadow: -3.875em 0 #fc4235, 3.875em 0 #ffc564;
+}
+
+.tranquil__pumpkinEye {
+  display: block;
+  position: relative;
+  top: 3.125em;
+  width: 4.375em;
+  height: 4.375em;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.tranquil__pumpkinEye::before {
+  content: "";
+  position: absolute;
+  right: 0.625em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #24003e;
+}
+.tranquil__pumpkinEye::after {
+  content: "";
+  position: absolute;
+  top: 2.25em;
+  right: 1.25em;
+  width: 4.6875em;
+  height: 4.6875em;
+  border-radius: 50%;
+  background-color: #ff5e54;
+}
+
+.tranquil__pumpkinEye--isRight {
+  margin-left: 0.625em;
+  transform: scaleX(-1);
+}
+
+.tranquil__pumpkinTeeth {
+  position: absolute;
+  bottom: 5.3125em;
+  width: 1.125em;
+  height: 0.9375em;
+  border-radius: 0 0 0.9375em 0.9375em;
+  color: #ffffff;
+  background: currentColor;
+  box-shadow: -1.0625em 0, 1.0625em 0;
+}
+
+.tranquil__pumpkinStalk {
+  position: absolute;
+  top: -6.25em;
+  left: 7.5em;
+  width: 6.5625em;
+  height: 3.75em;
+  border-radius: 3.75em 3.75em 0 0;
+  color: #24003e;
+  border: 2em solid;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+.tranquil__pumpkinStalk::before {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  right: -2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.tranquil__pumpkinStalk::after {
+  content: "";
+  position: absolute;
+  top: 1.625em;
+  left: -2em;
+  width: 2em;
+  height: 3.125em;
+  background-color: currentColor;
+}
+
+.tranquil__pumpkinLeaf {
+  position: absolute;
+  top: -3.5625em;
+  left: -5.4375em;
+  width: 4em;
+  height: 6.4375em;
+  border-radius: 0 3.125em 0 3.125em;
+  background-color: #ffac50;
+  z-index: -2;
+}
+
+.tranquil__spiderWeb {
+  position: absolute;
+  width: 12.5em;
+  height: 12.5em;
+  border: 0.125em solid #ffffff;
+  border-top: 0;
+  border-right: 0;
+  z-index: -2;
+}
+.tranquil__spiderWeb::before {
+  content: "";
+  position: absolute;
+  bottom: 4.3125em;
+  left: -1.875em;
+  width: 100%;
+  height: 0.125em;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+.tranquil__spiderWeb::after {
+  content: "";
+  position: absolute;
+  top: -4.4375em;
+  left: -0.0625em;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  color: #ff385f;
+  z-index: -1;
+  box-shadow: inset 0.125em -0.25em 0 -0.125em #ffffff, 7.0625em 7em, 6.75em 7.125em 0 -0.125em #ffffff, -2.125em 5.0625em 0 -2.125em, -2.25em 5.3125em 0 -2.1875em #ffffff, 1.9375em 9.125em 0 -2.125em, 1.625em 9.25em 0 -2.25em #ffffff, -4em 9.5625em 0 -4em, -4.125em 9.8125em 0 -4.125em #ffffff, -2.5625em 11em 0 -4em, -2.8125em 11.125em 0 -4.125em #ffffff;
+}
+
+.tranquil__spiderWeb--isFirst {
+  bottom: 0.125em;
+  right: -12.5em;
+}
+
+.tranquil__spiderWeb--isSecond {
+  font-size: 0.8em;
+  top: 3.75em;
+  right: 4.1875em;
+  transform: scale(-1);
+}
+
+.tranquil__spiderWeb--isThird {
+  bottom: 14.25em;
+  left: 2.125em;
+  transform: scaleX(-1);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="tranquil">
+      <div class="tranquil__cat">
+        <div class="tranquil__catHead">
+          <span class="tranquil__catEar"></span>
+          <span class="tranquil__catEar tranquil__catEar--isRight"></span>
+
+          <span class="tranquil__catEye"></span>
+          <span class="tranquil__catEye"></span>
+          <span class="tranquil__catNose"></span>
+          <span class="tranquil__catWhiskers"></span>
+          <span class="tranquil__catWhiskers tranquil__catWhiskers--isRight"></span>
+        </div>
+
+        <div class="tranquil__catEyeBall"></div>
+        <div class="tranquil__catLeg"></div>
+        <div class="tranquil__catLeg tranquil__catLeg--isBack"></div>
+        <div class="tranquil__catBody">
+          <span class="tranquil__catTail"></span>
+        </div>
+      </div>
+
+      <div class="tranquil__pumpkin">
+        <div class="tranquil__pumpkinStalk">
+          <span class="tranquil__pumpkinLeaf"></span>
+        </div>
+
+        <div class="tranquil__pumpkinBody">
+          <span class="tranquil__pumpkinEye"></span>
+          <span class="tranquil__pumpkinEye tranquil__pumpkinEye--isRight"></span>
+          <span class="tranquil__pumpkinTeeth"></span>
+        </div>
+      </div>
+
+      <span class="tranquil__spiderWeb tranquil__spiderWeb--isFirst"></span>
+      <span class="tranquil__spiderWeb tranquil__spiderWeb--isSecond"></span>
+      <span class="tranquil__spiderWeb tranquil__spiderWeb--isThird"></span>
+    </div>
+
+    <script>
+      (function() {
+        var lastTime = 0;
+        var vendors = ['ms', 'moz', 'webkit', 'o'];
+        for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+          window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+          window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+            || window[vendors[x]+'CancelRequestAnimationFrame'];
+        }
+
+        if (!window.requestAnimationFrame)
+          window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+          };
+
+        if (!window.cancelAnimationFrame)
+          window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+          };
+      }());
+(function() {
+  var player;
+  var turndownAt = 20
+  var numTurntAnimations = 10
+  var turntDown = false;
+  var maxNodes = 1000;
+  var animationCSS = {
+    'tdfw_intro': 'tdfwIntro 1s infinite ease-in-out',
+    'turntDown': function() {
+      var key = ~~ ( Math.random() * numTurntAnimations)
+      return 'turntDown' + key + ' 5s infinite ease-in-out'
+    }
+  }
+  var firstAddition = true
+  function embedVideo() {
+    var parent = document.createElement('div')
+    parent.style.position = 'fixed'
+    parent.style.zIndex = 5000;
+    parent.style.right = 0;
+    parent.style.top = 0
+    parent.style.opacity = 0.2
+    var div = document.createElement('div')
+    div.id = "tdfw"
+    parent.appendChild(div)
+    document.body.appendChild(parent)
+    parent.onmouseover = function() {
+      console.log('mouse')
+      parent.style.opacity = 1
+    }
+    parent.onmouseout = function() {
+      parent.style.opacity = 0.2
+    }
+    parent.style.webkitTransition = 'opacity 0.3s ease-in-out'
+    parent.style.transition = 'opacity 0.3s ease-in-out'
+
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.body.appendChild(tag)
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('tdfw', {
+        height: '200',
+        width: '305',
+        videoId: 'HMUDVMiITOU',
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+    window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady
+  }
+  function onPlayerReady(event) {
+    console.log('ready')
+    event.target.playVideo();
+    requestAnimationFrame(checkTime)
+  }
+
+  function checkTime() {
+    if(turntDown) {
+      return false;
+    }
+    requestAnimationFrame(checkTime);
+    if(player.getCurrentTime() > turndownAt) {
+      turntDown = true;
+      removeCurStyles();
+      addCurStyles()
+    }
+
+  }
+  function onPlayerStateChange(event) {
+    console.log(event)
+    if(event.data === 1) {
+      //started
+      addCurStyles()
+
+    } else if(event.data === 2) {
+      //paused
+      removeCurStyles()
+    }
+  }
+  //<iframe width="560" height="315" src="//www.youtube.com/embed/HMUDVMiITOU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+  function setupAnimations() {
+    var numKeyFrames = 10
+    var introKeyFrames = '';
+    var turntKeyFrames = [];
+    var jitterAmount = 10;
+    for(var i = 0; i < numTurntAnimations; i++) {
+      turntKeyFrames[i] = ''
+    }
+    for(var i = 0; i <= numKeyFrames; i++) {
+      var pct = i / numKeyFrames * 100 + '%';
+
+      var x = (Math.random() - 0.5) * jitterAmount
+      var y = (Math.random() - 0.5) * jitterAmount
+      x = ~~ x
+      y = ~~ y
+      var keyframe = '-webkit-transform: translate(' + x + 'px,' + y +'px); '
+      keyframe += 'transform: translate(' + x + 'px,' + y + 'px);'
+      introKeyFrames += pct + ' { ' + keyframe + ' } '
+      for(var j = 0; j < numTurntAnimations; j++) {
+        var x = (Math.random() - 0.5) * jitterAmount
+        var y = (Math.random() - 0.5) * jitterAmount
+        x = ~~ x
+        y = ~~ y
+        var rotationAmount = i / numKeyFrames * 360;
+        rotationAmount = ~~ rotationAmount
+        var rotateDirection = String.fromCharCode(88 + ~~ (Math.random() * 2))
+        var keyframe = '-webkit-transform: translate(' + x + 'px,' + y +'px) rotate' + rotateDirection + '(' + rotationAmount + 'deg); '
+        keyframe += 'transform: translate(' + x + 'px,' + y + 'px) rotate' + rotateDirection + '(' + rotationAmount + 'deg); '
+        turntKeyFrames[j] += pct + ' { ' + keyframe + ' }'
+
+      }
+
+    }
+    var introKeyFrameDef = '@-webkit-keyframes tdfwIntro { ' + introKeyFrames + ' } '
+    introKeyFrameDef += '@keyframes tdfwIntro { ' + introKeyFrames + ' } '
+
+
+    var allStyles = introKeyFrameDef
+
+    for(var i = 0; i < turntKeyFrames.length; i++) {
+      var kf = turntKeyFrames[i]
+      allStyles += '@-webkit-keyframes turntDown' + i + ' { ' + kf + ' } '
+      allStyles += '@keyframes turntDown' + i + ' { ' + kf + ' } '
+    }
+    var introClass = '.tdfw_intro { -webkit-animation: tdfw 1s infinite; animation: tdfw 1s infinite; } '
+    //allStyles += introClass
+    var style = document.createElement('style')
+    style.textContent = allStyles
+    document.body.appendChild(style)
+  }
+
+
+  function addCurStyles() {
+
+    var curClass = getCurClass()
+    var nodes = Array.prototype.slice.call(document.querySelectorAll('img'))
+    nodes = nodes.concat(Array.prototype.slice.call(document.querySelectorAll('div')))
+    nodes = nodes.concat(Array.prototype.slice.call(document.querySelectorAll('span')))
+    nodes = nodes.concat(Array.prototype.slice.call(document.querySelectorAll('a')))
+    nodes = nodes.concat(Array.prototype.slice.call(document.querySelectorAll('section, header, footer, video, iframe, nav, article, h1, h2, h3, h4, h5, h6, footer, main, p, pre, blockquote, ol, ul, li, embed, object, canvas, svg, form, input, select, button')))
+
+    var max = maxNodes < nodes.length ? maxNodes : nodes.length;
+
+    //console.log(nodes)
+    //console.log(max)
+    for(var i = 0; i < max ; i++) {
+      var node = nodes[i];
+
+      node.classList.add(curClass)
+      var delay = Math.round(Math.random() * 1000) / 1000 + 'ms'
+      if(firstAddition) {
+        delay = ~~ (Math.random() * 10) + 's'
+      }
+      var css = animationCSS[curClass];
+      if(typeof css === 'function') {
+        css = css()
+      }
+      node.style['webkitAnimation'] = css + ' ' + delay
+      node.style['animation'] = css + ' ' + delay
+
+    }
+    firstAddition = false
+
+  }
+  function removeCurStyles() {
+    var classes = allClasses()
+    var nodes = document.querySelectorAll('*')
+    for(var i = 0; i < nodes.length ; i++) {
+      var node = nodes[i];
+      for(var j = 0; j < classes.length; j++) {
+        var cl = classes[j]
+        node.classList.remove(cl)
+        node.style['webkitAnimation'] = ''
+        node.style['animation'] = ''
+
+      }
+    }
+  }
+  function allClasses() {
+    return ['tdfw_intro', 'turntDown']
+  }
+  function getCurClass() {
+    if(player.getCurrentTime() > turndownAt) {
+      return 'turntDown'
+    } else {
+      return 'tdfw_intro'
+    }
+
+  }
+
+  function init() {
+    if(typeof window.tdfw________TDFW !== 'undefined') {
+      return;
+    }
+    window.tdfw________TDFW = true;
+
+    embedVideo()
+    setupAnimations()
+  }
+  init()
+
+})()
+    </script>
+
+  </body>
+</html>
