@@ -386,6 +386,7 @@
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+  text-decoration: underline;
 }
 
 /* Hang */
