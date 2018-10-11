@@ -1,0 +1,88 @@
+.icon-bar {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition-property: width;
+  transition-duration: 1.5s;
+  transition-delay: 0.25s;
+  text-align: center;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: .5rem 1rem;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 70px;
+    transition-property: width;
+    transition-duration: 1.5s;
+    transition-delay: 0.25s;
+    text-align: left;
+  }
+
+  .icon-bar a {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: .5rem 1rem;
+  }
+
+  .icon-bar a:hover {
+    width: 120px;
+  }
+}
