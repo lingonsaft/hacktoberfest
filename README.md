@@ -32,21 +32,21 @@ P.S. Star and share this repository, if you had fun!
 
 ## Getting Started
 
-- Fork this repo (button on top)
-- Clone on your local machine
+- Fork this repo (button on top).
+- Clone on your local machine.
 
 ```terminal
 git clone https://github.com/lingonsaft/hacktoberfest.git
 cd hacktoberfest
 ```
 
-- Create a new branch
+- Create a new branch.
 
 ```markdown
-git checkout -b my-new-branch
+git checkout -b my-new-branch.
 ```
-- Add your contribution
-- Commit and push
+- Add your contribution.
+- Commit and push.
 
 ```markdown
 git add .
@@ -54,7 +54,7 @@ git commit -m "your-commit-msg"
 git push origin my-new-branch
 ```
 
-- Create a new pull request from your forked repository
+- Create a new pull request from your forked repository.
 
 
 ## Avoid Conflicts (Syncing your fork)
@@ -65,12 +65,12 @@ An easy way to avoid conflicts is to add an 'upstream' for your git repo, as oth
 git remote add upstream https://github.com/lingonsaft/hacktoberfest
 ```
 
-You can verify that the new remote has been added by typing
+You can verify that the new remote has been added by typing.
 ```terminal
 git remote -v
 ```
 
-To pull any new changes from your parent repo simply run
+To pull any new changes from your parent repo simply run.
 ```terminal
 git merge upstream/master
 ```
@@ -84,12 +84,12 @@ For more information on syncing forks [read this article from Github](https://he
 
 - Who can contribute?
   - Anyone with a github account and who is signed up for
-[hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
+[hacktoberfest](https://hacktoberfest.digitalocean.com/) :).
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
   - We are two programmers from Sweden [Richard](https://github.com/richie-south)
-  and [Benny](https://github.com/BennyCarlsson). We are doing this because we love Open
+  and [Benny](https://github.com/BennyCarlsson). We are doing this because we love Open.
   Source and Hacktoberfest. We want to make it easier for people to get started with Hacktoberfest and Open Source.
 - Why are you not using digitalocean?
   - Because we only know JavaScript and suck at servers. We use [now](https://zeit.co/now) instead.
@@ -100,11 +100,11 @@ For more information on syncing forks [read this article from Github](https://he
 - How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2018?
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
-  - go to : https://hacktoberfest.digitalocean.com/stats/ (Scroll down to Check Out Your Own Stats)
+  - go to : https://hacktoberfest.digitalocean.com/stats/ (Scroll down to Check Out Your Own Stats).
 - What is the duration of Hacktoberfest 2018?
   - It is from 1st october to 31st october 2018...
 - What is the event for?
-  - For the open source community engagement
+  - For the open source community engagement.
 
 
 
