@@ -1,7 +1,7 @@
 .magic{
-    padding: 80px;
+    padding: 3.5em;
 }
 
-.col-md{
-    margin-bottom: 20px;
+.magic .col-sm{
+    padding: 2em;
 }
