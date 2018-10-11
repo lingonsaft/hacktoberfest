@@ -6,12 +6,26 @@ body {
 
 .box {
   height: 100vh;
-  background: url(/images/bg.jpg);
+  background: url(bg3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.other-box {
+  height: 100vh;
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax {
+  height: 500px;
 }
 
 .h1--transparent {
+  top: 30%;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -26,8 +40,8 @@ body {
 
 .radiant-button {
   position: absolute;
-  top: 26%;
-  right: 16%;
+  top: 10%;
+  right: 30%;
   width: 200px;
   height: 60px;
   text-align: center;
@@ -80,14 +94,13 @@ body {
 
 .fancy-div {
   position: absolute;
-  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 0 15px #fff;
-  background: #ffffff94;
+  box-shadow: 0 0 0 10px #001418;
+  background: rgba(183, 117, 129, 0.64);
   box-sizing: border-box;
   text-align: center;
   transition: .5s;
@@ -104,7 +117,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #001418;
   z-index: -1;
   transform: rotate(-45deg);
   border-radius: 10px;
@@ -113,7 +126,7 @@ body {
 .fancy-div p {
   margin: 0;
   padding: 0;
-  color: #0a151a;
+  color: #e7e7e7;
   font-size: 16px;
   padding: 20px;
   font-family: sans-serif;
@@ -126,8 +139,8 @@ body {
 
 .svg {
   position: absolute;
-  top: 20%;
-  left: 15%;
+  top: 5%;
+  left: 20%;
 }
 
 #svg {
