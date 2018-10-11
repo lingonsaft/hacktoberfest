@@ -41,6 +41,21 @@
   }
 }
 
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 * {
   outline: none!important;
@@ -149,6 +164,11 @@ a:hover {
   background-color: transparent;
 }
 
+.index .jumbotron-transparent .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
 .index .jumbotron h1 {
   font-size: 302.5%;
   font-weight: 700;
@@ -220,8 +240,11 @@ a:hover {
 .video .card:hover {
   color: #FF0844;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  animation : jump 0.5s ease forwards;
 }
-
+#intro_video {
+    display: block
+}
 .single-faq {
   border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
@@ -511,6 +534,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
+
 .ytSubscribeContainer {
   margin-top: 25px;
 }
@@ -600,6 +624,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   cursor: pointer;
 }
 
+.video-border{
+  border: solid #FF0844 1px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius:  25px;
+}
+
 @media (min-width: 992px) {
   .single-tips .tip {
     border-left: 1px solid rgba(0,0,0,.125);
@@ -623,9 +653,5 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
     padding: 8.5rem 0;
-  }
-
-  .content {
-    margin-left: 60px;
   }
 }
