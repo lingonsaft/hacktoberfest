@@ -1,46 +1,56 @@
-
-
-.spinCard{
-  -webkit-animation:spin 4s linear reverse infinite;
-  animation:spin 4s linear reverse infinite;
+.spinCard {
+  -webkit-animation: spin 4s linear reverse infinite;
+  animation: spin 4s linear reverse infinite;
 }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
-#cheese-body {
+.cheese-body {
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
   font-size: 16px;
   color: #57283e;
   line-height: 1.6;
   background-color: mistyrose;
 }
-#cheese-container {
-  border: 3px dashed #57283e;
+.cheese-container {
+  border: 3px dashed #00f9d0;
 }
 
-#click-for-cheese {
-    color: #ff9a56;
-    background-color: #57283e;
+.click-for-cheese {
+  color: #2dc0da;
+  background-color: #57283e;
 }
 
 .copy {
   padding-left: 50%;
 }
 
-.list{
-    list-style-type: none;
+.list {
+  list-style-type: none;
 }
-
-
 
 .container a {
   text-decoration: none;
-  color: #FF0844;
+  color: #ff0844;
 }
 
 .container a:hover {
   text-decoration: none;
   color: #cc0636;
+}
+
+.text-shadow {
+  color: #D95D39;
+  text-shadow: 1px 1px #F0A202;
 }
 
 .jumbotron {
@@ -85,7 +95,7 @@
   background-color: #ff9a56;
 }
 
-#sublogo{
+.sublogo {
   position: absolute;
   top: 16px;
   left: 197px;
@@ -97,7 +107,7 @@
   opacity: 0;
 }
 
-#sublogo:hover{
+.sublogo:hover {
   position: absolute;
   top: 16px;
   left: 197px;
@@ -108,7 +118,8 @@
   height: 255px;
   opacity: 100;
 }
-#myBtn {
+
+.myBtnCheese {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -122,4 +133,3 @@
   border-radius: 34px;
   background-color: #57283e;
 }
-
