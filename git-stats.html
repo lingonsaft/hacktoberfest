@@ -3,18 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Repo Stats</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<style>
+
+
+.number {
+  padding: 20px;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  background: #fcd048;
+}
+.num{
+	font-size: 5em;
+} 
+
+.txt {
+	font-size: 1.5em;
+}
+
+</style>
   </head>
   <body>
-	<h1>Stats from lingonsaft/hacktoberfest repo</h1> 
-	<p>I didn't know what to add to the repo so I thought I'd write a counter for statics from the repo!</p>
-	<p>P.S. right now this is very bare bones html (no css). I will make it look better and add more functionality soon!</p>
-	<h3>Number of Pull requests</h3>
-    <div id="pull_number"></div>
-	<h3>Number of Stars</h3>
-	<div id="star_number"></div>
-	<h3>Number of Forks</h3>
-	<div id="fork_number"></div> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<nav class="navbar navbar-dark black">
+	 <a class="brand-logo center" href="#">Stats From lingonsaft/hacktoberfest repo</a>
+	</nav>
+	<div class="container">
+	<div style="padding:5px;background-color:#26a69a" class="card"><span class="txt center">I couldn't thing of something to add to the repo so I thought I'd write a counter for statics from the repo!
+P.S. right now this is very bare bones html (no css). I will make it look better and add more functionality soon!</span>
+	</div>
+	</div>
+	<div class="row">
+	<div class="center">
+	<div class="number col s12 m4 z-index-3"> 
+	<h3>Pull requests<img style="width:45px;height:45px;"src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/git-pull-request.svg"></img></h3>
+    <div class="num" id="pull_number"></div>
+	</div>
+	<div class="number col s12 m4">
+	<h3>Stars <img style="width:50px;height:50px;"src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/star.svg"></img></h3>
+	<div class="num" id="star_number"></div>
+	</div> 
+	<div class="number col s12 m4">
+	<h3>Forks <img style="width:50px;height:50px;"src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/svg/repo-forked.svg"></img></h3>
+	<div class="num" id="fork_number"></div>
+	</div>
+	</div>
+	</div>
+
     <script src="scripts/repo-stats.js"></script>
   </body>
 </html>
