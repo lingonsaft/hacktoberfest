@@ -8,9 +8,9 @@
 
 @media screen and (max-width: 40em) {
   .magic{
-    padding: 0;
+    padding: 2em;
   }
   .magic .col-sm {
-    padding: 0;
+    padding: 1em;
   }
 }
