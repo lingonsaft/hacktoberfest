@@ -5,3 +5,12 @@
 .magic .col-sm{
     padding: 2em;
 }
+
+@media screen and (max-width: 40em) {
+  .magic{
+    padding: 0;
+  }
+  .magic .col-sm {
+    padding: 0;
+  }
+}
