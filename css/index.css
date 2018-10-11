@@ -164,6 +164,11 @@ a:hover {
   background-color: transparent;
 }
 
+.index .jumbotron-transparent .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
 .index .jumbotron h1 {
   font-size: 302.5%;
   font-weight: 700;
