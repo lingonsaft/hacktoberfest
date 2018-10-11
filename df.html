@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Document
+            </title>
+        </meta>
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+ *Este codigo estan reservado con derechos de autorpor
+ *Andy Robers Javier Reyes . - Tu Beffo :3
+ */		
+
+function redondear(x){
+if((x+"").indexOf(".")==-1){return x;}
+	if(isNaN(x)){
+		return 0;
+	}
+     //obtien solo el numero entero y elimina las decimales
+   let t=Math.trunc(x);
+	//debugger;
+ // convierte en absololuto el numero
+	x=Math.abs(x-t);
+	//obtine los cero que hay  deun decimal
+   let countZeroDecimal=-Math.floor( Math.log(x) / Math.log(10) + 1);
+   let numeroredondeo=Math.pow(10,countZeroDecimal+4);
+   let a =Math.round(x * numeroredondeo) / numeroredondeo;
+
+   let resultado=(""+a).replace("0",t+"")
+     
+
+     return parseFloat(resultado);
+}
+
+
+
+function noExponente(n){
+
+	if((n+"").indexOf("e")==-1){
+		return n;
+	}
+    var [lead,decimal,pow] = n.toString().split(/e|\./);
+    return +pow <= 0 
+        ? "0." + "0".repeat(Math.abs(pow)-1) + lead + decimal
+        : lead + ( +pow >= decimal.length ? (decimal + "0".repeat(+pow-decimal.length)) : (decimal.slice(0,+pow)+"."+decimal.slice(+pow)))
+}
+Number.prototype.noExponents= function(){
+	debugger;
+	console.log(this);
+    var data= String(this).split(/[eE]/);
+    if(data.length== 1) return data[0]; 
+
+    var  z= '', sign= this<0? '-':'',
+    str= data[0].replace('.', ''),
+    mag= Number(data[1])+ 1;
+
+    if(mag<0){
+        z= sign + '0.';
+        while(mag++) z += '0';
+        return z + str.replace(/^\-/,'');
+    }
+    mag -= str.length;  
+    while(mag--) z += '0';
+    return str + z;
+}
+
+function no(t){
+	 var data= String(t).split(/[eE]/);
+    if(data.length== 1) return data[0]; 
+
+    var  z= '', sign= t<0? '-':'',
+    str= data[0].replace('.', ''),
+    mag= Number(data[1])+ 1;
+
+    if(mag<0){
+        z= sign + '0.';
+        while(mag++) z += '0';
+        return z + str.replace(/^\-/,'');
+    }
+    mag -= str.length;  
+    while(mag--) z += '0';
+    return str + z;
+}
+        </script>
+    </body>
+</html>
