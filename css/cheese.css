@@ -133,24 +133,3 @@
   border-radius: 34px;
   background-color: #57283e;
 }
-
-
-/* footer style */
-footer {
-  background: #061D25;
-  padding: 10px 0;
-  text-align: center;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-footer a {
-  color: #70726F;
-  font-size: 20px;
-  padding: 10px;
-  transition: all .5s ease;
-}
-footer a:hover {
-  color: white;
-}

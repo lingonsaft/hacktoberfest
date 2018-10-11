@@ -23,12 +23,11 @@ nav {
   margin: 0 10px !important;
 }
 .navbar-light .navbar-nav .active {
-  background-color: #ff4f84;
-
+  background-color: #f1ffc5;
 }
 
 .navbar-light .navbar-nav .active> .nav-link {
-  color: #fffdf5;
+  color: #ff0844;
   font-weight: 700;
 }
 
