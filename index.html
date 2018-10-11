@@ -126,7 +126,20 @@
         .github-corner .octo-arm {
             animation: octocat-wave 560ms ease-in-out
         }
-    }</style>
+    }
+	.btn {
+                margin: 15px !important;
+                position: relative;
+                z-index: 1;
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+            }
+
+            .btn:hover {
+                box-shadow: 0 0 1px 15px rgba(194, 55, 106, 0.4), 0 0 1px 30px rgba(138, 59, 88, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
+            }
+</style>
     <a class="navbar-brand" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img" aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px"><title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
 		  <style type="text/css">
@@ -476,6 +489,7 @@
                 <li><a href="flex_and_grid.html">Flex and Grid</a></li>
                 <li><a href="halloween-frenchies.html">Frenchieween</a></li>
                 <li><a href="turndown.html">Turndown</a></li>
+                <li><a href="helloGLSL.html">WebGL HELLO</a></li>
             </ul>
         </div>
 
