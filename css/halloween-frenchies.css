@@ -50,12 +50,36 @@ iframe {
 }
 
 @keyframes example {
-  0%   {color:black; left:0px; top:0px;}
-  15%  {color:red; left:200px; top:0px;}
-  30%  {color:yellow; left:200px; top:50px;}
-  45%  {color:red; left:-200px; top:50px;}
-  60% {color:yellow; left:-200px; top:0px;}
-  75% {color:black; left:0px; top:0px;}
+  0% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
+  15% {
+    color: red;
+    left: 200px;
+    top: 0px;
+  }
+  30% {
+    color: yellow;
+    left: 200px;
+    top: 50px;
+  }
+  45% {
+    color: red;
+    left: -200px;
+    top: 50px;
+  }
+  60% {
+    color: yellow;
+    left: -200px;
+    top: 0px;
+  }
+  75% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 @keyframes pulse {
@@ -65,11 +89,11 @@ iframe {
   }
   70% {
 
-      text-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 8px #000;
   }
   100% {
 
-      text-shadow: 0px 0px #000;
+    text-shadow: 0px 0px #000;
   }
 }
 

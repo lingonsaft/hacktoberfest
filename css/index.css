@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
-.spinCard{
-  -webkit-animation:spin 4s linear infinite;
-  -o-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+.spinCard {
+  -webkit-animation: spin 4s linear infinite;
+  -o-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -25,10 +25,10 @@
 
 @keyframes twist {
   from {
-      transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   to {
-      transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -151,9 +151,10 @@ a:hover {
   background-color: #ffeff3;
 
 }
+
 .jumbotron:first-child {
   margin-bottom: 0;
-  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
+  background: linear-gradient(to bottom, #fff 0%, #ffeff3 100%);
 }
 
 .index .jumbotron:first-child {
@@ -229,13 +230,13 @@ a:hover {
 }
 
 .no:hover {
-    transform: scale(1.25);  
+  transform: scale(1.25);
 }
 
 .video .card:hover {
   color: #FF0844;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
-  animation : jump 0.5s ease forwards;
+  animation: jump 0.5s ease forwards;
 }
 
 .single-faq {
@@ -246,7 +247,7 @@ a:hover {
 }
 
 .single-faq:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .single-faq h5 {
@@ -355,38 +356,41 @@ html [type=button] {
   font-size: 20px;
 }
 
-#tips{
+#tips {
   border-radius: 5px;
 }
 
-#btnsh:hover{
+#btnsh:hover {
 
-color: white;
-
-
-}
-#btnsh{
-
-color: black;
+  color: white;
 
 
 }
-div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+
+#btnsh {
+
+  color: black;
+
+
+}
+
+div#content div#contribution-rules ul,
+div#content div#contribution-rules ul li {
   list-style-type: none;
 }
 
-#contribution-rules{
+#contribution-rules {
   background-color: #fff;
-  padding:30px;
+  padding: 30px;
   border-radius: 5px;
 }
 
-.do{
-  color:green;
+.do {
+  color: green;
 }
 
-.dont{
-  color:red;
+.dont {
+  color: red;
 }
 
 .fork_image {
@@ -397,11 +401,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{
-  padding:3px;
-  padding-left:20px;
-  font-weight:bold;
+.card-header {
+  padding: 3px;
+  padding-left: 20px;
+  font-weight: bold;
 }
+
 .card {
   margin: 1%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -611,21 +616,21 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   font-weight: 600;
   padding: .75rem 4rem .75rem 4rem;
   border-radius: 2rem;
-  outline : none;
-  border : none;
+  outline: none;
+  border: none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.video-border{
+.video-border {
   border: solid #FF0844 1px;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius:  25px;
+  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 992px) {
   .single-tips .tip {
-    border-left: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0, 0, 0, .125);
     margin: 0;
   }
 

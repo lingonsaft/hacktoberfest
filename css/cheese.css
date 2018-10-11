@@ -2,11 +2,13 @@
   -webkit-animation: spin 4s linear reverse infinite;
   animation: spin 4s linear reverse infinite;
 }
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -21,6 +23,7 @@
   line-height: 1.6;
   background-color: mistyrose;
 }
+
 .cheese-container {
   border: 3px dashed #00f9d0;
 }
@@ -66,15 +69,18 @@
   background-image: url("../images/gouda.jpg");
   background-size: cover;
 }
+
 .cheesetron-2 {
   padding: 100px;
   background-image: url("../images/roquefort.jpg");
   background-size: cover;
 }
+
 .cheesetron-3 {
   padding: 100px;
   background-image: url("../images/monster.jpg");
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);

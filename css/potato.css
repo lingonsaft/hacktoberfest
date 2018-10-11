@@ -6,18 +6,17 @@ body {
   background-attachment: fixed;
 }
 
-h4.hero-heading
-{
-     font-weight:700;
-     color:#FFF;
+h4.hero-heading {
+  font-weight: 700;
+  color: #FFF;
 }
 
-h1.hero-heading
-{
-     font-weight:900;
-     color:#FFF;
+h1.hero-heading {
+  font-weight: 900;
+  color: #FFF;
 }
 
-td, th {
-    padding: 0.5em 2em;
+td,
+th {
+  padding: 0.5em 2em;
 }
