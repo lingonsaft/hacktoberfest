@@ -7,6 +7,8 @@ read the contribution rules. Happy hacking <3 !!
 
 P.S. Star and share this repository, if you had fun!
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
 
 
@@ -19,13 +21,13 @@ P.S. Star and share this repository, if you had fun!
 
 # Contribution rules
 
-- The project must work when opening index.html.
-- You are allowed to make pull requests that break the rules. We just won't merge it ;).
-- Do NOT add any build steps e.g npm install (we want to keep this a simple static site).
-- Do NOT remove Videos, Rules, FAQ or any other helpful content.
-- Styling/code can be pretty, ugly or stupid, big or small as long as it works.
-- Add your name to the contributors.html file.
-- Try to keep pull requests small to minimize merge conflicts.
+- The project must work when opening index.html
+- You are allowed to make pull requests that break the rules. We just won't merge it ;)
+- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+- Do NOT remove Videos, Rules, FAQ, or any other helpful content.
+- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+- Add your name to the contributors.html file
+- Try to keep pull requests small to minimize merge conflicts
 
 
 ## Getting Started
@@ -95,7 +97,7 @@ For more information on syncing forks [read this article from Github](https://he
   - Yes...
 - Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
-- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+- How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2018?
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
   - go to : https://hacktoberfest.digitalocean.com/stats/ (Scroll down to Check Out Your Own Stats).

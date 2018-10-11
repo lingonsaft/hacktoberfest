@@ -50,17 +50,16 @@ canvas {
   display: block;
 }
 
-a {
-  /* color: #fff; */
-  color: black;
-  text-decoration: none;
-}
+a,
 a:hover {
+  color: #FF0844;
   text-decoration: none;
+
 }
 
 .content {
   margin-top: 80px;
+  color: #000000;
 }
 .box {
   position: relative;
