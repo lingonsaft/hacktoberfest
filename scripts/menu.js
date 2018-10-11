@@ -28,7 +28,8 @@ const menu = {
     'Invert': {
       'text': 'Invert',
       'href': '#',
-      'id': 'invert-btn'
+      'id': 'invert-btn',
+      'onClick': 'handleInvertBtnClick()'
     },
     'Fireworks': {
       'text': 'Fireworks',
@@ -132,7 +133,8 @@ function buildMenuHTML (obj = {}) {
         let isCurrent = (currentPage === item.href)
 
         html += '<div class="nav-item' + (isCurrent ? ' active' : '') + '">'
-        html += '<a class="nav-link" href="' + item.href + '"' + (item.id ? ' id="' + item.id + '"' : '') + '>' + item.text + '</a>'
+        html += '<a class="nav-link" href="' + item.href + '"' + (item.id ? ' id="' + item.id + '"' : '') +
+          (item.onClick ? 'onClick="' + item.onClick + '"' : '') + '>' + item.text + '</a>'
         html += '</div>'
       })
       html += '</div>'
@@ -149,6 +151,21 @@ function buildMenuHTML (obj = {}) {
     }
   })
   document.getElementById('menu').innerHTML = html
+}
+
+function handleInvertBtnClick () {
+  let body = document.getElementById('body') || document.getElementsByTagName('body')[0];
+  let inverted = body.getAttribute('inverted');
+  let scale = 0;
+
+  if (inverted) {
+    body.removeAttribute("inverted");
+  } else {
+    scale = '80%';
+    body.setAttribute("inverted", true);
+  }
+
+  body.setAttribute("style", "filter: invert(" + scale + ")")
 }
 
 function buildMenu () {
