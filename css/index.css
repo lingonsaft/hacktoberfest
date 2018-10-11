@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext");
 
-.spinCard{
-  -webkit-animation:spin 4s linear infinite;
-  -o-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+.spinCard {
+  -webkit-animation: spin 4s linear infinite;
+  -o-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -25,10 +25,10 @@
 
 @keyframes twist {
   from {
-      transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   to {
-      transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -56,9 +56,8 @@
   }
 }
 
-
 * {
-  outline: none!important;
+  outline: none !important;
 }
 
 .icon-bar a {
@@ -81,12 +80,12 @@
 }
 
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -114,9 +113,11 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background-color: #FEFEFE;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  letter-spacing: .75px;
+  background-color: #fefefe;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  letter-spacing: 0.75px;
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
@@ -132,13 +133,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
 
 a,
 a:hover {
-  color: #FF0844;
+  color: #ff0844;
   transition: all 500ms ease-in-out;
 }
 
@@ -149,11 +150,10 @@ a:hover {
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
-
 }
 .jumbotron:first-child {
   margin-bottom: 0;
-  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
+  background: linear-gradient(to bottom, #fff 0%, #ffeff3 100%);
 }
 
 .index .jumbotron:first-child {
@@ -195,22 +195,22 @@ a:hover {
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
-  padding: .5rem .75rem .5rem 2.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
   border-radius: 2rem;
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
 }
 
 .index .btn svg {
   position: absolute;
-  left: .4em;
-  top: .2em;
+  left: 0.4em;
+  top: 0.2em;
   width: auto;
   height: 30px;
 }
 
 .index .btn-danger {
   color: #fff;
-  background-color: #FF0844;
+  background-color: #ff0844;
 }
 
 .btn-subscribe > svg {
@@ -234,13 +234,13 @@ a:hover {
 }
 
 .no:hover {
-    transform: scale(1.25);  
+  transform: scale(1.25);
 }
 
 .video .card:hover {
-  color: #FF0844;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
-  animation : jump 0.5s ease forwards;
+  color: #ff0844;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  animation: jump 0.5s ease forwards;
 }
 #intro_video {
     display: block
@@ -253,7 +253,7 @@ a:hover {
 }
 
 .single-faq:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .single-faq h5 {
@@ -307,7 +307,7 @@ a:hover {
   vertical-align: middle;
   text-align: center;
   margin: 10px 0;
-  border-left: 1px solid rgba(0, 0, 0, .125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .single-tips span {
@@ -317,13 +317,13 @@ a:hover {
 .single-tips .no {
   font-size: 35px;
   font-weight: 600;
-  line-height: .6;
-  color: #FF0844;
+  line-height: 0.6;
+  color: #ff0844;
   margin-bottom: 15px;
 }
 
 .single-tips .no::after {
-  content: '-';
+  content: "-";
   text-align: center;
   display: block;
   margin: 0;
@@ -335,10 +335,10 @@ a:hover {
 }
 
 .broccoli-green {
-  background-color: #A5D6A7;
+  background-color: #a5d6a7;
 }
 
-html [type=button] {
+html [type="button"] {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   -o-appearance: none !important;
@@ -362,38 +362,33 @@ html [type=button] {
   font-size: 20px;
 }
 
-#tips{
+#tips {
   border-radius: 5px;
 }
 
-#btnsh:hover{
-
-color: white;
-
-
+#btnsh:hover {
+  color: white;
 }
-#btnsh{
-
-color: black;
-
-
+#btnsh {
+  color: black;
 }
-div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+div#content div#contribution-rules ul,
+div#content div#contribution-rules ul li {
   list-style-type: none;
 }
 
-#contribution-rules{
+#contribution-rules {
   background-color: #fff;
-  padding:30px;
+  padding: 30px;
   border-radius: 5px;
 }
 
-.do{
-  color:green;
+.do {
+  color: green;
 }
 
-.dont{
-  color:red;
+.dont {
+  color: red;
 }
 
 .fork_image {
@@ -404,10 +399,10 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{
-  padding:3px;
-  padding-left:20px;
-  font-weight:bold;
+.card-header {
+  padding: 3px;
+  padding-left: 20px;
+  font-weight: bold;
 }
 .card {
   margin: 1%;
@@ -418,7 +413,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a {
   text-decoration: none;
-  color: #FF0844;
+  color: #ff0844;
 }
 
 .container-fluid a:hover {
@@ -534,7 +529,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
-
 .ytSubscribeContainer {
   margin-top: 25px;
 }
@@ -590,7 +584,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
-
 #love {
   animation-duration: 1s;
   animation-name: zoomeffect;
@@ -612,27 +605,27 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 #twist {
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #FF0844;
+  background-color: #ff0844;
   color: white;
   border-radius: 2rem;
   font-weight: 600;
-  padding: .75rem 4rem .75rem 4rem;
+  padding: 0.75rem 4rem 0.75rem 4rem;
   border-radius: 2rem;
-  outline : none;
-  border : none;
+  outline: none;
+  border: none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.video-border{
-  border: solid #FF0844 1px;
+.video-border {
+  border: solid #ff0844 1px;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius:  25px;
+  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 992px) {
   .single-tips .tip {
-    border-left: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
     margin: 0;
   }
 
