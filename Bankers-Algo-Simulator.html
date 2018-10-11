@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Banker's Algorithm Simulator</title>
+    <link rel="stylesheet" href="css/Bankers-Algo-Simulator.css"/>
+    <script src="scripts/Bankers-Algo-Simulator.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <center><h2>Banker's Algorithm Simulator</h2><a class="cname" title="Creator" href="http://fsociety.co.in">lucifer</a></center>
+    </div>
+    <div class="input">
+      <center>
+        No. of instances of A: &nbsp<input type="text" id="resourceA" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        No. of instances of B: &nbsp<input type="text" id="resourceB" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        No. of instances of C: &nbsp<input type="text" id="resourceC" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        <button type="input" name="sam" onclick="sample()">Sample Example</button>&nbsp&nbsp&nbsp
+        <button type="input" name="avai" onclick="find_avai()">Find available</button>&nbsp&nbsp&nbsp
+        <button type="input" name="need" onclick="find_need()">Find need</button>&nbsp&nbsp&nbsp
+        <button type="input" name="seq" onclick="find_sequence()">Find process sequence</button>&nbsp&nbsp&nbsp
+        <button type="input" name="reset" onclick="reset()">Reset</button>
+      </center>
+    </div>
+    <div class="tables">
+      <center>
+        <div class="allocation">
+          <table border="2">
+            <tr>
+              <th colspan="4">Allocation</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td><input id="a11" size="2" maxlength="2"/></td>
+              <td><input id="a12" size="2" maxlength="2"/></td>
+              <td><input id="a13" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td><input id="a21" size="2" maxlength="2"/></td>
+              <td><input id="a22" size="2" maxlength="2"/></td>
+              <td><input id="a23" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td><input id="a31" size="2" maxlength="2"/></td>
+              <td><input id="a32" size="2" maxlength="2"/></td>
+              <td><input id="a33" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td><input id="a41" size="2" maxlength="2"/></td>
+              <td><input id="a42" size="2" maxlength="2"/></td>
+              <td><input id="a43" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td><input id="a51" size="2" maxlength="2"/></td>
+              <td><input id="a52" size="2" maxlength="2"/></td>
+              <td><input id="a53" size="2" maxlength="2"/></td>
+            </tr>
+          </table>
+        </div>
+        <div class="max">
+          <table border="2">
+            <tr>
+              <th colspan="4">Max</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td><input id="m11" size="2" maxlength="2"/></td>
+              <td><input id="m12" size="2" maxlength="2"/></td>
+              <td><input id="m13" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td><input id="m21" size="2" maxlength="2"/></td>
+              <td><input id="m22" size="2" maxlength="2"/></td>
+              <td><input id="m23" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td><input id="m31" size="2" maxlength="2"/></td>
+              <td><input id="m32" size="2" maxlength="2"/></td>
+              <td><input id="m33" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td><input id="m41" size="2" maxlength="2"/></td>
+              <td><input id="m42" size="2" maxlength="2"/></td>
+              <td><input id="m43" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td><input id="m51" size="2" maxlength="2"/></td>
+              <td><input id="m52" size="2" maxlength="2"/></td>
+              <td><input id="m53" size="2" maxlength="2"/></td>
+            </tr>
+          </table>
+        </div>
+        <div class="need">
+          <table border="2">
+            <tr>
+              <th colspan="4">Need</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td><input id="n11" size="2" maxlength="2"/></td>
+              <td><input id="n12" size="2" maxlength="2"/></td>
+              <td><input id="n13" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td><input id="n21" size="2" maxlength="2"/></td>
+              <td><input id="n22" size="2" maxlength="2"/></td>
+              <td><input id="n23" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td><input id="n31" size="2" maxlength="2"/></td>
+              <td><input id="n32" size="2" maxlength="2"/></td>
+              <td><input id="n33" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td><input id="n41" size="2" maxlength="2"/></td>
+              <td><input id="n42" size="2" maxlength="2"/></td>
+              <td><input id="n43" size="2" maxlength="2"/></td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td><input id="n51" size="2" maxlength="2"/></td>
+              <td><input id="n52" size="2" maxlength="2"/></td>
+              <td><input id="n53" size="2" maxlength="2"/></td>
+            </tr>
+          </table>
+        </div>
+        <div class="available">
+          <table border="2">
+            <tr>
+              <th colspan="3">Available</th>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td><input id="av11" size="2" maxlength="2"/></td>
+              <td><input id="av12" size="2" maxlength="2"/></td>
+              <td><input id="av13" size="2" maxlength="2"/></td>
+            </tr>
+          </table>
+        </div>
+      </center>
+    </div>
+    <div class="seq">
+      <center>
+        Process Sequence : &nbsp&nbsp&nbsp
+        <input id="p1" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        <input id="p2" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        <input id="p3" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        <input id="p4" size="2" maxlength="2"/>&nbsp&nbsp&nbsp
+        <input id="p5" size="2" maxlength="2"/>
+      </center>
+    </div>
+    <div class="comparison">
+      <cener>
+        <span>Operations:</span>
+        <span id="calc0"></span>
+        <span id="calc1"></span><br/>
+        <span id="calc2"></span><br/>
+        <span id="calc3"></span><br/>
+        <span id="calc4"></span><br/>
+        <span id="calc5"></span>
+      </center>
+    </div>
+    <div class="creator">
+    </div>
+  </body>
+</html>

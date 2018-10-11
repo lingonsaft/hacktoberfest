@@ -1,25 +1,108 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
-.spinCard {
-  -webkit-animation: spin 4s linear infinite;
-  animation: spin 4s linear infinite;
+.spinCard{
+  -webkit-animation:spin 4s linear infinite;
+  -o-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
   }
 }
 
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+    -o-transform: rotate3d(1, 1, 1, 360deg);
+    -moz-transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes twist {
+  from {
+      transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
 * {
   outline: none!important;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  /* width: 7rem; */
+  background: #000;
+}
+
+.icon-bar a:hover i {
+  animation-name: twist;
+  animation-duration: 1s;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.insta {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
 }
 
 html {
@@ -27,52 +110,79 @@ html {
 }
 
 body {
+  font-size: 16px;
   color: #000;
   line-height: 1.9;
-  margin:0;
+  margin: 0;
   background-color: #FEFEFE;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
+  margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
 }
+
 .h1-hover:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), pointer;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 
-a,a:hover {
+a,
+a:hover {
   color: #FF0844;
+  transition: all 500ms ease-in-out;
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 120px;
 }
+
 .index .jumbotron {
   padding: 4rem 0;
   background-color: #ffeff3;
+
 }
+.jumbotron:first-child {
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
+}
+
 .index .jumbotron:first-child {
-  padding: 8.5rem 0;
+  padding: 4.5rem 0;
 }
+
 .index .jumbotron-transparent {
   background-color: transparent;
 }
+
+.index .jumbotron-transparent .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
 .index .jumbotron h1 {
   font-size: 302.5%;
   font-weight: 700;
 }
+
 .index .jumbotron h1 span {
   font-weight: 400;
   color: #555;
 }
+
 .index .jumbotron h2 {
   font-size: 2.5rem;
 }
+
 .index .jumbotron p.lead {
   max-width: 48rem;
   margin-bottom: 2rem;
@@ -89,6 +199,7 @@ a,a:hover {
   border-radius: 2rem;
   margin: 0 .3rem;
 }
+
 .index .btn svg {
   position: absolute;
   left: .4em;
@@ -96,13 +207,20 @@ a,a:hover {
   width: auto;
   height: 30px;
 }
+
 .index .btn-danger {
   color: #fff;
   background-color: #FF0844;
 }
+
+.btn-subscribe > svg {
+  margin-left: 2px;
+}
+
 .index .btn-danger:hover {
   color: #fff;
 }
+
 .index .btn-outline-danger:hover {
   color: #fff;
 }
@@ -110,25 +228,39 @@ a,a:hover {
 .video {
   cursor: pointer;
 }
+
 .modal .close {
   margin-bottom: 1rem;
 }
+
+.no:hover {
+    transform: scale(1.25);  
+}
+
 .video .card:hover {
   color: #FF0844;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  animation : jump 0.5s ease forwards;
 }
 #intro_video {
     display: block
 }
 .single-faq {
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
   border-radius: 4px;
+  transition: all 0.3s;
 }
+
+.single-faq:hover {
+    transform: scale(1.02);
+}
+
 .single-faq h5 {
   font-weight: 500;
   font-size: 112.5%;
 }
+
 .single-faq p {
   font-size: 87.5%;
   margin-bottom: 0;
@@ -140,6 +272,7 @@ a,a:hover {
   vertical-align: middle;
   position: relative;
 }
+
 .single-rules svg {
   width: 1.8rem;
   height: auto;
@@ -149,16 +282,21 @@ a,a:hover {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .single-rules span {
   display: block;
   margin-left: 3rem;
 }
+
 .rules-img {
   text-align: center;
   padding: 4rem 0;
 }
+
 .rules-img img {
   width: auto;
   height: 350px;
@@ -167,28 +305,43 @@ a,a:hover {
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
-  border-left: 1px solid rgba(0,0,0,.125);
+  text-align: center;
+  margin: 10px 0;
+  border-left: 1px solid rgba(0, 0, 0, .125);
 }
+
 .single-tips span {
   display: block;
 }
+
 .single-tips .no {
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
-  line-height: 1;
+  line-height: .6;
   color: #FF0844;
   margin-bottom: 15px;
 }
+
+.single-tips .no::after {
+  content: '-';
+  text-align: center;
+  display: block;
+  margin: 0;
+  height: 10px;
+}
+
 .single-tips .tip-text {
   font-size: 92.5%;
 }
 
 .broccoli-green {
-  background-color: #a5d6a7;
+  background-color: #A5D6A7;
 }
 
-html [type="button"] {
+html [type=button] {
   -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
 }
 
 .copy {
@@ -200,6 +353,7 @@ html [type="button"] {
   margin-left: 10%;
   margin-bottom: 50px;
 }
+
 .faq-question {
   background-color: lightgray;
 }
@@ -208,27 +362,38 @@ html [type="button"] {
   font-size: 20px;
 }
 
-#tips {
+#tips{
   border-radius: 5px;
 }
 
-div#content div#contribution-rules ul,
-div#content div#contribution-rules ul li {
+#btnsh:hover{
+
+color: white;
+
+
+}
+#btnsh{
+
+color: black;
+
+
+}
+div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   list-style-type: none;
 }
 
-#contribution-rules {
+#contribution-rules{
   background-color: #fff;
-  padding: 30px;
+  padding:30px;
   border-radius: 5px;
 }
 
-.do {
-  color: green;
+.do{
+  color:green;
 }
 
-.dont {
-  color: red;
+.dont{
+  color:red;
 }
 
 .fork_image {
@@ -239,6 +404,11 @@ div#content div#contribution-rules ul li {
   margin-top: 61px;
 }
 
+.card-header{
+  padding:3px;
+  padding-left:20px;
+  font-weight:bold;
+}
 .card {
   margin: 1%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -246,20 +416,26 @@ div#content div#contribution-rules ul li {
   border: 0;
 }
 
-.card-header {
-  padding: 3px;
-  padding-left: 20px;
-  font-weight: bold;
-}
-
 .container-fluid a {
   text-decoration: none;
-  color: #ff0844;
+  color: #FF0844;
 }
 
 .container-fluid a:hover {
   text-decoration: none;
+  transition: all 0.5s ease-out;
   color: #cc0636;
+}
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  transition: all 0.5s ease-out;
+  text-decoration: none;
 }
 
 #myBtn {
@@ -279,37 +455,50 @@ div#content div#contribution-rules ul li {
 .countdown-timer ul {
   padding: 0;
 }
+
 .countdown-timer li {
   display: inline-block;
   list-style-type: none;
   padding: 1em;
 }
+
 .countdown-timer li span {
   display: block;
   font-weight: bold;
   font-size: 3rem;
 }
-  .countdown-timer li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 1em;
-    margin: 10px;
-    height: 110px;
-    max-width: 120px;
-    border-radius: 4px;
-  }
-    .countdown-timer li span {
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 45px;
-    }
+
+.countdown-timer li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+  margin: 10px;
+  height: 110px;
+  max-width: 120px;
+  border-radius: 4px;
+}
+
+.countdown-timer li span {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 45px;
+}
+
+#seconds {
+  animation-duration: 1s;
+  animation-name: zoomeffect;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
 
 .logo-image {
   max-width: 100%;
 }
+
 .logo-image:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
 }
+
 /* Youtube Subscribe Styling */
 
 .btn-youtube {
@@ -324,17 +513,11 @@ div#content div#contribution-rules ul li {
   background-size: 400%;
   z-index: 1;
 }
+
 .btn-youtube:hover {
   animation: animate 8s linear infinite;
 }
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
+
 .btn-youtube:before {
   content: "";
   z-index: -1;
@@ -344,24 +527,32 @@ div#content div#contribution-rules ul li {
   opacity: 0;
   transition: 0.5s;
 }
+
 .btn-youtube:hover::before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+
+
 .ytSubscribeContainer {
   margin-top: 25px;
 }
+
 .ytSubscribeContainer a {
   color: white;
 }
+
 .ytSubscribeContainer a:hover {
   color: white;
 }
+
 .yt-logo {
   background: url("../images/you_logo.png");
 }
+
 /* Start Hacking Button Animation  */
+
 .btn-primary {
   background: linear-gradient(90deg, red, orange, rgb(247, 109, 45), red);
   border: 1px solid red;
@@ -369,9 +560,11 @@ div#content div#contribution-rules ul li {
   background-size: 400%;
   z-index: 1;
 }
+
 .btn-primary:hover {
   animation: animate 8s linear infinite;
 }
+
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -380,6 +573,7 @@ div#content div#contribution-rules ul li {
     background-position: 400%;
   }
 }
+
 .btn-primary:before {
   content: "";
   z-index: -1;
@@ -389,6 +583,7 @@ div#content div#contribution-rules ul li {
   opacity: 0;
   transition: 0.5s;
 }
+
 .btn-primary:hover::before {
   filter: blur(20px);
   opacity: 1;
@@ -396,19 +591,67 @@ div#content div#contribution-rules ul li {
 }
 
 
-#love{
+#love {
   animation-duration: 1s;
   animation-name: zoomeffect;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
 
-@keyframes zoomeffect{
-  from{
+@keyframes zoomeffect {
+  from {
     transform: scale(1.5);
   }
-  to{
+  to {
     transform: scale(1);
   }
 }
+
 /* Youtube Subscribe Styling End  */
+
+#twist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #FF0844;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: .75rem 4rem .75rem 4rem;
+  border-radius: 2rem;
+  outline : none;
+  border : none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.video-border{
+  border: solid #FF0844 1px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius:  25px;
+}
+
+@media (min-width: 992px) {
+  .single-tips .tip {
+    border-left: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+  }
+
+  .single-tips .tip:first-child {
+    border: none;
+  }
+
+  .single-tips .no {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .index .twist-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .index .jumbotron:first-child {
+    padding: 8.5rem 0;
+  }
+}
