@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h2>This is an example of insertionsort, check the page source.</h2>
-    <h2>See the output in the browser console</h2>
 
-    <script type="text/javascript">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h2>This is an example of insertionsort, check the page source.</h2>
+  <h2>See the output in the browser console</h2>
+
+  <script type="text/javascript">
     var a = [1, 326, 251, 24, 284, 364, 287, 74, 89, 63, 455, 130, 408, 378, 333, 49,
       69, 335, 195, 145, 122, 454, 30, 277, 208, 293, 311, 88, 32, 5, 304, 239, 448,
       61, 98, 382, 401, 452, 233, 150, 109, 252, 305, 51, 161, 480, 191, 44, 206,
@@ -40,26 +42,28 @@
       213, 200, 227, 354, 437, 280, 207, 143, 310, 385, 370, 58, 444, 198, 278,
       54, 494, 390, 113, 328, 144, 268, 78, 9, 102, 197, 301, 226, 220, 334, 419,
       299, 409, 421, 292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185, 181,
-      485, 495, 81, 169, 294, 79, 400, 92, 104, 249];
+      485, 495, 81, 169, 294, 79, 400, 92, 104, 249
+    ];
 
-      function insertionSort(arr){
-        var swapped;
+    function insertionSort(arr) {
+      var swapped;
 
-        for(let i=0;i<=arr.length-2;i++){
-          for(let j=i+1;j<=arr.length-1;j++){
-            if(a[i]>a[j]){
-              var temp = a[i];
-              a[i] = a[j];
-              a[j] = temp;
-            }
+      for (let i = 0; i <= arr.length - 2; i++) {
+        for (let j = i + 1; j <= arr.length - 1; j++) {
+          if (a[i] > a[j]) {
+            var temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
           }
         }
       }
-      insertionSort(a);
-      console.log("the result is :- ")
-      console.log(a);
+    }
+    insertionSort(a);
+    console.log("the result is :- ")
+    console.log(a);
 
-    </script>
+  </script>
 
-  </body>
+</body>
+
 </html>

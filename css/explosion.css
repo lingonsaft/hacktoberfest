@@ -4,6 +4,7 @@
   height: 600px;
   pointer-events: none;
 }
+
 .explosion .particle {
   position: absolute;
   width: 10px;
@@ -22,4 +23,3 @@
     opacity: 1;
   }
 }
-

@@ -9,25 +9,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 ::selection {
   background-color: #4835f7;
   color: #fff;
 }
+
 /* * {
   outline: none!important;
 } */
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat',sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
+
 html,
 body {
   background-color: #fff;
 }
+
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,7 +52,7 @@ body {
   min-height: 100vh;
   padding: 0 0 1.5rem;
   position: relative;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -61,6 +72,7 @@ a:hover {
   margin-top: 80px;
   color: #000000;
 }
+
 .box {
   position: relative;
   display: flex;
