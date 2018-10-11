@@ -242,7 +242,9 @@ a:hover {
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
   animation : jump 0.5s ease forwards;
 }
-
+#intro_video {
+    display: block
+}
 .single-faq {
   border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
