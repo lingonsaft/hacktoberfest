@@ -41,6 +41,21 @@
   }
 }
 
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 * {
   outline: none!important;
@@ -220,6 +235,7 @@ a:hover {
 .video .card:hover {
   color: #FF0844;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  animation : jump 0.5s ease forwards;
 }
 
 .single-faq {
@@ -510,6 +526,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+
 
 .ytSubscribeContainer {
   margin-top: 25px;
