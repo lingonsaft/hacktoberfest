@@ -622,6 +622,13 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   border : none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  -webkit-transition: -webkit-transform 2s;
+}
+/*github.com/deghost*/
+#twist:hover{
+  -webkit-transform: rotate(40deg);
+  font-size: 20px;
+  background: rgb(236, 72, 72);
 }
 
 .video-border{
