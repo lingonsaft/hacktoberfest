@@ -5,3 +5,6 @@
 #.idea/misc.xml
 *.sublime-workspace
 .idea/
+
+# visual studio code
+.vs/
