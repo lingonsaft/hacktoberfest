@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Coverts a word to lowercase </title>
+    </head>
+    <body>
+        <form name="lowerCase">
+            Enter the word
+            <input type="text" name="input">
+            <br><br>
+            Lowercase of the input is:
+            <input type="text" name="inLower">
+            <br><br>
+            <input type="button" value="click here" onclick="tolowercase()">
+        </form>
+
+        <script language="javascript">
+
+            function tolowercase()
+            {
+                var inputWord, wordInLowercase;
+                inputWord = document.lowerCase.input.value
+                wordInLowercase = inputWord.toLowerCase();
+                document.lowerCase.inLower.value = wordInLowercase;
+            }
+        </script>
+    </body>
+</html>
