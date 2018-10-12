@@ -82,7 +82,7 @@
     / /_/ // __ `// ___// //_// __// __ \ / __ \ / _ \ / ___// /_ / _ \ / ___// __/
   / __  // /_/ // /__ / ,<  / /_ / /_/ // /_/ //  __// /   / __//  __/(__  )/ /_
   /_/ /_/ \__,_/ \___//_/|_| \__/ \____//_.___/ \___//_/   /_/   \___//____/ \__/
-                                              i just want a t-shirt at this point
+                                              i just want a t-shirt AND some stickers at this point
   -->
     <!--Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
@@ -132,6 +132,19 @@
                 .github-corner .octo-arm {
                     animation: octocat-wave 560ms ease-in-out
                 }
+            }
+
+            .btn {
+                margin: 15px !important;
+                position: relative;
+                z-index: 1;
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+            }
+
+            .btn:hover {
+                box-shadow: 0 0 1px 15px rgba(194, 55, 106, 0.4), 0 0 1px 30px rgba(138, 59, 88, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
             }
         </style>
         <a class="navbar-brand" href="/">
@@ -247,7 +260,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 mx-auto text-center">
+                    <div class="col-md-12 mx-auto text-center" id="intro_video">
                         <div class="video">
                             <div class="card shadow  video-border">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -579,9 +592,6 @@
                         <a href="bp.html">BP</a>
                     </li>
                     <li>
-                        <a href="spooky-bat.html">Bats</a>
-                    </li>
-                    <li>
                         <a href="flex_and_grid.html">Flex and Grid</a>
                     </li>
                     <li>
@@ -590,82 +600,96 @@
                     <li>
                         <a href="turndown.html">Turndown</a>
                     </li>
-                </ul>
-            </div>
-
-        </div>
-
-
-        <div class="jumbotron jumbotron-transparent">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 mx-auto text-center">
-                        Follow us at
-                        <a href="https://twitter.com/lingonsaft1" target="_blank" class="fab fa-fw fa-twitter fa-2x hvr-bob"></a>
-                        <a href="https://www.instagram.com/lingonsaftofficial/" target="_blank" class="fab fa-fw fa-instagram fa-2x hvr-bob"></a>
-                        <a href="https://youtube.com/lingonsaft" target="_blank" class="fab fa-fw fa-youtube fa-2x hvr-bob"></a>
-                    </div>
-
-                </div>
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-md-12 mx-auto text-center">
-                        <p>Made with
-                            <img id="love" src="./images/heart.png" alt="heart icon" width="25px"> &amp;
-                            <span style="font-size: 22px;">&lt;/&gt;</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+                    <li>
+                        <a href="helloGLSL.html">WebGL HELLO</a>
+                    </li>
+                    <li>
+                        <a href="funPlus.html">Fun + Helloween</a>
+                    </li>
+                    <li>
+                        <a href=" Hacktoberfest_help.html>Hacktoberfest Intro</a></li>
+            </ul>
         </div>
 
     </div>
-    <!--Main content-->
 
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <iframe width="100%" height="450" src="" frameborder="0" allowfullscreen></iframe>
+
+    <div class=" jumbotron jumbotron-transparent ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 mx-auto text-center ">
+                    Follow us at
+                    <a href="https://twitter.com/lingonsaft1 " target="_blank "
+                       class="fab fa-fw fa-twitter fa-2x hvr-bob "></a>
+                    <a href="https://www.instagram.com/lingonsaftofficial/ " target="_blank "
+                       class="fab fa-fw fa-instagram fa-2x hvr-bob "></a>
+                    <a href="https://youtube.com/lingonsaft " target="_blank "
+                       class="fab fa-fw fa-youtube fa-2x hvr-bob "></a>
+                </div>
+
+            </div>
+            <div class="row " style="margin-top: 20px; ">
+                <div class="col-md-12 mx-auto text-center ">
+                    <p>Made with <img id="love " src="./images/heart.png "
+                                      alt="heart icon " width="25px "> &amp; <span
+                            style="font-size: 22px; ">&lt;/&gt;</span></p>
                 </div>
             </div>
         </div>
     </div>
-    <!--/.modal-->
 
-    <button id="backToTop" type="button" title="Back to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-            width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
-            <g>
-                <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z"
-                    fill="#FFFFFF">
-            </g>
-        </svg>
-    </button>
+</div>
+<!--Main content-->
 
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/menu.js"></script>
-    <script src="./scripts/drop.js"></script>
+<div class="modal fade " id="videoModal " tabindex="-1 " role="dialog " aria-labelledby="videoModalLabel "
+     aria-hidden="true ">
+    <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+        <div class="modal-content ">
+            <div class="modal-body ">
+                <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                </button>
+                <iframe width="100% " height="450 " src=" " frameborder="0 " allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/.modal-->
 
-    <!-- Latest compiled JavaScript -->
-    <script src="./scripts/scroll.js"></script>
-    <script src="./scripts/countdown.js"></script>
-    <script src="./scripts/iframe.js"></script>
-    <!-- Latest compiled JavaScript -->
+<button id="backToTop " type="button " title="Back to Top ">
+    <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " version="1.1 " id="Capa_1
+                            " x="0px " y="0px " width="512px " height="512px " viewBox="0 0 284.929 284.929 " style="enable-background:new
+                            0 0 284.929 284.929; " xml:space="preserve ">
+		<g><path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285
+                            C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854
+                            c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848
+                            c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566 C284.929,199.378,283.984,197.188,282.082,195.285z
+                            " fill="#FFFFFF "></g>
+	  </svg>
+</button>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="application/javascript" charset="utf-8" src="register.js"></script>
-    <script type="application/javascript" charset="utf-8" src="sw.js"></script>
+<script src="./scripts/index.js "></script>
+<script src="./scripts/menu.js "></script>
+<script src="./scripts/drop.js "></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="./scripts/scroll.js "></script>
+<script src="./scripts/countdown.js "></script>
+<script src="./scripts/iframe.js "></script>
+<!-- Latest compiled JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
+<script type="text/javascript " src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script type="application/javascript " charset="utf-8 " src="register.js "></script>
+<script type="application/javascript " charset="utf-8 " src="sw.js "></script>
 
 
-    <script>
-        AOS.init();
-    </script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 
