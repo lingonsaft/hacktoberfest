@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Carter+One");
+
+.pumpkinBody {
+  background-image: url("../images/pumpkinBoiBG.jpg");
+  background-attachment: 100%;
+  background-size: cover;
+}
+
+.pumpkinBoi {
+  width: 400px;
+  height: 400px;
+  background-image: url("../images//pumpkinBoi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.pumpkinText {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 85px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Carter One", cursive;
+  transition: color ease-in-out 0.5s, text-shadow ease-in-out 0.5s;
+}
+
+.pumpkinText:hover {
+  color: black;
+  text-shadow: 8px 8px #ffffff;
+  transition: color ease-in-out 0.5s, text-shadow ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.pumpkinBack {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Carter One", cursive;
+  transition: color ease-in-out 0.5s, text-shadow ease-in-out 0.5s;
+  text-decoration: none;
+}
+
+.pumpkinBack:hover {
+  color: black;
+  text-shadow: 4px 4px #ffffff;
+  transition: color ease-in-out 0.5s, text-shadow ease-in-out 0.5s;
+  cursor: pointer;
+}
