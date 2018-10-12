@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>May The Force Be With You</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #111;
+            height: 100vh;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        div {
+            animation: fade-in 1s;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 238, 0);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 40px;
+            animation: moving-text 8s linear infinite;
+        }
+
+        @keyframes moving-text {
+            0% {
+                transform: translateY(100vh)
+            }
+
+            100% {
+                transform: translateY(-10vh)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        const starArray = [
+            { color: 'deepskyblue', size: 2 },
+            { color: 'mediumvioletred', size: 3 },
+            { color: 'hotpink', size: 1 },
+            { color: 'white', size: 2 },
+            { color: 'yellow', size: 1 },
+            { color: 'white', size: 3 },
+            { color: 'yellow', size: 2 },
+        ];
+        const starCount = starArray.length;
+
+        for (let i = 0; i < 256; i++) {
+            const randomStar = starArray[Math.floor(Math.random() * starArray.length)];
+            const color = randomStar.color;
+            const size = randomStar.size;
+            const y = Math.round(Math.random() * 100);
+            const x = Math.round(Math.random() * 100);
+            const star = document.createElement('DIV');
+            star.setAttribute('style', `background-color: ${color}; width: ${size}px; height: ${size}px; position: absolute; top:${y}%; left: ${x}%;`)
+            document.body.appendChild(star);
+        }
+    </script>
+
+    <h1>MAY THE FORCE BE WITH YOU</h1>
+
+</body>
+
+</html>
