@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Dodgy wallpaper generator</title>
+	<link rel="stylesheet" type="text/css" href="./css/wallpaper.css">
+
+</head>
+<body>
+	<p>Click anywhere to generate tasteless wallpaper</p>
+<canvas id="wallpaper" resize stats hidpi="off">
+</canvas>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+<script type="text/paperscript" canvas="wallpaper">
+		
+	var size = 10;<!-- circle starting radius in px -->
+	<!-- set up the initial colors -->
+	var red = 0.03;<!-- red -->
+	var green = 0.02;<!-- green -->
+	var blue = 0.01;<!-- blue -->
+	var numLayers = 10;<!-- how many layers of color do you want -->
+
+function onMouseDown(event){
+
+<!-- clear the canvas -->
+paper.project.activeLayer.removeChildren();
+paper.view.draw();
+<!-- the loops make a number of grids (numLayers) with a different color/size each time -->
+for (var i = 0; i < numLayers; i ++){
+	for (var x = 10; x <=2000; x+=100){
+		for (var y = 10; y <=1000; y+=100){
+		var circleColor = new Color(red, green, blue);
+			var myCircle = new Path.Circle(new Point(x, y), size).fillColor = circleColor;
+			size = Math.random() * 50;
+		}
+	}
+		red = Math.random();
+		green = Math.random();
+		blue = Math.random();
+}
+}
+
+</script>
+</body>
+</html>
+	
