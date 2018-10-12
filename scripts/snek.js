@@ -193,6 +193,7 @@ function drawSnake() {
  * @param {KeyboardEvent} e
  */
 function changeDirection(e) {
+  e.preventDefault();
   if (DirectionKeys[e.keyCode]) {
     const currentDirection = state.direction
     const nextDirection = DirectionKeys[e.keyCode]
