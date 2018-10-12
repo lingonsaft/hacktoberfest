@@ -234,7 +234,7 @@ a:hover {
 }
 
 .no:hover {
-    transform: scale(1.25);  
+    transform: scale(1.25);
 }
 
 .video .card:hover {
@@ -654,4 +654,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   .index .jumbotron:first-child {
     padding: 8.5rem 0;
   }
+}
+
+#listPages h3 {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: inherit;
 }
