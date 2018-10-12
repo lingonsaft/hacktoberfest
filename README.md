@@ -5,7 +5,11 @@ This is a beginner-friendly project to help you get started with your
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 
-P.S. Star and share this repository, if you had fun! :*
+P.S. Star and share this repository, if you had fun!
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
 
 
 # Videos
@@ -20,7 +24,7 @@ P.S. Star and share this repository, if you had fun! :*
 - The project must work when opening index.html
 - You are allowed to make pull requests that break the rules. We just won't merge it ;)
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
-- Do NOT remove Videos, Rules, FAQ or any other helpful content.
+- Do NOT remove Videos, Rules, FAQ, or any other helpful content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the contributors.html file
 - Try to keep pull requests small to minimize merge conflicts
@@ -28,21 +32,21 @@ P.S. Star and share this repository, if you had fun! :*
 
 ## Getting Started
 
-- Fork this repo (button on top)
-- Clone on your local machine
+- Fork this repo (button on top).
+- Clone on your local machine.
 
 ```terminal
 git clone https://github.com/lingonsaft/hacktoberfest.git
 cd hacktoberfest
 ```
 
-- Create a new branch
+- Create a new branch.
 
 ```markdown
-git checkout -b my-new-branch
+git checkout -b my-new-branch.
 ```
-- Add your contribution
-- Commit and push
+- Add your contribution.
+- Commit and push.
 
 ```markdown
 git add .
@@ -50,7 +54,7 @@ git commit -m "your-commit-msg"
 git push origin my-new-branch
 ```
 
-- Create a new pull request from your forked repository
+- Create a new pull request from your forked repository.
 
 
 ## Avoid Conflicts (Syncing your fork)
@@ -61,12 +65,12 @@ An easy way to avoid conflicts is to add an 'upstream' for your git repo, as oth
 git remote add upstream https://github.com/lingonsaft/hacktoberfest
 ```
 
-You can verify that the new remote has been added by typing
+You can verify that the new remote has been added by typing.
 ```terminal
 git remote -v
 ```
 
-To pull any new changes from your parent repo simply run
+To pull any new changes from your parent repo simply run.
 ```terminal
 git merge upstream/master
 ```
@@ -79,8 +83,8 @@ For more information on syncing forks [read this article from Github](https://he
 # FAQs
 
 - Who can contribute?
-  - Anyone with a github account and who is signed up for.
-[hacktoberfest](https://hacktoberfest.digitalocean.com/) :)
+  - Anyone with a github account and who is signed up for
+[hacktoberfest](https://hacktoberfest.digitalocean.com/) :).
 - Are you getting paid for this?
   - Sadly no. But we think we should. This is 100% unofficial and we do it for fun, fame and glory.
 - Who are you and why are you doing this?
@@ -93,10 +97,14 @@ For more information on syncing forks [read this article from Github](https://he
   - Yes...
 - Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
   - Nope.
-- How many pull request (PR) must be made, if I can get a awesome shirt from Hacktoberfest 2018?
+- How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2018?
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
-  - go to : https://hacktoberfest.digitalocean.com/stats/username
+  - go to : https://hacktoberfest.digitalocean.com/stats/ (Scroll down to Check Out Your Own Stats).
+- What is the duration of Hacktoberfest 2018?
+  - It is from 1st october to 31st october 2018...
+- What is the event for?
+  - For the open source community engagement.
 
 
 

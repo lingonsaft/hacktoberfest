@@ -35,3 +35,14 @@ let chris = new Character("Christopher", "Film", "Male", 30, 120, 80);
 
 bigTony.mount = "Suburban";
 printStats(bigTony);
+
+var arr = [bigTony, uncleJunior, artie, chris];
+
+for(var i=0; i<arr.length; i++){
+    console.log(arr[i]);
+    var e = document.createElement('div');
+    e.innerHTML = "<div class='character-box'><h1><i class='fas fa-walking'></i><span style='margin-left:10px;'>" + arr[i].name + "</span><h1>"
+        + "<h2>" + arr[i].gender + ", " + arr[i].age + ", " + arr[i].profession + "</h2>"
+        + "<p>Strength: " + arr[i].strength + "</p><p>Health: " + arr[i].hp + "</p><p>" + arr[i].gender + "</p></div>";
+    document.getElementById('rpg').appendChild(e.firstChild);
+}
