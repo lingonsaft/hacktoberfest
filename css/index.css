@@ -32,20 +32,33 @@
   }
 }
 
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 * {
   outline: none!important;
-}
-
-/*Begin hover for social media sidebar*/
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .icon-bar a {
@@ -55,12 +68,10 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-  width: 3.5rem;
-  height: 3.5rem;
 }
 
 .icon-bar a:hover {
-  width: 7rem;
+  /* width: 7rem; */
   background: #000;
 }
 
@@ -93,14 +104,6 @@
   background: #bb0000;
   color: white;
 }
-
-@media (max-width: 1240px) {
-    .content {
-        margin-left: 60px;
-    }
-}
-/*End hover for social media sidebar*/
-
 
 html {
   overflow-x: hidden;
@@ -140,7 +143,7 @@ a:hover {
 }
 
 .content {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .index .jumbotron {
@@ -154,11 +157,16 @@ a:hover {
 }
 
 .index .jumbotron:first-child {
-  padding: 8.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .index .jumbotron-transparent {
   background-color: transparent;
+}
+
+.index .jumbotron-transparent .container-fluid {
+  position: relative;
+  z-index: 1;
 }
 
 .index .jumbotron h1 {
@@ -225,11 +233,18 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.no:hover {
+    transform: scale(1.25);
+}
+
 .video .card:hover {
   color: #FF0844;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+  animation : jump 0.5s ease forwards;
 }
-
+#intro_video {
+    display: block
+}
 .single-faq {
   border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
@@ -503,15 +518,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
-
 .btn-youtube:before {
   content: "";
   z-index: -1;
@@ -527,6 +533,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   opacity: 1;
   animation: animate 8s linear infinite;
 }
+
 
 .ytSubscribeContainer {
   margin-top: 25px;
@@ -602,8 +609,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 /* Youtube Subscribe Styling End  */
 
-
-
 #twist {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -619,6 +624,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   cursor: pointer;
 }
 
+.video-border{
+  border: solid #FF0844 1px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius:  25px;
+}
+
 @media (min-width: 992px) {
   .single-tips .tip {
     border-left: 1px solid rgba(0,0,0,.125);
@@ -628,12 +639,27 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   .single-tips .tip:first-child {
     border: none;
   }
+
   .single-tips .no {
     font-size: 40px;
     text-align: center;
   }
 
-.index .twist-btn{
-  margin-top: 20px;
+  .index .twist-btn {
+    margin-top: 20px;
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .index .jumbotron:first-child {
+    padding: 8.5rem 0;
+  }
+}
+
+#listPages h3 {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: inherit;
 }
