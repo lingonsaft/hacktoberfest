@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Penki</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png?v2"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<nav>
+	  	<div class="container">
+		  	<div class="row">
+				<div class="col-xs-12 col-md-7 col-sm-12">
+					<h1>Susisieksime su Jumis darbo dienomis per <span>5</span> min.!</h1>
+			  	</div>
+			  	<div class="col-xs-12 col-md-5 col-sm-12 buttons">
+			  		<form id="first" method="POST" action="">
+			  			<input type="text" name="phone" data-rule-required="true" class="btn btn-white" placeholder="+370 619 41650">
+			  			<input type="submit" name="submit" value="Siųsti" class="btn gradient">
+			  		</form>
+			  	</div>
+		  	</div>
+		</div>
+  	</nav>
+
+  	<div class="options">
+	  	<div class="container">
+		  	<div class="row">
+				<div class="col-xs-12 col-sm-12 text-center logo">
+					<img src="images/logo.svg" alt="Penki">
+			  	</div>
+			  	<div class="col-xs-12 col-sm-12">
+					<div class="row boxes">
+						<div class="col-xs-12 col-sm-12 box box1">
+							<div>
+								<img src="images/lights.png" alt="">
+								<h2>Go</h2>
+								<div class="price-container">
+									<div id="price" data-price="7.79">7<sup>79</sup></div>
+									<span>€/mėn.</span>
+								</div>
+								<div class="disclaimer">Tinklo mėnesinis mokestis <b>1</b> €/mėn.</div>
+								<ul class="checkboxes">
+									<li><input type="checkbox" id="wifi-irange" data-price="2.50"><label for="wifi-irange">WiFi įranga <span>(2,50 €/mėn.)</span></label></li>
+								</ul>
+								<a class="btn gradient" data-toggle="modal" data-target="#Užsisakyk">Užsisakyk</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 box box2">
+							<div>
+								<h2>Dovanojame</h2>
+								<ul class="checkboxes">
+									<li><input id="ti" type="checkbox" class="internetas" checked disabled><label>Televiziją internete</label></li>
+									<li><input id="ni" type="checkbox" class="internetas" disabled><label>Nemokamą įrengimą</label></li>
+									<li><input id="pkr" type="checkbox" class="internetas" disabled><label>Pagrindinį kanalų rinkinį</label></li>
+									<li><input id="spf" type="checkbox" disabled><label>Sustabdymo/ prasukimo funkciją</label></li>
+									<li><input id="si" type="checkbox" disabled><label>Statinį IP</label></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 box box3">
+							<div>
+								<div class="internetas single on">
+									<h2>Interneto greitis</h2>
+									<div class="internetas_pack">
+										<a class="btn btn-blue-borders active" data-matrix="0">100Mb/s : 100Mb/s</a>
+										<a class="btn btn-blue-borders" data-matrix="1">1Gb/s : 500Mb/s</a>
+										<a class="btn btn-blue-borders" data-matrix="2">1Gb/s : 1Gb/s</a>
+									</div>
+
+									<h2 class="mtop">Sutartis</h2>
+									<div class="sutartis_pack">
+										<a class="btn btn-blue-borders active" data-matrix="0">24 mėn.</a>
+										<a class="btn btn-blue-borders" data-matrix="1">12 mėn.</a>
+										<a class="btn btn-blue-borders" data-matrix="2">Neterminuota</a>
+									</div>
+								</div>
+								<div class="internetas tv">
+									<h2>Interneto greitis</h2>
+									<div class="internetas_pack">
+										<a class="btn btn-blue-borders active" data-matrix="0">100Mb/s : 100Mb/s</a>
+										<a class="btn btn-blue-borders" data-matrix="1">1Gb/s : 500Mb/s</a>
+										<a class="btn btn-blue-borders" data-matrix="2">1Gb/s : 1Gb/s</a>
+									</div>
+
+									<h2 class="mtop">Sutartis</h2>
+									<div class="sutartis_pack">
+										<a class="btn btn-blue-borders active" data-matrix="0">24 mėn.</a>
+										<a class="btn btn-blue-borders" data-matrix="1">12 mėn.</a>
+										<a class="btn btn-blue-borders" data-matrix="2">Neterminuota</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 box box4">
+							<div>
+								<h2>Pasirink</h2>
+								<div class="valign">
+									<a class="btn btn-blue-borders option1 active">Internetas</a>
+									<a class="btn btn-blue-borders option2">TV + Internetas</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</div>
+		  	</div>
+		</div>
+	</div>
+
+	<div class="services">
+		<div class="container">
+		  	<div class="row">
+				<div class="col-xs-12 col-sm-6 text-center scrollable"><!-- add here this class -> scrollable and uncomment the below text -->
+					<h2>Internetas</h2>
+					<h4>Dar greitesnis šviesolaidinis internetas</h4>
+					<div class="row">
+						<div class="col-xs-6">
+							<img src="images/internetas-01.png" alt="Maksimali sparta 1Gb/s">
+							<h5>Maksimali sparta 1Gb/s</h5>
+						</div>
+						<div class="col-xs-6">
+							<img src="images/internetas-02.png" alt="TV kanalai tavo kompiuteryje">
+							<h5>TV kanalai tavo kompiuteryje</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<img src="images/internetas-03.png" alt="Specialistų konsultacijos">
+							<h5>Specialistų konsultacijos</h5>
+						</div>
+						<div class="col-xs-6">
+							<img src="images/internetas-04.png" alt="Aukšta ryšio kokybė">
+							<h5>Aukšta ryšio kokybė</h5>
+						</div>
+					</div>
+					<a class="btn btn-blue-borders show-more" href="#">Skaityti daugiau</a>
+					<div class="hidden content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			  	</div>
+			  	<div class="col-xs-12 col-sm-6 text-center xs-gray scrollable">
+					<h2>Televizija</h2>
+					<h4>Net 54 kanalai pagrindiniame rinkinyje</h4>
+					<ul class="programs">
+						<li><img src="images/televizja-01.png" alt=""></li><!--
+						--><li><img src="images/televizja-02.png" alt=""></li><!--
+						--><li><img src="images/televizja-03.png" alt=""></li><!--
+						--><li><img src="images/televizja-04.png" alt=""></li><!--
+						--><li><img src="images/televizja-05.png" alt=""></li><!--
+						--><li><img src="images/televizja-06.png" alt=""></li>
+					</ul>
+					<span class="dotted-line" data-toggle="modal" data-target="#logo">Daugiau kanalų</span>
+					<div class="row">
+						<div class="col-xs-6">
+							<img src="images/televizja-icon-01.png" alt="Papildomos TV valdymo funkcijas">
+							<h5>Papildomos TV valdymo funkcijas</h5>
+						</div>
+						<div class="col-xs-6">
+							<img src="images/televizja-icon-02.png" alt="Elektroninis programų gidas">
+							<h5>Elektroninis programų gidas</h5>
+						</div>
+					</div>
+					<a class="btn btn-blue-borders show-more" href="#">Skaityti daugiau</a>
+					<div class="hidden content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+			  	</div>
+		  	</div>
+		</div>
+	</div>
+
+    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<h2>Gaukite išskirtinį pasiūlymą</h2>
+					<a class="btn gradient" data-toggle="modal" data-target="#Gauti">Gauti</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal1 -->
+	<div class="modal fade" id="Gauti" tabindex="-1" role="dialog" aria-labelledby="GautiLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<img src="images/close-btn.png" data-dismiss="modal" aria-label="Close" class="close">
+					<img src="images/modal-icon01.png">
+					<h2>Gaukite skambutį per 5 min.!</h2>
+					<form id="second" class="buttons" method="POST" action="">
+			  			<input type="text" name="phone" data-rule-required="true" class="btn btn-gray-borders" placeholder="+370 619 41650">
+			  			<input type="submit" name="submit" value="Siųsti" class="btn gradient">
+			  		</form>
+				</div>
+				<div class="modal-body">
+					<img src="images/modal-icon02.png">
+					<h2>Gaukite pasiūlymą per 24 val.! Įveskite savo duomenis:</h2>
+					<form id="third" class="full-buttons" method="POST" action="">
+						<input type="text" name="jūsų-vardas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Jūsų vardas">
+						<input type="text" name="adresas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Adresas">
+						<input type="text" name="telefonas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Telefonas">
+						<input type="submit" name="submit" value="Gauti pasiūlymą" class="btn gradient full-width no-margins">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal2 -->
+	<div class="modal fade" id="Užsisakyk" tabindex="-1" role="dialog" aria-labelledby="UžsisakykLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content text-center">
+				<img src="images/close-btn.png" data-dismiss="modal" aria-label="Close" class="close">
+				<div class="modal-body">
+					<img src="images/modal-icon02.png">
+					<h2>Gaukite pasiūlymą per 24 val.! Įveskite savo duomenis:</h2>
+					<form id="fourth" class="full-buttons" method="POST" action="">
+						<input type="text" name="jūsų-vardas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Jūsų vardas">
+						<input type="text" name="adresas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Adresas">
+						<input type="text" name="telefonas" data-rule-required="true" class="btn btn-gray-borders full-width no-margins" placeholder="Telefonas">
+						<input type="submit" name="submit" value="Gauti pasiūlymą" class="btn gradient full-width no-margins">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Logos -->
+	<div class="modal fade" id="logo" tabindex="-1" role="dialog" aria-labelledby="logoLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content text-center">
+				<img src="images/close-btn.png" data-dismiss="modal" aria-label="Close" class="close">
+				<div class="modal-body">
+					<h2>Televizijos kanalai:</h2>
+					<div class="services">
+						<ul class="programs">
+							<li><img src="images/televizja-01.png" alt=""></li><!--
+							--><li><img src="images/televizja-02.png" alt=""></li><!--
+							--><li><img src="images/televizja-03.png" alt=""></li><!--
+							--><li><img src="images/televizja-04.png" alt=""></li><!--
+							--><li><img src="images/televizja-05.png" alt=""></li><!--
+							--><li><img src="images/televizja-06.png" alt=""></li>
+						</ul>
+						<ul class="programs">
+							<li><img src="images/televizja-01.png" alt=""></li><!--
+							--><li><img src="images/televizja-02.png" alt=""></li><!--
+							--><li><img src="images/televizja-03.png" alt=""></li><!--
+							--><li><img src="images/televizja-04.png" alt=""></li><!--
+							--><li><img src="images/televizja-05.png" alt=""></li><!--
+							--><li><img src="images/televizja-06.png" alt=""></li>
+						</ul>
+						<ul class="programs">
+							<li><img src="images/televizja-01.png" alt=""></li><!--
+							--><li><img src="images/televizja-02.png" alt=""></li><!--
+							--><li><img src="images/televizja-03.png" alt=""></li><!--
+							--><li><img src="images/televizja-04.png" alt=""></li><!--
+							--><li><img src="images/televizja-05.png" alt=""></li><!--
+							--><li><img src="images/televizja-06.png" alt=""></li>
+						</ul>
+						<ul class="programs">
+							<li><img src="images/televizja-01.png" alt=""></li><!--
+							--><li><img src="images/televizja-02.png" alt=""></li><!--
+							--><li><img src="images/televizja-03.png" alt=""></li><!--
+							--><li><img src="images/televizja-04.png" alt=""></li><!--
+							--><li><img src="images/televizja-05.png" alt=""></li><!--
+							--><li><img src="images/televizja-06.png" alt=""></li>
+						</ul>
+						<ul class="programs">
+							<li><img src="images/televizja-01.png" alt=""></li><!--
+							--><li><img src="images/televizja-02.png" alt=""></li><!--
+							--><li><img src="images/televizja-03.png" alt=""></li><!--
+							--><li><img src="images/televizja-04.png" alt=""></li><!--
+							--><li><img src="images/televizja-05.png" alt=""></li><!--
+							--><li><img src="images/televizja-06.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
