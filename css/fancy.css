@@ -38,10 +38,60 @@ body {
   background: rgba(0, 0, 0, .5);
 }
 
+.fancy-div {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px #03a9f4;
+  background: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  text-align: center;
+  transition: .5s;
+}
+
+.fancy-div:hover {
+  border-radius: 0;
+}
+
+.fancy-div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  z-index: -1;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+}
+
+.fancy-div p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.fancy-div:hover p {
+  box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
 .radiant-button {
   position: absolute;
-  top: 10%;
-  right: 30%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   width: 200px;
   height: 60px;
   text-align: center;
@@ -92,55 +142,10 @@ body {
   animation: animate 5s linear infinite;
 }
 
-.fancy-div {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #001418;
-  background: rgba(183, 117, 129, 0.64);
-  box-sizing: border-box;
-  text-align: center;
-  transition: .5s;
-}
-
-.fancy-div:hover {
-  border-radius: 0;
-}
-
-.fancy-div:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #001418;
-  z-index: -1;
-  transform: rotate(-45deg);
-  border-radius: 10px;
-}
-
-.fancy-div p {
-  margin: 0;
-  padding: 0;
-  color: #e7e7e7;
-  font-size: 16px;
-  padding: 20px;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .5s;
-}
-
 .svg {
   position: absolute;
-  top: 5%;
   left: 20%;
+  transform: translate(-50%, -50%);
 }
 
 #svg {
