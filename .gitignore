@@ -5,3 +5,5 @@
 #.idea/misc.xml
 *.sublime-workspace
 .idea/
+
+.vs/
