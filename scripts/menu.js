@@ -114,6 +114,11 @@ const menu = {
       'text': 'Fancy CSS',
       'href': 'fancyCSS.html',
       'id': 'fancy'
+    },
+    'NyanCat': {
+      'text': 'NyanCat',
+      'href': 'nyancat.html',
+      'id': 'nyancat'
     }
   }
 }
