@@ -140,6 +140,7 @@ a.list-item:hover {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-weight: 100;
+  transition: all 0.3s;
 }
 
 .active, .collapsible:hover {
