@@ -1,5 +1,5 @@
 #footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
@@ -10,6 +10,20 @@
     text-align: center;
     z-index: 1000;
 }
+
+#footer {
+    border-top: 2px solid #555555;
+    margin: 2rem 0 0 0;
+    padding-bottom: 3rem;
+    background: rgba(110,110,130,0.8);
+    text-align: center;
+}
+
+#footer .social-icons .fa{
+    line-height: 50px;
+    color: #ffffff;
+    transition: color ease 0.4s;
+
 
 #footer h3 {
     padding: 5px;
@@ -67,6 +81,19 @@
 #backToTop:hover svg {
     opacity: 1;
 }
+#footer .social-icons .fa-github:hover{
+  color: #000000;
+}
+#footer .social-icons .fa-instagram:hover{
+  color: #bc2a8d;
+}
+
+#footer .social-icons .fa-youtube-play:hover{
+  color: #ff0000;
+}
+#footer .social-icons .fa-twitter:hover{
+  color: #1DA1F2;
+
 #backToTop:hover{transform: scale(1.1);}
 #backToTop.mousedown{transform: translateY(3px);}
 #backToTop.startscrolling{
