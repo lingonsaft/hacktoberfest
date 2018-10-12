@@ -1,0 +1,27 @@
+body {
+    background-color: darkorange;
+    overflow: hidden;
+    font-family: Creepster;
+}
+
+#title-bar {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+#countdown-bar {
+    padding-top: 25vh;
+    text-align: center;
+    
+}
+
+#decorations {
+    padding-top: 10vh;
+    height: 25vh;
+    text-align: center;
+}
+
+img {
+    height: inherit;
+    padding: 2vw;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="./css/spooky-countdown.css">
+    
+    <title>Countdown</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="row" id="title-bar">
+            <h1>The Spooky Countdown of 2018</h1>
+        </div>
+        <div class="row" id="countdown-bar">
+            <h1 id="countdown"></h1>
+        </div>
+        <div class="row" id="decorations">
+            <img src="https://www.broadwaytheatre.com/clientuploads/pumpkin.png">
+            <img src="http://halloween.phillipmartin.info/halloween_skeleton.png">
+            <img src="https://melbournechapter.net/images/clipart-ghost-clipart-2.png">
+            <img src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/4/44/Halloween-black-cat-silhouette.png/revision/latest?cb=20160902165538">
+            <img src="http://shopforclipart.com/images/black-and-white-halloween-clipart/26.jpg">
+        </div>
+    </div>
+</body>
+    
+<script>
+    var countDownDate = new Date("Oct 31, 2018 00:00:00").getTime();
+    var update = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + " and " + seconds + " seconds until Halloween!";
+    }, 1000);
+</script>
+    
+</html>
