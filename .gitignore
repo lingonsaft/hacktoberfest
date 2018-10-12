@@ -6,4 +6,5 @@
 *.sublime-workspace
 .idea/
 
+# visual studio code
 .vs/
