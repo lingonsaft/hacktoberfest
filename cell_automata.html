@@ -1,0 +1,40 @@
+<!--
+# CELL AUTOMATA 
+# Owner: Brandon Fizer (@Track7Dev)
+#   -Github: https://github.com/track7dev/
+#   -LinkedIn: https://www.linkedin.com/in/brandon-fizer/
+#
+# Environment: NodeJS (IFramed)
+# Framework: ReactJS
+# Deploy: Heroku
+#
+# App: https://cell-auto.herokuapp.com
+# Source: https://github.com/Track7Dev/Conways-Life/tree/master/guided-demo/cca
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./css/cell_automata.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <title>Cell-Automata</title>
+  </head>
+  <body>
+    <div id="load"><img class="load-image" src="images/hacktoberfest.png" width="70%"/></div>
+    <iframe onload="load()" style="border: none;" width="100%" height="100%" src="https://cell-auto.herokuapp.com"></iframe>
+    <script>
+      const load = () => {
+        const loadScreen = document.getElementById('load');
+        loadScreen.style.transition = 'opacity 1.7s';
+        loadScreen.style.opacity = 0
+        setTimeout(() => {
+          loadScreen.style.display = 'none';
+        }, 1700);
+      }
+    </script>
+  </body>
+</html>
