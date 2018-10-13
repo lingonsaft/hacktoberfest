@@ -79,6 +79,12 @@ This will give you any eventual conflicts and allow you to easily solve them in 
 
 For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
 
+# Ideas for contributions
+- Style the index.html
+- Add your own projects to the 'Helpful Material Page'
+- Add helpful links/guides to the 'Helpful Material Page'
+- Update Readme.md
+
 
 # FAQs
 
