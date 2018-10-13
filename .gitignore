@@ -5,3 +5,4 @@
 #.idea/misc.xml
 *.sublime-workspace
 .idea/
+.DS_Store
