@@ -21,7 +21,7 @@ P.S. Star and share this repository, if you had fun!
 
 # Contribution rules
 
-- The project must work when opening index.html
+- The project must work when opening <strong>index.html</strong>
 - You are allowed to make pull requests that break the rules. We just won't merge it ;)
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
 - Do NOT remove Videos, Rules, FAQ, or any other helpful content.
