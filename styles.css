@@ -1,7 +1,7 @@
 body {
   margin: 50px auto;
   max-width: 600px;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 18px;
   font-color: red;
   color: #444;
@@ -11,5 +11,5 @@ body {
 h1,
 h2,
 h4 {
-  line-height: 1.2;
+  line-height: 1.1;
 }
