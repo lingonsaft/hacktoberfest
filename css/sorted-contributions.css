@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+
+#sorted-contributions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    border: 1px dotted white;
+    margin: 20px;
+    padding-right: 50px;
+    color: white;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.content-box h1 {
+    margin-top: 15px;
+    margin-left: 35px;
+    text-align: left;
+    color: orange;
+}
+
+.content-box li { 
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.5em;
+}
+
+.content-box a {
+    color: lawngreen;
+}
+
+.content-box a:hover {
+    color: darkgreen;
+}
