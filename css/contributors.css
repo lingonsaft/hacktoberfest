@@ -106,7 +106,7 @@ a:hover {
 
 .box-item:hover {
   background-color: #FE0C43;
-  color: #fff;
+  color: #fff !important;
 }
 
 .box-item::before {

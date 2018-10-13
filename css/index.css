@@ -139,7 +139,7 @@ h6 {
 a,
 a:hover {
   color: #FF0844;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .content {
