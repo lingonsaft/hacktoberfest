@@ -5,6 +5,7 @@
 #.idea/misc.xml
 *.sublime-workspace
 .idea/
-
-# visual studio code
+.DS_Store
 .vs/
+
+
