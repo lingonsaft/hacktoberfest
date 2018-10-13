@@ -32,6 +32,31 @@ P.S. Star and share this repository, if you had fun!
 
 ## Getting Started
 
+-Tell Git who you are
+
+```terminal
+git config --global user.name "Sam Smith"
+
+git config --global user.email sam@example.com
+```
+
+-Create a new local repository
+
+```terminal
+git init
+```
+
+-Status
+```terminal
+git status
+```
+
+-Undo local changes
+
+```terminal
+git checkout -- <filename>
+```
+
 - Fork this repo (button on top).
 - Clone on your local machine.
 
