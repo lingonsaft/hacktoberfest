@@ -1,5 +1,7 @@
 .table-header {
-  background-color: rgb(245, 137, 164);
+  background: linear-gradient(to left, #FF0844, #FF4563);
+  color: white;
+  text-align: center;
 }
 table {
   table-layout: fixed;
