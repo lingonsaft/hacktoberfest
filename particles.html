@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dmaisano | Hacktober Particles</title>
+</head>
+
+<body>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: #1C1E26;
+			/* overflow: hidden; */
+		}
+
+		.text {
+			color: #FF9A56;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			background: transparent;
+		}
+
+		a {
+			all: unset;
+			cursor: pointer;
+		}
+
+		#particles-js {
+			height: 99%;
+		}
+	</style>
+
+	<div id="particles-js"></div>
+
+
+	<h1 class="text"><a href="https://hacktoberfest.digitalocean.com" target="blank">The Hacktoberfest T-Shirt is pretty
+			nice</a></h1>
+
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'particles.json');
+	</script>
+</body>
+
+</html>
