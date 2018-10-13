@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
+
+body {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.9;
+  margin: 0;
+  background-color: #FEFEFE;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: .75px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.5;
+}
+
 .table-header {
   background: linear-gradient(to left, #FF0844, #FF4563);
   color: white;
