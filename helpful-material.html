@@ -3,234 +3,645 @@
 
 <head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-  <!-- Github follow button -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-  <link rel="stylesheet" href="./css/helpful-material.css" />
-  <link rel="stylesheet" href="./css/navbar.css" />
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Hacktoberfest - Helpful Material</title>
+    <!-- Github follow button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <link rel="stylesheet" href="./css/helpful-material.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hacktoberfest - Helpful Material</title>
 
 </head>
-<link rel="shortcut icon" href="./images/sh_icon.png" />
+<link rel="shortcut icon" href="./images/sh_icon.png">
 
-<body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="/">Hacktoberfest</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
-        aria-expanded="false" aria-label="Toggle navigation">
+<body class="index">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <a class="navbar-brand" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+        y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img"
+        aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px">
+        <title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
+        <style type="text/css">
+          .st0 {
+              fill: #FF0844;
+          }
+        </style>
+        <path class="st0" d="M0.7,0.7v298.7h298.7V0.7H0.7z M197.8,271.4l-32-32v-95.6l-31.4,31.4v79l-17.3,17.3L99.8,254V70.4L95,65.6  L73,87.7L61.7,76.5l47.8-47.8l0.1,0.1l0,0l1.9,1.8l22.8,22.8V136l31.4-31.4V70.2L150,54.4l25.8-25.8l24.7,24.7v169.1l12.1,12.1  l14.7-14.7l11.1,11.1L197.8,271.4z"></path>
+      </svg>
+        lingonsaft/Hacktoberfest 2018
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="/helpful-material">Helpful Material</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/contributors">Contributors</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="twist" href="#">The Twist</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/cheese">Cheese!</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link" id="tools" href="/tools">Tools</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link" id="learn" href="/wow">Learn!</a>
-              </li>
-
-              <li class="nav-item ">
-                <a class="nav-link" id="learn" href="/Fireworks">Fireworks</a>
-            </li>
-
-
-          </ul>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto" id="menu">
+            <!-- Menu -->
+        </ul>
     </div>
-    </nav>
+</nav>
 
 
-
-  <div class="container">
-    <div id="header">
-      <h1>Helpful Material <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
-      <p>Feel free to add any of your own projects, helpul links or guides below.</p>
-    </div>
-    <div class="heart"></div>
-
-    <div id="content">
-      <h2 class="mt-4">Projects</h2>
-      <p>Feel free to add any of your own projects.</p>
-      <h3 class="mt-4">Beginner Friendly Projects</h3>
-
-      <div class="list beginnerProjects">
-        <a data-difficulty="1" href="https://github.com/publiclab/plots2" target="_blank" class="list-item easyProjectItem">public lab</a>
-        <a data-difficulty="1" href="https://github.com/awesome-lists/awesome-bash" target="_blank" class="list-item easyProjectItem">awesome-bash</a>
-        <a data-difficulty="1" href="https://github.com/3daddict/memory-match-react" target="_blank" class="list-item easyProjectItem">React Memory Match Game</a>
-        <a data-difficulty="1" href="https://github.com/MaisaMilena/MyAnimeList" target="_blank" class="list-item easyProjectItem">Clean Architecture Swift - My Anime List</a>
-        <a data-difficulty="2" href="https://github.com/openebs/openebs" target="_blank" class="list-item easyProjectItem">openebs</a>
-        <a data-difficulty="2" href="https://github.com/Kinto/kinto" target="_blank" class="list-item easyProjectItem">kinto</a>
-        <a data-difficulty="2" href="https://github.com/oppia/oppia" target="_blank" class="list-item easyProjectItem">oppia</a>      
-	<a data-difficulty="2" href="https://github.com/spverma536/solareclipse" target="_blank" class="list-item easyProjectItem">solareclipse</a>      
-
-    <div class="container">
-      <div id="header">
-        <h1>Helpful Material <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
-        <p>Feel free to add any of your own projects, helpul links or guides below.</p>
-
-      </div>
-      
-      <div id="content">
-        <h2 class="mt-4">Projects</h2>
+<div class="heart"></div>
+<div id="content" class="container">
+    <div class="mb-5 mt-5">
+        <h1>Projects</h1>
         <p>Feel free to add any of your own projects.</p>
-        <h3 class="mt-4">Beginner Friendly Projects</h3>
+    </div>
+    <div class="section-tree">
 
-        <div class="list beginnerProjects">
-          <a data-difficulty="1" href="https://github.com/publiclab/plots2" target="_blank" class="list-item easyProjectItem">public lab</a>
-          <a data-difficulty="1" href="https://github.com/awesome-lists/awesome-bash" target="_blank" class="list-item easyProjectItem">awesome-bash</a>
-          <a data-difficulty="1" href="https://github.com/3daddict/memory-match-react" target="_blank" class="list-item easyProjectItem">React Memory Match Game</a>
-          <a data-difficulty="1" href="https://github.com/MaisaMilena/MyAnimeList" target="_blank" class="list-item easyProjectItem">Clean Architecture Swift - My Anime List</a>
-          <a data-difficulty="2" href="https://github.com/openebs/openebs" target="_blank" class="list-item easyProjectItem">openebs</a>
-          <a data-difficulty="2" href="https://github.com/Kinto/kinto" target="_blank" class="list-item easyProjectItem">kinto</a>
-          <a data-difficulty="2" href="https://github.com/oppia/oppia" target="_blank" class="list-item easyProjectItem">oppia</a>      
-          <a data-difficulty="2" href="https://github.com/spverma536/solareclipse" target="_blank" class="list-item easyProjectItem">solareclipse</a>
-          <a data-difficulty="2" href="https://github.com/python-babel" target="_blank" class="list-item easyProjectItem">python-babel</a>
-          <a data-difficulty="2" target="_blank" class="list-item easyProjectItem" href="https://github.com/catapult-project/catapult">python catapult</a>
-          <a data-difficulty="2" target="_blank" class="list-item easyProjectItem" href="https://github.com/bevacqua/dragula">dragula</a>
-          <a data-difficulty="2" target="_blank" class="list-item easyProjectItem" href="https://github.com/borgbackup/borg">borg</a>
+        <div class="section">
+            <h3 class="section-tree-title">Beginner Friendly Projects</h3>
+            <ul class="list beginnerProjects">
 
-    <div class="container">
-        <div id="header">
-            <h1>Helpful Material <a href="https://github.com/lingonsaft/hacktoberfest">(Github repo)</a></h1>
-            <p>Feel free to add any of your own projects, helpul links or guides below.</p>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/publiclab/plots2" target="_blank"
+                                         class="easyProjectItem">public
+                    lab</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/awesome-lists/awesome-bash"
+                                         target="_blank"
+                                         class="easyProjectItem">awesome-bash</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/3daddict/memory-match-react"
+                                         target="_blank"
+                                         class="easyProjectItem">React
+                    Memory Match Game</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/MaisaMilena/MyAnimeList"
+                                         target="_blank"
+                                         class="easyProjectItem">Clean
+                    Architecture Swift - My Anime List</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/openebs/openebs" target="_blank"
+                                         class="easyProjectItem">openebs</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/Kinto/kinto" target="_blank"
+                                         class="easyProjectItem">kinto</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/oppia/oppia" target="_blank"
+                                         class="easyProjectItem">oppia</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/codecombat/codecombat"
+                                         target="_blank"
+                                         class="easyProjectItem">CodeCombat
+                    - learn to code by playing games</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/spverma536/solareclipse"
+                                         target="_blank"
+                                         class="easyProjectItem">solareclipse</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/python-babel" target="_blank"
+                                         class="easyProjectItem">python-babel</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/codeuino/Social-Platform-Donut"
+                                         target="_blank"
+                                         class="easyProjectItem">NodeJS-Donut</a></li>
+                <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem"
+                                         href="https://github.com/catapult-project/catapult">python
+                    catapult</a></li>
+                <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem"
+                                         href="https://github.com/bevacqua/dragula">dragula</a></li>
+                <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem"
+                                         href="https://github.com/borgbackup/borg">borg</a></li>
+                <li class="list-item"><a data-difficulty="1"
+                                         href="https://github.com/indiesquidge/javascript-challenges"
+                                         target="_blank" class="easyProjectItem">JavaScript
+                    Challenges</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/naijopkr/react-color-game"
+                                         target="_blank"
+                                         class="easyProjectItem">React
+                    RGB Color Game</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/viveksdf/mean-crud.git"
+                                         target="_blank"
+                                         class="easyProjectItem">Mean
+                    Stack CRUD App</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/bashbers/csharp-algorithms"
+                                         target="_blank"
+                                         class="easyProjectItem">Repository
+                    includes C# Algorithms</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/manasipandya7/TweetPanda"
+                                         target="_blank"
+                                         class="easyProjectItem">Twitter Sentiment Analysis with IBM Watson</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/rgehan/hacktoberfest-2k18-katas"
+                                         target="_blank"
+                                         class="easyProjectItem">Hacktoberfest 2k18 Katas -
+                    Code Challenges</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/sudz123/Happy_Hacking"
+                                         target="_blank"
+                                         class="easyProjectItem">Happy_Hacking Website</a></li>
+                <li class="list-item"><a data-difficulty="1"
+                                         href="https://github.com/gatsbyjs/gatsby/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Hacktoberfest%22+-label%3A%22type%3A+documentation%22+"
+                                         target="_blank" class="easyProjectItem">GatsbyJS</a>
+                </li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/Leaflet/Leaflet" target="_blank"
+                                         class="easyProjectItem">Leaflet</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/zeit/hyper" target="_blank"
+                                         class="easyProjectItem">Hyper</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/vimm0/auto-script" target="_blank"
+                                         class="easyProjectItem">Auto Script</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/ntrupin/LineScript"
+                                         target="_blank" class="easyProjectItem">LineScript</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/tsuru/tsuru" target="_blank"
+                                         class="easyProjectItem">Tsuru</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/freedomotic/freedomotic"
+                                         target="_blank" class="easyProjectItem">Freedomotic</a></li>
+                <li class="list-item"><a data-difficulty="1"
+                                         href="https://github.com/blackburn3333/ANGULAR-SIX-CRUD-APP" target="_blank"
+                                         class="easyProjectItem">ANGULAR-SIX-CRUD-APP</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-tree-title">Additional Projects</h3>
+            <ul class="list additionalProjects">
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/CommandLineHeroes/hero-engine"
+                                         target="_blank"
+                                         class="list-item projectItem">Command Line Heros</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/DEGoodmanWilson/luna"
+                                         target="_blank"
+                                         class="list-item projectItem">C++ web application framework</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/nodejs/node" target="_blank"
+                                         class="list-item projectItem">node</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/zulip/zulip" target="_blank"
+                                         class="list-item projectItem">zulip</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/shivanshkroos/moviefy"
+                                         target="_blank"
+                                         class="list-item projectItem">moviefy</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/scrapy/scrapy" target="_blank"
+                                         class="list-item projectItem">scrapy</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/hariprasetia/Belajar-CPP"
+                                         target="_blank"
+                                         class="list-item projectItem">Belajar C++ (Learn C++)</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/sharma-p/SimpleCalculatorApp"
+                                         target="_blank"
+                                         class="list-item projectItem">Simple Calculator App(Android)</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/kriswebdev/android_aircrack"
+                                         target="_blank"
+                                         class="list-item projectItem">AirCrack-ng for Android</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/sorrycc/awesome-javascript"
+                                         target="_blank"
+                                         class="list-item projectItem">Awesome Javascript</a></li>
+                <li class="list-item"><a data-difficulty="1"
+                                         href="https://github.com/Kunamatata/Starcraft2ChromeExtension"
+                                         target="_blank" class="list-item projectItem">A Starcraft Chrome Extension to
+                    find streams on Twitch</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/DextApp/dext"
+                                         class="list-item projectItem">Dext
+                    - 🔍 A smart launcher. Powered by JavaScript.</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/slothking-online/graphql-editor"
+                                         class="list-item projectItem">GraphQL
+                    Visual Node Editor</a></li>
+                <li class="list-item"><a data-difficulty="2" href="https://github.com/infinite-robots/nomnom-ui"
+                                         target="_blank"
+                                         class="list-item projectItem">NomNominate - group restaurant picker
+                    (vue/node)</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/learn-it-in-russian/tldr-ru"
+                                         class="list-item projectItem">tl;dr
+                    - Project to translate short man's into Russian.</a></li>
+                <li class="list-item"><a data-difficulty="1"
+                                         href="https://github.com/YohanKulasinghe/codeSamples_ReactNative"
+                                         class="list-item projectItem">tl;dr - Project to collect react-native code
+                    samples in one place.</a></li>
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/strigoaica/strigoaica"
+                                         class="list-item projectItem">Strigoaică
+                    - Project agnostic service for template based notification delivery</a></li>
+
+                <li class="list-item"><a data-difficulty="1" href="https://github.com/blackburn3333/hello"
+                                         class="list-item projectItem">Hello - PHP reusable functions, Classes, Forms
+                    and Views Generator for MySql. This application generate CRUD operations for MySql tables</a></li>
+            </ul>
+        </div>
+
+        <!-- Repos on GitHub which are completely beginner friendly!     -->
+        <div class="section">
+            <h2 class="mt-4">Helpful Links</h2>
+            <p>Feel free to add any helpful links!</p>
+            <div class="list">
+                <li><a href="https://www.quora.com/What-is-Hacktoberfest" target="_blank" class="list-item">What is
+                    Hacktoberfest & How to participate?</a></li>
+                <li><a href="https://hacktoberfest.digitalocean.com/" target="_blank"
+                       class="list-item">Hacktoberfest</a></li>
+                <li><a href="https://hacktoberfestchecker.herokuapp.com/" target="_blank" class="list-item">Hacktoberfest
+                    Checker</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github"
+                       target="_blank"
+                       class="list-item">How to Create a Pull Request?</a></li>
+                <li>
+                    <a href="https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940"
+                       target="_blank" class="list-item">A Step by Step Guide to Making Your First GitHub
+                        Contribution.</a></li>
+                <li>
+                    <a href="https://medium.freecodecamp.org/i-just-got-my-free-hacktoberfest-shirt-heres-a-quick-way-you-can-get-yours-fa78d6e24307"
+                       target="_blank" class="list-item">How you can get your Hacktoberfest T-shirt?</a></li>
+                <li><a href="https://sendgrid.com/blog/hacktoberfest-2018-hack-on-sendgrid-open-source-projects/"
+                       target="_blank"
+                       class="list-item">Hack on Sendgrid opensource projects.</a></li>
+                <li><a href="https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/" target="_blank"
+                       class="list-item">Details
+                    of Hacktoberfest from Auth0!</a></li>
+                <li>
+                    <a href="https://dev.to/sheldonnunes/hacktoberfest-2018---anyone-looking-for-open-source-contributors-6bp"
+                       target="_blank" class="list-item">Looking for Hacktoberfest contributors...?</a></li>
+                <li><a href="https://aws.amazon.com/blogs/opensource/amazonians-hacktoberfest/" target="_blank"
+                       class="list-item">Amazonians
+                    and Hacktoberfest.</a></li>
+                <li><a href="https://www.elastic.co/blog/hacktoberfest-2018-for-beats-and-logstash" target="_blank"
+                       class="list-item">Hacktoberfest
+                    2018 for Beats and Logstash.</a></li>
+                <li><a href="https://sendgrid.com/blog/hacktoberfest-2017-was-amazing/" target="_blank"
+                       class="list-item">Hacktoberfest
+                    2017 Was Amazing</a></li>
+                <li><a href="https://open.microsoft.com/2018/09/18/hacktoberfest-2018-microsoft/" target="_blank"
+                       class="list-item">Microsoft
+                    is joining Hacktoberfest - and you can win a t-shirt</a></li>
+                <li><a href="https://kotlin.link" target="_blank" class="list-item">Awesome Kotlin resources</a></li>
+                <li><a class="list-item"
+                       href="https://www.elegantthemes.com/blog/resources/git-and-github-a-beginners-guide-for-complete-newbies">Git
+                    for complete Newbies</a></li>
+                <li><a class="list-item"
+                       href="https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/">Hacktoberfest
+                    @Microsoft (earn an extra t-shirt!)</a></li>
+                <li><a class="list-item" href="https://www.quora.com/What-is-Hacktoberfest">What is Hactoberfest & How
+                    to
+                    participate</a></li>
+                <li><a class="list-item" href="https://www.atlassian.com/git/tutorials/comparing-workflows">
+                    Understanding
+                    the
+                    different Git Workflow</a></li>
+                <li><a class="list-item" href="https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request"> How
+                    to
+                    GitHub: Fork, Branch, Track, Squash and Pull Request</a></li>
+                <li><a class="list-item" href="https://tutorialzine.com/2016/06/learn-git-in-30-minutes">Learn Git in 30
+                    minutes</a></li>
+                <li><a class="list-item" href="https://books.goalkicker.com/"> Free books on different web technologies
+                    and
+                    different programming languages.</a></li>
+                <li><a class="list-item"
+                       href="https://medium.freecodecamp.org/hacktoberfest-my-gateway-to-open-source-f44c8778b022">Hacktoberfest:
+                    My Gateway to Open Source</a></li>
+                <li><a class="list-item"
+                       href="https://softwareengineering.stackexchange.com/questions/6395/how-do-you-dive-into-large-code-bases">
+                    How do you dive into large code bases? </a></li>
+                <li><a class="list-item"
+                       href="https://medium.freecodecamp.org/how-to-make-your-first-open-source-contribution-in-just-5-minutes-aaad1fc59c9a">How
+                    to make your first open source contribution in just 5 minutes</a></li>
+                <li><a class="list-item"
+                       href="https://medium.com/@jenweber/your-first-open-source-contribution-a-step-by-step-technical-guide-d3aca55cc5a6">Your
+                    first open source contribution: a step-by-step technical guide</a></li>
+                <li><a class="list-item" href="https://devswag.io/">Swag opportunities for developers (not just
+                    Hacktoberfest
+                    opportunities)</a></li>
+                <li><a class="list-item" href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">A to Z
+                    resources for
+                    Computer Science students.</a></li>
+                <li><a class="list-item"
+                       href="https://medium.freecodecamp.org/how-to-use-badges-to-stop-feeling-like-a-noob-d4e6600d37d2">GitHub
+                    Badges Guide</a></li>
+                <li><a class="list-item"
+                       href="https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7">Mac
+                    Terminal Improvement Guide"</a></li>
+                <li><a class="list-item" href="https://guides.github.com/features/pages/">Github Pages guide</a></li>
+                <li><a class="list-item" href="https://hacktoberfest.digitalocean.com/eventkit">Hacktoberfest 2018 Event
+                    Kit</a></li>
+
+                <li><a class="list-item"
+                       href="https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7">Mac
+                    Terminal Improvement Guide</a></li>
+                <li><a class="list-item" href="https://nvie.com/posts/a-successful-git-branching-model/">A successful
+                    Git
+                    branching model</a></li>
+                <li><a class="list-item"
+                       href="https://services.github.com/on-demand/github-cli/open-pull-request-github">Creating
+                    a pull request on github</a></li>
+                <li><a class="list-item" href="http://rogerdudler.github.io/git-guide/">Simple as hell GIT Guide</a>
+                </li>
+                <li><a class="list-item"
+                       href="https://pythom.com/Microsoft-Joins-5th-Annual-Open-Source-Hacktoberfest-2018-10-06-27338">Creating
+                    a pull request on github</a></li>
+                <li><a class="list-item" href="https://github.com/viatsko/awesome-vscode">A curated list of delightful
+                    VS Code packages and resources</a></li>
+                <li><a class="list-item"
+                       href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">
+                    How to install and use Bash on Windows</a></li>
+                <li><a class="list-item"
+                       href="https://rooksguide.files.wordpress.com/2013/12/rooks-guide-isbn-version.pdf">Rooks Guide to
+                    C++</a></li>
+                <li><a href="https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR"
+                       target="_blank" class="list-item">Net Ninja: Git and GitHub Tutorials on YouTube</a></li>
+                <li><a class="list-item" href="https://robots.thoughtbot.com/keeping-a-github-fork-updated">Keeping a
+                    Github Fork Updated</a></li>
+                <li><a class="list-item" href="http://jayendrasblog.blogspot.com/2018/05/how-to-use-html5-web-storage.html">HOW TO USE HTML5 WEB STORAGE</a></li>
+            </div>
+
+      <div class="section">
+        <h3 class="section-tree-title">Beginner Friendly Projects</h3>
+        <ul class="list beginnerProjects">
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/publiclab/plots2" target="_blank" class="easyProjectItem">public
+              lab</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/awesome-lists/awesome-bash" target="_blank"
+              class="easyProjectItem">awesome-bash</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/3daddict/memory-match-react" target="_blank"
+              class="easyProjectItem">React
+              Memory Match Game</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/MaisaMilena/MyAnimeList" target="_blank"
+              class="easyProjectItem">Clean
+              Architecture Swift - My Anime List</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/openebs/openebs" target="_blank" class="easyProjectItem">openebs</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/Kinto/kinto" target="_blank" class="easyProjectItem">kinto</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/oppia/oppia" target="_blank" class="easyProjectItem">oppia</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/codecombat/codecombat" target="_blank"
+              class="easyProjectItem">CodeCombat
+              - learn to code by playing games</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/spverma536/solareclipse" target="_blank"
+              class="easyProjectItem">solareclipse</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/python-babel" target="_blank" class="easyProjectItem">python-babel</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/codeuino/Social-Platform-Donut" target="_blank"
+              class="easyProjectItem">NodeJS-Donut</a></li>
+          <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem" href="https://github.com/catapult-project/catapult">python
+              catapult</a></li>
+          <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem" href="https://github.com/bevacqua/dragula">dragula</a></li>
+          <li class="list-item"><a data-difficulty="2" target="_blank" class="easyProjectItem" href="https://github.com/borgbackup/borg">borg</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/indiesquidge/javascript-challenges"
+              target="_blank" class="easyProjectItem">JavaScript
+              Challenges</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/naijopkr/react-color-game" target="_blank"
+              class="easyProjectItem">React
+              RGB Color Game</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/viveksdf/mean-crud.git" target="_blank"
+              class="easyProjectItem">Mean
+              Stack CRUD App</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/bashbers/csharp-algorithms" target="_blank"
+              class="easyProjectItem">Repository
+              includes C# Algorithms</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/manasipandya7/TweetPanda" target="_blank"
+              class="easyProjectItem">Twitter Sentiment Analysis with IBM Watson</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/rgehan/hacktoberfest-2k18-katas" target="_blank"
+              class="easyProjectItem">Hacktoberfest 2k18 Katas -
+              Code Challenges</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/sudz123/Happy_Hacking" target="_blank"
+              class="easyProjectItem">Happy_Hacking Website</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/gatsbyjs/gatsby/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22Hacktoberfest%22+-label%3A%22type%3A+documentation%22+"
+              target="_blank" class="easyProjectItem">GatsbyJS</a>
+          </li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/Leaflet/Leaflet" target="_blank" class="easyProjectItem">Leaflet</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/zeit/hyper" target="_blank" class="easyProjectItem">Hyper</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/vimm0/auto-script" target="_blank" class="easyProjectItem">Auto Script</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/ntrupin/LineScript" target="_blank" class="easyProjectItem">LineScript</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/tsuru/tsuru" target="_blank" class="easyProjectItem">Tsuru</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/freedomotic/freedomotic" target="_blank" class="easyProjectItem">Freedomotic</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3 class="section-tree-title">Additional Projects</h3>
+        <ul class="list additionalProjects">
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/CommandLineHeroes/hero-engine" target="_blank"
+              class="list-item projectItem">Command Line Heros</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/DEGoodmanWilson/luna" target="_blank"
+              class="list-item projectItem">C++ web application framework</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/nodejs/node" target="_blank" class="list-item projectItem">node</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/zulip/zulip" target="_blank" class="list-item projectItem">zulip</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/shivanshkroos/moviefy" target="_blank"
+              class="list-item projectItem">moviefy</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/scrapy/scrapy" target="_blank" class="list-item projectItem">scrapy</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/hariprasetia/Belajar-CPP" target="_blank"
+              class="list-item projectItem">Belajar C++ (Learn C++)</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/sharma-p/SimpleCalculatorApp" target="_blank"
+              class="list-item projectItem">Simple Calculator App(Android)</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/kriswebdev/android_aircrack" target="_blank"
+              class="list-item projectItem">AirCrack-ng for Android</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/sorrycc/awesome-javascript" target="_blank"
+              class="list-item projectItem">Awesome Javascript</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/Kunamatata/Starcraft2ChromeExtension"
+              target="_blank" class="list-item projectItem">A Starcraft Chrome Extension to find streams on Twitch</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/DextApp/dext" class="list-item projectItem">Dext
+              - 🔍 A smart launcher. Powered by JavaScript.</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/slothking-online/graphql-editor" class="list-item projectItem">GraphQL
+              Visual Node Editor</a></li>
+          <li class="list-item"><a data-difficulty="2" href="https://github.com/infinite-robots/nomnom-ui" target="_blank"
+              class="list-item projectItem">NomNominate - group restaurant picker (vue/node)</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/learn-it-in-russian/tldr-ru" class="list-item projectItem">tl;dr
+              - Project to translate short man's into Russian.</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/YohanKulasinghe/codeSamples_ReactNative"
+              class="list-item projectItem">tl;dr - Project to collect react-native code samples in one place.</a></li>
+          <li class="list-item"><a data-difficulty="1" href="https://github.com/strigoaica/strigoaica" class="list-item projectItem">Strigoaică
+              - Project agnostic service for template based notification delivery</a></li>
+        </ul>
+      </div>
+
+      <!-- Repos on GitHub which are completely beginner friendly!     -->
+      <div class="section">
+        <h2 class="mt-4">Helpful Links</h2>
+        <p>Feel free to add any helpful links!</p>
+        <div class="list">
+          <li><a href="https://www.quora.com/What-is-Hacktoberfest" target="_blank" class="list-item">What is
+              Hacktoberfest & How to participate?</a></li>
+          <li><a href="https://hacktoberfest.digitalocean.com/" target="_blank" class="list-item">Hacktoberfest</a></li>
+          <li><a href="https://hacktoberfestchecker.herokuapp.com/" target="_blank" class="list-item">Hacktoberfest
+              Checker</a></li>
+          <li><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github" target="_blank"
+              class="list-item">How to Create a Pull Request?</a></li>
+          <li><a href="https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940"
+              target="_blank" class="list-item">A Step by Step Guide to Making Your First GitHub Contribution.</a></li>
+          <li><a href="https://medium.freecodecamp.org/i-just-got-my-free-hacktoberfest-shirt-heres-a-quick-way-you-can-get-yours-fa78d6e24307"
+              target="_blank" class="list-item">How you can get your Hacktoberfest T-shirt?</a></li>
+          <li><a href="https://sendgrid.com/blog/hacktoberfest-2018-hack-on-sendgrid-open-source-projects/" target="_blank"
+              class="list-item">Hack on Sendgrid opensource projects.</a></li>
+          <li><a href="https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/" target="_blank" class="list-item">Details
+              of Hacktoberfest from Auth0!</a></li>
+          <li><a href="https://dev.to/sheldonnunes/hacktoberfest-2018---anyone-looking-for-open-source-contributors-6bp"
+              target="_blank" class="list-item">Looking for Hacktoberfest contributors...?</a></li>
+          <li><a href="https://aws.amazon.com/blogs/opensource/amazonians-hacktoberfest/" target="_blank" class="list-item">Amazonians
+              and Hacktoberfest.</a></li>
+          <li><a href="https://www.elastic.co/blog/hacktoberfest-2018-for-beats-and-logstash" target="_blank" class="list-item">Hacktoberfest
+              2018 for Beats and Logstash.</a></li>
+          <li><a href="https://sendgrid.com/blog/hacktoberfest-2017-was-amazing/" target="_blank" class="list-item">Hacktoberfest
+              2017 Was Amazing</a></li>
+          <li><a href="https://open.microsoft.com/2018/09/18/hacktoberfest-2018-microsoft/" target="_blank" class="list-item">Microsoft
+              is joining Hacktoberfest - and you can win a t-shirt</a></li>
+          <li><a href="https://kotlin.link" target="_blank" class="list-item">Awesome Kotlin resources</a></li>
+          <li><a class="list-item" href="https://www.elegantthemes.com/blog/resources/git-and-github-a-beginners-guide-for-complete-newbies">Git
+              for complete Newbies</a></li>
+          <li><a class="list-item" href="https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/">Hacktoberfest
+              @Microsoft (earn an extra t-shirt!)</a></li>
+          <li><a class="list-item" href="https://www.quora.com/What-is-Hacktoberfest">What is Hactoberfest & How to
+              participate</a></li>
+          <li><a class="list-item" href="https://www.atlassian.com/git/tutorials/comparing-workflows"> Understanding
+              the
+              different Git Workflow</a></li>
+          <li><a class="list-item" href="https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request"> How to
+              GitHub: Fork, Branch, Track, Squash and Pull Request</a></li>
+          <li><a class="list-item" href="https://tutorialzine.com/2016/06/learn-git-in-30-minutes">Learn Git in 30
+              minutes</a></li>
+          <li><a class="list-item" href="https://books.goalkicker.com/"> Free books on different web technologies and
+              different programming languages.</a></li>
+          <li><a class="list-item" href="https://medium.freecodecamp.org/hacktoberfest-my-gateway-to-open-source-f44c8778b022">Hacktoberfest:
+              My Gateway to Open Source</a></li>
+          <li><a class="list-item" href="https://softwareengineering.stackexchange.com/questions/6395/how-do-you-dive-into-large-code-bases">
+              How do you dive into large code bases? </a></li>
+          <li><a class="list-item" href="https://medium.freecodecamp.org/how-to-make-your-first-open-source-contribution-in-just-5-minutes-aaad1fc59c9a">How
+              to make your first open source contribution in just 5 minutes</a></li>
+          <li><a class="list-item" href="https://medium.com/@jenweber/your-first-open-source-contribution-a-step-by-step-technical-guide-d3aca55cc5a6">Your
+              first open source contribution: a step-by-step technical guide</a></li>
+          <li><a class="list-item" href="https://devswag.io/">Swag opportunities for developers (not just Hacktoberfest
+              opportunities)</a></li>
+          <li><a class="list-item" href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">A to Z resources for
+              Computer Science students.</a></li>
+          <li><a class="list-item" href="https://medium.freecodecamp.org/how-to-use-badges-to-stop-feeling-like-a-noob-d4e6600d37d2">GitHub
+              Badges Guide</a></li>
+          <li><a class="list-item" href="https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7">Mac
+              Terminal Improvement Guide"</a></li>
+          <li><a class="list-item" href="https://guides.github.com/features/pages/">Github Pages guide</a></li>
+          <li><a class="list-item" href="https://hacktoberfest.digitalocean.com/eventkit">Hacktoberfest 2018 Event Kit</a></li>
+
+          <li><a class="list-item" href="https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7">Mac
+              Terminal Improvement Guide</a></li>
+          <li><a class="list-item" href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git
+              branching model</a></li>
+          <li><a class="list-item" href="https://services.github.com/on-demand/github-cli/open-pull-request-github">Creating
+              a pull request on github</a></li>
+          <li><a class="list-item" href="http://rogerdudler.github.io/git-guide/">Simple as hell GIT Guide</a></li>
+          <li><a class="list-item" href="https://pythom.com/Microsoft-Joins-5th-Annual-Open-Source-Hacktoberfest-2018-10-06-27338">Creating
+              a pull request on github</a></li>
+          <li><a class="list-item" href="https://github.com/viatsko/awesome-vscode">A curated list of delightful VS Code packages and resources</a></li>
+          <li><a class="list-item" href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/"> How to install and use Bash on Windows</a></li>
+          <li><a class="list-item" href="https://rooksguide.files.wordpress.com/2013/12/rooks-guide-isbn-version.pdf">Rooks Guide to C++</a></li>
+          <li><a href="https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR" target="_blank" class="list-item">Net Ninja: Git and GitHub Tutorials on YouTube</a></li>
+          <li><a class="list-item" href="https://robots.thoughtbot.com/keeping-a-github-fork-updated">Keeping a Github Fork Updated</a></li>
+          <li><a class="list-item" href="https://akashgiricse.github.io/blog/setting-up-git-workspace-on-linux/">Setting up git workspace on Linux or Mac</a></li>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="section-tree-title">Projects accepting Hacktoberfest First Time Contributors</h3>
+        <div class="list otherProjects">
+          <a data-difficulty="1" href="https://github.com/sreetamdas/newbie-hacktoberfest" target="_blank" class="list-item projectItem">sreetamdas/newbie-hacktoberfest</a>
+          <a data-difficulty="1" href="https://github.com/Showndarya/Hacktoberfest" target="_blank" class="list-item projectItem">Showndarya/Hacktoberfest</a>
+          <a data-difficulty="1" href="https://github.com/firstcontributions/first-contributions" target="_blank" class="list-item projectItem">firstcontributions/first-contributionst</a>
 
         </div>
-        <h3 class="mt-4">Additional Projects</h3>
-     <div class="list otherProjects">
-         <a data-difficulty="1" href="https://github.com/nodejs/node" target="_blank" class="list-item projectItem">node</a>
-         <a data-difficulty="2" href="https://github.com/zulip/zulip" target="_blank" class="list-item projectItem">zulip</a>
-         <a data-difficulty="2" href="https://github.com/shivanshkroos/moviefy" target="_blank" class="list-item projectItem">moviefy</a>
-         <a data-difficulty="1" href="https://github.com/scrapy/scrapy" target="_blank" class="list-item projectItem">scrapy</a>
-         <a data-difficulty="2" href="https://github.com/hariprasetia/Belajar-CPP" target="_blank" class="list-item projectItem">Belajar C++ (Learn C++)</a>
-         <a data-difficulty="1" href="https://github.com/sharma-p/SimpleCalculatorApp" target="_blank" class="list-item projectItem">Simple Calculator App(Android)</a>
-         <a data-difficulty="2" href="https://github.com/kriswebdev/android_aircrack" target="_blank" class="list-item projectItem">AirCrack-ng for Android</a>
-         <a data-difficulty="1" href="https://github.com/sorrycc/awesome-javascript" target="_blank" class="list-item projectItem">Awesome Javascript</a>
-         <a data-difficulty="1" href="https://github.com/Kunamatata/Starcraft2ChromeExtension"  target="_blank" class="list-item projectItem">A Starcraft Chrome Extension to find streams on Twitch</a>
-         <a data-difficulty="1" href="https://github.com/DextApp/dext" class="list-item projectItem">Dext - 🔍 A smart launcher. Powered by JavaScript.</a>
-         <a data-difficulty="1" href="https://github.com/slothking-online/graphql-editor" class="list-item projectItem">GraphQL Visual Node Editor</a>
-         <a data-difficulty="2" href="https://github.com/infinite-robots/nomnom-ui" target="_blank" class="list-item projectItem">NomNominate - group restaurant picker (vue/node)</a>
-         <a data-difficulty="1" href="https://github.com/learn-it-in-russian/tldr-ru" class="list-item projectItem">tl;dr - Project to translate short man's into Russian.</a>
-     </div>
-     <h3 class="mt-4">Projects accepting Hacktoberfest First Time Contributors</h3>
-     <!-- Repos on GitHub which are completely beginner friendly!     -->
-     <div class="list otherProjects">
-       <a data-difficulty="1" href="https://github.com/sreetamdas/newbie-hacktoberfest" target="_blank" class="list-item projectItem">sreetamdas/newbie-hacktoberfest</a>
-     </div>
-
-     <h2 class="mt-4">Helpful Links</h2>
-     <p>Feel free to add any helpful links!</p>
-     <div class="list">
-       <a href="https://www.quora.com/What-is-Hacktoberfest" target="_blank" class="list-item">What is Hacktoberfest & How to participate?</a>
-       <a href="https://hacktoberfest.digitalocean.com/" target="_blank" class="list-item">Hacktoberfest</a>
-       <a href="https://hacktoberfestchecker.herokuapp.com/" target="_blank" class="list-item">Hacktoberfest Checker</a>
-       <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github" target="_blank" class="list-item">How to Create a Pull Request?</a>
-       <a href="https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940" target="_blank" class="list-item">A Step by Step Guide to Making Your First GitHub Contribution.</a>
-       <a href="https://medium.freecodecamp.org/i-just-got-my-free-hacktoberfest-shirt-heres-a-quick-way-you-can-get-yours-fa78d6e24307" target="_blank" class="list-item">How you can get your Hacktoberfest T-shirt?</a>
-       <a href="https://sendgrid.com/blog/hacktoberfest-2018-hack-on-sendgrid-open-source-projects/" target="_blank" class="list-item">Hack on Sendgrid opensource projects.</a>
-       <a href="https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/" target="_blank" class="list-item">Details of Hacktoberfest from Auth0!</a>
-       <a href="https://dev.to/sheldonnunes/hacktoberfest-2018---anyone-looking-for-open-source-contributors-6bp" target="_blank" class="list-item">Looking for Hacktoberfest contributors...?</a>
-       <a href="https://aws.amazon.com/blogs/opensource/amazonians-hacktoberfest/" target="_blank" class="list-item">Amazonians and Hacktoberfest.</a>
-       <a href="https://www.elastic.co/blog/hacktoberfest-2018-for-beats-and-logstash" target="_blank" class="list-item">Hacktoberfest 2018 for Beats and Logstash.</a>
-       <a href="https://sendgrid.com/blog/hacktoberfest-2017-was-amazing/" target="_blank" class="list-item">Hacktoberfest 2017 Was Amazing</a>
-       <a href="https://open.microsoft.com/2018/09/18/hacktoberfest-2018-microsoft/" target="_blank" class="list-item">Microsoft is joining Hacktoberfest - and you can win a t-shirt</a>
-     </div>
-
-     <h2 class="mt-4">Guides</h2>
-     <p>Feel free to add any guides.</p>
-     <div class="list">
-       <a class="list-item" href="https://codeburst.io/a-step-by-step-guide-to-making-your-first-github-contribution-5302260a2940">A Step by Step Guide to Making Your First GitHub Contribution</a>
-       <a class="list-item" href="https://aws.amazon.com/blogs/opensource/amazonians-hacktoberfest/">Amazonians and Hacktoberfest</a>
-       <a class="list-item" href="https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/">Details of Hacktoberfest from Auth0!</a>
-       <a class="list-item" href="https://www.elegantthemes.com/blog/resources/git-and-github-a-beginners-guide-for-complete-newbies">Git for complete Newbies</a>
-       <a class="list-item" href="https://auth0.com/blog/celebrate-hacktoberfest-with-auth0/">details of hacktober fest from Auth0!</a>
-       <a class="list-item" href="https://sendgrid.com/blog/hacktoberfest-2018-hack-on-sendgrid-open-source-projects/">Hack on Sendgrid opensource projects</a>
-       <a class="list-item" href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a>
-       <a class="list-item" href="https://sendgrid.com/blog/hacktoberfest-2017-was-amazing/">Hacktoberfest 2017 Was Amazing</a>
-       <a class="list-item" href="https://www.elastic.co/blog/hacktoberfest-2018-for-beats-and-logstash">Hacktoberfest 2018 for Beats and Logstash.</a>
-       <a class="list-item" href="https://hacktoberfestchecker.herokuapp.com/">Hacktoberfest Checker</a>
-       <a class="list-item" href="https://open.microsoft.com/2018/09/30/join-hacktoberfest-2018-celebration-microsoft/">Hacktoberfest @Microsoft (earn an extra t-shirt!)</a>
-       <a class="list-item" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github">How to Create a Pull Request</a>
-       <a class="list-item" href="https://medium.freecodecamp.org/i-just-got-my-free-hacktoberfest-shirt-heres-a-quick-way-you-can-get-yours-fa78d6e24307">How you can get your Hactoberfest T-shirt</a>
-       <a class="list-item" href="https://dev.to/sheldonnunes/hacktoberfest-2018---anyone-looking-for-open-source-contributors-6bp">Looking for hacktoberfest contributors...?</a>
-       <a class="list-item" href="https://www.quora.com/What-is-Hacktoberfest">What is Hactoberfest & How to participate</a>
-       <a class="list-item" href="https://www.atlassian.com/git/tutorials/comparing-workflows"> Understanding the different Git Workflow</a>
-       <a class="list-item" href="https://www.gun.io/blog/how-to-github-fork-branch-and-pull-request"> How to GitHub: Fork, Branch, Track, Squash and Pull Request</a>
-       <a class="list-item" href="https://tutorialzine.com/2016/06/learn-git-in-30-minutes">Learn Git in 30 minutes</a>
-       <a class="list-item" href="https://books.goalkicker.com/"> Free books on different web technologies and different programming languages.</a>
-       <a class="list-item" href="https://medium.freecodecamp.org/hacktoberfest-my-gateway-to-open-source-f44c8778b022">Hacktoberfest: My Gateway to Open Source</a>
-       <a class="list-item" href="https://softwareengineering.stackexchange.com/questions/6395/how-do-you-dive-into-large-code-bases"> How do you dive into large code bases? </a>
-       <a class="list-item" href="https://medium.freecodecamp.org/how-to-make-your-first-open-source-contribution-in-just-5-minutes-aaad1fc59c9a">How to make your first open source contribution in just 5 minutes</a>
-       <a class="list-item" href="https://medium.com/@jenweber/your-first-open-source-contribution-a-step-by-step-technical-guide-d3aca55cc5a6">Your first open source contribution: a step-by-step technical guide</a>
-       <a class="list-item" href="https://devswag.io/">Swag opportunities for developers (not just Hacktoberfest opportunities)</a>
-       <a class="list-item" href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">A to Z resources for Computer Science students.</a>
-       <a class="list-item" href="https://medium.freecodecamp.org/how-to-use-badges-to-stop-feeling-like-a-noob-d4e6600d37d2">GitHub Badges Guide</a>
-       <a class="list-item" href="https://medium.com/@caulfieldOwen/youre-missing-out-on-a-better-mac-terminal-experience-d73647abf6d7">Mac Terminal Improvement Guide</a>
-     </div>
-   </div>
-
-   <footer id="footer">
-    <div class="footer__socials">
-      <a href="https://github.com/lingonsaft" class="footer__socials-link">
-          <img src="images/svg/github.svg" alt="">
-      </a>
-      <a href="https://www.youtube.com/lingonsaft/" class="footer__socials-link">
-        <img src="images/svg/youtube.svg" alt="">
-      </a>
-      <a href="https://www.instagram.com/lingonsaftofficial/" class="footer__socials-link">
-        <img src="images/svg/instagram.svg" alt="">
-      </a>
-      <a href="https://twitter.com/lingonsaft1" class="footer__socials-link">
-        <img src="images/svg/twitter.svg" alt="">
-      </a>
+        <div class="section">
+            <h3 class="section-tree-title">Projects accepting Hacktoberfest First Time Contributors</h3>
+            <div class="list otherProjects">
+                <a data-difficulty="1" href="https://github.com/sreetamdas/newbie-hacktoberfest" target="_blank"
+                   class="list-item projectItem">sreetamdas/newbie-hacktoberfest</a>
+                <a data-difficulty="1" href="https://github.com/Showndarya/Hacktoberfest" target="_blank"
+                   class="list-item projectItem">Showndarya/Hacktoberfest</a>
+            </div>
+        </div>
     </div>
-  </footer>
+</div>
 
-  <button id="backToTop" type="button" title="Back to Top">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.189 511.189"><g fill="#ff0844"><path d="M364.858 157.935l-98.59-145.28c-8.547-12.586-22.158-12.331-30.25.526l-90.88 144.228c-8.093 12.857-2.56 23.381 12.302 23.381h26.639v50.148c0 15.7 12.742 28.445 28.445 28.445h85.333c15.73 0 28.445-12.743 28.445-28.445V180.79h27.008c14.875 0 20.109-10.269 11.547-22.855M51.115 338.627H19.641C5.774 338.627 0 328.502 0 318.702c0-10.097 7.225-19.91 19.641-19.91h106.226c12.43 0 19.655 9.813 19.655 19.91 0 9.8-5.773 19.925-19.655 19.925h-31.46v144.91c0 14.45-9.23 22.528-21.646 22.528s-21.646-8.079-21.646-22.527v-144.91zM300.559 401.561c0-34.93-18.19-66.417-54.273-66.417-36.096 0-54.286 31.487-54.286 66.417 0 35.214 17.621 66.389 54.286 66.389s54.273-31.175 54.273-66.389m-153.587 0c0-60.046 40.406-106.253 99.314-106.253 58.013 0 99.3 47.658 99.3 106.253 0 59.748-40.121 106.254-99.3 106.254-58.61 0-99.314-46.506-99.314-106.254M406.983 398.091h29.453c18.177 0 29.71-13.284 29.71-30.592 0-17.338-11.534-30.62-29.71-30.62h-29.453v61.212zm-43.32-76.786c0-13.582 8.092-22.5 22.542-22.5h51.073c42.453 0 73.912 27.691 73.912 68.978 0 42.14-32.611 68.422-72.164 68.422h-32.042v47.346c0 14.435-9.23 22.528-21.633 22.528-12.445 0-21.688-8.093-21.688-22.528V321.305z"/></g></svg>
-  </button>
+</div>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="./scripts/scroll.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="application/javascript" charset="utf-8" src="register.js"></script>
-  <script type="application/javascript" charset="utf-8" src="sw.js"></script>
-  <script src="./scripts/helpful-material.js"></script>
+<button id="backToTop" type="button" title="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+      y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;"
+      xml:space="preserve">
+      <g>
+        <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z"
+          fill="#FFFFFF">
+      </g>
+    </svg>
+</button>
 
-  <script>
+</div>
+<div class="row" id="listPages">
+    <div class="col-10 mx-auto text-center">
+        <h3 class="mb-5">Check available pages</h3>
+    </div>
+    <div class="col-lg-12 mx-auto text-center">
+        <ul style="padding: 0; list-style: none; columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+            <li><a href="4otakus.html">4otakus</a></li>
+            <li><a href="bubble.html">bubble</a></li>
+            <li><a href="canoi.html">canoi</a></li>
+            <li><a href="cheese.html">cheese</a></li>
+            <li><a href="colorgame.html">colorgame</a></li>
+            <li><a href="contributors.html">contributors</a></li>
+            <li><a href="dry.html">dry</a></li>
+            <li><a href="Fireworks.html">Fireworks</a></li>
+            <li><a href="Flappy.html">Flappy</a></li>
+            <li><a href="foxy.html">foxy</a></li>
+            <li><a href="gifheaven.html">gifheaven</a></li>
+            <li><a href="helpful-material.html">helpful material</a></li>
+            <li><a href="insertion.html">insertion</a></li>
+            <li><a href="kotlinconfkeynote.html">kotlinconfkeynote</a></li>
+            <li><a href="plain_page.html">plain page</a></li>
+            <li><a href="potato.html">potato</a></li>
+            <li><a href="snek.html">snek</a></li>
+            <li><a href="spooky.html">spooky</a></li>
+            <li><a href="tools.html">tools</a></li>
+            <li><a href="trylearnhowtoprogram.html">trylearnhowtoprogram</a></li>
+            <li><a href="values.html">values</a></li>
+            <li><a href="wow.html">wow</a></li>
+            <li><a href="rpg.html">RPG</a></li>
+            <li><a href="spooky-bat.html">Bats</a></li>
+            <li><a href="roll.html">Keep Rollin</a></li>
+            <li><a href="bp.html">BP</a></li>
+            <li><a href="flex_and_grid.html">Flex and Grid</a></li>
+            <li><a href="halloween-frenchies.html">Frenchieween</a></li>
+            <li><a href="turndown.html">Turndown</a></li>
+            <li><a href="helloGLSL.html">WebGL HELLO</a></li>
+            <li><a href="funPlus.html">Fun + Helloween</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="jumbotron jumbotron-transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mx-auto text-center">
+                Follow us at
+                <a href="https://twitter.com/lingonsaft1" target="_blank"
+                   class="fab fa-fw fa-twitter fa-2x hvr-bob"></a>
+                <a href="https://www.instagram.com/lingonsaftofficial/" target="_blank"
+                   class="fab fa-fw fa-instagram fa-2x hvr-bob"></a>
+                <a href="https://youtube.com/lingonsaft" target="_blank"
+                   class="fab fa-fw fa-youtube fa-2x hvr-bob"></a>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-12 mx-auto text-center">
+                <p>Made with <img id="love" src="./images/heart.png"
+                                  alt="heart icon" width="25px"> &amp; <span
+                        style="font-size: 22px;">&lt;/&gt;</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="./scripts/menu.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="./scripts/scroll.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="application/javascript" charset="utf-8" src="register.js"></script>
+<script type="application/javascript" charset="utf-8" src="sw.js"></script>
+<script src="./scripts/helpful-material.js"></script>
+
+<script>
     AOS.init();
-  </script>
-
+</script>
 </body>
 
 </html>
