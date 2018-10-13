@@ -1,0 +1,9 @@
+canvas {
+	width: 100%;
+	background: #252525;
+	height: 100%;
+}
+body,html {
+	height: 100%;	
+	margin: 0;
+}
