@@ -111,6 +111,8 @@ For more information on syncing forks [read this article from Github](https://he
   - It is from 1st october to 31st october 2018...
 - What is the event for?
   - For the open source community engagement.
+- What do one get after participating in Hacktoberfest?
+  -  Learn about open source, git, github and get an awesome Hacktoberfest T-shirt as well as really cool stickers!!
 
 
 
