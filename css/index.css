@@ -302,6 +302,13 @@ a:hover {
   height: 350px;
 }
 
+@media (max-width: 767px) {
+  .rules-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .single-tips .tip {
   position: relative;
   vertical-align: middle;
