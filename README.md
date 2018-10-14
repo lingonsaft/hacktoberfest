@@ -84,6 +84,7 @@ For more information on syncing forks [read this article from Github](https://he
 - Add your own projects to the 'Helpful Material Page'
 - Add helpful links/guides to the 'Helpful Material Page'
 - Update Readme.md
+- Following versioning - https://semver.org/
 
 
 # FAQs
