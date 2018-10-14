@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form id="form" action="" method="">
+            Nombre <input type="text" id="nombre"><br>
+            Apellido1 <input type="text" id="apellido1"><br>
+            Apellido2 <input type="text" id="apellido2"><br>
+            DNI <input type="text" id="dni"><br>
+            <input type="button" onclick="guardarContenido()" id="envia" value="Envia">
+            <input type="button" onclick="guardarCambios()" id="modificar" value="Modificar">
+            <input type="reset" value="Reset">
+            <br><br><br>
+        </form>
+
+        <h3>TABLA</h3>
+        <table id="tabla" border="1">
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido 1</td>
+                <td>Apellido 2</td>
+                <td>DNI</td>
+                <td>Borrar</td>
+            </tr>
+        </table><br>
+
+        <script type="text/javascript">
+
+            //Variables globales
+            table = document.getElementById("tabla");
+            nombre = document.getElementById("nombre");
+            apellido1 = document.getElementById("apellido1");
+            apellido2 = document.getElementById("apellido2");
+            dni = document.getElementById("dni");
+            contador = 1; //creamos los tr con id ++
+            tr = table.getElementsByTagName('tr');
+
+            //boton modificar lo iniciamos a disabled
+            botonModificar = document.getElementById("modificar");
+            botonModificar.disabled = true;
+
+            function guardarContenido(){ //guardamos el contenido
+                crearFilaCol(nombre, apellido1, apellido2, dni);
+
+                doubleClickTr();//llamamos a la funcion de subir la informacion a los inputs
+            }
+
+            function crearFilaCol(dato1, dato2, dato3, dato4){ //funcion para crear filas
+                var filaNueva = document.createElement("tr");
+                var colNueva1 = document.createElement("td");
+                var colNueva2 = document.createElement("td");
+                var colNueva3 = document.createElement("td");
+                var colNueva4 = document.createElement("td");
+                var colNueva5 = document.createElement("td"); //para el boton borrar
+
+                filaNueva.setAttribute("id",contador);
+
+                var contenido1 = document.createTextNode(dato1.value);
+                var contenido2 = document.createTextNode(dato2.value);
+                var contenido3 = document.createTextNode(dato3.value);
+                var contenido4 = document.createTextNode(dato4.value);
+                botonBorrar = document.createElement("input");
+                botonBorrar.setAttribute("type","button");
+                botonBorrar.setAttribute("value","Borrar");
+
+                colNueva1.appendChild(contenido1);
+                colNueva2.appendChild(contenido2);
+                colNueva3.appendChild(contenido3);
+                colNueva4.appendChild(contenido4);
+
+                filaNueva.appendChild(colNueva1);
+                filaNueva.appendChild(colNueva2);
+                filaNueva.appendChild(colNueva3);
+                filaNueva.appendChild(colNueva4);
+                filaNueva.appendChild(botonBorrar); //hacemos el boton borrar hijo del tr
+
+                botonBorrar.addEventListener("click",borrarFila,false);
+
+                table.appendChild(filaNueva);
+                contador++;
+            }
+
+            //Funcion doble click en tr
+            function doubleClickTr(){
+                for(var i=1; i<tr.length; i++){//ponemos var=1 para q ignore la fila de var i=0 (nombre, apel....)
+                    tr[i].addEventListener("dblclick",subirInformacion,false);
+                }
+            }
+
+            function subirInformacion(lEsdeveniment){//al clicar en los tr pasamos la info de los td a los inputs
+                var esdeveniment = lEsdeveniment || window.event;
+
+                var indice = esdeveniment.target.parentNode.getAttribute("id");//el target es el td por el bubling
+                a = tr[indice];
+                a.style.backgroundColor = "red"; //cuando lo seleccionamos se pone de color rojo
+
+                td0 = a.getElementsByTagName('td')[0];
+                td1 = a.getElementsByTagName('td')[1];
+                td2 = a.getElementsByTagName('td')[2];
+                td3 = a.getElementsByTagName('td')[3];
+
+                nombre.value = td0.textContent;
+                apellido1.value = td1.textContent;
+                apellido2.value = td2.textContent;
+                dni.value = td3.textContent;
+
+                botonModificar.disabled = false; //habilitamos el boton modificar
+
+            }
+
+            function guardarCambios(){ //Funcion para el boton de modificar
+                if(validacion() !== false){
+                    td0.textContent = nombre.value;
+                    td1.textContent = apellido1.value;
+                    td2.textContent = apellido2.value;
+                    td3.textContent = dni.value;
+                    a.style.backgroundColor="white";
+                    botonModificar.disabled = true;
+                }else{
+                    botonModificar.disabled = false;
+                }
+            }
+
+            function borrarFila(lEsdeveniment){//funcion del boton para borrar la fila
+                var esdeveniment = lEsdeveniment || window.event;
+                var indice = esdeveniment.target.parentNode.getAttribute("id"); //boton, tr
+                b = tr[indice];
+
+                if(b.hasChildNodes()){ //mientras tenga hijos el tr q vaya borarndo
+                    while(b.childNodes.length >= 1)
+                        b.removeChild(b.firstChild);
+                }
+
+            }
+
+            function validacion(){//Funcion para la validacion
+
+                //Campo nombre
+                if(/^[a-z][a-z]*/.test(nombre.value)==false){
+                    alert("Campo nombre solo admite caracteres");
+                    return false;
+                }
+
+                //Campo apellido 1
+                if(/^[a-z][a-z]*/.test(apellido1.value)==false){
+                    alert("Campo apellido1 solo admite caracteres");
+                    return false;
+                }
+
+                //Campo apellido 2
+                if(/^[a-z][a-z]*/.test(apellido2.value)==false){
+                    alert("Campo apellido2 solo admite caracteres");
+                    return false;
+                }
+
+                //Campo DNI
+                var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+                var nie = dni.value;
+
+            	if( !(/^\d{8}[A-Z]$/.test(nie)) && nie.charAt(8) != letras[(nie.substring(0, 8))%23]) { //q este formado por 8 numeros seguidos y una letra correcta
+                    alert("Campo dni incorrecto");
+                    return false;
+            	}
+
+                return true;
+
+            }
+        </script>
+    </body>
+</html>
