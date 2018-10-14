@@ -152,6 +152,7 @@ function buildMenuHTML (obj = {}) {
 }
 
 function buildMenu () {
+  console.log("done this been here")
   return buildMenuHTML(menu)
 }
 

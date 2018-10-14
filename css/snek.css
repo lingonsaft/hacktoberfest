@@ -2,6 +2,10 @@ h5 {
     color: #FF174B,
 }
 
+.navbar-dark .navbar-nav .dropdown-content .nav-link  {
+    color: black;
+}
+
 g {
     fill: #FF174B,
 }
