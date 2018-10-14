@@ -1,4 +1,5 @@
 var config = {
+    parent: 'phaser-root',
     type: Phaser.AUTO,
     width: 800,
     height: 600,
