@@ -122,6 +122,11 @@ body {
   transition: 1s ease-in-out;
 }
 
+.hack-title{
+  font-family: 'Pacifico', cursive;
+  font-size: 70px !important;
+}
+
 .h1-hover:hover {
   cursor: url("../images/NinjaDuck_min.jpg"), pointer;
 }
