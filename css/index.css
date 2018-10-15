@@ -114,7 +114,7 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background:linear-gradient(to right,#25CCF7,#487EB0);
+  background:linear-gradient(to right,#C9D6FF, #E2E2E2);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
   margin: 0;
@@ -143,7 +143,7 @@ h6 {
 
 a,
 a:hover {
-  color: #FF0844;
+  color: #E71D36;
   transition: all 500ms ease-in-out;
 }
 
@@ -215,7 +215,7 @@ a:hover {
 
 .index .btn-danger {
   color: #fff;
-  background-color: #FF0844;
+  background-color: #E71D36;
 }
 
 .btn-subscribe > svg {
@@ -243,7 +243,7 @@ a:hover {
 }
 
 .video .card:hover {
-  color: #FF0844;
+  color: #E71D36;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
   animation : jump 0.5s ease forwards;
 }
@@ -323,7 +323,7 @@ a:hover {
   font-size: 35px;
   font-weight: 600;
   line-height: .6;
-  color: #FF0844;
+  color: #E71D36;
   margin-bottom: 15px;
 }
 
@@ -423,7 +423,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a {
   text-decoration: none;
-  color: #FF0844;
+  color: #E71D36;
 }
 
 .container-fluid a:hover {
@@ -617,7 +617,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 #twist {
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #FF0844;
+  background-color: #E71D36;
   color: white;
   border-radius: 2rem;
   font-weight: 600;
@@ -630,7 +630,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .video-border{
-  border: solid #FF0844 1px;
+  border: solid #E71D36 1px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius:  25px;
 }

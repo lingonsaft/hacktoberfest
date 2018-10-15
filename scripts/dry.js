@@ -206,7 +206,7 @@ class Scene {
   background() {
     const gradient = this.ctx.createLinearGradient(0, 0, 170, 0)
     gradient.addColorStop(0, '#ff5974')
-    gradient.addColorStop(1, '#ff0844')
+    gradient.addColorStop(1, '#E71D36')
     this.ctx.fillStyle = gradient
     this.ctx.fillRect(0, 0, this.height, this.width)
   }
