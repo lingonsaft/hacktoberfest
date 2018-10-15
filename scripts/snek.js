@@ -4,7 +4,7 @@
 const canvas = document.querySelector('.snek')
 canvas.width = 400
 canvas.height = 300
-canvas.style.border = '2px solid #FF0844'
+canvas.style.border = '2px solid #E71D36'
 canvas.style.width = '800px'
 canvas.style.height = '600px'
 canvas.style.margin = '0 auto'
@@ -32,7 +32,7 @@ button.style.display = 'none'
  */
 const points = document.querySelector('.snek-points')
 points.style.fontSize = '50px'
-points.style.color = '#FF0844'
+points.style.color = '#E71D36'
 
 points.innerHTML = 0
 
@@ -160,7 +160,7 @@ function drawSnake() {
     const movement = Movements[direction]
     movement && movement()
 
-    
+
     ctx.clearRect(0, 0, canvas.width, canvas.height)
   } else {
     ctx.font = '20px Georgia'

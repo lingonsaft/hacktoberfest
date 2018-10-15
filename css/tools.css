@@ -1,5 +1,5 @@
 .table-header {
-  background: linear-gradient(to left, #FF0844, #FF4563);
+  background: linear-gradient(to left, #E71D36, #FF4563);
   color: white;
   text-align: center;
 }
@@ -11,7 +11,7 @@ section {
 }
 
 a {
-  color: #ff0844;
+  color: #E71D36;
 }
 a:hover {
   color: #96334f;
