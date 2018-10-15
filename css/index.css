@@ -238,6 +238,11 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.no {
+  transition: all 430ms;
+  cursor: default;
+}
+
 .no:hover {
     transform: scale(1.25);
 }
