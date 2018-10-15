@@ -1,0 +1,96 @@
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>I dunno v:</title>
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <script src="https://code.jquery.com/jquery-3.3.1.js" charset="utf-8"></script>
+        </head>
+        <body>
+            <style>
+                #Cortin { position: absolute; top: 33%; width: 95%; text-align: center }
+
+                @keyframes mostrar {
+                    0%      { opacity: 0; }
+                    100%    { opacity: 1; }
+                }.mostrar   { animation-name: mostrar; animation-duration: 4s; }
+
+                @keyframes esconder {
+                    0%      { opacity: 1; }
+                    100%    { opacity: 0; }
+                }.esconder  { animation-name: esconder; animation-duration: 4s; }
+
+
+                @keyframes colorchange {
+                     0%   { background-color: #50a6ff; }
+                    12.5% { background-color: #50ffae; }
+                    25%   { background-color: #ffb150; }
+                    37.5% { background-color: #ff5050; color: #000000; }
+                    50%   { background-color: #000000; color: #ffffff; }
+                    62.5% { background-color: #ff5050; color: #000000; }
+                    75%   { background-color: #ffb150; }
+                    87.5% { background-color: #50ffae; }
+                    100%  { background-color: #50a6ff; }
+                }
+
+                body {
+                  animation-name: colorchange;
+                  animation-duration: 60s;
+                  animation-iteration-count: infinite;
+                }
+
+                .center {
+                    font-size: 120px;
+                    position: absolute;
+                    top: 35%;
+                    width: 100%;
+                    text-align: center;
+                }
+            </style>
+            <div class="container-fluid" style="height: 100%; width: 100%;">
+                <div id="Cortin">
+
+                </div>
+            </div>
+            <script src="{{ asset('js/jquery-3.2.1.min.js') }}"</script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"</script>
+            <script type="text/javascript">
+                function cortinIA()
+                {
+                    this.dice = function(mensaje, size, esconder)
+                    {
+                        $("#Cortin").empty();
+                        document.getElementById("Cortin").innerHTML = "<p class='mostrar' style = 'font-size:"+size+"px'>"+mensaje+"</p>";
+
+                        if(esconder)
+                        {
+                            setTimeout(function() {
+                                $("#Cortin").find("p").removeClass("mostrar");
+                                $("#Cortin").find("p").addClass("esconder");
+                            }, 4000);
+                        }
+                    };
+
+                    this.loop = function(vueltas, tiempo, funcion)
+                    {
+                        for(var i=0; i<vueltas; i++) { (function(j) { setTimeout(funcion, 1000 + (tiempo * j)); })(i); }
+                    };
+                }
+                var i = 0;
+                var cortin = new cortinIA();
+
+                var mensaje = new Array(
+                    "I dunno c:",
+                    //Put yout Message here
+                    "Happy Hacktoberfest <3"
+                );
+
+                cortin.loop(mensaje.length, 8000, function(){
+                    cortin.dice(mensaje[i], 75, true);
+                    i++;
+                });
+            </script>
+        </body>
+    </html>
+</script>
