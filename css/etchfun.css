@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 72px;
+  font-family: 'Amatic SC', cursive;
+}
+
+button {
+  background: none;
+  border: solid 2px black;
+  margin: 1em;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  transition: 0.05s ease-out;
+  font-family: 'Amatic SC', cursive;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.reset-area {
+  text-align: center;
+}
+
+.canvas {
+  text-align: center;
+  margin: 30px auto;
+  display: grid;
+  width: 600px;
+  height: 600px;
+}
