@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pointless Button</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="button.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.5/sweetalert2.min.css">
 </head>
 <body>
     <div class="container">
+        <h1>This is a Completly Useless Button!! xD</h1>
         <div class="btn">
             <button class="btn">Click Me!</button>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.5/sweetalert2.all.min.js"></script>
+    <script>
+        $('.btn').on('click', function(){
+            console.log('object');
+            swal('Told You...');
+        });
+    </script>
 </body>
 </html>
