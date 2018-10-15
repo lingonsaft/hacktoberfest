@@ -79,6 +79,12 @@ This will give you any eventual conflicts and allow you to easily solve them in 
 
 For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
 
+## Git and Pull Request Resources
+  - [Github](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+  - [The Net Ninja](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+  - [Awesome-Git](https://github.com/dictcp/awesome-git)
+
+
 # Ideas for contributions
 - Style the index.html
 - Add your own projects to the 'Helpful Material Page'
