@@ -26,13 +26,13 @@ P.S. Star and share this repository, if you had fun!
 - Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
 - Do NOT remove Videos, Rules, FAQ, or any other helpful content.
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
-- Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file 
+- Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file
 - Try to keep pull requests small to minimize merge conflicts
 
 
 ## Getting Started
 
-- Fork this repo (button on top).
+- Fork this repo (button on top right)
 - Clone on your local machine.
 
 ```terminal
@@ -59,7 +59,7 @@ git push origin my-new-branch
 
 ## Avoid Conflicts (Syncing your fork)
 
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
 
 ```terminal
 git remote add upstream https://github.com/lingonsaft/hacktoberfest
