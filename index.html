@@ -19,6 +19,7 @@
     }
   </script>
     <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
   <!--Stats Script-->
   <script src="scripts/stats.js"></script>
@@ -71,7 +72,7 @@
 	<title>!!HACKTOBERFEST 2018!!</title>
 	<link rel="stylesheet" href="css/explosion.css">
 	<link rel="stylesheet" href="./css/terminal.css">
-
+    <link rel="stylesheet" href="./css/shake.css">
 </head>
 <body id="body" class="index">
 <!--
@@ -80,7 +81,7 @@
     / /_/ // __ `// ___// //_// __// __ \ / __ \ / _ \ / ___// /_ / _ \ / ___// __/
   / __  // /_/ // /__ / ,<  / /_ / /_/ // /_/ //  __// /   / __//  __/(__  )/ /_
   /_/ /_/ \__,_/ \___//_/|_| \__/ \____//_.___/ \___//_/   /_/   \___//____/ \__/
-                                              i just want a t-shirt at this point
+                                              i just want a t-shirt AND some stickers at this point
   -->
 <!--Navigation bar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
@@ -126,7 +127,20 @@
         .github-corner .octo-arm {
             animation: octocat-wave 560ms ease-in-out
         }
-    }</style>
+    }
+	.btn {
+                margin: 15px !important;
+                position: relative;
+                z-index: 1;
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+                transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+            }
+
+            .btn:hover {
+                box-shadow: 0 0 1px 15px rgba(112, 143, 2, 0.4), 0 0 1px 30px rgba(183, 185, 18, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
+            }
+</style>
     <a class="navbar-brand" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" role="img" aria-labelledby="dyn2wm4vin1xgraye3ggy9kf12oaz8a" class="header__logo" width="50px" height="50px"><title id="dyn2wm4vin1xgraye3ggy9kf12oaz8a">Hacktoberfest</title>
 		  <style type="text/css">
@@ -164,9 +178,11 @@
             <center>
                 <div id="heart-bar"></div>
             </center>
-            <h1>Hacktoberfest <span>2018</span></h1>
+            <div class="shake">
+               <h1 class="hack-title">Hacktoberfest <span>2018</span></h1>
+            </div>
             <div id="stats"></div>
-            <p class="lead mx-auto">THIS is a BEGINNER friendly project to help you get started with hacktoberfest. If
+            <p class="lead mx-auto">THIS is a BEGINNER friendly project to help you get started with <b>hacktoberfest!!</b>. If
                 you don't know where to start feel free to watch the videos and read the contribution rules. Happy
                 hacking <img id="heart" data-toggle="tooltip" title="Show some love!" src="./images/heart.png"
                              alt="heart icon" width="30px"></p>
@@ -214,7 +230,7 @@
           <li class="shadow bg-light"><span id="seconds"></span> SECONDS</li>
         </ul>
         <p class="lead text-center mx-auto mt-4">Hurry up and make your pull requests!</p>
-        <p>To check your progress visit the <a href="https://hacktoberfestchecker.herokuapp.com/">Hacktoberfest Checker</a>.</p>
+        <h3>To check your progress visit the <a href="https://hacktoberfestchecker.herokuapp.com/">Hacktoberfest Checker</a>.</h3>
       </div>
 
     </div>
@@ -227,7 +243,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 mx-auto text-center">
+                <div class="col-md-12 mx-auto text-center" id="intro_video">
                     <div class="video" >
                         <div class="card shadow  video-border">
                             <div class="embed-responsive embed-responsive-16by9">
@@ -272,7 +288,7 @@
                     </div>
                 </div>
                 <div class="col-12 text-center twist-btn">
-                    <button id="twist" class="btn-outline-danger twist-button hvr-grow-rotate">
+                    <button id="twist" class="btn-outline-danger twist-button hvr-grow-rotate btn-block">
                         Twist
                     </button>
                 </div>
@@ -453,6 +469,7 @@
                 <li><a href="colorgame.html">colorgame</a></li>
                 <li><a href="contributors.html">contributors</a></li>
                 <li><a href="dry.html">dry</a></li>
+                <li><a href="ellipses.html">Ellipses</a></li>
                 <li><a href="Fireworks.html">Fireworks</a></li>
                 <li><a href="Flappy.html">Flappy</a></li>
                 <li><a href="foxy.html">foxy</a></li>
@@ -472,15 +489,35 @@
                 <li><a href="spooky-bat.html">Bats</a></li>
                 <li><a href="roll.html">Keep Rollin</a></li>
                 <li><a href="bp.html">BP</a></li>
-                <li><a href="spooky-bat.html">Bats</a></li>
                 <li><a href="flex_and_grid.html">Flex and Grid</a></li>
                 <li><a href="halloween-frenchies.html">Frenchieween</a></li>
                 <li><a href="turndown.html">Turndown</a></li>
+                <li><a href="helloGLSL.html">WebGL HELLO</a></li>
+                <li><a href="funPlus.html">Fun + Helloween</a></li>
+                <li><a href="mondrian.html">Mondrian</a></li>
+		            <li><a href="Hacktoberfest_help.html">Hacktoberfest Intro</a></li>
+                <li><a href="etchfun.html">Etch Fun</a></li>
             </ul>
         </div>
 
     </div>
 
+    <div class="row" id="listIdes">
+        <div class="col-10 mx-auto text-center">
+            <h3 class="mb-5">What Code Editor Are You Using?</h3>
+        </div>
+        <div class="col-lg-12 mx-auto text-center">
+            <ul style="padding: 0; list-style: none; columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+                <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+                <li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+                <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+                <li><a href="https://atom.io/">Atom</a></li>
+                <li><a href="http://brackets.io/">Brackets</a></li>
+                <li><a href="https://panic.com/coda/">Coda</a></li>
+                
+            </ul>
+        </div>
+    </div>
 
     <div class="jumbotron jumbotron-transparent">
         <div class="container">
@@ -532,6 +569,7 @@
 
 <script src="./scripts/index.js"></script>
 <script src="./scripts/menu.js"></script>
+<script src="./scripts/invert.js"></script>
 <script src="./scripts/drop.js"></script>
 
 <!-- Latest compiled JavaScript -->
