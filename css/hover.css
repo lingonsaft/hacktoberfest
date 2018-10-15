@@ -4151,3 +4151,8 @@
 }
 
 /*# sourceMappingURL=hover.css.map */
+
+.linkStyles a:hover {
+  color: black;
+  border: 1px solid black;
+}
