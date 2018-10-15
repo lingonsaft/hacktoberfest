@@ -1,0 +1,18 @@
+#tipSelect {
+    width: 50%
+}
+
+.container {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    flex-direction: column;
+    border: solid black 2px;
+    height: 45em;
+    width: 30em;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}

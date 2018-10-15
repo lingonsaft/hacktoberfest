@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hacktober</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/TIP-U-LATOR.css" />
+
+</head>
+
+<body>
+    <form class="container">
+        <h1>Tip Calculator</h1>
+        <input type="text" id="input" class="amount" placeholder="Enter an amount: ">
+        <br>
+        <select id="tipSelect" class="custom-select my-1 mr-sm-2">
+            <option disabled selected>How much?</option>
+            <option id="ten">10%</option>
+            <option id="fifteen">15%</option>
+            <option id="twenty">20%</option>
+        </select>
+
+        <br>
+        <button id="calculate">Calculate Tip</button>
+        <h3 id="output"></h3>
+    </form>
+    <script src="./scripts/TIP-U-LATOR.JS"></script>
+</body>
+
+</html>
