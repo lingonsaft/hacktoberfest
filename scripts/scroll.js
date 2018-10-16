@@ -10,7 +10,7 @@ function scrollFunc() {
 }
 scrollButton.onclick = function() {
     scrollButton.classList.add('startscrolling');
-    scrollTo(document.documentElement, 0, 1250, function(){
+    scrollTo(document.documentElement, 0, 250, function(){
         scrollButton.classList.remove('startscrolling');
     });
 }
