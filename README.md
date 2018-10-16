@@ -28,7 +28,7 @@ P.S. Star and share this repository, if you had fun!
 - Styling/code can be pretty, ugly or stupid, big or small as long as it works
 - Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file 
 - Try to keep pull requests small to minimize merge conflicts
-
+- Have fun coding!
 
 ## Getting Started
 
