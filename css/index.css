@@ -262,6 +262,17 @@ a:hover {
   outline: none !important;
 }
 
+#heart {
+  animation: beat .3s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat{
+  to {
+    transform: scale(1.2); 
+  }
+}
+
 .icon-bar a {
   display: block;
   text-align: center;
