@@ -10,7 +10,8 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background: linear-gradient(to right, #9ae3f3, #82acd3);
+  background: rgb(150,100,100);
+  background: linear-gradient(34deg, rgba(150,100,100,1) 0%, rgba(81,75,190,1) 38%, rgba(0,212,255,1) 100%);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -729,4 +730,13 @@ div#content div#contribution-rules ul li {
   line-height: 1.5;
   font-weight: 500;
   color: inherit;
+}
+
+div.lowerSection {
+  padding-top: 12px;
+}
+
+#listPages a,
+#listIdes a {
+   color: #121212;  
 }
