@@ -12,31 +12,14 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-  @-webkit-keyframes shake {
-  0%, 100% {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
-  }
-  20%, 40%, 60%, 80% {
-  -webkit-transform: translate3d(10px, 0, 0);
-  transform: translate3d(10px, 0, 0);
-  }
-  }
   @keyframes shake {
   0%, 100% {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+    left: 0px;
   }
   10%, 30%, 50%, 70%, 90% {
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
+  left: 10px;
   }
   20%, 40%, 60%, 80% {
-  -webkit-transform: translate3d(10px, 0, 0);
-  transform: translate3d(10px, 0, 0);
+  left: -10px;
   }
   }
