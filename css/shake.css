@@ -5,8 +5,8 @@
  .shake {
     -webkit-animation-name: shake;
     animation-name: shake;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
+    -webkit-animation-duration: 7.5s;
+    animation-duration: 7.5s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-fill-mode: both;
