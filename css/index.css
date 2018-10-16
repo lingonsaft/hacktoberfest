@@ -114,12 +114,17 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background-color: #FEFEFE;
+  background:linear-gradient(to right,#25CCF7,#487EB0);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: .75px;
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
+}
+
+.hack-title{
+  font-family: 'Pacifico', cursive;
+  font-size: 70px !important;
 }
 
 .h1-hover:hover {
@@ -234,7 +239,7 @@ a:hover {
 }
 
 .no:hover {
-    transform: scale(1.25);  
+    transform: scale(1.25);
 }
 
 .video .card:hover {
@@ -654,4 +659,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   .index .jumbotron:first-child {
     padding: 8.5rem 0;
   }
+}
+
+#listPages h3 {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: inherit;
 }
