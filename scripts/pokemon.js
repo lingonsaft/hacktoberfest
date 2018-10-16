@@ -38,7 +38,7 @@ function DigitalPal(hungry, sleepy, bored, age){
   }
   
   DigitalPal.doMore = function(){
-    console.log('FUCK');
+    console.log('Cursing isnt cool');
   }
   
   let dog = new DigitalPal(false, false, true, 0);
