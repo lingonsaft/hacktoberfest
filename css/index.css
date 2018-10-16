@@ -604,11 +604,14 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 @keyframes zoomeffect {
-  from {
+  0% {
     transform: scale(1.5);
   }
-  to {
+  50% {
     transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
   }
 }
 
