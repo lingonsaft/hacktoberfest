@@ -16,7 +16,7 @@ function createRain() {
 	var i;
 	var drop_number = 0;
 	for (i = 0; i < 10; i++) {
-		var num_drops = randRange(3,6);
+		var num_drops = randRange(1,2);
 		for (x = 0; x <= num_drops; x++) {
 			var dropLeft = randRange(i*10,i*10+10);
 			var dropTop = randRange(-1000,1400);
