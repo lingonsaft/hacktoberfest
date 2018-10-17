@@ -136,3 +136,9 @@ a:hover {
 .box-item.different-color:hover {
   background-color: #FE0C43;
 }
+
+.chaaarles-long-name-class{
+  padding: 2px 8px 2px 70px;
+  white-space: inherit;
+  line-height: 1.5em;
+}

@@ -10,9 +10,6 @@ body {
   background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
-}
 h1,h2,h3 {
   font-weight: bold;
 }
@@ -85,7 +82,9 @@ a.guides-links{
 }
 
 .list {
-  padding-left: 1.2rem;
+  padding-left: 2rem;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
 }
 
 a.list-item {
