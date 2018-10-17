@@ -738,5 +738,12 @@ div.lowerSection {
 
 #listPages a,
 #listIdes a {
-   color: #121212;  
+   color: #121212;
+   text-decoration: underline;
+}
+
+#listPages a:hover,
+#listIdes a:hover {
+  color: #ff0844;
+  transition: all .3s ease-in;
 }
