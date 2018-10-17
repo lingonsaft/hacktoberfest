@@ -720,7 +720,7 @@ div#content div#contribution-rules ul li {
 
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
-    padding: 8.5rem 0;
+    padding: 8.5rem 0 .5rem 0;
   }
 }
 
