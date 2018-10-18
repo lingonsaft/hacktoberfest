@@ -11,7 +11,7 @@ body {
   line-height: 1.9;
   margin: 0;
   background: rgb(150,100,100);
-  background: linear-gradient(34deg, rgba(234, 200, 225) 0%, rgba(241, 218, 235) 38%, rgb(248, 237, 245) 80%);
+  background: linear-gradient(34deg, rgba(234, 200, 225) 0%, rgba(241, 218, 235) 38%, rgb(248, 237, 245) 95%);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -720,7 +720,7 @@ div#content div#contribution-rules ul li {
 
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
-    padding: 8.5rem 0;
+    padding: 8.5rem 0 .5rem 0;
   }
 }
 
