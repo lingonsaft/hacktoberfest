@@ -2,7 +2,6 @@ body {
   background-color: orange;
   font-family: 'Creepster', cursive;
   background-image: url('https://media.giphy.com/media/3a7MwISbmEF8I/giphy.gif');
-
 }
 
 h1 {
@@ -50,26 +49,47 @@ iframe {
 }
 
 @keyframes example {
-  0%   {color:black; left:0px; top:0px;}
-  15%  {color:red; left:200px; top:0px;}
-  30%  {color:yellow; left:200px; top:50px;}
-  45%  {color:red; left:-200px; top:50px;}
-  60% {color:yellow; left:-200px; top:0px;}
-  75% {color:black; left:0px; top:0px;}
+  0% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
+  15% {
+    color: red;
+    left: 200px;
+    top: 0px;
+  }
+  30% {
+    color: yellow;
+    left: 200px;
+    top: 50px;
+  }
+  45% {
+    color: red;
+    left: -200px;
+    top: 50px;
+  }
+  60% {
+    color: yellow;
+    left: -200px;
+    top: 0px;
+  }
+  75% {
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 @keyframes pulse {
   0% {
-
     text-shadow: 0px 0px #000;
   }
   70% {
-
-      text-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 8px #000;
   }
   100% {
-
-      text-shadow: 0px 0px #000;
+    text-shadow: 0px 0px #000;
   }
 }
 

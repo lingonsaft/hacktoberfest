@@ -1,6 +1,7 @@
 /* * {
   background-color: black
 } */
+
 header {
   position: absolute;
   z-index: 5;
@@ -20,9 +21,9 @@ li {
   padding: 10px 0;
 }
 
-.active{
-  border-right: 2px solid rgb(252,57,95);
-  border-left: 2px solid rgb(252,57,95);
+.active {
+  border-right: 2px solid rgb(252, 57, 95);
+  border-left: 2px solid rgb(252, 57, 95);
   border-radius: 5px;
 }
 
@@ -36,13 +37,12 @@ li {
 
 h2 {
   font-family: 'Lobster', cursive;
-  color: rgb(252,57,95);
+  color: rgb(252, 57, 95);
   left: 26%;
   padding-top: 65px;
   transform: rotate(-12deg);
   font-size: 50px;
   text-shadow: 1px 0.5px white;
-  
 }
 
 h2 span {
@@ -152,7 +152,7 @@ h2 span {
 h1 {
   font-size: 180px;
   font-family: 'Chakra Petch', sans-serif;
-  color: rgb(165,238,212);
+  color: rgb(165, 238, 212);
   letter-spacing: 30px;
 }
 
@@ -172,10 +172,10 @@ body {
   background-color: #222;
   overflow: hidden;
   -webkit-user-select: none;
-     -moz-user-select: none;
-       -o-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 canvas {
@@ -188,7 +188,7 @@ canvas {
   display: none;
 }
 
-.information{
+.information {
   position: absolute;
   z-index: 40;
   left: 32%;
@@ -219,7 +219,7 @@ button span {
   font-size: 18px;
 }
 
-.social-icons .fab{
+.social-icons .fab {
   color: white;
   font-size: 23px;
 }

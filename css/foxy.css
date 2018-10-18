@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
@@ -6,7 +6,7 @@
     margin: 2.5vh 2.5vw;
 }
 
-.row{
+.row {
     display: flex;
     flex-flow: row wrap;
     width: auto;
@@ -14,9 +14,9 @@
     align-items: center;
 }
 
-.column{
+.column {
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     width: auto;
     align-self: center;
 }

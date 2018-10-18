@@ -2,12 +2,12 @@ body {
   background-color: black;
 }
 
-.gifs{
-     margin-top: 100px;
+.gifs {
+  margin-top: 100px;
 }
 
-.doggo{
-     height: 0;
-     transition: height 1s;
-     -webkit-transition: height 1s;
+.doggo {
+  height: 0;
+  transition: height 1s;
+  -webkit-transition: height 1s;
 }

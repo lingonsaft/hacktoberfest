@@ -1,73 +1,73 @@
-body{
-  height:100%;
-  width:99%;
+body {
+  height: 100%;
+  width: 99%;
 }
 
-button{
+button {
   border-color: black;
   padding: 7px;
   border-radius: 15px;
   background-color: orange;
 }
 
-td, th{
+td, th {
   padding: 5px;
   background-color: skyblue;
 }
 
-input{
+input {
   padding: 8px;
   border-radius: 15px;
   border-color: black;
 }
 
-.wrapper{
-  padding:10px;
+.wrapper {
+  padding: 10px;
 }
 
-.tables{
-  padding-bottom:8%;
+.tables {
+  padding-bottom: 8%;
 }
 
-.allocation{
-  width:23%;
-  float:left;
+.allocation {
+  width: 23%;
+  float: left;
 }
 
-.max{
-  width:23%;
-  float:left;
+.max {
+  width: 23%;
+  float: left;
 }
 
-.need{
-  width:23%;
-  float:left;
+.need {
+  width: 23%;
+  float: left;
 }
 
-.available{
-  width:23%;
-  float:left;
+.available {
+  width: 23%;
+  float: left;
 }
 
-.input{
-  padding:20px;
+.input {
+  padding: 20px;
 }
 
-.seq{
-  padding-top:3%;
+.seq {
+  padding-top: 3%;
 }
 
-.comparison{
+.comparison {
   padding-top: 10%;
   padding-left: 7%;
 }
 
-.cname{
+.cname {
   color: white;
   text-decoration: none;
 }
 
-.cname:hover{
-  color:black;
+.cname:hover {
+  color: black;
   font-size: 24px;
 }
