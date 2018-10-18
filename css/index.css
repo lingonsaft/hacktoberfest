@@ -224,7 +224,7 @@ a:hover {
     -webkit-transform: rotate3d(1, 1, 1, 360deg);
     -o-transform: rotate3d(1, 1, 1, 360deg);
     -moz-transform: rotate3d(1, 1, 1, 360deg);
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 0.99, 360deg);
   }
 }
 
