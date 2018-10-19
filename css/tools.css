@@ -6,6 +6,12 @@
 table {
   table-layout: fixed;
 }
+
+.table td {
+    background-color: #fff !important;
+    padding: 15px;
+}
+
 section {
   margin-top: 75px;
 }
