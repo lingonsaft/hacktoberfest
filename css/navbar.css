@@ -1,11 +1,14 @@
 .navbar {
   padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 nav {
   background-color: black;
 }
 .navbar-nav {
-  width: 100%;
+  width: 100%;  
 }
 .navbar-brand {
   line-height: 1;
@@ -95,7 +98,7 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   overflow-y: scroll;
-  height: 80vh;
+  height: 30vh;
 }
 
 .dropdown:hover .dropdown-content {
