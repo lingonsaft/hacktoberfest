@@ -23,6 +23,10 @@ body {
   transition: 1s ease-in-out;
 }
 
+.main-bg {
+    background: url('https://www.hemglass.se/media/1232/kladdkaka_2.png') no-repeat left top fixed;
+}
+
 .hack-title {
   font-family: 'Pacifico', cursive;
   font-size: 70px !important;
@@ -49,9 +53,11 @@ a:hover {
   transition: all 500ms ease-in-out;
 }
 
+/*
 .content {
   margin-top: 120px;
 }
+*/
 
 .index .jumbotron {
   padding: 4rem 0;
@@ -130,6 +136,10 @@ a:hover {
 
 .index .btn-outline-danger:hover {
   color: #fff;
+}
+
+.index .social-media-section {
+    padding-top: 2rem !important;
 }
 
 .video {
@@ -273,7 +283,7 @@ a:hover {
 
 @keyframes beat{
   to {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
 }
 
