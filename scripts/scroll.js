@@ -1,8 +1,11 @@
-window.onscroll = function() {scrollFunc()};
+window.onscroll = function() {
+    scrollFunc()
+};
+
 var scrollButton = document.getElementById('backToTop');
 
 function scrollFunc() {
-    if (document.body.scrollTop> 150 || document.documentElement.scrollTop> 150) {
+    if ( document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 ) {
         scrollButton.style.display = "block";
     } else {
         scrollButton.style.display = "none";
@@ -39,9 +42,11 @@ function scrollTo(element, to, duration, callback) {
     };
     animateScroll();
 }
-Math.easeInOutQuad = function(t,b,c,d) {
-    t /= d/2;
-    if (t < 1) return c/2*t*t + b;
+Math.easeInOutQuad = function(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) {
+        return c / 2 * t * t + b;
+    }
     t--;
-    return -c/2 * (t*(t-2) - 1) + b;
+    return -c / 2 * (t * (t - 2) - 1) + b;
 };
