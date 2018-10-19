@@ -6,3 +6,6 @@
 *.sublime-workspace
 .idea/
 .DS_Store
+/.vs/config/applicationhost.config
+/.vs/hacktoberfest/v15/.suo
+/.vs/VSWorkspaceState.json
