@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Purple CSS Menue</title>
+    
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+
+body {
+  font-family: 'Pacifico', cursive;
+  font-size: 20;
+}
+
+header {
+  background-color: #f4aa42;
+  width: 100%;
+  position: fixed;
+  border-radius: 2px 2px 2px 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  
+}
+
+
+li {
+ display: block;
+ transition-duration: 0.5s;
+ color: white;
+}
+
+
+li:hover {
+  cursor: pointer; 
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  
+}
+
+
+ul li:hover > ul, ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  background-color: #f4aa42;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 0px 0px 2px 2px;
+}
+
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  padding: 5px;
+  
+}
+
+ul li ul li:hover  {
+  background-color:  #f9ca86;
+  width: 100%;
+  padding:20px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 2px;
+  font-size: 120%;
+  color: #6417a8;
+}
+
+ul li > a {
+  text-align: left;
+  color: #6417a8;
+}
+
+</style>
+
+      
+   </head>
+	
+   <body>
+
+
+
+<header>
+    <nav>
+    <ul><li><a href="#">Menue</a>
+    <ul class="dropdown">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#October">Octoberfest Beer</a></li>
+      <li><a href="#Halloween">Halloween Sweets</a></li>
+      <li><a href="#Pumpkin">Pumpkin Spiced Latte</a></li>
+      <li><a href="#Ghost">Ghost Calories</a></li>
+      </ul></li></ul>
+  </nav>
+  
+ </header>
+  
+  <article id="Home">
+    <section>
+    </section>
+    
+  </article>
+<article id="October"><section></section></article>
+<article id="Halloween"></article>
+<article id="Pumpkin"><section></section></article>
+ <article id="Ghost"><section></section></article>
+<footer>Hacktoberfest 2018</footer>
+
+</body>
+	
+</html>
