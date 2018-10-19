@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Pufos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Pufos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" style="color: white" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" style="color: white" href="#">Page</a>
+        <a class="nav-item nav-link" style="color: white" href="#">Page</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled page</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="padding-top:200px">
+    <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="POP">Click me</a>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+  <div class="footer bg-dark text-center fixed-bottom" style="padding:30px">
+    <i class="fas fa-ghost" style="color: white"></i>
+    <i class="fas fa-cloud-moon" style="color: white"></i>
+    <i class="fas fa-hat-wizard"style="color: white"></i>
+  </div>
+
+</body>
+</html>
