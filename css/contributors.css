@@ -13,9 +13,9 @@
   background-color: #4835f7;
   color: #fff;
 }
-* {
+/* * {
   outline: none!important;
-}
+} */
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -50,48 +50,71 @@ canvas {
   display: block;
 }
 
-a {
-  /* color: #fff; */
-  color: black;
-  text-decoration: none;
-}
+a,
 a:hover {
+  color: #FF0844;
   text-decoration: none;
+
 }
 
 .content {
   margin-top: 80px;
+  color: #000000;
 }
 .box {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
+
 .box-item {
   position: relative;
-  display: inline-block;
-  float: left;
+  display: block;
   background-color: #FEEEF2;
   color: #444;
-  width: 250px;
+  font-weight: 600;
+  width: 100%;
   cursor: pointer;
   border-radius: 0.4rem;
   padding: 15px 8px 15px 70px;
-  margin: 0 10px 20px;
+  margin: 10px;
   font-size: 1rem;
-  vertical-align: middle;
   text-overflow: ellipsis;
   overflow-x: hidden;
   white-space: nowrap;
 }
-.box-item:hover {
-  background-color: #FE0C43;
+
+@media (min-width: 768px) {
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .box-item {
+    width: calc(50% - 20px);
+  }
 }
+
+@media (min-width: 1100px) {
+
+  .box-item {
+    width: calc(25% - 20px);
+  }
+}
+
+.box a:hover {
+  background-color: #FE0C43;
+  color: #fff;
+}
+
 .box-item::before {
   content: "";
   display: table;
   clear: both;
 }
+
 .box-item img {
   position: absolute;
   top: 2px;
@@ -101,6 +124,21 @@ a:hover {
   margin-right: 15px;
   padding: 4px;
 }
+
 .box-item:hover a {
   color: #fff;
+}
+
+.box-item.different-color {
+  background-color: #a7eded;
+}
+
+.box-item.different-color:hover {
+  background-color: #FE0C43;
+}
+
+.chaaarles-long-name-class{
+  padding: 2px 8px 2px 70px;
+  white-space: inherit;
+  line-height: 1.5em;
 }

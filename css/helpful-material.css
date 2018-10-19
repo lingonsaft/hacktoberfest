@@ -10,9 +10,6 @@ body {
   background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
-}
 h1,h2,h3 {
   font-weight: bold;
 }
@@ -46,12 +43,12 @@ h3 {
 }
 .container a {
   text-decoration: none;
-  color: #FF0844;
+  color: rgb(57,116,48);
 }
 
 .container a:hover {
   text-decoration: none;
-  color: #cc0636;
+  color: #3dcff4;
 }
 
 #myBtn {
@@ -85,8 +82,43 @@ a.guides-links{
 }
 
 .list {
-  padding-left: 1.2rem;
+  padding-left: 2rem;
+  background-color: rgba(203, 178, 178, 0.3);
+  border-radius: 5px;
 }
-.list-item a:hover {
+
+a.list-item {
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+a.list-item:hover {
+  text-decoration: underline;
+
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+     height: 45px; 
+    background: linear-gradient(to left, #FF0844, #FF4563);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+.footer__socials {
+  padding: 6px;
+  display: inline-block;
+
+}   
+.footer__socials a {
+  padding: 20px;
+
+  color: #a8050f;
+
+}
+.container a.hvr-bob:hover {
   text-decoration: underline;
 }
