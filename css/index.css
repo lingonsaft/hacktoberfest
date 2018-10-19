@@ -30,6 +30,7 @@ body {
 .hack-title {
   font-family: 'Pacifico', cursive;
   font-size: 70px !important;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .h1-hover:hover {
@@ -44,7 +45,7 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a,
