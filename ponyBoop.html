@@ -1,0 +1,15 @@
+<img id="booper" src="https://i.imgur.com/njXO3fT.jpg" />
+
+<script>
+	var boop = false;
+	var reset;
+	document.querySelector("#booper").onclick = function() {
+		if (boop == false) {
+			clearTimeout(reset);
+			boop = true;
+			document.querySelector("#booper").src = "https://i.imgur.com/ag572CV.gif";
+			setTimeout(function (){boop = false;}, 200);
+			reset = setTimeout(function (){document.querySelector("#booper").src = "https://i.imgur.com/njXO3fT.jpg";}, 400);
+		}
+	};
+</script>
