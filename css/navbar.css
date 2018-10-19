@@ -14,7 +14,7 @@ nav {
 .navbar-brand svg {
   height: 37px;
   width: auto;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 .navbar-light .navbar-nav .nav-link {
   color: #444;
