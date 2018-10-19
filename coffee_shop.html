@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/home_page.css" />
+    
+</head>
+<body>
+    <header>
+        <div style="position: fixed;">
+                <ul>
+                        <li><a href="file:///F:/GIT/Coffe_Cafe/html/home.html" class="active"><span>HOME</span></a></li>
+                        <li><a href="http:"><span><b>ABOUT</b> </span></a> </li>
+                        <li><a href="http:"><span><b>MENU</b></span></a></li>
+                        <li><a href="http:"><span><b>NEWS</b></span></a></li>
+                        <li><a href="http:"><span><b>GALLERY</b></span></a></li>
+                        <li><a href="http:"><span><b>CONTACTS</b></span></a></li>
+                        
+                    </ul>
+        </div>
+    </header>
+    <div class="parallax"></div>
+    
+            
+                    <img src="../images/home_page/6a0120a541c924970c0133ed524c37970b.gif" class="img" alt="coffe cafe">
+                    <br><br><br>
+             <header id="header" class="header">
+                   <h1>START THE DAY WITH </h1>
+                   <br>
+                   <h2 > GREAT TASTE</h2> <br>
+                  <a href="http://"><img src="../images/home_page/if_gtk-media-next-ltr_39071.png" class="imgs" alt="next arrow"></a> 
+                   <div id="caroufredsel_next" class="caroufredsel_next" style="display:block;">
+                       <span></span>
+                   </div>
+               <a href="http://"><h3 >More Info</h3></a> 
+             </header>  
+                   <a href="http://"><img src="../images/home_page/if_twitter-square-social-media_764881.png" class="logo" alt="tweeter"></a> 
+                   <a href="http://"><img src="../images/home_page/social-media-icons-01.png" class="logoo" alt="fb"></a> 
+                   <br>
+                
+            
+    
+    
+    <div  style="height:150px;background-image:url('../images/home_page/videoblocks-animation-dust-particles-on-a-black-background-4k_s7fw8itm5l_thumbnail-full01.png'); font-size:36px;  ">
+            
+                
+            
+               
+            </div>  
+
+           
+               
+                    
+            <img src="../images/home_page/person-icons-transparent-background-711970-3331308.png" class="icon_person" alt="person">
+            <img src="../images/home_page/coffee.png" class="icon_coffee" alt="coffee">
+             <img src="../images/home_page/images.png" class="icon_dishes" alt="dishes">
+             <a href="people_page.html"><img src="..images/home_page/PEOPLE_Magazine-logo-C7552FFC4D-seeklogo.com.png" class="people_word" alt="people"></a>
+               
+                          
+               
+            <script>
+                    var lastKnownScrollY = 0;
+var currentScrollY = 0;
+var ticking = false;
+var idOfHeader = 'header';
+var eleHeader = null;
+const classes = {
+  pinned: 'header-pin',
+  unpinned: 'header-unpin',
+};
+function onScroll() {
+  currentScrollY = window.pageYOffset;
+  if (currentScrollY < lastKnownScrollY) {
+    pin();
+  } else if (currentScrollY > lastKnownScrollY) {
+    unpin();
+  }
+  lastKnownScrollY = currentScrollY;
+}
+function pin() {
+  if (eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.unpinned);
+    eleHeader.classList.add(classes.pinned);
+  }
+}
+function unpin() {
+  if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
+    eleHeader.classList.remove(classes.pinned);
+    eleHeader.classList.add(classes.unpinned);
+  }
+}
+window.onload = function() {
+  eleHeader = document.getElementById(idOfHeader);
+  document.addEventListener('scroll', onScroll, false);
+}
+    
+                    </script>
+</body>
+</html>
