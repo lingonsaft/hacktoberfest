@@ -1,7 +1,16 @@
 .magic{
-    padding: 80px;
+    padding: 0 3.5em 3.5em;
 }
 
-.col-md{
-    margin-bottom: 20px;
+.magic .col-sm{
+    padding: 2em;
+}
+
+@media screen and (max-width: 40em) {
+  .magic{
+    padding: 2em;
+  }
+  .magic .col-sm {
+    padding: 1em;
+  }
 }
