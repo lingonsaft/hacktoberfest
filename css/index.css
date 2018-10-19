@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.75px;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   transition: 1s ease-in-out;
 }
 
