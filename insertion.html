@@ -40,7 +40,18 @@
       213, 200, 227, 354, 437, 280, 207, 143, 310, 385, 370, 58, 444, 198, 278,
       54, 494, 390, 113, 328, 144, 268, 78, 9, 102, 197, 301, 226, 220, 334, 419,
       299, 409, 421, 292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185, 181,
-      485, 495, 81, 169, 294, 79, 400, 92, 104, 249];
+      485, 495, 81, 169, 294, 79, 400, 92, 104, 249]; 
+     
+      function swap(){
+        var a1,b,c;
+        a1=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c=a1;
+        a1=b;
+        b=c;
+        document.getElementById("answer1").value= a1;
+        document.getElementById("answer2").value= b;
+      }
 
       function insertionSort(arr){
           let swapped;
