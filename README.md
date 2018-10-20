@@ -33,7 +33,7 @@ P.S. Star and share this repository, if you had fun!
 - Clone on your local machine.
 
 ```terminal
-git clone https://github.com/lingonsaft/hacktoberfest.git
+git clone https://github.com/<your username>/hacktoberfest.git
 cd hacktoberfest
 ```
 
