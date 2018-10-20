@@ -5,7 +5,8 @@ const messageDisplay = document.querySelector('#message');
 const resetButton = document.querySelector('#reset');
 const easyBtn = document.querySelector('#easyBtn');
 const hardBtn = document.querySelector('#hardBtn');
-let numSquares = 6
+const wayHardBtn = document.querySelector('#wayHardBtn');
+let numSquares = 9;
 
 genPickColors(numSquares);
 
@@ -13,6 +14,7 @@ easyBtn.addEventListener("click", function() {
   resetBackgroundColors();
   this.classList.add('selected');
   hardBtn.classList.remove('selected');
+  wayHardBtn.classList.remove('selected');
   numSquares = 3;
   genPickColors(numSquares);
   for (let i = numSquares; i < squares.length; i++) {
@@ -24,10 +26,24 @@ hardBtn.addEventListener("click", function() {
   resetBackgroundColors();
   this.classList.add("selected");
   easyBtn.classList.remove("selected");
+  wayHardBtn.classList.remove('selected');
   numSquares = 6;
   genPickColors(numSquares);
   
   for (let i = 3; i < squares.length; i++) {
+    squares[i].style.display = 'block';
+  }
+})
+
+wayHardBtn.addEventListener("click", function() {
+  resetBackgroundColors();
+  this.classList.add("selected");
+  easyBtn.classList.remove("selected");
+  hardBtn.classList.remove('selected');
+  numSquares = 9;
+  genPickColors(numSquares);
+  
+  for (let i = 6; i < squares.length; i++) {
     squares[i].style.display = 'block';
   }
 })

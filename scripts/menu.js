@@ -21,10 +21,6 @@ const menu = {
       'text': 'Potato',
       'href': 'potato.html'
     },
-    'Cheese': {
-      'text': 'Cheese!',
-      'href': 'cheese.html'
-    },
     'Invert': {
       'text': 'Invert',
       'href': '#',
