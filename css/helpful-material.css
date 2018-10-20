@@ -43,12 +43,12 @@ h3 {
 }
 .container a {
   text-decoration: none;
-  color: #FF0844;
+  color: rgb(57,116,48);
 }
 
 .container a:hover {
   text-decoration: none;
-  color: #cc0636;
+  color: #3dcff4;
 }
 
 #myBtn {
@@ -83,7 +83,7 @@ a.guides-links{
 
 .list {
   padding-left: 2rem;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(203, 178, 178, 0.3);
   border-radius: 5px;
 }
 

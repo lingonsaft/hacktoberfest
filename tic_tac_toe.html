@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  
+  <!--Stats Script-->
+  <link rel="stylesheet" type="text/css" href="css/tic_tac_toe.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+ <div id="giveRule">
+ 	<button id="O"> O </button>
+ 	<button id="X"> X </button>
+ 	<h4 id="win"> You Win </h4>
+ 	<h4 id="lose"> You Lose </h4>
+ 	<h4 id="tie"> Tie </h4>	
+ </div>
+
+  <table>
+  	<tr>
+  		<td class="cell" id="0"></td>
+  		<td class="cell" id="1"></td>
+  		<td class="cell" id="2"></td>
+  	</tr>
+  	<tr>
+  		<td class="cell" id="3"></td>
+  		<td class="cell" id="4"></td>
+  		<td class="cell" id="5"></td>
+  	</tr>
+  	<tr>
+  		<td class="cell" id="6"></td>
+  		<td class="cell" id="7"></td>
+  		<td class="cell" id="8"></td>
+  	</tr>
+  </table>
+  <div class="endgame"> 
+	<div class="text">end</div>
+  </div>
+  <div id="status">
+  <button id="startGame"> Start Game </button>
+  <button id="replay" > Replay </button>
+  </div>
+  
+  <script src="scripts/tic_tac_toe.js"></script>
+</body>
+
+</html>
