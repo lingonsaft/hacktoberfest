@@ -17,6 +17,10 @@ const menu = {
       'id': 'tools'
   },
   'Others': {
+    'Brazilian-Friends': {
+      'text': 'Brazilian Friends',
+      'href': 'brazilian-friends.html'
+    },
     'Potato': {
       'text': 'Potato',
       'href': 'potato.html'
