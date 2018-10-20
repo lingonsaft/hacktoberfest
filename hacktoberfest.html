@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <title>Hacktoberfest 2018</title>
+    <style>
+        :root {
+            font-size: 62.5%;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #4F283A;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: right;
+            color: #FDA365;
+        }
+        a {
+            text-decoration: none;
+        }
+        button {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 4px solid #03FFFF;
+            border-radius: 5px;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        button:hover {
+            background: #03FFFF;
+            color: black;
+            cursor: pointer;
+        }
+        .Container {
+            height: 100vh;
+            max-width: 80rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+        .Container__HeaderText {
+            position: relative;
+        }
+        .Container__HeaderText::after {
+            content: "2018";
+            position: absolute;
+            top: -12rem;
+            border: 0.6rem solid #03FFFF;
+            border-radius: 100%;
+            padding: 3.5rem 2rem;
+            color: #03FFFF;
+        }
+        .Container__NavContainer {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            margin: 0 auto;
+            max-width: 120rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class='Container'>
+        <header>
+            <h1 class='Container__HeaderText'>Merry Hacktoberfest,</h1>
+            <h2>Happy Coding!</h2>
+        </header>
+        <div class='Container__NavContainer'>
+            <a href='#'><button>Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
