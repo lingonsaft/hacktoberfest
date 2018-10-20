@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <h2>This is an example of bubblesort, check the page source.</h2>
+    <h2>This is an example of insertionsort, check the page source.</h2>
     <h2>See the output in the browser console</h2>
 
     <script type="text/javascript">
@@ -40,24 +40,34 @@
       213, 200, 227, 354, 437, 280, 207, 143, 310, 385, 370, 58, 444, 198, 278,
       54, 494, 390, 113, 328, 144, 268, 78, 9, 102, 197, 301, 226, 220, 334, 419,
       299, 409, 421, 292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185, 181,
-      485, 495, 81, 169, 294, 79, 400, 92, 104, 249];
+      485, 495, 81, 169, 294, 79, 400, 92, 104, 249]; 
+     
+      function swap(){
+        var a1,b,c;
+        a1=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c=a1;
+        a1=b;
+        b=c;
+        document.getElementById("answer1").value= a1;
+        document.getElementById("answer2").value= b;
+      }
 
-      function bubbleSort(arr){
-        var swapped;
+      function insertionSort(arr){
+          let swapped;
 
-        do{
-          swapped = false;
-          for(var i = 0; i<arr.length-1; i++){
-            if(arr[i]>arr[i+1]){
+          for(let i=0;i<=arr.length-2;i++){
+          for(let j=i+1;j<=arr.length-1;j++){
+            if(a[i]>a[j]){
               var temp = a[i];
-              a[i] = a[i+1];
-              a[i+1] = temp;
-              swapped = true;
+              a[i] = a[j];
+              a[j] = temp;
             }
           }
-        } while(swapped);
+        }
       }
-      bubbleSort(a);
+      insertionSort(a);
+      console.log("the result is :- ")
       console.log(a);
 
     </script>
