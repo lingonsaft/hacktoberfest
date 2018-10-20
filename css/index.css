@@ -23,9 +23,14 @@ body {
   transition: 1s ease-in-out;
 }
 
+.main-bg {
+    background: url('https://www.hemglass.se/media/1232/kladdkaka_2.png') no-repeat left top fixed;
+}
+
 .hack-title {
   font-family: 'Pacifico', cursive;
   font-size: 70px !important;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .h1-hover:hover {
@@ -40,7 +45,7 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a,
@@ -49,9 +54,11 @@ a:hover {
   transition: all 500ms ease-in-out;
 }
 
+/*
 .content {
   margin-top: 120px;
 }
+*/
 
 .index .jumbotron {
   padding: 4rem 0;
@@ -132,12 +139,21 @@ a:hover {
   color: #fff;
 }
 
+.index .social-media-section {
+    padding-top: 2rem !important;
+}
+
 .video {
   cursor: pointer;
 }
 
 .modal .close {
   margin-bottom: 1rem;
+}
+
+.no {
+  transition: all 430ms;
+  cursor: default;
 }
 
 .no:hover {
@@ -147,7 +163,7 @@ a:hover {
 .video .card:hover {
   color: #ff0844;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  animation: jump 0.5s ease forwards;
+  animation: jump 1s ease forwards;
 }
 #intro_video {
   display: block;
@@ -273,7 +289,7 @@ a:hover {
 
 @keyframes beat{
   to {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
 }
 
@@ -496,7 +512,7 @@ div#content div#contribution-rules ul li {
 
 .container-fluid a:hover {
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 2s ease-out;
   color: #cc0636;
 }
 
