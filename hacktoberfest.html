@@ -28,10 +28,29 @@
             text-align: right;
             color: #FDA365;
         }
+        a {
+            text-decoration: none;
+        }
+        button {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 4px solid #03FFFF;
+            border-radius: 5px;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        button:hover {
+            background: #03FFFF;
+            color: black;
+            cursor: pointer;
+        }
         .Container {
             height: 100vh;
+            max-width: 80rem;
+            margin: 0 auto;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center; 
         }
@@ -47,6 +66,14 @@
             padding: 3.5rem 2rem;
             color: #03FFFF;
         }
+        .Container__NavContainer {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            margin: 0 auto;
+            max-width: 120rem;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +82,9 @@
             <h1 class='Container__HeaderText'>Merry Hacktoberfest,</h1>
             <h2>Happy Coding!</h2>
         </header>
+        <div class='Container__NavContainer'>
+            <a href='#'><button>Home</button></a>
+        </div>
     </div>
 </body>
 </html>
