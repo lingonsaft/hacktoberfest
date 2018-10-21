@@ -36,7 +36,7 @@ nav {
 }
 .navbar-light .navbar-nav .nav-link::before {
   background-color: currentColor;
-  bottom: -1px;
+  bottom: 1px;
   content: "";
   height: 1px;
   left: auto;
