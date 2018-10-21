@@ -1,0 +1,24 @@
+.table-header {
+  background: linear-gradient(to left, #FF0844, #FF4563);
+  color: white;
+  text-align: center;
+}
+table {
+  table-layout: fixed;
+}
+
+.table td {
+    background-color: #fff !important;
+    padding: 15px;
+}
+
+section {
+  margin-top: 75px;
+}
+
+a {
+  color: #ff0844;
+}
+a:hover {
+  color: #96334f;
+}

@@ -1,28 +1,30 @@
 .icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 9999;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition-property: width;
+  transition-duration: 1.5s;
+  transition-delay: 0.25s;
+  text-align: center;
 }
 
 /* Style the icon bar links */
 .icon-bar a {
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 0.5rem 1rem 0.5rem 1rem;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: .5rem 1rem;
 }
 
 .twitter {
   background: #55acee;
   color: white;
-}
-.twitter:hover {
-  
 }
 
 .instagram {
@@ -56,4 +58,31 @@
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 70px;
+    transition-property: width;
+    transition-duration: 1.5s;
+    transition-delay: 0.25s;
+    text-align: left;
+  }
+
+  .icon-bar a {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: .5rem 1rem;
+  }
+
+  .icon-bar a:hover {
+    width: 120px;
+  }
 }
