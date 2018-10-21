@@ -21,6 +21,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
+  padding: 10pt;
 }
 
 .main-bg {
@@ -48,7 +49,11 @@ h6 {
   text-decoration: underline;
 }
 
-a,
+a{
+
+  color: #000;
+
+}
 a:hover {
   color: #ff0844;
   transition: all 500ms ease-in-out;
@@ -765,4 +770,12 @@ div.lowerSection {
 #listIdes a:hover {
   color: #ff0844;
   transition: all .3s ease-in;
+}
+.nav-invert-btn{
+  background-color: transparent;
+  display: block;
+  width: calc(100% - 2 * 10px);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
 }
