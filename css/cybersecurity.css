@@ -1,0 +1,17 @@
+/* Created by pydevsg*/
+
+body {
+
+color:lightblue;
+font-size:20px;
+    background-image:url(https://s.newsweek.com/sites/www.newsweek.com/files/styles/lg/public/2014/12/04/hacking.jpg);
+}
+button{
+     position: relative;
+    top: 10px;
+    left: 20px;
+    height:50px;
+    width:150px;
+    font-size:25px;
+    background-color:lightgreen;
+}
