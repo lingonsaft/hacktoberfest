@@ -1,14 +1,15 @@
 body {
-  margin: 40px auto;
-  max-width: 650px;
+  margin: 50px auto;
+  max-width: 600px;
   line-height: 1.6;
   font-size: 18px;
-  color: #444;
+  font-color: green;
+  color: #445;
   padding: 0 10px;
 }
 
 h1,
 h2,
-h3 {
+h4 {
   line-height: 1.2;
 }

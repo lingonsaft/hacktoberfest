@@ -386,6 +386,7 @@
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+  text-decoration: underline;
 }
 
 /* Hang */
@@ -4148,5 +4149,16 @@
   width: 25px;
   height: 25px;
 }
+
+/*Hacktoberfest Checker hover effect*/
+#checker:hover{
+    color: red;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 
 /*# sourceMappingURL=hover.css.map */
