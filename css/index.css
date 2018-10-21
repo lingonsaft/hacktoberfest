@@ -49,7 +49,11 @@ h6 {
   text-decoration: underline;
 }
 
-a,
+a{
+
+  color: #000;
+
+}
 a:hover {
   color: #ff0844;
   transition: all 500ms ease-in-out;

@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 206, 206));
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 18px;
+}
+
+.page-header {
+    height: 300px;
+    background-color: rgb(110, 34, 47);
+}
+
+.page-header-title {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: white;
+}
+
+.navbar{
+    background-color: transparent;
+}
+
+.navbar-hacktoberfest-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.navbar a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(252, 57, 131);
+}
+
+.navbar a:hover{
+    color: rgb(255, 147, 188);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar a:focus, .navbar a:active{
+    outline: none !important;
+}
+
+.content {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.shirt-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    border: 2px solid rgb(252, 57, 131);
+    box-shadow: 0px 5px 15px grey;
+}
+
+.logo-img {
+    width: 70px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.hacktoberfest-sponsors {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sponsors a:focus, .sponsors a:active{
+    outline: none !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 233, 233);
+}
+
+.svg-img {
+    margin-left: 2px;
+    margin-right: 2px;
+    filter: invert(.6) sepia(3) saturate(8) hue-rotate(300deg);
+}
+
+.svg-img:hover {
+    filter: invert(.3) sepia(3) saturate(8) hue-rotate(300deg);
+}
