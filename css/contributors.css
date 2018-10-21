@@ -104,7 +104,7 @@ a:hover {
   }
 }
 
-.box-item:hover {
+.box a:hover {
   background-color: #FE0C43;
   color: #fff;
 }
@@ -138,7 +138,6 @@ a:hover {
   background-color: #FE0C43;
 }
 
-
 /*HACKTOBERFEST COLOR GLOW*/
 /* START H18-fx_glow */
 .box-item.H18-fx_glow {
@@ -162,4 +161,9 @@ a:hover {
   100%{border: 0.1rem solid #21ffff}
 }
 /* END H18-fx_glow */
+
+.chaaarles-long-name-class{
+  padding: 2px 8px 2px 70px;
+  white-space: inherit;
+  line-height: 1.5em;
 

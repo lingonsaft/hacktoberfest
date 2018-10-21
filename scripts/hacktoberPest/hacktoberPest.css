@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Eater');
 
-html,
-body {
+html, body {
     background-color: #CC5500;
     font-family: Eater;
 }
@@ -10,7 +9,7 @@ h1 {
     text-align: center;
 }
 
-div{
+div {
     opacity: .2;
     display: block;
     width: 300px;
