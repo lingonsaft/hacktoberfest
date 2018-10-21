@@ -83,7 +83,7 @@
     / /_/ // __ `// ___// //_// __// __ \ / __ \ / _ \ / ___// /_ / _ \ / ___// __/
    / __  // /_/ // /__ / ,<  / /_ / /_/ // /_/ //  __// /   / __//  __/(__  )/ /_
   /_/ /_/ \__,_/ \___//_/|_| \__/ \____//_.___/ \___//_/   /_/   \___//____/ \__/
-                                              i just want a t-shirt AND some stickers at this point
+
   -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
     <a class="navbar-brand" href="/">
@@ -499,5 +499,36 @@
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="application/javascript" charset="utf-8" src="register.js"></script>
     <script type="application/javascript" charset="utf-8" src="sw.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+<script>
+(() => {
+    /*const style = document.createElement('style')
+
+    style.innerHTML = `
+    @keyframes rotation {
+        from { transform: rotate(0deg) }
+        to   { webkit-transform: rotate(359deg) }
+    }`*/
+
+    //document.body.appendChild(style)
+
+    const kladdkaka = new Image(540, 340)
+
+    kladdkaka.src = 'https://www.hemglass.se/media/1232/kladdkaka_2.png'
+
+    document.body.appendChild(kladdkaka)
+
+    kladdkaka.style.position = 'fixed'
+    kladdkaka.style.top = '100px'
+    //kladdkaka.style.animation = 'rotation 2s infinite linear'
+})()
+</script>
+
 </body>
 </html>
