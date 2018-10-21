@@ -1,0 +1,28 @@
+body {
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  margin: 0 auto; 
+  padding: 0; 
+  overflow: hidden;
+}
+
+.load-image {
+  animation: glow 2.5s infinite alternate ease-in-out;
+}
+
+#load {
+  position: absolute; 
+  width:100%; 
+  height: 100%; 
+  background-color: #411e2f;
+  color: white;
+  font-size: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes glow {
+  0%{opacity:1;}
+  100%{opacity: 0;}
+}
