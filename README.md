@@ -42,7 +42,7 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 - Clone on your local machine./ Cloner sur votre machine en local
 
 ```terminal
-git clone https://github.com/lingonsaft/hacktoberfest.git
+git clone https://github.com/<your username>/hacktoberfest.git
 cd hacktoberfest
 ```
 
