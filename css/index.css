@@ -766,3 +766,11 @@ div.lowerSection {
   color: #ff0844;
   transition: all .3s ease-in;
 }
+.nav-invert-btn{
+  background-color: transparent;
+  display: block;
+  width: calc(100% - 2 * 10px);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
