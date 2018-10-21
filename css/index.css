@@ -774,3 +774,14 @@ div.lowerSection {
   cursor: pointer;
   text-align: left;
 }
+
+@media screen and (min-width: 576px){
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .index .jumbotron {
+    padding: 0;
+  }
+}
