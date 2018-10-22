@@ -10,14 +10,21 @@ body {
   color: #000;
   line-height: 1.9;
   margin: 0;
-  background: linear-gradient(to right, #25ccf7, #487eb0);
+  background: rgb(165,183,115);
+  background: linear-gradient(34deg, rgba(234, 200, 225) 0%, rgba(241, 218, 235) 38%, rgb(248, 237, 245) 95%);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   letter-spacing: 0.75px;
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
+}
+
+.main-bg {
+    background: url('https://www.hemglass.se/media/1232/kladdkaka_2.png') no-repeat left top fixed;
 }
 
 .hack-title {
@@ -37,6 +44,7 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+    text-decoration: underline;
 }
 
 a,
@@ -45,9 +53,11 @@ a:hover {
   transition: all 500ms ease-in-out;
 }
 
+/*
 .content {
   margin-top: 120px;
 }
+*/
 
 .index .jumbotron {
   padding: 4rem 0;
@@ -126,6 +136,10 @@ a:hover {
 
 .index .btn-outline-danger:hover {
   color: #fff;
+}
+
+.index .social-media-section {
+    padding-top: 2rem !important;
 }
 
 .video {
@@ -221,7 +235,7 @@ a:hover {
     -webkit-transform: rotate3d(1, 1, 1, 360deg);
     -o-transform: rotate3d(1, 1, 1, 360deg);
     -moz-transform: rotate3d(1, 1, 1, 360deg);
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 0.99, 360deg);
   }
 }
 
@@ -260,6 +274,17 @@ a:hover {
 
 * {
   outline: none !important;
+}
+
+#heart {
+  animation: beat .3s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat{
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .icon-bar a {
@@ -708,7 +733,7 @@ div#content div#contribution-rules ul li {
 
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
-    padding: 8.5rem 0;
+    padding: 8.5rem 0 .5rem 0;
   }
 }
 
@@ -718,4 +743,20 @@ div#content div#contribution-rules ul li {
   line-height: 1.5;
   font-weight: 500;
   color: inherit;
+}
+
+div.lowerSection {
+  padding-top: 12px;
+}
+
+#listPages a,
+#listIdes a {
+   color: #121212;
+   text-decoration: underline;
+}
+
+#listPages a:hover,
+#listIdes a:hover {
+  color: #ff0844;
+  transition: all .3s ease-in;
 }
