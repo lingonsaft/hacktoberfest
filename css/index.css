@@ -21,6 +21,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
+  padding: 10pt;
 }
 
 .main-bg {
@@ -30,6 +31,7 @@ body {
 .hack-title {
   font-family: 'Pacifico', cursive;
   font-size: 70px !important;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 }
 
 .h1-hover:hover {
@@ -44,10 +46,14 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-a,
+a{
+
+  color: #000;
+
+}
 a:hover {
   color: #ff0844;
   transition: all 500ms ease-in-out;
@@ -150,6 +156,11 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.no {
+  transition: all 430ms;
+  cursor: default;
+}
+
 .no:hover {
   transform: scale(1.25);
 }
@@ -157,7 +168,7 @@ a:hover {
 .video .card:hover {
   color: #ff0844;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  animation: jump 0.5s ease forwards;
+  animation: jump 1s ease forwards;
 }
 #intro_video {
   display: block;
@@ -506,7 +517,7 @@ div#content div#contribution-rules ul li {
 
 .container-fluid a:hover {
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 2s ease-out;
   color: #cc0636;
 }
 
@@ -759,4 +770,12 @@ div.lowerSection {
 #listIdes a:hover {
   color: #ff0844;
   transition: all .3s ease-in;
+}
+.nav-invert-btn{
+  background-color: transparent;
+  display: block;
+  width: calc(100% - 2 * 10px);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
 }
