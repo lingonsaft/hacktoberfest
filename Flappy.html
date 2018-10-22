@@ -18,7 +18,7 @@
 
     canvas {
       border: 3px dotted #ee0f0f;
-      background-color: #c4e7fc;
+      background-color: #bce6ff;
       position: relative;
       top: 120px;
       left: 350px;
@@ -28,8 +28,8 @@
     button {
       width: 100px;
       height: 50px;
-      background-color: lightcoral;
-      font-size: 25px;
+      background-color: orange;
+      font-size: 24px;
       font-weight: bold;
       position: relative;
       left: 350px;
@@ -39,7 +39,7 @@
     }
 
     button:active {
-      background-color: #e4685d;
+      background-color: white;
       border: none;
     }
 
@@ -53,16 +53,16 @@
 </head>
 
 <body onload="startGame()">
-  <h1>Jump The Box , Clear The Obstacle.</h1>
+  <h1>Bounce the box and clear the obstacles.</h1>
   <script>
     var myGamePiece;
     var myObstacles = [];
     var myScore;
 
     function startGame() {
-      myGamePiece = new component(30, 30, "red", 10, 120);
+      myGamePiece = new component(30, 30, "orange", 10, 120);
       myGamePiece.gravity = 0.05;
-      myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+      myScore = new component("30px", "Consolas", "black", 10, 30, "text");
       myGameArea.start();
     }
 
@@ -175,7 +175,7 @@
     }
   </script>
   <br>
-  <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Jump</button>
+  <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Bounce</button>
 </body>
 
 </html>
