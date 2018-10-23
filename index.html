@@ -524,14 +524,15 @@
     kladdkaka.src = 'https://www.hemglass.se/media/1232/kladdkaka_2.png'
     bacon.src = 'https://upload.wikimedia.org/wikipedia/commons/2/2e/500gfpx-Bacon.png'
 
-    document.body.appendChild(kladdkaka)
-    document.body.appendChild(bacon)
-
+    
+    document.appendChild(kladdkaka)
+    document.appendChild(bacon)
+    bacon.style.position = 'fixed'
     kladdkaka.style.position = 'fixed'
     kladdkaka.style.top = '100px'
-    bacon.style.position = 'fixed'
     bacon.style.top = '400px'
     bacon.style.left = '75%'
+   
 
 })()
 </script>
