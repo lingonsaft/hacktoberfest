@@ -125,11 +125,11 @@ function buildMenuHTML (obj = {}) {
       html += '<a class="nav-link nested-dropdown" href="#" id="Others"> Others </a>'
       html += '<div class="dropdown-content">'
 
-      if(isIndexPage){
-        html += '<div class="nav-item">'
-        html += '<button class="nav-link nav-invert-btn" id="invert-btn">Invert</button>'
-        html += '</div>'
-      }
+      // if(isIndexPage){
+      //   html += '<div class="nav-item">'
+      //   html += '<button class="nav-link nav-invert-btn" id="invert-btn">Invert</button>'
+      //   html += '</div>'
+      // }
 
       Object.entries(item).forEach(([key, item]) => {
         let isCurrent = (currentPage === item.href)

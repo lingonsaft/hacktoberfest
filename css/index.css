@@ -19,6 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.75px;
   margin: 0;
+  overflow-x: hidden;
   transition: 1s ease-in-out;
   padding: 1vw;
 }
@@ -124,6 +125,21 @@ a:hover {
   top: 0.2em;
   width: auto;
   height: 30px;
+}
+
+.btn-invert {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #ff0844;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: 0.75rem 4rem 0.75rem 4rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .index .btn-danger {
@@ -770,14 +786,14 @@ div.lowerSection {
   color: #ff0844;
   transition: all .3s ease-in;
 }
-.nav-invert-btn{
+/* .nav-invert-btn{
   background-color: transparent;
   display: block;
   width: calc(100% - 2 * 10px);
   border: 0;
   cursor: pointer;
   text-align: left;
-}
+} */
 
 @media screen and (max-width: 400px){
   .hack-title {
