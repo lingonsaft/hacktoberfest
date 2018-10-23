@@ -137,6 +137,15 @@ a:hover {
   background-color: #FE0C43;
 }
 
+.box-item.lucas-alcantara-color {
+  background-color: #d388ff;
+  color: #2e0049;
+}
+
+.box-item.lucas-alcantara-color:hover {
+  background-color: rgb(28, 12, 254);
+}
+
 .chaaarles-long-name-class{
   padding: 2px 8px 2px 70px;
   white-space: inherit;
