@@ -19,7 +19,6 @@ body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.75px;
   margin: 0;
-  overflow-x: hidden;
   transition: 1s ease-in-out;
   padding: 1vw;
 }
