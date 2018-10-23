@@ -21,12 +21,12 @@ body {
   margin: 0;
   overflow-x: hidden;
   transition: 1s ease-in-out;
-  padding: 10pt;
+  padding: 1vw;
 }
 
-.main-bg {
+/* .main-bg {
     background: url('https://www.hemglass.se/media/1232/kladdkaka_2.png') no-repeat left top fixed;
-}
+} */
 
 .hack-title {
   font-family: 'Pacifico', cursive;
@@ -778,4 +778,19 @@ div.lowerSection {
   border: 0;
   cursor: pointer;
   text-align: left;
+}
+
+@media screen and (max-width: 400px){
+  .hack-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px !important;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  }
+  .mobile-full{
+    max-width: 100%;
+  }
+  #mobile-hacktober-img{
+    width: 85vw;
+    height: auto;
+  }
 }
