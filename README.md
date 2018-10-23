@@ -118,6 +118,7 @@ Pour plus d'info, [lire cet article de Github](https://help.github.com/articles/
 - Add your own projects to the 'Helpful Material Page'
 - Add helpful links/guides to the 'Helpful Material Page'
 - Update Readme.md
+- Add name to contributors.html
 
 ## FAQs
 
