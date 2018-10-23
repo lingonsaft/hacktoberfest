@@ -12,19 +12,28 @@ P.S. Star and share this repository, if you had fun!
 Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas ou commencer, vous pouvez regarder la vidéo(le liens se trouve polus bas) et de lire les règles de contribution. Joyeux Hacking!!
 Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest et comment créer des pull request.
 
+
+```[Português]```
+Este é um projeto amigável para iniciantes para ajudar você a começar
+[hacktoberfest] (https://hacktoberfest.digitalocean.com/). Se você não
+sabe por onde começar, fique à vontade para assistir aos vídeos relacionados abaixo e
+leia as regras de contribuição. Feliz hacking <3 !!
+Ao assistir ao vídeo, você entenderá melhor sobre o funcionamento do hacktoberfest e como será possível criar pull requests.
+P.S. Star e compartilhe este repositório, se você se divertiu!
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
 
 
-## Videos/Vidéos
+## Videos/Vidéos/Vídeos
 
 - [Hacktoberfest Intro](https://youtu.be/OsAFX_ZbgaE)
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
-## Contribution rules/Règles de contribution
+## Contribution rules/Règles de contribution/Regras de contribuição
 
 ```[English]```
 - The project must work when opening [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
@@ -44,24 +53,32 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 - Ajoutez votre nom d'utilisateur au fichier [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
 - Essayez de garder les pull request petites pour minimiser les conflits.
 
+```[Português```
+- O projeto deve funcionar ao abrir [index.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
+- Você tem permissão para fazer pedidos de pull que violam as regras. Nós apenas não vamos realizar o merge ;)
+- NÃO adicione nenhuma etapa de compilação, por exemplo, npm install (queremos manter um site estático simples)
+- NÃO remova Vídeos, Regras, FAQ ou qualquer outro conteúdo útil.
+- O estilo/código pode ser bonito, feio ou estúpido, grande ou pequeno, desde que funcione
+- Adicione seu nome ao arquivo [contributors.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
+- Tente manter os pull requests pequenos para minimizar conflitos de merge
 
-## Getting Started/Pour commencer
+## Getting Started/Pour commencer/Começando
 
-- Fork this repo (button on top) / Forker le repo (bouton en haut de la page)
-- Clone on your local machine / Cloner sur votre machine en local
+- Fork this repo (button on top) / Forker le repo (bouton en haut de la page) / Faça fork desse repositório (botão no topo)
+- Clone on your local machine / Cloner sur votre machine en local / Faça clone para sua máquina local
 
 ```terminal
 git clone https://github.com/<your username>/hacktoberfest.git
 cd hacktoberfest
 ```
 
-- Create a new branch / Créer une nouvelle branche
+- Create a new branch / Créer une nouvelle branche / Crie uma nova branch
 
 ```terminal
 git checkout -b my-new-branch
 ```
 
-- Add your contribution / Ajouter votre contribution
+- Add your contribution / Ajouter votre contribution / Adicione sua contribuição
 - Commit and push
 
 ```terminal
@@ -70,15 +87,18 @@ git commit -m "your-commit-msg"
 git push origin my-new-branch
 ```
 
-- Create a new pull request from your forked repository /Créer une pull request à partir de votre repo
+- Create a new pull request from your forked repository /Créer une pull request à partir de votre repo / Crie um novo pull request do  repositório que você fez fork
 
 -------------------------
 
-## Avoid Conflicts (Syncing your fork) /Eviter les conflits (synchroniser le fork)
+## Avoid Conflicts (Syncing your fork) /Eviter les conflits (synchroniser le fork) / Evite conflitos (sincronize seu fork)
 
 ```[English]``` An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
 
 ```[French]``` Une façon simple d'éviter les conflits est d'ajouter un 'upstream' pour votre repo, vu que d'autres PR pourraient avoir été incluses pendant que vous travailliez sur la votre.
+
+```[Português]```
+Uma maneira fácil de evitar conflitos é adicionar um 'upstream' para o seu repositório git, já que outros PRs podem ser mesclados enquanto você estiver trabalhando em seu branch / fork.
 
 ```terminal
 git remote add upstream https://github.com/lingonsaft/hacktoberfest
@@ -88,6 +108,8 @@ git remote add upstream https://github.com/lingonsaft/hacktoberfest
 
 ```[French]``` Il est possible de vérifier le fonctionnement en tapant
 
+```[Português]``` Você pode verificar que seu novo controle remoto foi adicionado digitando
+
 ```terminal
 git remote -v
 ```
@@ -95,6 +117,8 @@ git remote -v
 ```[English]``` To pull any new changes from your parent repo simply run.
 
 ```[French]``` Pour pull les nouveaux changements, il suffit de taper
+
+```[Português]``` Para realizar pull de quaisquer novas mudanças para seu repositório, simplesmente execute.
 
 ```terminal
 git merge upstream/master
@@ -109,6 +133,11 @@ For more information on syncing forks [read this article from Github](https://he
 Ceci vous donnera un aper`cu des conflits éventuels et vous permet de les résoudre dans votre repo. Il est de bonne pratique de le faire régulièrement entre deux commits pour s'assurer que le repo est à jour.
 
 Pour plus d'info, [lire cet article de Github](https://help.github.com/articles/syncing-a-fork/).
+
+```[Português]```
+Isso lhe dará eventuais conflitos e permitirá que você os resolva facilmente em seu repo. É uma boa ideia usá-lo com frequência entre seus próprios commits para garantir que o repo esteja atualizado com o pai.
+
+Para mais informações sobre a sincronização de garfos [leia este artigo do Github] (https://help.github.com/articles/syncing-a-fork/).
 
 -------------------------
 
