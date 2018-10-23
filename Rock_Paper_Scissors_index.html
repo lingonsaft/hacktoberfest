@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" type="text/css" href="css/Rock_Paper_Scissors_styles.css">
+</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div class="score-board">
+		<div id="user-level" class="badge">User</div>
+		<div id="computer-level" class="badge">Comp</div>
+		<span id="user-score">0</span>:<span id="computer-score">0</span>
+	</div>
+	<div class="result">
+		<p>Let's Play The Game....</p>
+	</div>
+
+	<div class="choices">
+		<div class="choice" id="ro">
+			<img src="images/rock.png" alt="ROCK">
+		</div>
+		<div class="choice" id="pa">
+			<img src="images/paper.png" alt="PAPER">
+		</div>
+		<div class="choice" id="sc">
+			<img src="images/scissors.png" alt="SCISSORS">
+		</div>
+	</div>
+
+	<div class="audios">
+		<div class="audio" id="w">
+			<audio src="audios/win.mp3"></audio>
+		</div>
+		<div class="audio" id="l">
+			<audio src="audios/loose.mp3"></audio>
+		</div>
+		<div class="audio" id="d">
+			<audio src="audios/draw.mp3"></audio>
+		</div>
+	</div>
+
+	<p id="action-message">Make Your Move</p>
+
+	<script src="scripts/Rock_Paper_Scissors_app.js" type="text/javascript" charset="utf-8"></script>
+
+	<audio src="audios/backgroundMusic.mp3" controls autoplay hidden="true" loop="true"></audio>
+
+</body>
+</html>

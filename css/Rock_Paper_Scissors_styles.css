@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #292C34;
+}
+
+header {
+	background: white;
+	padding: 20px;
+}
+
+header > h1 {
+	color: #24272E;
+	text-align: center;
+	font-family: Righteous, sans-serif;
+	font-size: 40px;
+}
+
+.score-board {
+	margin: 50px auto;
+	border: 2px solid white;
+	border-radius: 20px;
+	text-align: center;
+	width: 300px;
+	color: white;
+	font-size: 60px;
+	padding: 20px 20px;	
+	font-family: Audiowide, sans-serif;
+	position: relative;
+}
+
+.badge {
+	background: #E2584D;
+	color: white;
+	font-size: 25px;
+	padding: 2px 5px;
+	font-family: Audiowide, sans-serif;
+}
+
+#user-level {
+	position: absolute;;
+	top: 40px;
+	left: -40px;
+}
+
+#computer-level {
+	position: absolute;;
+	top: 40px;
+	right: -45px;
+}
+
+.result {
+	font-size: 35px;
+	color: white;
+}
+
+.result > p {	
+	text-align: center; 
+	font-family: Luckiest Guy, sans-serif;
+}
+
+.choices {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.choice {
+	border: 2px solid white;
+	border-radius: 50%;
+	margin: 0 30px;
+	padding: 20px;
+	display: inline-block;
+	transition: all 0.3s ease;
+}
+
+.choice:hover {
+	cursor: pointer;
+	background-color: #CCCCFF;
+}
+
+.win-glow {
+	border: 8px solid #99FF00;
+	background-color: #99FF00;
+}
+
+.loose-glow {
+	border: 8px solid #CC0000;
+	background-color: #CC0000;
+}
+
+.draw-glow {
+	border: 8px solid #FFFF00;
+	background-color: #FFFF00;
+}
+
+#action-message {
+	color: white;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Holtwood One SC, sans-serif;
+}
