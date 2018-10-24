@@ -808,3 +808,21 @@ div.lowerSection {
     height: auto;
   }
 }
+
+
+.social-media-section a.fab {
+  color: #000;
+  text-decoration: none;
+}
+.social-media-section a.fab:hover {
+  text-decoration: none;
+}
+.social-media-section a.fa-twitter:hover {
+  color: #55acee;
+}
+.social-media-section a.fa-instagram:hover {
+  color: #e4405f;
+}
+.social-media-section a.fa-youtube:hover {
+  color: #cd201f;
+}
