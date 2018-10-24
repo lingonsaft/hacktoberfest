@@ -16,7 +16,7 @@ const menu = {
       'href': 'tools.html',
       'id': 'tools'
   },
-  'Others': {
+  'Others ▼': {
     'Brazilian-Friends': {
       'text': 'Brazilian Friends',
       'href': 'brazilian-friends.html'
