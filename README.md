@@ -8,8 +8,8 @@ read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
 P.S. Star and share this repository, if you had fun!
 
-```[French]```
-Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas ou commencer, vous pouvez regarder la vidéo(le liens se trouve polus bas) et de lire les règles de contribution. Joyeux Hacking!!
+```[Français]```
+Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas par ou commencer, vous pouvez regarder la vidéo(le liens se trouve plus bas) et lire les règles de contribution. Joyeux Hacking!!
 Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest et comment créer des pull request.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -35,14 +35,14 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 - Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file
 - Try to keep pull requests small to minimize merge conflicts
 
-```[French]```
+```[Français]```
 - Ce projet doit fonctionner à l'ouverture de [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
 - Vous avez le droit de soumettre des pull request qui ne respectent pas les règles, mais nous ne les intégrerons pas
 - Ne PAS ajouter d'étapes supplémentaires comme npm install ( nous souhaitons que le projet reste simple)
 - Ne supprimez PAS les vidéos, règles, FAQ ou autre contenu utile.
 - Le style/code peut être moche, élégant, stupide, petit ou grand à condition qu'il soit fonctionnel
 - Ajoutez votre nom d'utilisateur au fichier [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
-- Essayez de garder les pull request petites pour minimiser les conflits.
+- Essayez de garder les pull request petit pour minimiser les conflits.
 
 
 ## Getting Started/Pour commencer
@@ -106,7 +106,7 @@ This will give you any eventual conflicts and allow you to easily solve them in 
 For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
 
 ```[French]``` 
-Ceci vous donnera un aper`cu des conflits éventuels et vous permet de les résoudre dans votre repo. Il est de bonne pratique de le faire régulièrement entre deux commits pour s'assurer que le repo est à jour.
+Ceci vous donnera un aperçu des conflits éventuels et vous permet de les résoudre dans votre repo. Il est de bonne pratique de le faire régulièrement entre deux commits pour s'assurer que le repo est à jour.
 
 Pour plus d'info, [lire cet article de Github](https://help.github.com/articles/syncing-a-fork/).
 
