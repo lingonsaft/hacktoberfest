@@ -16,7 +16,7 @@ const menu = {
       'href': 'tools.html',
       'id': 'tools'
   },
-  'Others ▼': {
+  'Others': {
     'Brazilian-Friends': {
       'text': 'Brazilian Friends',
       'href': 'brazilian-friends.html'
@@ -122,7 +122,7 @@ function buildMenuHTML (obj = {}) {
   Object.entries(obj).forEach(([key, item]) => {
     if (key == 'Others') {
       html += '<li class="dropdown">'
-      html += '<a class="nav-link nested-dropdown" href="#" id="Others"> Others </a>'
+      html += '<a class="nav-link nested-dropdown" href="#" id="Others"> Others ▼ </a>'
       html += '<div class="dropdown-content">'
 
       // if(isIndexPage){
