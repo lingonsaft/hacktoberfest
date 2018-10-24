@@ -809,20 +809,12 @@ div.lowerSection {
   }
 }
 
-
+/* Overrided styles to make it black and pink hover effect */
 .social-media-section a.fab {
   color: #000;
   text-decoration: none;
 }
 .social-media-section a.fab:hover {
+  color: pink;
   text-decoration: none;
-}
-.social-media-section a.fa-twitter:hover {
-  color: #55acee;
-}
-.social-media-section a.fa-instagram:hover {
-  color: #e4405f;
-}
-.social-media-section a.fa-youtube:hover {
-  color: #cd201f;
 }
