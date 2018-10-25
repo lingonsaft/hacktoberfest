@@ -1,11 +1,252 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=latin-ext');
 
-.spinCard{
-  -webkit-animation:spin 4s linear infinite;
-  -o-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.9;
+  margin: 0;
+  background: rgb(165,183,115);
+  background: linear-gradient(34deg, rgba(234, 200, 225) 0%, rgba(241, 218, 235) 38%, rgb(248, 237, 245) 95%);
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.75px;
+  margin: 0;
+  transition: 1s ease-in-out;
+  padding: 1vw;
+}
+
+/* .main-bg {
+    background: url('https://www.hemglass.se/media/1232/kladdkaka_2.png') no-repeat left top fixed;
+} */
+
+.hack-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px !important;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.h1-hover:hover {
+  cursor: url('../images/NinjaDuck_min.jpg'), pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+a{
+
+  color: #000;
+
+}
+a:hover {
+  color: #ff0844;
+  transition: all 500ms ease-in-out;
+}
+
+/*
+.content {
+  margin-top: 120px;
+}
+*/
+
+.index .jumbotron {
+  padding: 4rem 0;
+  background-color: #ffeff3;
+}
+
+.jumbotron:first-child {
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #fff 0%, #ffeff3 100%);
+}
+
+.index .jumbotron:first-child {
+  padding: 4.5rem 0;
+}
+
+.index .jumbotron-transparent {
+  background-color: transparent;
+}
+
+.index .jumbotron-transparent .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+.index .jumbotron h1 {
+  font-size: 302.5%;
+  font-weight: 700;
+}
+
+.index .jumbotron h1 span {
+  font-weight: 400;
+  color: #ff0844;
+}
+
+.index .jumbotron h2 {
+  font-size: 2.5rem;
+}
+
+.index .jumbotron p.lead {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+  font-size: 112.5%;
+  font-weight: normal;
+}
+
+.index .btn {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border-radius: 2rem;
+  margin: 0 0.3rem;
+}
+
+.index .btn svg {
+  position: absolute;
+  left: 0.4em;
+  top: 0.2em;
+  width: auto;
+  height: 30px;
+}
+
+.btn-invert {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #ff0844;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: 0.75rem 4rem 0.75rem 4rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.index .btn-danger {
+  color: #fff;
+  background-color: #ff0844;
+}
+
+.btn-subscribe > svg {
+  margin-left: 2px;
+}
+
+.index .btn-danger:hover {
+  color: #fff;
+}
+
+.index .btn-outline-danger:hover {
+  color: #fff;
+}
+
+.index .social-media-section {
+    padding-top: 2rem !important;
+}
+
+.video {
+  cursor: pointer;
+}
+
+.modal .close {
+  margin-bottom: 1rem;
+}
+
+.no {
+  transition: all 430ms;
+  cursor: default;
+}
+
+.no:hover {
+  transform: scale(1.25);
+}
+
+.video .card:hover {
+  color: #ff0844;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  animation: jump 1s ease forwards;
+}
+#intro_video {
+  display: block;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .github-corner > svg {
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+.btn {
+  margin: 15px !important;
+  position: relative;
+  z-index: 1;
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
+    -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
+    transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1),
+    transform 200ms cubic-bezier(0.2, 0, 0.7, 1),
+    -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+}
+
+.btn:hover {
+  box-shadow: 0 0 1px 15px rgba(112, 143, 2, 0.4),
+    0 0 1px 30px rgba(183, 185, 18, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
+}
+
+.spinCard {
+  -webkit-animation: spin 4s linear infinite;
+  -o-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -19,16 +260,16 @@
     -webkit-transform: rotate3d(1, 1, 1, 360deg);
     -o-transform: rotate3d(1, 1, 1, 360deg);
     -moz-transform: rotate3d(1, 1, 1, 360deg);
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(1, 1, 0.99, 360deg);
   }
 }
 
 @keyframes twist {
   from {
-      transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   to {
-      transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -56,9 +297,19 @@
   }
 }
 
-
 * {
-  outline: none!important;
+  outline: none !important;
+}
+
+#heart {
+  animation: beat .3s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat{
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .icon-bar a {
@@ -81,12 +332,12 @@
 }
 
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -105,146 +356,6 @@
   color: white;
 }
 
-html {
-  overflow-x: hidden;
-}
-
-body {
-  font-size: 16px;
-  color: #000;
-  line-height: 1.9;
-  margin: 0;
-  background-color: #FEFEFE;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  letter-spacing: .75px;
-  margin: 0;
-  overflow-x: hidden;
-  transition: 1s ease-in-out;
-}
-
-.h1-hover:hover {
-  cursor: url("../images/NinjaDuck_min.jpg"), pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
-}
-
-a,
-a:hover {
-  color: #FF0844;
-  transition: all 500ms ease-in-out;
-}
-
-.content {
-  margin-top: 120px;
-}
-
-.index .jumbotron {
-  padding: 4rem 0;
-  background-color: #ffeff3;
-
-}
-.jumbotron:first-child {
-  margin-bottom: 0;
-  background: linear-gradient(to bottom, #fff 0%,#ffeff3 100%);
-}
-
-.index .jumbotron:first-child {
-  padding: 4.5rem 0;
-}
-
-.index .jumbotron-transparent {
-  background-color: transparent;
-}
-
-.index .jumbotron-transparent .container-fluid {
-  position: relative;
-  z-index: 1;
-}
-
-.index .jumbotron h1 {
-  font-size: 302.5%;
-  font-weight: 700;
-}
-
-.index .jumbotron h1 span {
-  font-weight: 400;
-  color: #555;
-}
-
-.index .jumbotron h2 {
-  font-size: 2.5rem;
-}
-
-.index .jumbotron p.lead {
-  max-width: 48rem;
-  margin-bottom: 2rem;
-  font-size: 112.5%;
-  font-weight: normal;
-}
-
-.index .btn {
-  position: relative;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 600;
-  padding: .5rem .75rem .5rem 2.5rem;
-  border-radius: 2rem;
-  margin: 0 .3rem;
-}
-
-.index .btn svg {
-  position: absolute;
-  left: .4em;
-  top: .2em;
-  width: auto;
-  height: 30px;
-}
-
-.index .btn-danger {
-  color: #fff;
-  background-color: #FF0844;
-}
-
-.btn-subscribe > svg {
-  margin-left: 2px;
-}
-
-.index .btn-danger:hover {
-  color: #fff;
-}
-
-.index .btn-outline-danger:hover {
-  color: #fff;
-}
-
-.video {
-  cursor: pointer;
-}
-
-.modal .close {
-  margin-bottom: 1rem;
-}
-
-.no:hover {
-    transform: scale(1.25);
-}
-
-.video .card:hover {
-  color: #FF0844;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
-  animation : jump 0.5s ease forwards;
-}
-#intro_video {
-    display: block
-}
 .single-faq {
   border: 1px solid rgb(247, 36, 133);
   padding: 1rem;
@@ -253,7 +364,7 @@ a:hover {
 }
 
 .single-faq:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .single-faq h5 {
@@ -307,7 +418,7 @@ a:hover {
   vertical-align: middle;
   text-align: center;
   margin: 10px 0;
-  border-left: 1px solid rgba(0, 0, 0, .125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .single-tips span {
@@ -317,8 +428,8 @@ a:hover {
 .single-tips .no {
   font-size: 35px;
   font-weight: 600;
-  line-height: .6;
-  color: #FF0844;
+  line-height: 0.6;
+  color: #ff0844;
   margin-bottom: 15px;
 }
 
@@ -335,10 +446,10 @@ a:hover {
 }
 
 .broccoli-green {
-  background-color: #A5D6A7;
+  background-color: #a5d6a7;
 }
 
-html [type=button] {
+html [type='button'] {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   -o-appearance: none !important;
@@ -362,38 +473,34 @@ html [type=button] {
   font-size: 20px;
 }
 
-#tips{
+#tips {
   border-radius: 5px;
 }
 
-#btnsh:hover{
-
-color: white;
-
-
+#btnsh:hover {
+  color: white;
 }
-#btnsh{
-
-color: black;
-
-
+#btnsh {
+  color: black;
 }
-div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
+
+div#content div#contribution-rules ul,
+div#content div#contribution-rules ul li {
   list-style-type: none;
 }
 
-#contribution-rules{
+#contribution-rules {
   background-color: #fff;
-  padding:30px;
+  padding: 30px;
   border-radius: 5px;
 }
 
-.do{
-  color:green;
+.do {
+  color: green;
 }
 
-.dont{
-  color:red;
+.dont {
+  color: red;
 }
 
 .fork_image {
@@ -404,11 +511,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   margin-top: 61px;
 }
 
-.card-header{
-  padding:3px;
-  padding-left:20px;
-  font-weight:bold;
+.card-header {
+  padding: 3px;
+  padding-left: 20px;
+  font-weight: bold;
 }
+
 .card {
   margin: 1%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -418,12 +526,12 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 .container-fluid a {
   text-decoration: none;
-  color: #FF0844;
+  color: #ff0844;
 }
 
 .container-fluid a:hover {
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 2s ease-out;
   color: #cc0636;
 }
 
@@ -496,7 +604,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .logo-image:hover {
-  cursor: url("../images/NinjaDuck_min.jpg"), not-allowed;
+  cursor: url('../images/NinjaDuck_min.jpg'), not-allowed;
 }
 
 /* Youtube Subscribe Styling */
@@ -519,7 +627,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .btn-youtube:before {
-  content: "";
+  content: '';
   z-index: -1;
   background: linear-gradient(90deg, red, orange, yellow, red);
   background-size: 400%;
@@ -534,7 +642,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   animation: animate 8s linear infinite;
 }
 
-
 .ytSubscribeContainer {
   margin-top: 25px;
 }
@@ -548,7 +655,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .yt-logo {
-  background: url("../images/you_logo.png");
+  background: url('../images/you_logo.png');
 }
 
 /* Start Hacking Button Animation  */
@@ -575,7 +682,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 }
 
 .btn-primary:before {
-  content: "";
+  content: '';
   z-index: -1;
   background: linear-gradient(90deg, red, orange, yellow, red);
   background-size: 400%;
@@ -589,7 +696,6 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   opacity: 1;
   animation: animate 8s linear infinite;
 }
-
 
 #love {
   animation-duration: 1s;
@@ -612,27 +718,27 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 #twist {
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #FF0844;
+  background-color: #ff0844;
   color: white;
   border-radius: 2rem;
   font-weight: 600;
-  padding: .75rem 4rem .75rem 4rem;
+  padding: 0.75rem 4rem 0.75rem 4rem;
   border-radius: 2rem;
-  outline : none;
-  border : none;
+  outline: none;
+  border: none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.video-border{
-  border: solid #FF0844 1px;
+.video-border {
+  border: solid #ff0844 1px;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius:  25px;
+  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 992px) {
   .single-tips .tip {
-    border-left: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
     margin: 0;
   }
 
@@ -652,7 +758,7 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
 
 @media screen and (min-width: 1024px) {
   .index .jumbotron:first-child {
-    padding: 8.5rem 0;
+    padding: 8.5rem 0 .5rem 0;
   }
 }
 
@@ -662,4 +768,53 @@ div#content div#contribution-rules ul, div#content div#contribution-rules ul li{
   line-height: 1.5;
   font-weight: 500;
   color: inherit;
+}
+
+div.lowerSection {
+  padding-top: 12px;
+}
+
+#listPages a,
+#listIdes a {
+   color: #121212;
+   text-decoration: underline;
+}
+
+#listPages a:hover,
+#listIdes a:hover {
+  color: #ff0844;
+  transition: all .3s ease-in;
+}
+/* .nav-invert-btn{
+  background-color: transparent;
+  display: block;
+  width: calc(100% - 2 * 10px);
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+} */
+
+@media screen and (max-width: 400px){
+  .hack-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px !important;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  }
+  .mobile-full{
+    max-width: 100%;
+  }
+  #mobile-hacktober-img{
+    width: 85vw;
+    height: auto;
+  }
+}
+
+/* Overrided styles to make it black and pink hover effect */
+.social-media-section a.fab {
+  color: #000;
+  text-decoration: none;
+}
+.social-media-section a.fab:hover {
+  color: pink;
+  text-decoration: none;
 }

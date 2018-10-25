@@ -17,18 +17,13 @@ const menu = {
       'id': 'tools'
   },
   'Others': {
+    'Brazilian-Friends': {
+      'text': 'Brazilian Friends',
+      'href': 'brazilian-friends.html'
+    },
     'Potato': {
       'text': 'Potato',
       'href': 'potato.html'
-    },
-    'Cheese': {
-      'text': 'Cheese!',
-      'href': 'cheese.html'
-    },
-    'Invert': {
-      'text': 'Invert',
-      'href': '#',
-      'id': 'invert-btn'
     },
     'Fireworks': {
       'text': 'Fireworks',
@@ -122,15 +117,22 @@ function buildMenuHTML (obj = {}) {
   var html = ''
   var path = window.location.pathname.split('/')
   var currentPage = path[path.length - 1] === '' ? '/' : path[path.length - 1]
+  var isIndexPage = currentPage === '/' || currentPage === 'index.html';
 
   Object.entries(obj).forEach(([key, item]) => {
     if (key == 'Others') {
       html += '<li class="dropdown">'
-      html += '<a class="nav-link nested-dropdown" href="#" id="Others"> Others </a>'
+      html += '<a class="nav-link nested-dropdown" href="#" id="Others" onclick="return false;"> Others ▼ </a>'
       html += '<div class="dropdown-content">'
+
+      // if(isIndexPage){
+      //   html += '<div class="nav-item">'
+      //   html += '<button class="nav-link nav-invert-btn" id="invert-btn">Invert</button>'
+      //   html += '</div>'
+      // }
+
       Object.entries(item).forEach(([key, item]) => {
         let isCurrent = (currentPage === item.href)
-
         html += '<div class="nav-item' + (isCurrent ? ' active' : '') + '">'
         html += '<a class="nav-link" href="' + item.href + '"' + (item.id ? ' id="' + item.id + '"' : '') + '>' + item.text + '</a>'
         html += '</div>'
