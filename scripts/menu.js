@@ -35,30 +35,10 @@ const menu = {
       'href': 'wow.html',
       'id': 'learn'
     },
-    '4otakus': {
-      'text': '4otakus',
-      'href': '4otakus.html',
-      'id': '4otakus'
-    },
-    'Bubble': {
-      'text': 'Bubble',
-      'href': 'bubble.html',
-      'id': 'Bubble'
-    },
-    'Canoi': {
-      'text': 'Canoi',
-      'href': 'canoi.html',
-      'id': 'Canoi'
-    },
     'Colorgame': {
       'text': 'Colorgame',
       'href': 'colorgame.html',
       'id': 'Colorgame'
-    },
-    'Foxy': {
-      'text': 'Foxy',
-      'href': 'foxy.html',
-      'id': 'Foxy'
     },
 	'cold-hacktomber': {
       'text': 'cold-hacktomber',
@@ -84,11 +64,6 @@ const menu = {
       'text': 'Spooky',
       'href': 'spooky.html',
       'id': 'Spooky'
-    },
-    'Values': {
-      'text': 'Values',
-      'href': 'values.html',
-      'id': 'Values'
     },
     'Wow': {
       'text': 'Wow',
