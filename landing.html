@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/landing.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <header id="header">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="nav-bar">
+      <a href="#" class="navbar-brand">Company Name <i class="fa fa-spinner"></i><img id="header-img" src="#" alt=""></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#videos" class="nav-link">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#form" class="nav-link">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <!-- carousel -->
+
+    <div class="container-fluid carCont">
+      <div >
+        <div id="newCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#newCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#newCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.planwallpaper.com/static/images/abstract-colourful-cool-wallpapers-55ec7905a6a4f.jpg" alt="">
+              <div class="carousel-caption caroCap1">
+                <h1>hello</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quisquam!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="http://4.bp.blogspot.com/-l8ZyF69R8B0/VCO8B3KYwpI/AAAAAAAAFZY/UZ2FzwWDpDk/s1600/Website%2Bdesign%2Bbackground%2Bpatterns%2Caquamarine%2Bcopy.jpg" alt="">
+              <div class="carousel-caption caroCap2">
+                Your text here!!
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#newCarousel" data-slide="prev">
+            <span><i class="fa fa-caret-left"></i></span>
+          </a>
+          <a class="right carousel-control" href="#newCarousel" data-slide="next">
+            <span><i class="fa fa-caret-right"></i></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- product jumbotron -->
+
+
+      <div class="jumbotron container-fluid">
+        <div class="row">
+        <h1 class="col-sm-12 productHeader" id="products">Our Products</h1>
+
+        <img src="http://2.bp.blogspot.com/_UVPacgpIQLc/S6o9Yp9X1AI/AAAAAAAAAso/DiyARsxWlRk/s1600/img_544790f5a1228d8.jpg" alt="">
+        <img src="https://www.onegoodthingbyjillee.com/wp-content/uploads/2015/04/generic.png" alt="">
+
+        </video>
+      </div>
+    </div>
+
+    <!-- videos -->
+    <div class="container" id="videos">
+      <h1>Videos</h1>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QwRISkyV_B8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!--pricing form-->
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h1>Fill out the form to receieve a quote</h1>
+      <fieldset class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="exampleTextarea">Enter project information</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </fieldset>
+
+
+
+      <input type="submit" class="btn btn-secondary" id="submit"></input>
+    </form>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  </body>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  </body>
+</html>
