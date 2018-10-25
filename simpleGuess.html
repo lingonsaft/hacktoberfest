@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Enter a number and try fooling the computer!</h1>
+    <h3 id="heading"></h3>
+    <p id="score"></p>
+    <button onclick="guesser()">Play</button>
+    <input type="text" name="User Answer" id="userAnswer" />
+    <p id="error" style="color: red;"></p>
+    <script>
+
+        let score = 0;
+
+        function guesser() {
+            let number = Math.floor(Math.random() * Math.floor(10));
+            let userAnswer = document.getElementById('userAnswer').value;
+            console.log(userAnswer);
+            
+            document.getElementById('error').innerHTML = '';
+
+            if (userAnswer == number && userAnswer != '') {
+                console.log('you win!');
+                score++;
+            } else if (userAnswer == '') {
+                console.log('enter a number!')
+                document.getElementById('error').innerHTML = 'Enter a number!';
+            } else { console.log('Try again...') }
+
+            document.getElementById('heading').innerHTML = `The computer guesses ${number}`;
+            document.getElementById('score').innerHTML = `The computer has guessed ${score} numbers correctly!`;
+        }
+    </script>
+</body>
+
+</html>
