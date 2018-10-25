@@ -732,8 +732,6 @@ div#content div#contribution-rules ul li {
 
 .video-border {
   border: solid #ff0844 1px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 992px) {
