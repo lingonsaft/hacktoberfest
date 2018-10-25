@@ -1,0 +1,67 @@
+.navbar {
+  background: rgb(16, 42, 48);
+}
+
+.nav-toggler-icon {
+  color: rgb(255, 255, 255)
+}
+
+.navbar-brand {
+  color: rgb(189, 184, 209);
+}
+
+.nav-link {
+  color: green;
+}
+.nav-link:hover{
+  color: black;
+  background: orange;
+}
+
+
+.carCont {
+  justify-content: center;
+  height: 50px
+}
+
+.carousel-item {
+  height: 200px;
+}
+
+body {
+  background: rgb(103, 106, 111);
+  padding-top: 58px;
+}
+
+.caroCap1 {
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.caroCap2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: serif;
+  background-color: rgba(75, 78, 74, 0.75);
+}
+
+.jumbotron {
+  margin-top: 11rem;
+  background-image: url("https://www.choicebankltd.com/file/2014/03/blue-background-large.png");
+background-repeat: no-repeat;
+background-size: cover;
+padding: 25px;
+}
+
+.productHeader {
+  font-family: monospace;
+}
+
+#videos {
+
+}
+#form {
+  background: white;
+}
