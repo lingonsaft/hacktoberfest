@@ -5,6 +5,7 @@
   right: 0;
   bottom: 0;
   user-select: none;
+  z-index: -1;
 }
 
 .drop {
