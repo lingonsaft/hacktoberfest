@@ -71,6 +71,8 @@
     <div class="flex-item">
     <h3 id="heading"></h3>
     <p id="score"></p>
+    <p id="incorrect"></p>
+    <p id="percentage"></p>
     </div>
     <div class="flex-item">
     <input type="text" name="User Answer" id="userAnswer" />
@@ -84,7 +86,9 @@
     <script>
 
         let score = 0;
-
+        let incorrect = 0;
+        let percent = 0;
+        
         function guesser() {
             let number = Math.floor(Math.random() * Math.floor(10));
             let userAnswer = document.getElementById('userAnswer').value;
@@ -98,10 +102,15 @@
             } else if (userAnswer == '') {
                 console.log('enter a number!')
                 document.getElementById('error').innerHTML = 'Enter a number!';
-            } else { console.log('Try again...') }
+            } else { 
+                console.log('Try again...') 
+                incorrect++;
+            }
 
             document.getElementById('heading').innerHTML = `The computer guesses ${number}`;
             document.getElementById('score').innerHTML = `The computer has guessed ${score} numbers correctly!`;
+            document.getElementById('incorrect').innerHTML = `The computer has guessed ${incorrect} numbers incorrectly!`;
+            document.getElementById('percentage').innerHTML = `That's an accuracy of ${percent}%!`;
         }
     </script>
 </body>
