@@ -6,7 +6,7 @@ This is a beginner-friendly project to help you get started with your
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
-P.S. Star and share this repository, if you had fun!
+P.S. Star and share this repository, if you  had fun!
 
 ```[Français]```
 Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas par ou commencer, vous pouvez regarder la vidéo(le liens se trouve plus bas) et lire les règles de contribution. Joyeux Hacking!!
