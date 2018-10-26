@@ -1,0 +1,262 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #fff url(../images/fundo.png) repeat-x right top;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+/*************CABEÇALHO TODO*************/
+.container{
+	width: 750px;
+	margin: 0 auto;
+}
+
+.logo{
+	margin-top: 20px;
+}
+
+.detalhe-topo{
+	float: right;
+}
+
+header{
+	background: url(../images/detalhe-topo.png) no-repeat right top;
+	padding-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+/*************MENU*************/
+header ul{
+	list-style: none;
+	background: #b10333;
+	margin-top: 25px;
+}
+
+header ul li{
+	font-size: 0.85em;
+	float: left;
+	background: #b10333 url(../images/divisor.png) no-repeat center left;
+}
+
+header ul li a{
+	padding: 15px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	line-height: 15px;
+}
+header ul li a:visited{
+	color: #fff;
+}
+header ul li a:hover{
+	color: #69001d;
+}
+
+.primeiro{
+	background: #b10333;
+}
+
+.marcado{
+	background: #de003e;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.marcado a{
+	color: #fff;
+}
+/*************AREA CENTRAL*************/
+main{
+	margin-top: 60px;
+}
+#entrevistas, #news, .noticia{
+	background: #f3f3f3 url(../images/fundo-caixa.png);
+	padding: 5px;
+}
+aside h3, article h3{
+	display: block;
+	background: #294c71;
+	font-size: 1.1em;
+	color: #fff;
+	padding:5px;
+	font-weight: lighter;
+}
+/*************COLUNA ESQUERDA*************/
+aside{
+	float: left;
+}
+
+#entrevistas ul{
+	list-style: none;
+	padding: 5px 0 0 0;
+}
+#entrevistas a:link, #entrevistas a:visited{
+	display: block;
+	font-size: 0.9em;
+	color: black;
+	padding:10px;
+	background: white;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#entrevistas a:hover{
+	background: #f9f9f9 url(../images/marcador.png) no-repeat left center;
+	color: #a1a1a1;
+	padding-left: 20px;
+}
+#news{
+	margin-top: 15px;
+}
+#news fieldset{
+	margin-top: 5px;
+	padding: 5px;
+	border: none;
+	background: #fff;
+}
+#news label{
+	display: block;
+}
+#news input[type="text"]{
+	display: block;
+	padding: 5px;
+}
+#news input[type="submit"]{
+	display: block;
+	padding: 3px 6px;
+	background: #b10333;
+	border: 2px solid #870529;
+	color: white;
+	margin-top: 3px;
+}
+/*************CONTEUDO PRINCIPAL*************/
+article{
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+article h3{
+}
+.conteudo{
+	background: #fff;
+	margin-top: 5px;
+}
+
+.conteudo img{
+	width: 250px;
+	border: 5px solid #f3f3f3;
+}
+
+.conteudo h3{
+	background: #b10333;
+	font-size: 0.8em;
+	padding: 2px;
+
+	font-weight: bold;
+}
+.conteudo p{
+	width: 230px;
+	font-size: 1em;
+	margin-left: 8px;
+}
+.conteudo a:link, .conteudo a:visited{
+	color: #b10333;
+	margin-left: 8px;
+}
+.conteudo a:hover{
+	color: #de003e;
+}
+.listas-principais{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+.listas-principais a:link, a:visited{
+	text-decoration: none;
+}
+.listas-principais img{
+	width: 80px;
+	float: left;
+}
+.listas-principais ul{
+	list-style: none;
+}
+
+.listas-principais li{
+	width: 240px;
+	padding: 10px 5px;	
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.listas-principais h2{
+	float: left;
+	font-size: 0.8em;
+	margin-left: 5px;
+	color: #3e7ab9;
+}
+
+.listas-principais p{
+	float: left;
+	color: black;
+	font-size: 0.75em;
+	width: 150px;
+	margin-left: 5px;
+}
+
+.listas-principais li:hover{
+	background: #f3f3f3;
+	color: black;
+}
+
+footer{
+	background: #294c71;
+	padding: 20px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+footer .lul{
+	width: 750px;
+	margin: 0 auto;
+}
+.noticia-grande{
+	padding: 5px;
+}
+.noticia-grande .conteudo img{
+	width: 98.1%;
+}
+
+.noticia-grande p, .noticia-grande a{
+	width: 98%;
+	margin-left: 8px;
+}
+.grande{
+	width: 74%;
+	background: #f3f3f3 url(../images/fundo-caixa.png);
+}
+
+.noticia-grande .listas-principais li{
+	width: 98%;
+	padding: 10px 5px;	
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.noticia-grande .listas-principais img{
+	float: left;}
+
+.noticia-grande .listas-principais h3{
+	float: none;
+}
+.noticia-grande .listas-principais p{
+	float: none;
+	margin-left: 85px;
+}
+
+.ultimo-lista{
+	border: none;
+}
+.clear{
+	clear: both;
+}
