@@ -1,0 +1,197 @@
+/* Fidel Lim 5847485  */
+/* Assignment 3 CSIT128 */
+
+/* Assignment3- Part1 */
+#firstPart{
+  background:
+  linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+  linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color:#708090;
+  background-size: 64px 128px
+}
+#wrapper1{
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  margin-left:10%;
+  margin-right:10%;
+  height: 83%;
+  position: relative;
+  top: 55px;
+}
+#firstLine{
+  width: 100%;
+  height:70px;
+}
+#sentence1{
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  margin-left: 3%;
+}
+#sentence2{
+  float: left;
+  margin-top: 5px;
+  margin-left: 8%;
+  margin-left: 8%;
+}
+#int {
+  width: 700px;
+  height: 40px;
+  border-radius: 5px;
+}
+#generator{
+  width: 200px;
+  height: 45px;
+}
+#bothTables{
+  margin: 20px;
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  margin-top: 13%;
+}
+#table1{
+  clear: both;
+  float: left;
+  margin-left: 20%;
+  padding: 1%;
+}
+#table2{
+  float: left;
+  margin-left: 37%;
+  padding: 1%;
+}
+.stormy {
+  background:linear-gradient( to top right,rgba(117,117,117 ,1) 25%, rgba(33,33,33 ,1) 90%);
+  box-shadow: 1px 1px 30px rgba(33,33,33 ,1);
+  color: 	#fee7d5;
+}
+ul{
+  margin: 0px;
+}
+
+/* Assignment3- Part2 */
+#secondPart{
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+}
+#wrapper2{
+  background: linear-gradient(to right, #ffe259, #ffa751);
+  margin-left:10%;
+  margin-right:10%;
+  height: 83%;
+  position: relative;
+  top: 55px;
+}
+#start{
+   width: 200px;
+   height: 64px;
+   position: relative;
+   top: 55px;
+   left:25%;
+}
+#stop{
+  margin-left: 40px;
+  width: 200px;
+  height: 64px;
+  position: relative;
+  top: 55px;
+  left:35%;
+}
+#chooseNumber{
+  font-size: 50px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#chosen{
+  font-size: 50px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#scoreSoFar{
+  font-size: 50px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#score{
+  font-size: 50px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#number1 {
+  color: red;
+  font-size: 200px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#number2 {
+  color: orange;
+  font-size: 200px;
+  margin-left: 100px;
+  position: relative;
+  top: 60px;
+  left:25%;
+}
+#number3 {
+  color: blue;
+  font-size: 200px;
+  margin-left: 100px;
+  position: relative;
+  top: 55px;
+  left:25%;
+}
+.breezy {
+  position: absolute; top:25%; left:20%;
+  background:linear-gradient( to top right, rgba(63,81,181,1) 10%, rgba(3,155,229 ,1) 40%);
+  box-shadow: 1px 1px 30px rgba(2,119,189 ,1);
+}
+.night  {
+  position: absolute; top:25%; left:50%;
+  background:linear-gradient( to bottom right,rgba(63,81,181,1) 25%, rgba(171,71,188 ,1) 70%);
+  box-shadow: 1px 1px 30px rgba(81,45,168 ,1);
+
+}
+
+/*Applicable for both Assignment3-Part1 & Assignment3-Part2  */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0px;
+}
+button:focus {
+  outline:0;
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button:hover {
+  background-color: #3e8e41;
+}
+hr:after {
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}

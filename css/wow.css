@@ -14,3 +14,11 @@
     padding: 1em;
   }
 }
+
+.nav-link {
+    color: #afafaf !important;;
+}
+
+.nav-link:hover {
+    color: #000000 !important;;
+}
