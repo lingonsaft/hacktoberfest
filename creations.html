@@ -44,9 +44,11 @@
         background-color: #444;
       }
 
-      iframe {
+      iframe, .placeholder {
         width: 40vw;
         height: 40vh;
+        display: inline-block;
+        border: 1px solid white;
       }
 
       .overlay {
@@ -73,25 +75,40 @@
         var nonIndexHtmlFiles = files.filter(
           f => /\.html$/.test(f.name) && f.name !== 'index.html'
         );
-        nonIndexHtmlFiles.forEach(file => {
+        shuffle(nonIndexHtmlFiles).forEach(file => {
           createLink(file.path);
         });
+      }
+
+      function shuffle(array) {
+        var i = 2048;
+        while (i--) {
+          array.sort(() => Math.random() - 0.5);
+        }
+        return array;
       }
 
       function createLink(path) {
         var li = document.createElement('li');
         var header = document.createElement('h3');
-        var iframe = document.createElement('iframe');
+        var placeholder = document.createElement('div');
         var overlay = document.createElement('div');
         var url = 'https://hacktoberfest.lingonsaft.com/' + path;
         header.innerHTML = path.split('.html')[0];
-        iframe.src = url;
+        placeholder.classList.add('placeholder');
         overlay.addEventListener('click', () => {
           window.open(url);
         });
+        function onMouseOver() {
+          var iframe = document.createElement('iframe');
+          iframe.src = url;
+          li.replaceChild(iframe, placeholder);
+          overlay.removeEventListener('mouseover', onMouseOver);
+        }
+        overlay.addEventListener('mouseover', onMouseOver);
         overlay.classList.add('overlay');
         li.appendChild(header);
-        li.appendChild(iframe);
+        li.appendChild(placeholder);
         li.appendChild(overlay);
         ul.appendChild(li);
       }
