@@ -102,11 +102,14 @@
             } else if (userAnswer == '') {
                 console.log('enter a number!')
                 document.getElementById('error').innerHTML = 'Enter a number!';
+                return;
             } else { 
                 console.log('Try again...') 
                 incorrect++;
             }
-
+            
+            percent = ((score /  (score + incorrect)) * 100).toFixed(2);
+            
             document.getElementById('heading').innerHTML = `The computer guesses ${number}`;
             document.getElementById('score').innerHTML = `The computer has guessed ${score} numbers correctly!`;
             document.getElementById('incorrect').innerHTML = `The computer has guessed ${incorrect} numbers incorrectly!`;
