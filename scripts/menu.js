@@ -55,11 +55,11 @@ const menu = {
       'href': 'colorgame.html',
       'id': 'Colorgame'
     },
-    'Foxy': {
+    /*'Foxy': {
       'text': 'Foxy',
       'href': 'foxy.html',
       'id': 'Foxy'
-    },
+    },*/
 	'cold-hacktomber': {
       'text': 'cold-hacktomber',
       'href': 'cold-hacktomber.html',
@@ -85,11 +85,11 @@ const menu = {
       'href': 'spooky.html',
       'id': 'Spooky'
     },
-    'Values': {
+    /*'Values': {
       'text': 'Values',
       'href': 'values.html',
       'id': 'Values'
-    },
+    },*/
     'Wow': {
       'text': 'Wow',
       'href': 'wow.html',
