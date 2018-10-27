@@ -2,11 +2,12 @@
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't
+[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open surce community. Feel free to start contributing. There are no wrong contributions. If you don't
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
 P.S. Star and share this repository, if you had fun!
+
 
 ```[Français]```
 Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas par ou commencer, vous pouvez regarder la vidéo(le liens se trouve plus bas) et lire les règles de contribution. Joyeux Hacking!!
