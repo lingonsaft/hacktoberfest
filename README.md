@@ -166,7 +166,7 @@ Para mais informações sobre a sincronização de garfos [leia este artigo do G
   - Because we only know JavaScript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab?
   - Nope.
 - How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2018?
   - 5
