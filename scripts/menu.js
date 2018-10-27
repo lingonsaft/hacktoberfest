@@ -30,12 +30,12 @@ const menu = {
       'href': 'Fireworks.html',
       'id': 'fireworks'
     },
-    'Learn': {
+    /*'Learn': {
       'text': 'Learn!',
       'href': 'wow.html',
       'id': 'learn'
     },
-    /*'4otakus': {
+    '4otakus': {
       'text': '4otakus',
       'href': '4otakus.html',
       'id': '4otakus'
