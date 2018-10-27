@@ -1,0 +1,40 @@
+#rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+  z-index: -1;
+}
+
+.drop {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  top: calc(var(--top) * 1%);
+  font-family: sans-serif;
+  font-size: 30px;
+  transform: translateY(0vh);
+  animation: fall linear infinite;
+  animation-duration: var(--speed);
+  opacity: 1;
+}
+
+/* animate the drops*/
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

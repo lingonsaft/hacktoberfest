@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <title>Noodle Facts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background: #111111;
+      margin: 10px;
+    }
+
+    div {
+      margin: 0;
+    }
+
+    h3 {
+      font-family: "Fredoka One";
+    }
+
+    .wrapper {
+      margin: 0;
+      padding: 20px;
+    }
+
+    #factsDiv {
+      border-radius: 20px;
+      background: white;
+      color: black;
+    }
+
+    #factsBtn {
+      background: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: gold;
+      font-family: "Fredoka One";
+    }
+
+    #facts {
+      font-family: "Raleway";
+      font-weight: bold;
+    }
+
+    #factsImg {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-center bg-dark text-danger p-1">
+    <h3>Noodle Facts</h3>
+  </div>
+  <div class="container-fluid text-center bg-warning wrapper">
+    <div class="container text-dark col-sm-12 col-md-6 col-lg-8" id="factsDiv">
+      <img src="https://www.unicornpoint.net/img/ramen3.png" class="img-fluid" id="factsImg" />
+      <br>
+      <span id="facts"></span>
+      <script>
+        var facts = [
+          'It would only cost about $140 a year to eat ramen for every meal.',
+          'The first instant ramen was considered a luxury item.',
+          'Ramen noodles were the first ever noodles consumed in space.',
+          'One pack of ramen will bring you well over half the daily recommended amount of sodium.',
+          'Ramen is the Japanese pronunciation of the Chinese word lamein.',
+          'China consumes the most instant ramen.',
+          'In Japan, there are at least 22 different styles.',
+          'Momofuku Andu invented the idea of instant ramen.',
+          'The noodle length inside an instant ramen packet is 51 meters.',
+          'Miso ramen was born in Sapporo, Japan around the mid-1950s.',
+          'Today, there are over 35,000 ramen noodle restaurants in Japan!',
+          'There are four major kinds of Japanese noodles: Somen, Udon, Soba and Ramen.',
+          'Asian noodles are kneaded, often by hand, and then stretched and pulled into thin threads or rolled or sliced into flat ribbons.',
+          'A 4,000 year old bowl of noodles was unearthed in China.',
+          'The first noodles were made from millet.'
+          'Noodles were first found in a Chinese cookbook during the Eastern Han period (25CE-220CE).'
+        ]
+
+        function newFact() {
+          var randomNumber = Math.floor(Math.random() * (facts.length));
+          document.getElementById('facts').innerHTML = facts[randomNumber];
+        }
+        newFact();
+      </script>
+      <br>
+      <button class="btn" id="factsBtn" onclick="newFact()">New Noodle Fact</button>
+    </div>
+  </div>
+</body>
+
+</html>

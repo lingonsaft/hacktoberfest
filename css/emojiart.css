@@ -1,0 +1,14 @@
+body {
+  background-color: #F1F1F1;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+p {
+  font-size: 1.8em;
+  text-align: center;
+}

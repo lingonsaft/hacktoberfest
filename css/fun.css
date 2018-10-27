@@ -1,0 +1,361 @@
+body {
+    background: linear-gradient(132deg, #00ffff, #000000);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease infinite;
+    border: 30px solid #eb6b6b;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  @keyframes BackgroundGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .hut {
+    position: relative;
+    left: 50%;
+    margin-top: 300px;
+    margin-right: 100px;
+    margin-bottom: -100px;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .roof {
+    position: absolute;
+    top: -55%;
+    width: 72%;
+    left: -10px;
+    right: -20px;
+    height: 45%;
+    border: 2px solid transparent;
+    border-right: 5em solid transparent;
+    border-left: 5em solid transparent;
+    border-top: 5em solid transparent;
+    border-bottom: 12em solid #4e5362;
+    filter: drop-shadow(0px 6px 2px rgba(0, 0, 0, 0.5));
+    z-index: 4;
+  }
+  
+  .chimni {
+    position: absolute;
+    width: 80px;
+    height: 85px;
+    bottom: 0;
+    left: 30px;
+    background-color: #cc6d4b;
+    -webkit-box-shadow: inset 1px -3px 82px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: inset 1px -3px 82px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: inset 1px -3px 82px 0px rgba(0, 0, 0, 0.23);
+    filter: drop-shadow(7px 0px 0.33rem rgba(0, 0, 0, 0.3));
+  }
+  
+  .chimni::after {
+    content: '';
+    position: absolute;
+    width: 82px;
+    height: 15px;
+    top: -10px;
+    left : -1px;
+    border-radius: 50%;
+    background-color: #2f422f;
+      box-shadow: inset 1px -3px 82px 0px rgba(0, 0, 0, 0.23);
+  }
+  
+  .walls {
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    top: 44%;
+    background-color: #eed1a7;
+    -webkit-box-shadow: inset -10px -10px 83px 10px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: inset -10px -10px 83px 10px rgba(0, 0, 0, 0.27);
+    box-shadow: inset -10px -10px 83px 10px rgba(0, 0, 0, 0.27);
+    filter: drop-shadow(5px 0px 0.33rem rgba(0, 0, 0, 0.7));
+    z-index: 3;
+  }
+  
+  .window {
+    position: absolute;
+    height: 55%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    border: 8px solid #794519;
+    background: rgba(147, 206, 222, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(74, 165, 191, 1) 99%, rgba(73, 165, 191, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(147, 206, 222, 1)), color-stop(41%, rgba(117, 189, 209, 1)), color-stop(99%, rgba(74, 165, 191, 1)), color-stop(100%, rgba(73, 165, 191, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(74, 165, 191, 1) 99%, rgba(73, 165, 191, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(74, 165, 191, 1) 99%, rgba(73, 165, 191, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(74, 165, 191, 1) 99%, rgba(73, 165, 191, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(74, 165, 191, 1) 99%, rgba(73, 165, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+    -webkit-box-shadow: inset 1px 2px 24px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: inset 1px 2px 24px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: inset 1px 2px 24px -2px rgba(0, 0, 0, 0.62);
+    z-index: 2;
+    overflow: hidden;
+  
+  }
+  
+  .window::after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    top: 45%;
+    background-color: #794519;
+    -webkit-box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    z-index: 2;
+  }
+  
+  .window::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    left: 45%;
+    background-color: #794519;
+    -webkit-box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: inset 1px 2px 30px -2px rgba(0, 0, 0, 0.62);
+    z-index: 2;
+  }
+  
+  
+  
+  /* =================== jerry Walking ================== */
+  .image1{
+    position: absolute;
+    width : 200px;
+    height : 200px;
+    top : 55%;
+    left : 0%;
+    z-index: 2;
+    transition:left 400ms ease;
+  
+  }
+  
+  .image1 img{
+    width : 200px;
+    height : 200px;
+  
+  }
+  
+  .hut:hover .image1{
+    left: -47%;
+  }
+  
+  
+  .image2{
+    position: absolute;
+    left : 6%;
+    top : 100%;
+    width : 100px;
+    height : 60px;
+    transition: top 300ms ease-in;
+    overflow: hidden;
+  
+  }
+  
+  .image2 img{
+    position: absolute;
+    width : 100px;
+    height : 100px;
+    transform: rotate(50deg);
+    transition: transform 400ms ease-in;
+  }
+  
+  .hut:hover .image2{
+      top : 60%;
+  }
+  
+  .hut:hover .image2 img{
+      transform: rotate(0deg);
+  }
+  
+  /* ================= blackCloud =================== */
+  
+  .chimni .cloudimg1{
+    width : 100px;
+    height : 100px;
+    position: relative;
+    top : -130px;
+    left : 100px;
+    z-index: 4;
+    filter:grayscale(3.6);
+    transform: rotate(180deg);
+    animation: cloudBump1  2s linear infinite;
+  
+  
+  }
+  
+  .chimni .cloudimg2{
+    width : 60px;
+    height : 60px;
+    position: relative;
+    top : -180px;
+    left : 30%;
+    z-index: 4;
+    transform: rotate(180deg);
+    animation: cloudBump2  2s linear infinite;
+  
+  }
+  
+  @keyframes cloudBump1 {
+    0%{
+      left : 100px;
+    }
+    100%{
+      left : 200px;
+    }
+  }
+  
+  @keyframes cloudBump2 {
+    0%{
+      left : 30%;
+    }
+    100%{
+      left : 150px;
+    }
+  }
+  
+  /* ================== flor ================== */
+  
+  .flor{
+    width : 100%;
+    height : 200px;
+    position: relative;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 30%;
+    background: linear-gradient(#10770f, #055e16);
+  }
+  
+  .flor img {
+    width : 300px;
+    height: 100px;
+    position: absolute;
+    left : 120px;
+    top : -40px ;
+    filter: drop-shadow(5px 10px 0.33rem rgba(0, 0, 0, 0.3));
+  }
+  
+  /* ======== sky ======= */
+  
+  
+  .sky .star1{
+    width : 40px;
+    height : 40px;
+    left : 10%;
+      top: 100px;
+    position: relative;
+    animation: starBlur 29.5s ease-in-out infinite alternate;
+    z-index: 3;
+  }
+  
+  .sky .star2{
+    width : 40px;
+    height : 40px;
+      left : 30%;
+        top: 200px;
+    position: relative;
+    animation: starBlur 29.5s ease-in-out infinite alternate;
+    z-index: 3;
+  }
+  
+  .sky .star3{
+    width : 40px;
+    height : 40px;
+    left : 60%;
+      top: 100px;
+    position: relative;
+    animation: starBlur 29.5s ease-in-out infinite alternate;
+    z-index: 3;
+  }
+  
+  .sky .star4{
+    width : 40px;
+    height : 40px;
+    left : 80%;
+      top: 50px;
+    position: relative;
+    animation: starBlur 29.5s ease-in-out infinite alternate;
+    z-index: 3;
+  }
+  
+  .sky .star5{
+    width : 40px;
+    height : 40px;
+    left : 40%;
+    top: 150px;
+    position: relative;
+    filter: sepia(2.6);
+    animation: starBlur 29.5s ease-in-out infinite alternate;
+    z-index: 3;
+  }
+  
+  .sky .night-cloud1{
+    width : 250px;
+    height : 200px;
+    position: relative;
+      bottom : -150px;
+      filter: blur(1px);
+      z-index: 2;
+  }
+  
+  .sky .night-cloud2{
+    width : 250px;
+    height : 200px;
+    position: relative;
+    bottom : -150px;
+    margin-left: 200px;
+    filter: blur(1px);
+    z-index: 2;
+  }
+  
+  /* ===================== sun =========== */
+  
+  .sky .sun{
+    position: absolute;
+    width : 100px;
+    height : 100px;
+    background-color: #e4b336;
+    border-radius: 50%;
+    left : 48%;
+    filter: drop-shadow(0px 0px 0.33rem rgba(0, 0, 0, 0.7));
+    animation: sun 20s ease-in-out infinite alternate;
+  }
+  
+  
+  @keyframes starBlur {
+    0% {
+      filter: blur(30px);
+    }
+    75% {
+      filter: blur(0px);
+    }
+    100%{
+      filter: blur(30px);
+    }
+  }
+  
+  
+  @keyframes sun {
+    0% {
+      background-color: orange;
+    }
+    100%{
+      background-color: #ccc;
+    }
+  }

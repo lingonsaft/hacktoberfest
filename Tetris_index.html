@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Tetris</title>
+	<style>
+		header {
+			background: white;
+			padding: 15px;
+			width: 98%;
+			height: 50px;
+		}
+		header > h1 {
+			color: #24272E;
+			text-align: center; 
+			font-family: Righteous, sans-serif;
+			font-size: 30px;
+		}
+		body {
+			background: #202028;
+			color: #fff;
+			font-family: sans-serif;
+			font-size: 40px;
+			text-align: center;
+		}
+		canvas {
+			border: solid .2em #fff;
+			height: 82vh;
+		}
+	</style>
+</head>
+<body>
+	<header><h1>Tetris-Neo</h1></header>
+	<div id = "score"></div>
+	<canvas id = "tetris" width="240" height="400"></canvas>
+	<script src="scripts/tetris.js"></script>
+</body>
+</html>

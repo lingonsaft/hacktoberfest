@@ -1,0 +1,24 @@
+.magic{
+    padding: 0 3.5em 3.5em;
+}
+
+.magic .col-sm{
+    padding: 2em;
+}
+
+@media screen and (max-width: 40em) {
+  .magic{
+    padding: 2em;
+  }
+  .magic .col-sm {
+    padding: 1em;
+  }
+}
+
+.nav-link {
+    color: #afafaf !important;;
+}
+
+.nav-link:hover {
+    color: #000000 !important;;
+}
