@@ -1,0 +1,52 @@
+.paper {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.paper .circle {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+}
+.paper .circle .left-eye {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.paper .circle .right-eye {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 120px;
+}
+.paper .circle .mouth {
+  position: relative;
+  top: 60px;
+  left: 40px;
+}
+.paper .circle .mouth .open {
+  height: 50px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: black;
+}
+.paper .circle .mouth .smile {
+  height: 30px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: relative;
+  bottom: 53px;
+  left: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
