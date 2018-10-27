@@ -35,7 +35,7 @@ const menu = {
       'href': 'wow.html',
       'id': 'learn'
     },
-    '4otakus': {
+    /*'4otakus': {
       'text': '4otakus',
       'href': '4otakus.html',
       'id': '4otakus'
@@ -49,7 +49,7 @@ const menu = {
       'text': 'Canoi',
       'href': 'canoi.html',
       'id': 'Canoi'
-    },
+    },*/
     'Colorgame': {
       'text': 'Colorgame',
       'href': 'colorgame.html',

@@ -2,11 +2,12 @@
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/). If you don't
+[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open surce community. Feel free to start contributing. There are no wrong contributions. If you don't
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
 P.S. Star and share this repository, if you had fun!
+
 
 ```[Français]```
 Ceci est un projet pour débutant qui vous permettra de commencer sur [hacktoberfest](https://hacktoberfest.digitalocean.com/). Si vous ne savez pas par ou commencer, vous pouvez regarder la vidéo(le liens se trouve plus bas) et lire les règles de contribution. Joyeux Hacking!!
@@ -14,10 +15,10 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 
 
 ```[Português]```
-Este é um projeto amigável para iniciantes para ajudar você a começar
+Este é um projeto bom para iniciantes para ajudar você a começar a contribuir com o
 [hacktoberfest] (https://hacktoberfest.digitalocean.com/). Se você não
 sabe por onde começar, fique à vontade para assistir aos vídeos relacionados abaixo e
-leia as regras de contribuição. Feliz hacking <3 !!
+leia as regras de contribuição. Bom hacking <3 !!
 Ao assistir ao vídeo, você entenderá melhor sobre o funcionamento do hacktoberfest e como será possível criar pull requests.
 P.S. Star e compartilhe este repositório, se você se divertiu!
 
@@ -166,14 +167,14 @@ Para mais informações sobre a sincronização de garfos [leia este artigo do G
   - Because we only know JavaScript and suck at servers. We use [now](https://zeit.co/now) instead.
 - Are you not the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab ?
+- Should I come closer to the text saying 'Don't come closer' on the left side of the home tab?
   - Nope.
 - How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2018?
   - 5
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2018?
   - go to : [https://hacktoberfest.digitalocean.com/stats/](https://hacktoberfest.digitalocean.com/stats/) (Scroll down to Check Out Your Own Stats).
 - What is the duration of Hacktoberfest 2018?
-  - It is from 1st october to 31st october 2018...
+  - It is from October 1st till October 31st, 2018.
 - What is the event for?
   - For the open source community engagement.
 
