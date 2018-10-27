@@ -6,7 +6,7 @@ overflow: hidden;
 font-family: 'Molle', cursive;
 }
 h2{
-  left: 50%;
+  left: 70%;
   position: absolute;
   top: 50%;
   transform: translate( -50%, -50%);
