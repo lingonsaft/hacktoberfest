@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Hacktoberfest Creations</title>
+    <style>
+      html, body {
+        height: 100%;
+        font-family: sans-serif;
+      }
+
+      h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 5vh;
+        margin: 0;
+        padding: 2vh;
+        background-color: #fa0;
+      }
+
+      ul {
+        margin: 0;
+        position: fixed;
+        background-color: #000;
+        top: 9vh;
+        left: 0;
+        width: 100vw;
+        height: 91vh;
+        overflow: auto;
+      }
+
+      li {
+        list-style: none;
+        background-color: #222;
+        color: #fff;
+        padding: 2vh;
+        margin: 2vh;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      li:hover {
+        background-color: #444;
+      }
+
+      iframe, .placeholder {
+        width: 40vw;
+        height: 40vh;
+        display: inline-block;
+        border: 1px solid white;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All Hacktoberfest creations:</h1>
+    <ul class="creation-list"></ul>
+
+    <script>
+      var ul = document.getElementsByClassName('creation-list')[0];
+      fetch('https://api.github.com/repos/lingonsaft/hacktoberfest/contents/')
+        .then(res => res.json())
+        .then(listCreations)
+        .catch(fail);
+
+      function listCreations(files) {
+        var nonIndexHtmlFiles = files.filter(
+          f => /\.html$/.test(f.name) && f.name !== 'index.html'
+        );
+        shuffle(nonIndexHtmlFiles).forEach(file => {
+          createLink(file.path);
+        });
+      }
+
+      function shuffle(array) {
+        var i = 2048;
+        while (i--) {
+          array.sort(() => Math.random() - 0.5);
+        }
+        return array;
+      }
+
+      function createLink(path) {
+        var li = document.createElement('li');
+        var header = document.createElement('h3');
+        var placeholder = document.createElement('div');
+        var overlay = document.createElement('div');
+        var url = 'https://hacktoberfest.lingonsaft.com/' + path;
+        header.innerHTML = path.split('.html')[0];
+        placeholder.classList.add('placeholder');
+        overlay.addEventListener('click', () => {
+          window.open(url);
+        });
+        function onMouseOver() {
+          var iframe = document.createElement('iframe');
+          iframe.src = url;
+          li.replaceChild(iframe, placeholder);
+          overlay.removeEventListener('mouseover', onMouseOver);
+        }
+        overlay.addEventListener('mouseover', onMouseOver);
+        overlay.classList.add('overlay');
+        li.appendChild(header);
+        li.appendChild(placeholder);
+        li.appendChild(overlay);
+        ul.appendChild(li);
+      }
+
+      function fail(error) {
+        console.log('Reason for failure:', error);
+        var errorMessage = document.createElement('li');
+        errorMessage.innerHTML = 'Something went wrong. Please check the console.';
+        errorMessage.style.cursor = 'default';
+        ul.appendChild(errorMessage);
+      }
+    </script>
+  </body>
+</html>
