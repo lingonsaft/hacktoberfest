@@ -809,7 +809,7 @@ div.lowerSection {
 
 /* Overrided styles to make it black and pink hover effect */
 .social-media-section a.fab {
-  color: #000;
+  color: rgb(255, 0, 200);
   text-decoration: none;
 }
 .social-media-section a.fab:hover {
