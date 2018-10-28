@@ -17,6 +17,10 @@ const menu = {
       'id': 'tools'
   },
   'Others': {
+    'Star Collector': {
+      'text': 'Star Collector',
+      'href': 'star-collector.html'
+    },
     'Brazilian-Friends': {
       'text': 'Brazilian Friends',
       'href': 'brazilian-friends.html'
