@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Car Racing Game</title>	
+	<link rel="stylesheet" type="text/css" href="css/Car_Race_style.css">
+</head>
+<body>
+	<header>
+		<h1>Rush on the Road</h1>
+	</header>
+	<div class="score-board">
+		<div id="money-level" class="badge">Earned $</div>
+		<div id="dist-level" class="badge">m Covered</div>
+		<span id="earned-money">0</span>  --  <span id="coverd-dist">0</span>
+	</div>
+	<div id="container">
+		<div id="line_1" class="line"></div>
+		<div id="line_2" class="line"></div>
+		<div id="line_3" class="line"></div>
+		<div id="car" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="car_1" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="car_2" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="car_3" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="car_4" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="car_5" class="car">
+			<div class="f_glass"></div>
+			<div class="b_glass"></div>
+			<div class="f_light_l"></div>
+			<div class="f_light_r"></div>
+			<div class="f_tyre_l"></div>
+			<div class="f_tyre_r"></div>
+			<div class="b_tyre_l"></div>
+			<div class="b_tyre_r"></div>
+		</div>
+		<div id="restart_div">
+			<button id="restart">Let's go Again<br>
+				<small class="small_text">[Press SPACEBAR]</small>
+			</button>
+		</div>
+	</div>
+	<audio id="game_audio" src="audios/Car_Race_audio_music.mp3" loop="loop"></audio>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/Car_Race_script.js"></script>
+</body>
+</html>

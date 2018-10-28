@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+    .transition-button {
+       border: none;
+       background: #404040;
+       color: #ffffff;
+       padding: 20px;
+       border-radius: 6px;
+       display: inline-block;
+       text-decoration:none;
+       height:100px;
+       width:100px;
+   }
+       .transition-button:hover {
+           text-decoration:none;
+           color:white;
+       }
+   .oldtext,
+   .newtext {
+     font-family:Courier;
+       display: block;
+       overflow: hidden;
+       transition: all .5s ease-in;
+       text-align:center;
+
+   }
+   #Rick a{
+     border:5px;
+     height:40px;
+     width:40px;
+   }
+   #Rick span{
+     padding:0px;
+   }
+      .oldtext{
+        padding-top:15px;
+        display:inline-block;
+          height:auto;
+          opacity:1;
+          font-size:20px;
+          width:auto;
+      }
+      .newtext{
+        justify-content: center;
+          height:0;
+          opacity:0;
+          width:0;
+          font-size:15px;
+      }
+      .transition-button:hover .oldtext{
+          height:0;
+          opacity:0;
+          width:0;
+      }
+      .transition-button:hover .newtext{
+          height:auto;
+          opacity:1;
+          width:auto;
+      }
+      #ZeusButton{
+        background:#42e8f4 !important;
+      }
+        #PoisedonButton{
+          background:#2400c9;
+        }
+        #HadesButton{
+          background:#343435;
+        }
