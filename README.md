@@ -2,7 +2,7 @@
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open surce community. Feel free to start contributing. There are no wrong contributions. If you don't
+[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open source community. Feel free to start contributing. There are no wrong contributions. If you don't
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
@@ -66,7 +66,12 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 ## Getting Started/Pour commencer/Começando
 
 - Fork this repo (button on top) / Forker le repo (bouton en haut de la page) / Faça fork desse repositório (botão no topo)
+
+![alt text](https://github.com/iyerkritika/hacktoberfest/blob/master/images/fork.png) <!--replace iyerkritika with lingonsaft-->
+
 - Clone on your local machine / Cloner sur votre machine en local / Faça clone para sua máquina local
+
+![alt text](https://github.com/iyerkritika/hacktoberfest/blob/master/images/clone.png) <!--replace iyerkritika with lingonsaft-->
 
 ```terminal
 git clone https://github.com/<your username>/hacktoberfest.git
@@ -125,12 +130,12 @@ git remote -v
 git merge upstream/master
 ```
 
-```[English]``` 
+```[English]```
 This will give you any eventual conflicts and allow you to easily solve them in your repo. It's a good idea to use it frequently in between your own commits to make sure that your repo is up to date with its parent.
 
 For more information on syncing forks [read this article from Github](https://help.github.com/articles/syncing-a-fork/).
 
-```[French]``` 
+```[French]```
 Ceci vous donnera un aperçu des conflits éventuels et vous permet de les résoudre dans votre repo. Il est de bonne pratique de le faire régulièrement entre deux commits pour s'assurer que le repo est à jour.
 
 Pour plus d'info, [lire cet article de Github](https://help.github.com/articles/syncing-a-fork/).
