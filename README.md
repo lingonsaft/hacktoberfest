@@ -1,4 +1,5 @@
-# Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/))
+# Hacktoberfest ([Live Website](https://hacktoberfest.lingonsaft.com/)) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
@@ -21,8 +22,6 @@ sabe por onde começar, fique à vontade para assistir aos vídeos relacionados 
 leia as regras de contribuição. Bom hacking <3 !!
 Ao assistir ao vídeo, você entenderá melhor sobre o funcionamento do hacktoberfest e como será possível criar pull requests.
 P.S. Star e compartilhe este repositório, se você se divertiu!
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
 
