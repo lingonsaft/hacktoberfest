@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!---
+    Simple scorer in HTML
+
+    To change the score of local team:
+
+        * ARROW_RIGHT = +1
+        * ARROW_LEFT  = -1
+
+    To change the score of visitor team:
+
+        * ARROW_UP   = +1
+        * ARROW_DOWN = -1
+
+--->
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Marcador</title>
+        <style>
+            #tabla{
+                border: 0px solid black;
+            }
+            .texto {
+                font-family: "Finger Paint";
+                font-size: 4em;
+                text-align: center;
+                color: #000;
+                margin-top: 0.6em;
+            }
+            .numero {
+                font-family: "Finger Paint";
+                font-size: 15em;
+                text-align: center;
+                color: #f00;
+                margin-top: -0.2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 texto">
+                    Local
+                </div>
+                <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6 texto">
+                    Visitor
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5 numero izquierda">
+                    <p id="local">0</p>
+                </div>
+                <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2">
+                    &nbsp;
+                </div>
+                <div class="col-sm-5 col-xs-5 col-md-5 col-lg-5 numero derecha">
+                    <p id="visitor">0</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script lang="text/javascript">
+    var local = 0;
+    var visitor = 0;
+    document.addEventListener('keydown',
+    function(event){
+        if(event.keyCode == 37) {
+            local--;
+        }
+        else if (event.keyCode == 39) {
+            local++;
+        }
+        else if (event.keyCode == 38) {
+            visitor++;
+        }
+        else if (event.keyCode == 40) {
+            visitor--;
+        }
+        else {
+            //alert(event.keyCode);
+        }
+        document.getElementById("local").innerHTML = local;
+        document.getElementById("visitor").innerHTML = visitor;
+    });
+
+    </script>
+</html>

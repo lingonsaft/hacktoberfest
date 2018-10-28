@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        body {
+            background-color: #e27d60;
+            font-family: sans-serif;
+            color: #e8a87c;
+        }
+        .flex-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30vh;
+        }
+        .row {
+            width: auto;
+        }
+        .flex-item {
+            text-align: center;
+        }
+        #userAnswer {
+            height: 30px;
+            width: 30px;
+            font-size: 1.2em;
+            background-color: #e27d60;
+            color: white;
+            border: 1px solid #e8a87c;
+            text-align: center;
+        }
+        #userAnswer:focus {
+            outline: none;
+        }
+        #mainButton:focus {
+            outline: none;
+        }
+        #mainButton:active {
+            height: 35px;
+            width: 95px;
+        }
+        #mainButton {
+            border-radius: 0%;
+            background-color: #e8a87c;
+            border: none;
+            color: #e27d60;   
+            margin-top: 30px;
+            height: 40px;
+            width: 100px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 6px #d69265;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="flex-container">
+    <div class="row">
+    <div class="flex-item">
+    <h1>Enter a number between 1 and 9 and try fooling the computer!</h1>
+    </div>
+    <div class="flex-item">
+    <h3 id="heading"></h3>
+    <p id="score"></p>
+    <p id="incorrect"></p>
+    <p id="percentage"></p>
+    </div>
+    <div class="flex-item">
+    <input type="text" name="User Answer" id="userAnswer" />
+    </div>
+    <div class="flex-item">
+    <button onclick="guesser()" id="mainButton">PLAY</button>
+    <p id="error" style="color: red;"></p>
+    </div>
+    </div>
+</div>
+    <script>
+        let score = 0;
+        let incorrect = 0;
+        let percent = 0;
+        
+        function guesser() {
+            let number = Math.floor(Math.random() * Math.floor(10));
+            let userAnswer = document.getElementById('userAnswer').value;
+            console.log(userAnswer);
+            
+            document.getElementById('error').innerHTML = '';
+            if (userAnswer == number && userAnswer != '') {
+                console.log('you win!');
+                score++;
+            } else if (userAnswer == '') {
+                console.log('enter a number!')
+                document.getElementById('error').innerHTML = 'Enter a number!';
+                return;
+            } else { 
+                console.log('Try again...') 
+                incorrect++;
+            }
+            
+            percent = ((score /  (score + incorrect)) * 100).toFixed(2);
+            
+            document.getElementById('heading').innerHTML = `The computer guesses ${number}`;
+            document.getElementById('score').innerHTML = `The computer has guessed ${score} numbers correctly!`;
+            document.getElementById('incorrect').innerHTML = `The computer has guessed ${incorrect} numbers incorrectly!`;
+            document.getElementById('percentage').innerHTML = `That's an accuracy of ${percent}%!`;
+        }
+    </script>
+</body>
+
+</html>

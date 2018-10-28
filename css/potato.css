@@ -9,12 +9,13 @@ body {
 h4.hero-heading
 {
      font-weight:700;
+     font-family:Comic Sans;
      color:#FFF;
 }
 
 h1.hero-heading
 {
-     font-weight:900;
+     font-weight:800;
      color:#FFF;
 }
 
