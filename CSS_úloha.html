@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://alej.alisma.cz/prog2/pg02/css-ukol.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CSS úloha</title>
+<style type="text/css">
+	
+	BODY {
+		font-family: sans-serif;
+		line-height: 1.5;
+		background-color: #CCF;
+		}
+		
+	H2 {
+		font-size: 200%;
+		text-align: right;
+	}	
+	
+	DT {
+		font-weight:bold;
+		font-size: 120%;
+	}
+	
+	Table.countries {
+		width: 387px;
+		border-top: 2px solid black; 
+		border-bottom: 2px solid black;
+		border-collapse: collapse;
+		align: center; /*jak zarovnat doprostred s css?*/ 
+		}
+		
+	
+	THEAD {	
+		font-weight:bold;
+		background-color: #CCF;
+		border-bottom: 1px solid black;	
+	}
+	
+	TD.area {text-align: right;}
+	TD.population {text-align: right;}
+	
+	TR.even {background-color: #CCF;}
+	
+	TR.odd {background-color: #E6E6FA;}
+	
+	P {text-align: justify;}
+	
+	P.note {font-style: italic;}
+	
+	.figure {text-align: center;}
+	
+	P.important {color: #B22222;}
+	
+	P.important STRONG{background-color: #B22222; color: white;}
+	
+	div.info {/*background-image: "https://alej.alisma.cz/prog2/pg02/border.png"*/;
+		background-color: #FFEFD5;
+		border: 1px solid black;
+		text-align: center;
+		margin:0 2%;
+    	padding:0 100px;
+    	background-image: url("https://alej.alisma.cz/prog2/pg02/border.png");
+    	background-repeat: repeat-y;
+		/* chci zde pridat ramecek a zarovnat doprostred, width: x%; margin: 0 auto;*/
+		/*border-left: 100px;
+		border-right: 100px;
+		border-style: solid;
+    	border-image: url('https://alej.alisma.cz/prog2/pg02/border.png') 0% 100% round;*/
+    	
+		width: 494px; 
+		height: 300px; 
+		position: relative;
+	}
+	
+	div.info:after {
+		content: "";
+		background-image: url("https://alej.alisma.cz/prog2/pg02/border.png");
+    	background-repeat: repeat-y;
+    	position: absolute;
+    	height: 100%;
+    	width: 40px;
+    	right: 0;
+    	top: 0;
+	}
+	
+	Table.graph {
+  	max-width: 1000px; /* does not work*/
+  	/* set the whole background white, with the bars */
+  	background-color: white;
+  	/*@media screen and (max-width: 700px) { BODY { color: #444; } }*/
+  	
+  	}
+
+	.g75:after {
+  	content: " (" attr(href) ")";
+  	display: block;
+  	background-color: black;
+  	width: 750px;
+	}
+	.g60:after {
+  	content: " (" attr(href) ")";
+  	display: block;
+  	background-color: black;
+  	width: 600px;
+	}
+	.g50:after {
+  	content: " (" attr(href) ")";
+  	display: block;
+  	background-color: black;
+  	width: 500px;
+	}
+	.g45:after {
+  	content: " (" attr(href) ")";
+  	display: block;
+  	background-color: black;
+  	width: 450px;
+	}
+	
+	
+	
+</style>
+</head>
+
+<body>
+<h1>Kaskádové styly</h1>
+
+<div style="border: 2px solid #600; padding: 1em; margin: 1em 4em; color: #600; background: #fcc; border-radius: 1ex">
+	<p>
+		Úloha slouží k ověření pochopení základních principů
+		a vlastností CSS.
+	</p>
+	<p>
+		Řešení bude jediný CSS soubor (resp. CSS pravidla doplněná
+		do tohoto souboru), který zformátuje
+		<strong>tuto</strong> webovou stránku podle pokynů rozepsaných
+		v odstavcích níže.
+	</p>
+</div>
+	
+
+<h2>Úkoly</h2>
+
+<p>
+	Nastavte v celém dokumentu (webové stránce) bezpatkové písmo
+	(výběr konkrétního fontu ale nechte na výchozím nastavení prohlížeče).
+</p>
+
+<p>
+	Nastavte výchozí
+	<a href="http://www.jakpsatweb.cz/css/line-height.html">řádkování</a>
+	na 1,5.
+</p>
+
+<p>
+	Nadpisy druhé úrovně <code>&lt;h2&gt;</code> zobrazte 2× větším
+	písmem (vůči základní velikosti) a
+	<a href="http://www.jakpsatweb.cz/css/text-align.html">zarovnejte</a>
+	je doprava.
+</p>
+
+<p>
+	Pozadí celé stránky udělejte světle modré,
+	např.&nbsp;<a href="https://en.wikipedia.org/wiki/Web_colors#Shorthand_hexadecimal_form">#CCF</a>.
+	Text ponechte černý.
+</p>
+
+<p>
+	V následujícím definičním seznamu pište termín
+	<a href="http://www.jakpsatweb.cz/css/font-weight.html">tučně</a>
+	a větším písmem (třeba o 20% než okolní text).
+</p>
+
+<dl>
+	<dt>CSS</dt>
+		<dd>Cascading Style Sheets</dd>
+	<dt>HTML</dt>
+		<dd>Hyper Text Markup Language</dd>
+	<dt>HTTP</dt>
+		<dd>Hyper Text Transfer Protocol</dd>
+	<dt>PHP</dt>
+		<dd>PHP Hypertext Preprocessor (dříve Personal Home Page)</dd>
+</dl>
+
+<p>
+	Naformátujte následující tabulku jako na obrázku.
+	Pro hezčí vzhled se vám bude hodit vlastnost
+	<a href="http://www.jakpsatweb.cz/css/border-collapse.html">border-collapse</a>.
+</p>
+<div class="figure">
+	<img src="./CSS úloha_files/css-table.png" width="389" height="173">
+</div>
+
+<table class="countries" align="center">
+<thead>
+	<tr>
+		<th class="country">Stát</th>
+		<th class="area">Rozloha (km<sup>2</sup>)</th>
+		<th class="population">Počet obyvatel</th>
+	</tr>
+</thead>
+<tbody>
+	<tr class="odd">
+		<td class="country">Česko</td>
+		<td class="area">78 866</td>
+		<td class="population">10 513 834</td>
+	</tr>
+	<tr class="even">
+		<td class="country">Slovensko</td>
+		<td class="area">49 035</td>
+		<td class="population">5 412 008</td>
+	</tr>
+	<tr class="odd">
+		<td class="country">Polsko</td>
+		<td class="area">312 685</td>
+		<td class="population">38 533 789</td>
+	</tr>
+	<tr class="even">
+		<td class="country">Německo</td>
+		<td class="area">357 021</td>
+		<td class="population">81 993 000</td>
+	</tr>
+	<tr class="odd">
+		<td class="country">Rakousko</td>
+		<td class="area">83 858</td>
+		<td class="population">8 488 511</td>
+	</tr>
+</tbody>
+</table>
+
+<p>
+	Obrázek výše (a všechny ostatní, co jsou uzavřeny ve třídě
+	<code>.figure</code>) zarovnejte na střed.
+</p>
+
+<p class="note">
+	Tenhle odstavec napište
+	<a href="http://www.jakpsatweb.cz/css/font-style.html">kurzívou</a>.
+</p>
+
+<p class="important">
+	Tenhle odstavec zobrazte tmavě červenou <strong>barvou</strong> a
+	prvkům <code>&lt;strong&gt;</code> dejte tuto červenou barvu jako
+	pozadí (a vhodně nastavte barvu popředí).
+</p>
+
+<p>
+	Zarovnejte všechny odstavce do bloku.
+</p>
+
+<div class="info"><p>
+	Naformátujte tenhle odstavec podle následujícho obrázku.
+	Pruhování můžete stáhnout
+	<a href="https://alej.alisma.cz/prog2/pg02/border.png">tady</a>
+	(použitá barva je <code>#000080</code>).
+	V CSS kódu pak předpokládejte, že se obrázek bude jmenovat stejně
+	a bude ve stejném adresáři jako styl.
+	<br><br>
+	Tenhle text je tady jenom proto, aby byl odstavec delší a šlo lépe
+	ověřit, že pruhovaný okraj funguje.
+	A ještě nějaké nesmysly, ať to má více řádek i na hodně širokém
+	monitoru.
+	A ještě jedna větička.
+	To už musí stačit.
+	Tak ještě pro jistotu jedna věta.
+	A tahle už je fakt poslední.
+	Vážně.
+</p></div>
+
+<div class="figure">
+	<img src="./CSS úloha_files/css-para-border.png" width="494" height="76">
+</div>
+
+
+<p>
+	Pouze s využitím CSS vytvořte z následující tabulky
+	sloupcový (řádkový) graf.
+</p>
+<table class="graph">
+<tbody><tr><td>75</td><td class="g75"><span>&nbsp;</span></td></tr>
+<tr><td>60</td><td class="g60"><span>&nbsp;</span></td></tr>
+<tr><td>50</td><td class="g50"><span>&nbsp;</span></td></tr>
+<tr><td>45</td><td class="g45"><span>&nbsp;</span></td></tr>
+<tr><td>60</td><td class="g60"><span>&nbsp;</span></td></tr>
+</tbody></table>
+<div class="figure">
+	<img src="./CSS úloha_files/css-table-graph.png" width="185" height="142">
+</div>
+
+<p>
+	A to je všechno :-).
+</p>
+
+
+
+
+<h2>Zbytek stránky</h2>
+<p>
+	Následující text je pouze výplní, aby stránka nebyla příliš krátká.
+	Můžete jej s klidem ignorovat.
+</p>
+
+<h2>Lorem Ipsum Dolor Sit Amet</h2>
+<p>
+	Magna faucibus diam cubilia vitae ipsum congue aenean eu sociosqu
+	dolor in mauris est. Elit ullamcorper. Ut feugiat arcu, id donec
+	lectus penatibus netus. Cras posuere ve, cubilia eu. In suspendisse
+	quam, arcu, amet hac dolor. Varius. Fusce. Laoreet condimentum quam
+	elit, euismod eget, nibh dui id amet molestie sollicitudin, aptent.
+	Nisi. Sem mi felis. Sem eu aliquet ad, leo ut.
+</p>
+<p>
+	Fermentum taciti a ultrices leo, varius erat. Ligula a, interdum.
+	Fames platea praesent class leo rhoncus. Consectetuer imperdiet massa
+	eni orci porta fusce enim suspendisse. Enim quis viverra a, condimentu
+	eni, cursus eget enim per viverra. Auctor, potenti nisi ad. Montes at
+	et tincidunt.
+</p>
+<p>
+	Quam dui sed consectetuer fames. Consectetuer aliquet urna nunc
+	adipiscing ut. Nibh pede aliquam mi, pede torquent dolor dolor
+	luctus montes donec purus. Laoreet euismod etiam.
+</p>
+<p>
+	Maecenas, curae proin fermentum. Auctor in pulvinar facilisi, ve donec
+	consectetuer sagittis magna. Eu rutrum in, dictum curae. Hac ridiculus
+	lectus lorem quisque, ad. A, pellentesque arcu, potenti amet, metus.
+	Blandit in curabitur elementum nibh orci ut felis hymenaeos lobortis.
+</p>
+<p>
+	Lorem donec, eros sed semper cras condimentum. Feugiat conubia sociis
+	diam scelerisque sed aenean mattis class. Elit dis consectetuer mi
+	integer eget maecenas quis, faucibus netus dis. Erat, ante cum tortor
+	facilisi, arcu eros viverra sem. Hac feugiat praesent ipsum aliquet
+	erat.
+</p>
+<h3>Purus donec proin</h3>
+<p>
+	Donec imperdiet cubilia varius tortor maecenas scelerisque. Bibendum
+	felis pellentesque, etiam odio mollis. Tellus sociis tristique donec
+	at. Duis mattis habitant sodales. Dapibus arcu. Vestibulum dictumst
+	curae accumsan ipsum, diam cubilia, at, dictumst mollis, montes sed
+	arcu a eros lacus. Ac, ullamcorper enim, libero, luctus quis
+	ullamcorper per nisi adipiscing.
+</p>
+
+<h2>Blandit consectetuer</h2>
+<ul>
+	<li>
+		Per ipsum quis euismod, imperdiet enim ullamcorper gravida
+		eni accumsan viverra.
+	</li>
+	<li>
+		Ultricies turpis proin.
+	</li>
+	<li>
+		Lacinia urna.
+	</li>
+	<li>
+		Tempus torquent.
+	</li>
+	<li>
+		Semper etiam cum.
+	</li>
+</ul>
+
+
+
+
+</body></html>
