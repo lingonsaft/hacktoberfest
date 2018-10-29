@@ -549,7 +549,7 @@ div#content div#contribution-rules ul li {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 30px;
   z-index: 99;
   cursor: pointer;
@@ -732,8 +732,6 @@ div#content div#contribution-rules ul li {
 
 .video-border {
   border: solid #ff0844 1px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 @media (min-width: 992px) {
@@ -809,20 +807,12 @@ div.lowerSection {
   }
 }
 
-
+/* Overrided styles to make it black and pink hover effect */
 .social-media-section a.fab {
-  color: #000;
+  color: rgb(255, 0, 200);
   text-decoration: none;
 }
 .social-media-section a.fab:hover {
+  color: pink;
   text-decoration: none;
-}
-.social-media-section a.fa-twitter:hover {
-  color: #55acee;
-}
-.social-media-section a.fa-instagram:hover {
-  color: #e4405f;
-}
-.social-media-section a.fa-youtube:hover {
-  color: #cd201f;
 }
