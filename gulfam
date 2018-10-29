@@ -2,10 +2,25 @@
 <html>
 <head>
 	<title>My first hacktoberfest page</title>
+	<style>
+		body {
+		  background-color: white;
+		}
+
+		h1 {
+		  font-family: "Merriweather", serif;
+		  font-size: 32px;
+		}
+	</style>
 </head>
 <body>
-	<p>My first hacktoberfest page</p>
-	<p>very excited to be a part of opensource community</p>
+	<h1>My first hacktoberfest page</h1>
+	<hr>
+	<br>
+	<h2>very excited to be a part of opensource community</h2>
+	<hr>
+	<br>
+	<p> Hacktoberfest is open to everyone in our global community!</p>
 
 </body>
 </html>
