@@ -758,6 +758,10 @@ div#content div#contribution-rules ul li {
   .index .jumbotron:first-child {
     padding: 8.5rem 0 .5rem 0;
   }
+  
+  .video .card-body {
+    min-height: 90px;
+  }
 }
 
 #listPages h3 {
