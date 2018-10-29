@@ -12,6 +12,7 @@
 ::selection {
   background-color: #4835f7;
   color: #fff;
+  width:100%;
 }
 /* * {
   outline: none!important;
@@ -22,7 +23,7 @@ html {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat',sans-serif;
-  line-height: 1.5;
+  line-height: 1.5px;
 }
 html,
 body {
