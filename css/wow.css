@@ -16,9 +16,15 @@
 }
 
 .nav-link {
-    color: #afafaf !important;;
+    color: #fff !important;;
 }
 
 .nav-link:hover {
-    color: #000000 !important;;
+    color: #000000 !important;
+}
+.dropdown-content>.nav-item >.nav-link {
+    color: blue !important;
+}
+.dropdown-content>.nav-item >.nav-link:hover {
+    color: #000000 !important;
 }
