@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Hacktoberfest 2018 Countdown</title>
+	<style>
+		body {
+			background: #f77d03;
+  			text-align: center;
+		}
+
+		h1 {
+			font-size: 3.5rem;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		h6 {
+			margin-top: 0;
+		}
+
+		#container {
+			width: 100%;
+			height: auto;
+		}
+
+		#timer {
+			font-size: 3rem;
+			background: #efe90d;
+			border-radius: 2px;
+			display: inline-block;
+			margin: 1rem;
+			position: relative;
+			min-width: 350px;
+			padding: 1rem 2rem;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		}
+
+		#timer span {
+			font-size: 1rem;
+		}
+	</style>
+  </head>
+  <body>
+	  <h1>Hacktoberfest 2018 Countdown</h1>
+	  <h6>Created by: <a href="https://github.com/skwid138">Hunter Rancourt</a></h6>
+
+	  <article id="container">
+		  <div id="timer"></div>
+	  </article>
+
+	  <script>
+		/* November 1st at 12:00:01 */
+		const hacktoberfestEndDate = new Date("Nov 1, 2018 00:00:01 PDT").getTime();
+
+		// Update the countdown every 1 second
+		const x = setInterval(() => {
+			const currentTime = new Date().getTime();
+			const timeLeft = hacktoberfestEndDate - currentTime;
+
+			const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)); // divide by milliseconds in a day
+			const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // divide the remainder of time after days have been removed by milliseconds in an hour
+			const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)); // divide the remainder of time after days and hours have been removed by milliseconds in a minute
+			const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000); // divide the remainder of time after days, hours and minutes have been removed by milliseconds in a second
+
+			// Update the DOM
+			document.querySelector('#timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s <span>PDT</span>`;
+
+			// If the count down is over, write some text
+			if (timeLeft <= 0) {
+				clearInterval(x);
+				document.querySelector('#timer').innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
+  </body>
+</html>
