@@ -1,0 +1,20 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(38, 38, 89);
+    text-align: center;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-left: 40%;
+}
+
+.name {
+    color: rgb(64, 111, 113);
+    margin-right: 5%;
+    text-align: right;
+}
