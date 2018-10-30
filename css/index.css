@@ -698,18 +698,18 @@ div#content div#contribution-rules ul li {
 }
 
 #love {
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: zoomeffect;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
 
 @keyframes zoomeffect {
-  from {
-    transform: scale(1.5);
+  0%, 100% {
+    transform: rotate(0)scale(1.5);
   }
-  to {
-    transform: scale(1);
+  50% {
+    transform: rotate(360deg)scale(1);
   }
 }
 
