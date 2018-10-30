@@ -3,6 +3,7 @@
 
 html {
   overflow-x: hidden;
+  transform: rotateY(180deg);
 }
 
 body {
