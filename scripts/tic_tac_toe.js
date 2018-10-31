@@ -6,7 +6,7 @@ var aiRecord;
 var turn;
 var playerChose=["O"];
 var random;
-var gameOver;
+var gameOver = false;
 
 chooseOX();
 
@@ -43,26 +43,29 @@ function chooseOX(){
 }
 
 function gameStart(){
+	$(".cell").on("click",function(){
+	$(this).off('click');
+	whoWin();
+	// var turn = player1; //choose O or X to start;
 	if (!gameOver)
 	{
-		$(".cell").on("click",function(){
-		$(this).off('click');
-		whoWin(); //check for win condition
 		choseId = $(this).attr('id');
 		$(this).text(turn);
-		record[choseId] = turn; // player play
-		aiRecord = record.filter(function(x){return x!=="O" && x!=="X"}); // give a new array for ai chooseing
+		record[choseId] = turn;
+		// player play
+		aiRecord = record.filter(function(x){return x!=="O" && x!=="X"});
+		// give a new array for ai chooseing
 		turn = checkPlayer(turn);
+		// tie situation 
+		if (aiRecord.length == 0){
+			tie();
+		} else{
+			random();
+		}
+		turn = checkPlayer(turn);
+		// check if someone won!!
+		whoWin(); // check if anyone win
 	}
-	// tie situation 
-	if (aiRecord.length == 0){
-		tie();
-	} else{
-		random();
-	}
-	turn = checkPlayer(turn);
-	// check if someone won!!
-	whoWin(); // check if anyone win
 });
 }
 
@@ -77,7 +80,6 @@ function random(){
 
 
 $("#startGame").on("click",function(){
-	gameOver = false;
 	$(".cell").text("");
 	$("#O,#X").hide();
 	record = [0,1,2,3,4,5,6,7,8];
@@ -154,5 +156,3 @@ function tie(){
 // 	["O",1,2,3,"O",5,6,7,"O"],
 // 	[0,1,"O",3,"O",5,"O",7,8],
 // ]
-
-
