@@ -11,7 +11,7 @@ function calculate(){
   for (i = 1; i < 10; i++) {
     text1 += "<li>"+ int+ " x " + i + " = " + int*i +"</li>"+"<br>";
   }
-  var exp = /^[1-9]$/
+  var exp = /^[1-9]$/;
   if (exp.test(int)) {
     document.getElementById("table1").innerHTML= text;
     document.getElementById("table2").innerHTML= "<ul>"+text1+"</ul>";
@@ -37,7 +37,7 @@ var rand  = 0;
 var change = 0;
 var x = 0;
 var score = 0;
-var exp = /^[0-9]$/
+var exp = /^[0-9]$/;
 
 function start(){
   document.getElementById("number1").disabled = false;

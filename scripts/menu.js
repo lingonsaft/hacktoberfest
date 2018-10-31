@@ -17,6 +17,10 @@ const menu = {
       'id': 'tools'
   },
   'Others': {
+    'Star Collector': {
+      'text': 'Star Collector',
+      'href': 'star-collector.html'
+    },
     'Brazilian-Friends': {
       'text': 'Brazilian Friends',
       'href': 'brazilian-friends.html'
@@ -30,7 +34,7 @@ const menu = {
       'href': 'Fireworks.html',
       'id': 'fireworks'
     },
-    'Learn': {
+    /*'Learn': {
       'text': 'Learn!',
       'href': 'wow.html',
       'id': 'learn'
@@ -49,7 +53,7 @@ const menu = {
       'text': 'Canoi',
       'href': 'canoi.html',
       'id': 'Canoi'
-    },
+    },*/
     'Colorgame': {
       'text': 'Colorgame',
       'href': 'colorgame.html',

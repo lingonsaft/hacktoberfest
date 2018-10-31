@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamming</title>
+    <style>
+    body{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+    text-align: center;
+
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+input{
+    width: 70%;
+    padding: 20px;
+    background:#181c22;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #989898;
+    margin-top: 40px;
+}
+
+button{
+    padding: 20px;
+    width: 20%;
+    float: left;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+#result{
+    clear: both;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#display{
+    padding-top: 10px;
+    font-family: cursive;
+    width: 70%;
+    margin: 40px;
+    clear: both;
+}
+
+em{
+    font-size: 20px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Hamming Distance Calculator</h1>
+    <form id="hammingForm">
+    <input type="text" class="col-m-8 col-8" id="stringInput" 
+    placeholder="Enter two texts/string seperated by a comma">
+    <button type="submit" class="col-m-3 col-3" id="btn">Calculate</button>
+</form>
+    <div id="display" class="col-10 col-m-10"><p>Hamming distance between two strings of equal lenght is the number of 
+        positions at which the corresponding symbols are different </p>
+<p id="result"></p>
+    </div>
+</div>
+    <script>
+    document.getElementById( 'hammingForm' ).addEventListener( 'submit',  hamming );
+
+//clears the result message
+document.getElementById( 'stringInput' ).addEventListener('focus', function(){
+    let result = document.getElementById('result');
+    if( result.value !== '' ){
+    result.innerHTML = '';
+}
+});
+
+
+
+function hamming( event ){
+
+    let count = 0, stringVal, splittedValue, firstString, secondString;
+
+    //To prevent the form from submitting by default
+    event.preventDefault();
+
+    //Retrieve the input value
+    stringVal = document.getElementById('stringInput').value;
+
+    if(stringVal === '' || stringVal === null || !stringVal.includes( ',' )
+     ||  ( /^[a - ZA - Z0 - 9]/.test(stringVal) ) ){
+
+        document.getElementById( 'result' ).innerHTML = '<em>Error: Pls,\
+        Enter two texts/string seperated by a comma</em>';
+        return;   
+    }
+
+    
+    splittedValue = stringVal.toLowerCase().split( ',' );
+
+    firstString = splittedValue[ 0 ].trim();
+
+    secondString = splittedValue[ 1 ].trim();
+    
+    //Check if the length of the two texts has equal lengths
+    if( firstString.length !== secondString.length ){
+
+        document.getElementById( 'result' ).innerHTML = '<em>Error: Make sure\
+        the length of the strings are equal</em>';
+        return;
+    }
+
+    //Increment count by 1 if the corresponding symbols are different at a particular position
+    for( let i = 0; i < firstString.length; i++ ){
+
+        if( firstString[ i ] !== secondString[ i ] ){
+
+            count += 1;
+        }
+    }
+
+    document.getElementById( 'result' ).innerHTML = 'The hamming distance is: '+count;
+}
+
+ 
+    </script>
+</body>
+</html>
