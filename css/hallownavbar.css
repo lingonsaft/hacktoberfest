@@ -1,0 +1,34 @@
+
+
+.navbar.navbar-default{
+	font-family: 'roboto', sans-serif;
+	font-weight: bold;
+	/*sets background color*/
+	background-color: #68797f;
+	border-color: black;
+	/*sets padding for logo and navbar aesthetics*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*aligns border edges with screen*/
+	border-radius: 0;
+}
+
+.navbar-header{
+	width: 100px;
+}
+
+.navbar.navbar-default .navbar-nav > li > a {
+	/*changes color of navbar links*/
+	color: #d7e8f2;
+	font-size: 16px;
+	margin-top: 25px;
+}
+
+.navbar.navbar-default .navbar-nav > li > a:hover, .navbar.navbar-default .navbar-nav > li > a:focus{
+	color: black;
+
+}
+.navbar-nav > li > .dropdown-menu {
+	background-color: #e7e7e7;
+	color: white;
+}
