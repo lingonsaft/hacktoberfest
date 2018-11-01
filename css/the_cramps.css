@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  background-color: rgb(0, 0, 0);
+  margin: 50px;
+  border-radius: 5px;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  color: yellow;
+  font-family: 'Creepster', cursive;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+h2,
+h3 {
+  font-style: italic;
+  font-family: 'Fugaz One', cursive;
+  color: black;
+}
+
+.cramp {
+  margin: auto 0px;
+}
+
+.jumbotron {
+  margin: 25px 50px;
+  padding: 10px;
+}
+
+.crass {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.details {
+  color: black;
+}
+
+.panel {
+  margin-top: 12px;
+}
+
+.graph {
+  margin: 0 auto;
+  height: 350px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.apfel {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 25px;
+}
+
+li {
+  font-family: 'Open Sans', cursive;
+  font-size: 18px;
+}
