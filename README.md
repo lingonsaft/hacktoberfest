@@ -33,7 +33,8 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
-## Contribution rules/Règles de contribution/Regras de contribuição
+## 
+bution rules/Règles de contribution/Regras de contribuição
 
 ```[English]```
 - The project must work when opening [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html).
@@ -83,7 +84,7 @@ cd hacktoberfest
 git checkout -b my-new-branch
 ```
 
-- Add your contribution / Ajouter votre contribution / Adicione sua contribuição
+- Add your contributions / Ajouter votre contribution / Adicione sua contribuição
 - Commit and push
 
 ```terminal
