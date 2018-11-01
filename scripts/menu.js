@@ -74,11 +74,6 @@ const menu = {
       'href': 'gifheaven.html',
       'id': 'Gifheaven'
     },
-    /*'Plainpage': {
-      'text': 'Plain Page',
-      'href': 'plain_page.html',
-      'id': 'Plainpage'
-    },*/
     'Snek': {
       'text': 'Snek',
       'href': 'snek.html',

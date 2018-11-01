@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="en-us">
+    <title>Pixel Run</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      canvas {
+        background: #335C67;
+        padding: 0;
+        margin: auto;
+        display: block;
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -webkit-crisp-edges;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="game">Sorry, your browser doesn't support HTML5 canvas.</canvas>
+    <script>
+
+      function clamp(val, min, max) {
+        if (val < min) { return min; } else
+        if (val > max) { return max; } else {
+          return val;
+        }
+      }
+
+      function randInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      function hasCollided(rect1, rect2) {
+        if (rect1.x < rect2.x + rect2.width &&
+        rect1.x + rect1.width > rect2.x &&
+        rect1.y < rect2.y + rect2.height &&
+        rect1.y + rect1.height > rect2.y) {
+          // collision detected!
+          return true;
+        }
+        return false;
+      }
+
+      class InputManager {
+        constructor() {
+          this.keysDown = [];
+        }
+
+        clearKeysDown() { this.keysDown.length = 0; }
+
+        setKeyDown(keyCode) { this.keysDown[keyCode] = true; }
+        setKeyUp(keyCode) { this.keysDown[keyCode] = false; }
+        isKeyDown(name) {
+          switch (name) {
+            case "up": {
+              var keyW = (this.keysDown[87] !== undefined && this.keysDown[87] !== undefined) ? this.keysDown[87] : false;
+              var keyUp = (this.keysDown[38] !== undefined && this.keysDown[38] !== undefined) ? this.keysDown[38] : false;
+              
+              if (keyW || keyUp) { return true; }
+              break;
+            }
+
+            case "right": {
+              var keyD = (this.keysDown[68] !== undefined && this.keysDown[68] !== undefined) ? this.keysDown[68] : false;
+              var keyRight = (this.keysDown[39] !== undefined && this.keysDown[39] !== undefined) ? this.keysDown[39] : false;
+
+              if (keyD || keyRight) { return true; }
+              break;
+            }
+
+            case "down": {
+              var keyS = (this.keysDown[83] !== undefined && this.keysDown[83] !== undefined) ? this.keysDown[83] : false;
+              var keyDown = (this.keysDown[40] !== undefined && this.keysDown[40] !== undefined) ? this.keysDown[40] : false;
+              
+              if (keyS || keyDown) { return true; }
+              break;
+            }
+
+            case "left": {
+              var keyA = (this.keysDown[65] !== undefined && this.keysDown[65] !== undefined) ? this.keysDown[65] : false;
+              var keyLeft = (this.keysDown[37] !== undefined && this.keysDown[37] !== undefined) ? this.keysDown[37] : false;
+
+              if (keyA || keyLeft) { return true; }
+              break;
+            }
+
+            case "enter": {
+              return (this.keysDown[13] !== undefined && this.keysDown[13] !== undefined) ? this.keysDown[13] : false;
+              break;
+            }
+          }
+        }
+      }
+
+      class World {
+        constructor(canvas, ctx, inputManager) {
+          this.canvas = canvas;
+          this.ctx = ctx;
+          this.input = inputManager;
+          this.tileSize = 4;
+          this.initialWallGenDelay = 200;
+          this.wallGenDelay = this.initialWallGenDelay;
+          this.wallGenTick = 0;
+          this.walls = [];
+          this.secondDelay = 60;
+          this.secondTick = 0;
+          this.score = 0;
+          this.gameOver = false;
+
+          this.createWorld();
+        }
+
+        resetWorld() {
+          this.tileSize = 4;
+          this.initialWallGenDelay = 200;
+          this.wallGenDelay = this.initialWallGenDelay;
+          this.wallGenTick = 0;
+          this.clearWalls();
+          this.secondDelay = 60;
+          this.secondTick = 0;
+          this.score = 0;
+          this.gameOver = false;
+        }
+
+        createWorld() {
+          this.player = new Player(
+            randInt(1, this.canvas.width / this.tileSize) * this.tileSize,
+            randInt(1, this.canvas.height / this.tileSize) * this.tileSize,
+            this.tileSize,
+            "#FFF3B0",
+            this.input
+          );
+        }
+
+        isWallPlaceFree(x, y) {
+          var placeFree = true;
+          for (var i = 0; i < this.walls.length; i++) {
+            if (this.walls[i].x == x && this.walls[i].y == y) {
+              placeFree = false;
+            }
+          }
+          return placeFree;
+        }
+
+        generateWall(x, y) {
+          this.walls.push(new Wall(x, y, this.tileSize));
+        }
+
+        clearWalls() { this.walls.length = 0; }
+
+        update() {
+          if (!this.gameOver) {
+
+            if (this.secondTick < this.secondDelay) {
+              this.secondTick++;
+            }
+            else {
+              this.score++;
+
+              this.wallGenDelay *= 0.95;
+
+              this.secondTick = 0;
+            }
+
+            if (this.player) {
+              this.player.update();
+              this.player.x = clamp(this.player.x, 0, this.canvas.width - this.tileSize);
+              this.player.y = clamp(this.player.y, 16, this.canvas.height - this.tileSize);
+              if (this.player.x == 0 || this.player.x == this.canvas.width - this.tileSize) {
+                this.player.velX = 0;
+              }
+              if (this.player.y == 16 || this.player.y == this.canvas.height - this.tileSize) {
+                this.player.velY = 0;
+              }
+
+            }
+
+            // Update walls
+            for (var i = 0; i < this.walls.length; i++) {
+              this.walls[i].update();
+
+              if (this.walls[i].state == "solid") {
+                var playerBox = { x: this.player.x, y: this.player.y, width: this.player.size, height: this.player.size };
+                var wallBox = { x: this.walls[i].x, y: this.walls[i].y, width: this.walls[i].size, height: this.walls[i].size };
+                if (hasCollided(playerBox, wallBox)) {
+                  this.gameOver = true;
+                }
+              }
+
+            }
+
+            // Generate walls
+            if (this.wallGenTick < this.wallGenDelay) {
+              this.wallGenTick++;
+            }
+            else {
+              let x = randInt(0, this.canvas.width / this.tileSize) * this.tileSize;
+              let y = randInt(1, this.canvas.height / this.tileSize) * this.tileSize;
+              if (this.isWallPlaceFree(x, y)) {
+                this.generateWall(x, y);
+              }
+
+              this.wallGenTick = 0;
+            }
+          }
+        }
+        
+        draw(ctx) {
+          if (!this.gameOver) {
+            this.player.draw(ctx);
+          }
+
+          for (var i = 0; i < this.walls.length; i++) {
+            this.walls[i].draw(ctx);
+          }
+        }
+      }
+
+      class Wall {
+        constructor(x, y, size) {
+          this.x = x;
+          this.y = y;
+          this.size = size;
+          this.color = "black";
+          
+          this.growDuration = 60;
+          this.growTimer = 0;
+          this.state = "grow";
+
+        }
+
+        update() {
+          switch (this.state) {
+            case "grow": {
+              if (this.growTimer < this.growDuration) {
+                this.color = "#540B0E";
+
+                this.growTimer++;
+              }
+              else {
+                this.color = "#E09F3E";
+                this.state = "solid";
+              }
+              break;
+            }
+
+            case "solid": {
+
+
+              break;
+            }
+          }
+        }
+
+        draw(ctx) {
+          ctx.save();
+          ctx.fillStyle = this.color;
+          ctx.fillRect(this.x, this.y, this.size, this.size);
+          ctx.restore();
+        }
+      }
+
+      class Player {
+        
+        constructor(x, y, size, color, inputManager) {
+          this.x = x;
+          this.y = y;
+          this.velX = 0;
+          this.velY = 0;
+          this.size = size;
+          this.color = color;
+          this.input = inputManager;
+        }
+
+        update() {
+
+          this.velX *= 0.9;
+          this.velY *= 0.9;
+
+          if (this.input.isKeyDown("up")) {
+            this.velY -= 0.1;
+          }
+          if (this.input.isKeyDown("down")) {
+            this.velY += 0.1;
+          }
+          if (this.input.isKeyDown("left")) {
+            this.velX -= 0.1;
+          }
+          if (this.input.isKeyDown("right")) {
+            this.velX += 0.1;
+          }
+
+          this.velX = clamp(this.velX, -5, 5);
+          this.velY = clamp(this.velY, -5, 5);
+
+          this.x += this.velX;
+          this.y += this.velY;
+          
+        }
+
+        draw(ctx) {
+          ctx.save();
+          ctx.fillStyle = this.color;
+          ctx.fillRect(this.x, this.y, this.size, this.size);
+          ctx.restore();
+        }
+
+      }
+
+      var canvas = document.getElementById("game");
+      var ctx = canvas.getContext("2d");
+      var input = new InputManager();
+
+      var game = {
+        init: function(canvas, ctx, input) {
+          this.canvas = canvas;
+          this.canvas.width = Math.floor(400 * 0.5);
+          this.canvas.height = Math.floor(500 * 0.5);
+          this.ctx = ctx;
+          this.input = input;
+
+          this.ctx.imageSmoothingEnabled = false;
+          this.ctx.mozImageSmoothingEnabled = false;
+          this.ctx.msImageSmoothingEnabled = false;
+          
+          this.world = new World(this.canvas, this.ctx, this.input);
+
+          return true;
+        },
+        update: function() {
+          this.world.update();
+
+          if (this.world.gameOver) {
+            if (this.input.isKeyDown("enter")) {
+              this.world.resetWorld();
+            }
+          }
+        },
+        draw: function() {
+          this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          this.world.draw(this.ctx);
+          this.ctx.save();
+          this.ctx.fillStyle = "#540B0E";
+          this.ctx.fillRect(0, 0, this.canvas.width, 16);
+          this.ctx.restore();
+
+          // Draw game over text if game is over
+          if (this.world.gameOver) {
+            ctx.save();
+            ctx.fillStyle = "#FFF3B0";
+            ctx.font = "26px arial";
+            ctx.fillText("GAME OVER", (this.canvas.width * 0.5) - (ctx.measureText("GAME OVER").width * 0.5), this.canvas.height * 0.5);
+            
+            let strScore = "YOU SURVIVED " + this.world.score + " SECONDS";
+            ctx.font = "10px arial";
+            ctx.fillText(strScore, (this.canvas.width * 0.5) - (ctx.measureText(strScore).width * 0.5), this.canvas.height * 0.6);
+            ctx.restore();
+          }
+          else {
+            // Draw score
+            ctx.save();
+            ctx.fillStyle = "#FFF3B0";
+            ctx.font = "10px arial";
+            ctx.fillText(this.world.score + " SECONDS", 10, 12);
+            ctx.restore();
+          }
+        }
+      }
+
+      if (game.init(canvas, ctx, input)) {
+        function mainloop() {
+          game.update();
+          game.draw(ctx);
+          window.requestAnimationFrame(mainloop);
+        }
+        mainloop();
+      }
+
+      window.addEventListener("keydown", function(e) {
+        var keyCode = e.which || e.keyCode || 0;
+        input.setKeyDown(keyCode);
+      });
+
+      window.addEventListener("keyup", function(e) {
+        var keyCode = e.which || e.keyCode || 0;
+        input.setKeyUp(keyCode);
+      })
+
+    </script>
+  </body>
+</html>
