@@ -60,13 +60,8 @@ a:hover {
 
 .card-body {
   display: flex;
-  height: 115px
-}
-
-.card-title {
-  display: flex;
-  align-self: center;
-  justify-self: center;
+  height: 115px;
+  justify-content: center;
 }
 
 /*
