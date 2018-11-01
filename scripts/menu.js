@@ -74,6 +74,11 @@ const menu = {
       'href': 'gifheaven.html',
       'id': 'Gifheaven'
     },
+    'Pixel Run': {
+      'text': 'Pixel Run',
+      'href': 'pixelrun.html',
+      'id': 'Pixelrun'
+    },
     'Plainpage': {
       'text': 'Plain Page',
       'href': 'plain_page.html',
