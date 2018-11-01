@@ -154,6 +154,16 @@ a:hover {
   color: #fff;
 }
 
+.index #invert-btn {
+  transition: all .4s;
+}
+
+.index #invert-btn:hover {
+  transform: scale(1.2);
+  background-color: #20c997;
+  color: black;
+}
+
 .index .btn-outline-danger:hover {
   color: #fff;
 }

@@ -1,0 +1,25 @@
+.bgimg {
+    height: 100%;
+    background-image: url('../images/pent.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    color: purple;
+    font-family: "Verdana", Tahoma, monospace;
+    font-size: 25px;
+}
+
+.bottomright {
+    padding: 5% 0% 0% 85%; 
+    right: 16px;
+}
+
+.middle {
+    padding: 20% 0% 0% 0%;    
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
