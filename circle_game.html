@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Circle_game</title>
+		<style type="text/css">
+			
+			.circle{
+				width:100px;
+				height:100px;
+				border-radius:50%;
+				margin-right: 50px;
+				float: left;
+				}
+			#red-circle{
+			    
+				background-color:red;
+				}
+			#blue-circle{
+			    
+				background-color:blue;
+				}
+			#black-circle{
+			    
+				background-color:black;
+				}
+			#yellow-circle{
+			    
+				background-color:yellow;
+				}
+			#green-circle{
+			    
+				background-color:green;
+				}
+				
+		</style>	
+	</head>
+	<body align="center">
+	    <h2 align="center"> Disappearing Circle Game</h2>
+		<div class="circle" id="red-circle" ></div>
+		<div class="circle" id="blue-circle"></div>
+		<div class="circle" id="green-circle"></div>
+		<div class="circle" id="black-circle"></div>
+		<div class="circle" id="yellow-circle"></div>
+		
+		<script type="text/javascript">
+			document.getElementById("red-circle").onclick=function(){
+				document.getElementById("red-circle").style.display="none";
+			}
+			document.getElementById("blue-circle").onclick=function(){
+				document.getElementById("blue-circle").style.display="none";
+			}
+			document.getElementById("black-circle").onclick=function(){
+				document.getElementById("black-circle").style.display="none";
+			}
+			document.getElementById("yellow-circle").onclick=function(){
+				document.getElementById("yellow-circle").style.display="none";
+			}
+			document.getElementById("green-circle").onclick=function(){
+				document.getElementById("green-circle").style.display="none";
+			}
+				
+		</script>
+	</body>
+</html>
