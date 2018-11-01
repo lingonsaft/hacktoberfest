@@ -17,7 +17,7 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 
 ```[Português]```
 Este é um projeto bom para iniciantes para ajudar você a começar a contribuir com o
-[hacktoberfest] (https://hacktoberfest.digitalocean.com/). Se você não
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). Se você não
 sabe por onde começar, fique à vontade para assistir aos vídeos relacionados abaixo e
 leia as regras de contribuição. Bom hacking <3 !!
 Ao assistir ao vídeo, você entenderá melhor sobre o funcionamento do hacktoberfest e como será possível criar pull requests.
