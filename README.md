@@ -53,13 +53,13 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 - Ajoutez votre nom d'utilisateur au fichier [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
 - Essayez de garder les pull request petit pour minimiser les conflits.
 
-```[Português```
-- O projeto deve funcionar ao abrir [index.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
+```[Português]```
+- O projeto deve funcionar ao abrir [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
 - Você tem permissão para fazer pedidos de pull que violam as regras. Nós apenas não vamos realizar o merge ;)
 - NÃO adicione nenhuma etapa de compilação, por exemplo, npm install (queremos manter um site estático simples)
 - NÃO remova Vídeos, Regras, FAQ ou qualquer outro conteúdo útil.
 - O estilo/código pode ser bonito, feio ou estúpido, grande ou pequeno, desde que funcione
-- Adicione seu nome ao arquivo [contributors.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
+- Adicione seu nome ao arquivo [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
 - Tente manter os pull requests pequenos para minimizar conflitos de merge
 
 ## Getting Started/Pour commencer/Começando
