@@ -101,6 +101,8 @@
                 console.log('enter a number!')
                 document.getElementById('error').innerHTML = 'Enter a number!';
                 return;
+            } else if (userAnswer > 9){
+                document.getElementById('error').innerHTML = 'Your number is too big!';  
             } else { 
                 console.log('Try again...') 
                 incorrect++;
