@@ -1,0 +1,26 @@
+h1 {
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item img {
+    max-width: 380px;
+}
+
+.right {
+	background-color: gray;
+}
