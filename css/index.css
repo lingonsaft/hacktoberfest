@@ -58,6 +58,17 @@ a:hover {
   transition: all 500ms ease-in-out;
 }
 
+.card-body {
+  display: flex;
+  height: 115px
+}
+
+.card-title {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
 /*
 .content {
   margin-top: 120px;
