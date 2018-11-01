@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WOW</title>
+  <meta charset="utf-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+
+<body>
+  <style>
+    button {
+      font-size: 4rem;
+    }
+
+    button::before {
+      content: "\xF0\x9F\x94\x92";
+      animation: moon 1s infinite;
+    }
+
+    @keyframes moon {
+      50% {
+        content: ":unlock:"
+      }
+
+      100% {
+        content: ""
+      }
+    }
+  </style>
+
+  <button>
+    Moon Button
+  </button>
+
+</body>
+
+</html>
