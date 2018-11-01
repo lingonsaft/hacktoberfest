@@ -1,0 +1,30 @@
+.box {
+	text-align: center;
+	margin: 5% auto;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: bground;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: fade-in;
+	/*animation-delay: 2s;*/
+	transition: all 2s ease;
+}
+
+.box:hover {
+	width: 200px;
+	height: 200px;
+	transform: rotate(360deg);
+	animation-play-state: paused;
+	
+}
+
+@keyframes bground {
+	0% {background-color: red;}
+	25% {background-color: green;}
+	50% {background-color: orange;}
+	75% {background-color: blue;}
+	/*Can also vary position of box by margin or left & right.*/
+}
