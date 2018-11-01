@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+    font-family: fantasy;
+    background-color: white;
+}
+
+.pumpkin {
+    width: 100px;
+}

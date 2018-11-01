@@ -21,14 +21,14 @@ const menu = {
       'text': 'Star Collector',
       'href': 'star-collector.html'
     },
-    'Brazilian-Friends': {
+    /*'Brazilian-Friends': {
       'text': 'Brazilian Friends',
       'href': 'brazilian-friends.html'
     },
     'Potato': {
       'text': 'Potato',
       'href': 'potato.html'
-    },
+    },*/
     'Fireworks': {
       'text': 'Fireworks',
       'href': 'Fireworks.html',
@@ -64,20 +64,15 @@ const menu = {
       'href': 'foxy.html',
       'id': 'Foxy'
     },*/
-	'cold-hacktomber': {
+	/*'cold-hacktomber': {
       'text': 'cold-hacktomber',
       'href': 'cold-hacktomber.html',
       'id': 'cold-hacktomber'
-    },
+    },*/
     'Gifheaven': {
       'text': 'Gif Heaven',
       'href': 'gifheaven.html',
       'id': 'Gifheaven'
-    },
-    'Plainpage': {
-      'text': 'Plain Page',
-      'href': 'plain_page.html',
-      'id': 'Plainpage'
     },
     'Snek': {
       'text': 'Snek',
@@ -94,11 +89,11 @@ const menu = {
       'href': 'values.html',
       'id': 'Values'
     },*/
-    'Wow': {
+    /*'Wow': {
       'text': 'Wow',
       'href': 'wow.html',
       'id': 'Wow'
-    },
+    },*/
     'Flappy': {
       'text': 'Flappy Game',
       'href': 'Flappy.html',

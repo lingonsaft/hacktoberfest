@@ -3,11 +3,11 @@
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open source community. Feel free to start contributing. There are no wrong contributions. If you don't
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). This repository is dedicated to help beginners step up and join hands with the open source community. Feel free to start contributing. There are no wrong contributions. If you don't
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
-P.S. Star and share this repository, if you had fun!
+(P.S: Star and share this repository, if you had fun!)
 
 
 ```[Français]```
@@ -17,7 +17,7 @@ Regarder la vidéo permet de mieux comprendre le fonctionnement de hacktoberfest
 
 ```[Português]```
 Este é um projeto bom para iniciantes para ajudar você a começar a contribuir com o
-[hacktoberfest] (https://hacktoberfest.digitalocean.com/). Se você não
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). Se você não
 sabe por onde começar, fique à vontade para assistir aos vídeos relacionados abaixo e
 leia as regras de contribuição. Bom hacking <3 !!
 Ao assistir ao vídeo, você entenderá melhor sobre o funcionamento do hacktoberfest e como será possível criar pull requests.
@@ -33,16 +33,17 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
-## Contribution rules/Règles de contribution/Regras de contribuição
+## 
+bution rules/Règles de contribution/Regras de contribuição
 
 ```[English]```
-- The project must work when opening [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
-- You are allowed to make pull requests that break the rules. We just won't merge it ;)
-- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+- The project must work when opening [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html).
+- You are allowed to make pull requests that break the rules. We just won't merge it ;).
+- Do NOT add any build steps e.g npm install (we want to keep this a simple static site).
 - Do NOT remove Videos, Rules, FAQ, or any other helpful content.
-- Styling/code can be pretty, ugly or stupid, big or small as long as it works
-- Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file
-- Try to keep pull requests small to minimize merge conflicts
+- Styling/code can be pretty, ugly or stupid, big or small as long as it works.
+- Add your name to the [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html) file.
+- Try to keep pull requests small to minimize merge conflicts.
 
 ```[Français]```
 - Ce projet doit fonctionner à l'ouverture de [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
@@ -53,13 +54,13 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 - Ajoutez votre nom d'utilisateur au fichier [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
 - Essayez de garder les pull request petit pour minimiser les conflits.
 
-```[Português```
-- O projeto deve funcionar ao abrir [index.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
+```[Português]```
+- O projeto deve funcionar ao abrir [index.html](https://github.com/lingonsaft/hacktoberfest/blob/master/index.html)
 - Você tem permissão para fazer pedidos de pull que violam as regras. Nós apenas não vamos realizar o merge ;)
 - NÃO adicione nenhuma etapa de compilação, por exemplo, npm install (queremos manter um site estático simples)
 - NÃO remova Vídeos, Regras, FAQ ou qualquer outro conteúdo útil.
 - O estilo/código pode ser bonito, feio ou estúpido, grande ou pequeno, desde que funcione
-- Adicione seu nome ao arquivo [contributors.html] (https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
+- Adicione seu nome ao arquivo [contributors.html](https://github.com/lingonsaft/hacktoberfest/blob/master/contributors.html)
 - Tente manter os pull requests pequenos para minimizar conflitos de merge
 
 ## Getting Started/Pour commencer/Começando
@@ -83,7 +84,7 @@ cd hacktoberfest
 git checkout -b my-new-branch
 ```
 
-- Add your contribution / Ajouter votre contribution / Adicione sua contribuição
+- Add your contributions / Ajouter votre contribution / Adicione sua contribuição
 - Commit and push
 
 ```terminal
