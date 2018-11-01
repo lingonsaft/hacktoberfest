@@ -1,0 +1,190 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Review Bootstrap</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <div>
+            <h1 class="page-header text-info" style="text-align: center">Formulário</h1>
+        </div>
+
+            <h3>Cadastro</h3>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <form>
+
+                            <div class="form-group">
+
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" placeholder="Digite o nome">
+                                <small id ="nomeHelp" class="form-text text-muted">Nome deve ser completo</small>
+
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input class="form-control" type="email" id="email" aria-describedby="emailHelp">
+                                <small id ="emailHelp"class="form-text text-muted">Só aceitamos hotmail</small> 
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input class="form-control" type="password" id="senha" aria-describedby="senhaHelp">
+                                <small  id ="senhaHelp"class="form-text text-muted">Deve ter 8 dígitos no mínimo</small>
+                            </div>
+
+                            <div class="form-group">
+                                    <label for="senha1">Repita a Senha</label>
+                                    <input class="form-control" type="password" id="senha1" aria-describedby="senhaHelp1">
+                                    <small  id ="senhaHelp1"class="form-text text-muted">Deve ter 8 dígitos no mínimo</small>
+                            </div>
+
+                        
+                            <div class="form-group"style="text-align:center">
+
+                                    <button class="btn btn-primary col-sm-5">Cadastrar</button>
+
+                                    <button class="btn btn-danger col-sm-5"> Limpar</button>
+
+
+                            </div>
+
+
+                       
+
+
+                    </form>
+
+
+                    <! Tabela!>
+
+                    <h1 class="text-success">Usuários Cadastrados</h1>
+
+                    <table class="table table-striped table-bordered table-hover">
+          
+                         <! Cabecalho !>
+                         <thead>
+
+                            <tr>
+                               <th>Nome</th>
+
+                               <th>Email</th>
+                               
+                            </tr>
+
+                         </thead>
+
+                         <tbody>
+
+                            <tr class="table-success">
+                                <td>Opa</td>
+                                <td>Opa</td> 
+                            </tr>
+
+                            <tr>
+                                <td>Opa</td>
+                                <td>Opa</td> 
+                                
+                            </tr>
+
+                            
+
+                         </tbody>
+
+
+
+                    </table>
+
+
+                </div>
+
+
+
+                <div class="col-sm-6">
+
+                        <div class="form-group">
+            
+                             <label for="emailLogin">Login</label>
+                             <input class="form-control" type="email" id="emailLogin">
+            
+                        </div>
+            
+                        <div class="form-group">
+            
+                            <label for="senhaLogin">Senha</label>
+            
+                            <input class="form-control" type="password" id="senhaLogin">
+            
+                        </div>
+
+
+                        <div class="form-group" style="text-align: center">
+
+                            <button class="btn btn-primary col-sm-5">Login</button>
+                            <button class="btn btn-warning col-sm-5">Esqueci a senha</button>
+
+
+                        </div>
+            
+            
+            
+                    </div>
+
+
+            </div>
+
+
+            
+    
+       
+
+
+            
+
+
+            
+
+    </div>
+
+
+
+
+
+
+</body>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</html>
