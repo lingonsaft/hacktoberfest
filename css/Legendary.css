@@ -51,7 +51,7 @@
       .newtext{
         justify-content: center;
           height:0;
-          opacity:0;
+          opacity:0.2;
           width:0;
           font-size:15px;
       }
