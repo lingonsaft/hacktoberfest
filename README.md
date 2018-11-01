@@ -3,7 +3,7 @@
 
 ```[English]```
 This is a beginner-friendly project to help you get started with your
-[hacktoberfest](https://hacktoberfest.digitalocean.com/).This repository is dedicated to help beginners step up and join hands with the open source community. Feel free to start contributing. There are no wrong contributions. If you don't
+[hacktoberfest](https://hacktoberfest.digitalocean.com/). This repository is dedicated to help beginners step up and join hands with the open source community. Feel free to start contributing. There are no wrong contributions. If you don't
 know where to start, feel free to watch the videos linked below, and
 read the contribution rules. Happy hacking <3 !!
 By watching the video you will understand better about the working of hacktoberfest and how one will be able to create pull requests.
