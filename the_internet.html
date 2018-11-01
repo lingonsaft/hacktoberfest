@@ -1,0 +1,62 @@
+<html>
+<style>
+  .background {
+    background-color: black;
+  }
+
+  .text-color {
+    color: green;
+  }
+
+  .the-internet-wrapper {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .the-internet {
+    width: 99vw;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 84px;
+    word-break: break-all;
+    text-align: justify;
+  }
+
+</style>
+
+<head>
+  
+   <script type="text/javascript">
+      function randString(len) {
+        "use strict";
+        var i, out="", all ="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (i = 0; i < len; i++) {
+          out += all.charAt(Math.floor(Math.random() * all.length));
+        }
+        return out;
+      }
+      
+      function main() {
+        "use strict";
+        var $_inter = setInterval(function() {
+          var text = document.getElementById("text");
+          text.innerHTML = randString(text.innerHTML.length);
+        }, 100);
+      }
+
+      window.onload = window.setTimeout(main, 2500);
+  </script>
+</head>
+
+<body class="background text-color">
+  <div class="the-internet-wrapper">
+    <div id="text" class="the-internet">
+      THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_THE_INTERNET_</div>
+  </div>
+</body>
+
+</html>
