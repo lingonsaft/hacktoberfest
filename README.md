@@ -7,6 +7,8 @@ read the contribution rules. Happy hacking <3 !!
 
 P.S. Star and share this repository, if you had fun!
 
+![Alt Text](https://raw.githubusercontent.com/lauras5/hacktoberfest/master/images/hacktoberfest2018.gif)
+
 
 # Videos
 
