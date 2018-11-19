@@ -108,6 +108,11 @@ const menu = {
       'text': 'Fancy CSS',
       'href': 'fancyCSS.html',
       'id': 'fancy'
+    },
+    'Generative Art Canvas': {
+      'text': 'Generative Art Canvas',
+      'href': 'genart.html',
+      'id': 'generative'
     }
   }
 }
