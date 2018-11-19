@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            position: absolute;
+            left: 20%;
+            top: 25%;
+            background: #C06C84;
+        }
+
+        .btn {
+            position: absolute;
+            border-style: solid;
+            background-color: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <p>Generative Art</p>
+    <canvas id='canvas' class="canvas">
+    </canvas>
+    <button id='btn' class='btn'>next</button>
+</body>
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+    canvas.width = window.innerWidth/2
+    canvas.height = window.innerHeight/2
+
+    const width = canvas.width
+    const height = canvas.height
+
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const aColors = '#F8B195 #F67280 #C06C84 #6C5B7B #355C7D #99B898 #FECEAB #FF847C #E84A5F #2A363B #A8E6CE #DCEDC2 #FFD3B5 #FFAAA6 #FF8C94 #A8A7A7 #CC527A #E8175D #474747 #363636 #A7226E #EC2049 #F26B38 #F7DB4F #2F9599 #E1F5C4 #EDE574 #F9D423 #FC913A #FF4E50 #E5FCC2 #9DE0AD #45ADA8 #547980 #594F4F #FE4365 #FC9D9A #F9CDAD #C8C8A9 #83AF9B'
+
+    const bColors = ['#e74c3c','#34495e','#3498db','#16a085','#f39c12','#e74c3c','#e74c3c', '#764949', '#a35d5d','#cebe6c','#9ba97b','#61744e','#d06969','#e7a46b', '#fbddf6', '#f6f1f4', '#b7bef3']
+    
+    const colors = aColors.split(' ').concat(bColors)
+
+    function draw() {
+        const random = Math.floor((Math.random() * colors.length))
+        ctx.fillStyle = colors[random]
+        ctx.fillRect(5, 5, canvas.width, canvas.height) 
+
+        const count = Math.floor(Math.random() * 5 + 200);
+
+        for (let i = 0; i < count; i++) {
+            const pointCount = 10 + Math.floor(Math.random() * 10);
+            const y = Math.floor(Math.random() * height);
+            const offset = width / 4 + (Math.random() * 2 - 1) * width / 8;
+            const points = Array.from(new Array(pointCount)).map(() => {
+            return [ offset + Math.floor(Math.random() * width), -20 + y + Math.floor(-20 + Math.random() * 20) ];
+            })
+        
+
+        for (let k = 0; k < points.length - 1; k += 2) {
+            const rand = Math.floor((Math.random() * colors.length))
+            const p1 = points[k];
+            const p2 = points[k + 1];
+            ctx.beginPath();
+            ctx.lineTo(-width / 2 + p1[0] * 4, p1[1]);
+            ctx.lineTo(-width / 2 + p2[0] * 4, p2[1]);
+            ctx.globalAlpha = false ? 0.05 : 0.75;
+            ctx.strokeStyle = colors[rand]
+            ctx.stroke();
+            } 
+        }
+    }
+    draw();
+    btn.addEventListener('click', draw);
+</script>
+</html>
