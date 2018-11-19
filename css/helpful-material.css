@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
 * {
-  outline: none!important;
+  outline: none !important;
 }
 body {
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   color: #444;
   line-height: 1.6;
   background-color: white;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
 h1 {
@@ -43,7 +45,7 @@ h3 {
 }
 .container a {
   text-decoration: none;
-  color: rgb(57,116,48);
+  color: rgb(57, 116, 48);
 }
 
 .container a:hover {
@@ -65,16 +67,13 @@ h3 {
   border-radius: 34px;
 }
 
-a.guides-links{
+a.guides-links {
   display: inline-block;
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .section-tree {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: auto;
 }
 .section {
   margin: 0 0 60px;
@@ -85,40 +84,42 @@ a.guides-links{
   padding-left: 2rem;
   background-color: rgba(203, 178, 178, 0.3);
   border-radius: 5px;
+  list-style: none;
 }
 
 a.list-item {
   text-decoration: none;
-  transition: 0.5s ease;
 }
 
 a.list-item:hover {
   text-decoration: underline;
-
 }
-#footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-     height: 45px; 
-    background: linear-gradient(to left, #FF0844, #FF4563);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: white;
-    text-align: center;
-    z-index: 1000;
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 45px;
+  background: linear-gradient(to left, #ff0844, #ff4563);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  text-align: center;
+  z-index: 1000;
 }
 .footer__socials {
   padding: 6px;
   display: inline-block;
-
-}   
+}
 .footer__socials a {
   padding: 20px;
 
   color: #a8050f;
-
 }
 .container a.hvr-bob:hover {
   text-decoration: underline;
+}
+.material-menu a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: gray;
 }
