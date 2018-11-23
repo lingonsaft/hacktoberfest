@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+	#bgm{
+    background-color:black;
+}
+
+#Time{
+    text-align:center;
+    font-family:sans-serif;
+    color:black;
+    letter-spacing:3px;
+    font-size:90px;
+    text-shadow:8px 5px 30px cyan; 
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px; 
+    margin-top: -80px;  
+}
+</style>
+<script>
+
+window.onload = function(){
+printTime();
+};
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    
+        if(hours<10){
+            hours = "0" + hours;
+        }
+        if(mins<10){
+            
+            mins = "0" + mins;
+        }
+        if(secs<10){
+
+            secs = "0" + secs;
+        }
+   
+ document.getElementById("Time").innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+</script>
+<body id = "bgm">
+<div id = "Time"></div>
+</body>
+</html>

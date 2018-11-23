@@ -1,0 +1,7 @@
+<html>
+<head>
+<title>IDK</title>
+<img src="https://goo.gl/images/cpRQMS" alt="I don't know"
+>
+</head>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+	This is the Wikipedia search page assignment I presented for the course on Freecodecamp.
+	The aim is to show a proficient usage of bootstrap, jQuery and AJAX requests.
+	
+	This project has been updated and the assets have been merged in a single file (besides the jQuery and bootstrap files that are loaded from external links).
+	The original project can be seen on https://codepen.io/gianc/full/oLGRQG
+	An updated copy can be found also on my personal repository https://github.com/GCa/Web-Projects	
+-->
+	<head>
+		<title>Wikipedia Quick Search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Niramit:500);
+
+			html,
+			body {
+			  font-family: 'Niramit', sans-serif;
+			  background: #FFD46B;
+			  color: #E9B125;
+			}
+
+			#header {
+			  text-align: center;
+			  margin-bottom:22px;
+			}
+
+			.buttonBar {
+			  padding: 14px 0;  
+			}
+
+			.btn:focus,
+			.btn:active {
+			  outline: none !important;
+			}
+
+			.form-control:focus {
+				outline: none;
+			box-shadow:none !important;
+			border:1px solid #ccc !important;
+			} 
+
+
+			#search {
+			  font-size: 1.1em;
+			}
+
+			.message { 
+			  height: auto;    
+			  margin: auto;
+			  width: 50%;  
+			  background-color: #E9B125;
+			  color: #FFEBBA;
+			  padding: 8px;
+			  text-align: center;
+			  border-radius: 5px;
+			  opacity: 0.8;
+			}
+
+			.article a {
+			  color: #E9B125;
+			}
+
+			.article {
+			  background: #6373C9;  
+			  color: #FFEBBA;
+			  margin-bottom:8px;
+			  border-radius:5px;
+			  opacity:0.8;
+			}
+
+			.btn-primary {
+			  color: #FFEBBA;
+				background: #6373C9;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+		<script type="text/javascript">
+			var lang = "en";
+
+			$(document).ready(function() {
+			  $('#searchtext').keypress(function(event) {
+				if (event.which == 13)
+				  $("#go").click();
+			  });
+
+			  $("#go").click(getArticles);
+
+			  $("#randB").click(function() {
+				window.open("https://en.wikipedia.org/wiki/Special:Random", "_blank");
+			  });
+
+			  $("#clearB").click(function() {
+				$(".article").remove();
+				document.getElementById("searchtext").value = "";
+			  });
+
+			  $(".dropdown-menu li a").click(function() {
+				$(this).parents(".dropdown").find(".btn").html($(this).text() + ' <span class="caret"></span>');
+				lang = $(this).data("value");
+				console.log(lang);
+			  });
+
+			  $('#langlist li').on('click', function() {
+				lang = $(this).text();
+			  });
+
+			  $(".btn").mouseup(function() {
+				$(this).blur();
+			  });
+
+			});
+
+			function getArticles() {
+			  $(".article").remove();
+			  if ($("#searchtext").val() == "") {
+				$(".message").html("<i class='fa fa-warning'></i>  Nothing to search").fadeIn(500).delay(2000).fadeOut(800);
+			  } else {
+				queryUrl = "https://" + lang + ".wikipedia.org/w/api.php?action=opensearch&format=json&search=" + encodeURIComponent($("#searchtext").val()) + "&limit=10";
+				console.log(queryUrl);
+
+				ret_data = $.ajax({
+				  url: queryUrl,
+				  dataType: "jsonp",
+				  success: function(datalist) {
+					if (datalist[1].length === 0 ) {
+					  $(".message").html("<i class='fa fa-warning'></i>  Nothing found").fadeIn(500).delay(2000).fadeOut(800);
+					}
+					else {
+					var result = [];
+					for (var i = 0; i < datalist[1].length; i++) {
+					  result.push([datalist[1][i], datalist[2][i], datalist[3][i]]);
+					}
+					for (i = 0; i < result.length; i++) {
+					  var insert = "<div id=article-'" + i + "' class='article col-sm-10 col-sm-offset-1'><a href='" + result[i][2] + "' target='_blank'><div class='entry'><h3>" + result[i][0] + "</h3></a><p>" + result[i][1] + "</p></div></div>";
+					  $(".articles").append(insert);
+					}
+					}
+
+				  }
+				});
+			  }
+			};
+		</script>	
+	</head>	
+	<body>
+		<div id="external">
+		  <div id="header">
+			<h1>Wikipedia Searcher</h1></div>
+		  <div id="search" class="container">
+			<div class="input-group">
+			  <span class="input-group-btn dropdown">
+				<button type="button" class="btn btn-default btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lang (default: EN) <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+				<li><a href="#" data-value="EN">English</a></li>
+				<li><a href="#" data-value="IT">Italian</a></li>
+				<li><a href="#" data-value="DE">German</a></li>
+				<li><a href="#" data-value="FR">French</a></li>
+				<li><a href="#" data-value="ES">Spanish</a></li>
+			  </ul>
+			  </span>
+			  <input id="searchtext" type="text" class="form-control">
+			  <span class="input-group-btn">
+				<button id="go" class="btn btn-default btn-primary" type="button" ><i class="fa fa-search"></i></button>
+		</div>  
+			  <div class="clearfix"></div>
+			  <div class="text-center">
+		  <div class="btn-group buttonBar"><button id="randB" name="randomButton"  type="button" class="randButton btn btn-primary">Random Article <i class="fa fa-random fa-lg"></i></button>
+		<button id="clearB" name="clearButton"  type="button" class="randButton btn btn-primary">Clear Page <i class="fa fa-recycle fa-lg"></i></button>
+				</div></div>
+				<div class="message" style="display:none"></div>
+			  <div class="articles"></div>
+		</div>
+	</body>
+</html>

@@ -5,6 +5,7 @@ if ('serviceWorker' in navigator) {
 		}, (err) => {
 			// registration failed
 			console.log('Service Worker -Failed to Register-', err);
+			console.log('hacktoberfest!');
 		});
 	});
 }

@@ -1,16 +1,17 @@
 <html>
 <head>
 <style>
+    
     html {
-      background: bluegreen;
+      background: orange;
       background-size:cover;
       font-family:'helvetica neue';
       text-align: center;
-      font-size: 10px;
+      font-size: 15px;
     }
 
     body {
-      margin: 0;
+      margin: 10px; /* added this to help positioning everything in the middle */
       font-size: 2rem;
       display:flex;
       flex:1;
@@ -21,7 +22,7 @@
     .clock {
       width: 30rem;
       height: 30rem;
-      border:20px solid blue;
+      border:20px solid balck;
       border-radius:50%;
       margin:50px auto;
       position: relative;
@@ -33,7 +34,7 @@
       position: relative;
       width: 100%;
       height: 100%;
-      background: yellow;
+      background: black;
       border-radius: 50%;
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
@@ -41,7 +42,7 @@
     .hand {
       width:50%;
       height:9px;
-      background: blue;
+      background: brown;
       position: absolute;
       top:50%;
       transform-origin: 100%;
@@ -61,6 +62,7 @@
 </style>
 </head>
 <body>
+    <h1> Dole's Clock </h1>
     <div class="clock">
       <div class="clock-face">
         <div class="hand hour-hand"></div>

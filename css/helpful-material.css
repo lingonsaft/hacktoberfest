@@ -10,9 +10,6 @@ body {
   background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
-}
 h1,h2,h3 {
   font-weight: bold;
 }
@@ -46,18 +43,18 @@ h3 {
 }
 .container a {
   text-decoration: none;
-  color: #FF0844;
+  color: rgb(57,116,48);
 }
 
 .container a:hover {
   text-decoration: none;
-  color: #cc0636;
+  color: #3dcff4;
 }
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 30px;
   z-index: 99;
   cursor: pointer;
@@ -85,7 +82,9 @@ a.guides-links{
 }
 
 .list {
-  padding-left: 1.2rem;
+  padding-left: 2rem;
+  background-color: rgba(203, 178, 178, 0.3);
+  border-radius: 5px;
 }
 
 a.list-item {
