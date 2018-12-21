@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	font-family: Helvetica, sans-serif;
 	background-color: grey;
@@ -9,54 +10,117 @@ a:hover {
 	text-decoration: underline;
 }
 #wrap {
+=======
+body{
+
+	font-family: Helvetica, sans-serif;
+	background-color: grey;
+}
+
+a:link, a:visited{
+
+	text-decoration: none;
+}
+a:hover{
+
+	text-decoration: underline;
+}
+
+#wrap{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	width: 920px;
 	margin: auto;
 	padding: 10px 20px;
 	background: #000000;
 	overflow: hidden;
 }
+<<<<<<< HEAD
 .logo {
 	width: 60px;
 	height: 60px;
 }
 .titulo {
+=======
+.logo{
+
+	width: 60px;
+	height: 60px;
+}
+.titulo{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	color: white;
 	float: right;
 	padding-right: 300px;
 	margin: 10px;
 }
+<<<<<<< HEAD
 .menuPrincipal {
 	list-style: none;
 	margin-top: 18px;
 	padding-left: 300px;
 }
 header nav ul li {
+=======
+.menuPrincipal{
+
+	list-style: none;
+	margin-top: 18px;
+	padding-left: 300px;
+
+}
+header nav ul li{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	display: inline-block;
 	margin-left: 10px;
 	font-size: 18px;
 }
+<<<<<<< HEAD
 header nav ul li a {
 	color: white;
 }	
 #conteudo {
+=======
+header nav ul li a{
+
+	color: white;
+}	
+#conteudo{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	margin-top: 40px;
 	float: left;
 	width: 610px;
 	padding: 10px;
+<<<<<<< HEAD
 }
 .borda {
+=======
+
+}
+.borda{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	border-width: 3px;
 	border-style: solid;
 	border-color: #6A5ACD;
 	margin-bottom: 10px; 
 }
+<<<<<<< HEAD
 .name { 
+=======
+.name{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	float: right;
 	color: #6A5ACD;
 	padding-right: 180px;
 	font-size: 17px;
 	margin-top: 10px;
 	font-weight: bolder;
+<<<<<<< HEAD
 }
 .proLado {
 	float: right;
@@ -68,14 +132,40 @@ header nav ul li a {
 	width: 200px;
 }
 #sidebar {
+=======
+
+}
+.proLado{
+
+	float: right;
+	width: 300px;
+	padding-right: 40px;
+	margin: 10px;
+}
+.sectionImagens{
+
+	width: 200px;
+}
+#sidebar{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	margin-top: 40px;
 	float: right;
 	width: 280px;
 }
 
+<<<<<<< HEAD
 aside ol li a {
 	color: grey;
 }
 .cor {
+=======
+aside ol li a{
+
+	color: grey;
+}
+.cor{
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 	color: white;
 }

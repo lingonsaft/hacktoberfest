@@ -1,0 +1,15 @@
+body {
+  background-image: linear-gradient(45deg, white, lightblue);
+}
+
+h4.hero-heading
+{
+     font-weight:700;
+     color:#FF0844;
+}
+
+h1.hero-heading
+{
+     font-weight:900;
+     color:#FF0844;
+}

@@ -76,7 +76,11 @@ document.addEventListener('keydown', function(e) {
 
 function executeEasterEgg() {
   var html = document.createElement('div');
+<<<<<<< HEAD
   var image = '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#ccc;padding:10px;"><h1 style="text-align:center;">You´re such a nerd!!!</h1><img src="https://i.giphy.com/media/4hnQDVKVARZ6w/giphy.webp"></div>'
+=======
+  var image = '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#ccc;padding:10px;"><h1 style="text-align:center;">You´re such a nerd!!!</h1><img src="https://i.giphy.com/media/4hnQDVKVARZ6w/giphy.webp"/></div>'
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 
   html.innerHTML = image;
   document.body.appendChild(html);

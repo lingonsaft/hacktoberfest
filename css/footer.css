@@ -14,21 +14,36 @@
 #footer h3 {
     padding: 5px;
     height: 25px;
+<<<<<<< HEAD
 }
 
 .footer-icon {
     color: #e6e6fa;
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
+
+.footer-icon {
+    color: #fff;
+  }
 
 .social-icons {
     padding: 5px;
 }
 
+<<<<<<< HEAD
 .social-icons> a img {
    transition: all .2s ease-in-out;
   }
 
   .social-icons> a img:hover {
+=======
+.social-icons > a img {
+   transition: all .2s ease-in-out;
+  }
+
+  .social-icons > a img:hover {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
 }
@@ -45,6 +60,10 @@
 }
 
 #backToTop {
+<<<<<<< HEAD
+=======
+    margin-bottom: 20px;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     display: none;
     position: fixed;
     bottom: 50px;
@@ -54,10 +73,15 @@
     border-radius: 50%;
     border: none;
     background-color: #FF0844;
+<<<<<<< HEAD
     padding: 6px 10px 10px;
     z-index: 1001;
     animation: backToTopShowAnim .3s;
     transition: transform .2s ease-out;
+=======
+    padding: 4px 10px 10px;
+    z-index: 1001;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
 #backToTop svg {
     width: 25px;
@@ -66,6 +90,7 @@
 }
 #backToTop:hover svg {
     opacity: 1;
+<<<<<<< HEAD
 }
 #backToTop:hover{transform: scale(1.1);}
 #backToTop.mousedown{transform: translateY(3px);}
@@ -81,4 +106,6 @@
 @keyframes backToTopScrollingAnimation{
     from{transform: rotate(0deg)}
     to{transform: rotate(360deg)}
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }

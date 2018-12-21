@@ -19,7 +19,10 @@ const reqObj = [
 const getData = (url, key) => {
     fetch(url)
         .then(r => {
+<<<<<<< HEAD
         	if(r.ok) {
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
             if (r.headers.get('Link')) {
                 r.headers.get('Link').split(',').forEach(link => {
                     if (link.includes('next')) {
@@ -38,10 +41,14 @@ const getData = (url, key) => {
         .then(json => {
             statsObj[key] += json.length
             document.getElementById('stats').innerHTML = 'Commits: ' + statsObj.commits + ' Forks: ' + statsObj.forks + ' Pull Requests: ' + statsObj.pr + ' Issues: ' + statsObj.issues + ' Stars: ' + statsObj.stars + ' Contributors: ' + statsObj.contribut
+<<<<<<< HEAD
         }).catch(() => {
         	console.log('This catched 403');
 						document.getElementById('stats').innerHTML = 'You guys are awesome, we have passed the github rate again this hour. <a href="https://github.com/lingonsaft/hacktoberfest">Here</a> is a link to repo to check out live stats'
 				})
+=======
+        })
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
 
 reqObj.forEach(rq => {

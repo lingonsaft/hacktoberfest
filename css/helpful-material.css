@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 * {
   outline: none!important;
 }
@@ -7,9 +10,18 @@ body {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
+<<<<<<< HEAD
   background-color: white;
 }
 
+=======
+  background-color: whitesmoke;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Sailec-Bold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 h1,h2,h3 {
   font-weight: bold;
 }
@@ -70,6 +82,7 @@ a.guides-links{
   margin-bottom: 80px
 }
 
+<<<<<<< HEAD
 .section-tree {
   display: flex;
   flex-direction: row;
@@ -122,3 +135,12 @@ a.list-item:hover {
 .container a.hvr-bob:hover {
   text-decoration: underline;
 }
+=======
+.list {
+  padding-left: 40px;
+}
+.list-item {
+  display: list-item;
+  list-style-type: circle;
+}
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
