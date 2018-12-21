@@ -11,7 +11,11 @@ body {
   margin: 1.66%;
   float: left;
   transition: 0.6s;
+<<<<<<< HEAD
   border-radius: 20%;
+=======
+  border-radius: 15%;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
 
 .container {

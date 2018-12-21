@@ -111,7 +111,11 @@ Firework.prototype.update = function(index) {
   );
 
   // if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached
+<<<<<<< HEAD
   if (this.distanceTraveled>= this.distanceToTarget) {
+=======
+  if (this.distanceTraveled >= this.distanceToTarget) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     createParticles(this.tx, this.ty);
     // remove the firework, use the index passed into the update function to determine which to remove
     fireworks.splice(index, 1);
@@ -251,7 +255,11 @@ function loop() {
   }
 
   // launch fireworks automatically to random coordinates, when the mouse isn't down
+<<<<<<< HEAD
   if (timerTick>= timerTotal) {
+=======
+  if (timerTick >= timerTotal) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     if (!mousedown) {
       // start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
       fireworks.push(
@@ -264,7 +272,11 @@ function loop() {
   }
 
   // limit the rate at which fireworks get launched when mouse is down
+<<<<<<< HEAD
   if (limiterTick>= limiterTotal) {
+=======
+  if (limiterTick >= limiterTotal) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     if (mousedown) {
       // start the firework at the bottom middle of the screen, then set the current mouse coordinates as the target
       fireworks.push(new Firework(cw / 2, ch, mx, my));

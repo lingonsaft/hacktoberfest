@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
 	background-color: black;
 }
 
@@ -10,4 +11,17 @@ body {
 	height: 0;
 	transition: height 1s;
 	-webkit-transition: height 1s;
+=======
+  background-color: black;
+}
+
+.gifs{
+     margin-top: 100px;
+}
+
+.doggo{
+     height: 0;
+     transition: height 1s;
+     -webkit-transition: height 1s;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }

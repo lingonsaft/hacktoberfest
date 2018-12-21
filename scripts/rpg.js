@@ -6,7 +6,11 @@ function Character(name, profession, gender, age, strength, hp) {
   this.strength = strength;
   this.hp = hp;
   this.isAlive = function(){
+<<<<<<< HEAD
     if(this.hp> 0){
+=======
+    if(this.hp > 0){
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
       console.log("Alive");
     }
     else{
@@ -35,6 +39,7 @@ let chris = new Character("Christopher", "Film", "Male", 30, 120, 80);
 
 bigTony.mount = "Suburban";
 printStats(bigTony);
+<<<<<<< HEAD
 
 var arr = [bigTony, uncleJunior, artie, chris];
 
@@ -46,3 +51,5 @@ for(var i=0; i<arr.length; i++){
         + "<p>Strength: " + arr[i].strength + "</p><p>Health: " + arr[i].hp + "</p><p>" + arr[i].gender + "</p></div>";
     document.getElementById('rpg').appendChild(e.firstChild);
 }
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee

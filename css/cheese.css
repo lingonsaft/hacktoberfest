@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .spinCard {
   -webkit-animation: spin 4s linear reverse infinite;
   animation: spin 4s linear reverse infinite;
@@ -15,12 +16,25 @@
 }
 
 .cheese-body {
+=======
+
+
+.spinCard{
+  -webkit-animation:spin 4s linear reverse infinite;
+  animation:spin 4s linear reverse infinite;
+}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#cheese-body {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
   background-image: url("../images/katrin-leinfellner-571533-unsplash.jpg");
   font-size: 16px;
   color: #57283e;
   line-height: 1.6;
   background-color: mistyrose;
 }
+<<<<<<< HEAD
 .cheese-container {
   border: 3px dashed #00f9d0;
 }
@@ -28,12 +42,22 @@
 .click-for-cheese {
   color: #2dc0da;
   background-color: #57283e;
+=======
+#cheese-container {
+  border: 3px dashed #57283e;
+}
+
+#click-for-cheese {
+    color: #ff9a56;
+    background-color: #57283e;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
 
 .copy {
   padding-left: 50%;
 }
 
+<<<<<<< HEAD
 .list {
   list-style-type: none;
 }
@@ -41,6 +65,17 @@
 .container a {
   text-decoration: none;
   color: #ff0844;
+=======
+.list{
+    list-style-type: none;
+}
+
+
+
+.container a {
+  text-decoration: none;
+  color: #FF0844;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 }
 
 .container a:hover {
@@ -48,11 +83,14 @@
   color: #cc0636;
 }
 
+<<<<<<< HEAD
 .text-shadow {
   color: #D95D39;
   text-shadow: 1px 1px #F0A202;
 }
 
+=======
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -95,7 +133,11 @@
   background-color: #ff9a56;
 }
 
+<<<<<<< HEAD
 .sublogo {
+=======
+#sublogo{
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
   position: absolute;
   top: 16px;
   left: 197px;
@@ -107,7 +149,11 @@
   opacity: 0;
 }
 
+<<<<<<< HEAD
 .sublogo:hover {
+=======
+#sublogo:hover{
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
   position: absolute;
   top: 16px;
   left: 197px;
@@ -118,8 +164,12 @@
   height: 255px;
   opacity: 100;
 }
+<<<<<<< HEAD
 
 .myBtnCheese {
+=======
+#myBtn {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
   display: none;
   position: fixed;
   bottom: 20px;
@@ -133,3 +183,7 @@
   border-radius: 34px;
   background-color: #57283e;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee

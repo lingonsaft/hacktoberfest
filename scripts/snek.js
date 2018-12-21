@@ -4,7 +4,11 @@
 const canvas = document.querySelector('.snek')
 canvas.width = 400
 canvas.height = 300
+<<<<<<< HEAD
 canvas.style.border = '2px solid #FF0844'
+=======
+canvas.style.border = '2px solid red'
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 canvas.style.width = '800px'
 canvas.style.height = '600px'
 canvas.style.margin = '0 auto'
@@ -31,8 +35,13 @@ button.style.display = 'none'
  * @type {HTMLDivElement}
  */
 const points = document.querySelector('.snek-points')
+<<<<<<< HEAD
 points.style.fontSize = '50px'
 points.style.color = '#FF0844'
+=======
+points.style.fontSize = '30px'
+points.style.color = 'green'
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 
 points.innerHTML = 0
 
@@ -94,7 +103,11 @@ function getFoodPosition() {
 const Movements = {
   [Directions.Left]: () => {
     const nextPos = leftPosition()
+<<<<<<< HEAD
     if (nextPos>= 0) {
+=======
+    if (nextPos >= 0) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
       state.x = nextPos
     } else {
       state.alive = false
@@ -102,7 +115,11 @@ const Movements = {
   },
   [Directions.Up]: () => {
     const nextPos = upPosition()
+<<<<<<< HEAD
     if (nextPos>= 0) {
+=======
+    if (nextPos >= 0) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
       state.y = nextPos
     } else {
       state.alive = false
@@ -171,7 +188,11 @@ function drawSnake() {
   }
 
   body.push({x, y})
+<<<<<<< HEAD
   if (body.length> bodyLength) {
+=======
+  if (body.length > bodyLength) {
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     var itemToRemove = body.shift()
     ctx.clearRect(itemToRemove.x, itemToRemove.x, GRID_SIZE, GRID_SIZE)
   }

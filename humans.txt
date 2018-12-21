@@ -1,10 +1,17 @@
 /* TEAM */
 Owner: Lingonsaft.
+<<<<<<< HEAD
 Site:- https://hacktoberfest.lingonsaft.com/
 Twitter:- https://twitter.com/lingonsaft1
 Instagram:- https://www.instagram.com/lingonsaftofficial/
 Facebook:- https://www.facebook.com/lingonsaftOfficial/
 Youtube:- https://www.youtube.com/lingonsaft
 
+=======
+Site: https://hacktoberfest.lingonsaft.com/
+Twitter: https://twitter.com/lingonsaft1
+Instagram: https://www.instagram.com/lingonsaftofficial/
+							
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 /* THANKS */
 To all contributors!

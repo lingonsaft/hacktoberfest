@@ -9,7 +9,12 @@ function sortProject(containerClassName, projectClassName) {
     items.appendTo(projectClassName);
 }
 
+<<<<<<< HEAD
 sortProject('li>.projectItem', 'li>.otherProjects');
 sortProject('li>.easyProjectItem', 'li>.beginnerProjects');
+=======
+sortProject('.projectItem', '.otherProjects');
+sortProject('.easyProjectItem', '.beginnerProjects');
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 
 console.log('Script Triggered')

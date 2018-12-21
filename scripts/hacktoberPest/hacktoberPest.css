@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Eater');
 
+<<<<<<< HEAD
 html, body {
     background-color: #CC5500;
+=======
+html,
+body {
+    background-color: #EE7600;
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     font-family: Eater;
 }
 
 h1 {
     text-align: center;
+<<<<<<< HEAD
     font-family: Century;
 }
 
 div {
+=======
+}
+
+div{
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
     opacity: .2;
     display: block;
     width: 300px;

@@ -46,7 +46,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
 	let request = event.request;
 	event.respondWith (
+<<<<<<< HEAD
 			fetch(request).then(
+=======
+			fetch(fetchRequest).then(
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 				(response) => {
 					//check valid response basic means we do NOT cache 3rd party responses
 					if(!response || response.status !== 200 || response.type !== 'basic') {
@@ -60,7 +64,11 @@ self.addEventListener('fetch', (event) => {
 						});
 					return response;
 				}
+<<<<<<< HEAD
 			).catch((err) => {
+=======
+			).catch(function (err){
+>>>>>>> 79de7abf060f33f198b75fbe9838e7f7c964d7ee
 				caches.match(request).then((response) => {
 					if (response) {
 						return response;
