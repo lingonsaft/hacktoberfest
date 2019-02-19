@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Event</title>
+	<script type="text/javascript">
+		function bo()
+		{
+			alert("This is event");
+		}
+		function aux()
+		{
+			alert("This is AUXCLICK");
+		}
+		function on()
+		{
+			alert("This is onclick");
+		}
+		function db()
+		{
+			alert("This is double click");
+		}
+		function down()
+		{
+			document.getElementById("d1").innerHTML = "Release Me";
+		}
+		function up()
+		{
+			document.getElementById("d1").innerHTML ="Thank for Your Release"
+		}
+		function over()
+		{
+			alert("This is Mouse Over");
+		}
+		function move()
+		{
+			alert("This is Mouse Move");
+		}
+		function press()
+		{
+			alert("This page is loading");
+		}
+		function leave()
+		{
+			alert("This is Mouse leave");
+
+		}
+		function out()
+		{
+			alert("This is Mouse out ");
+		}
+		function enter()
+		{
+			alert("This is Mouse Enter");
+		}
+		function un()
+		{
+			alert("This page is loading already");
+		}
+		function drag()
+		{
+			alert("you want to do this");
+		}
+	</script>
+</head>
+<body>
+	<h2> Event in javascript occur when the user or the browser manipulate a page</h2>
+	<button onclick="on()">ON Click</button><br>
+	<button onauxclick="aux()">AUX Click</button><br> 
+	<button ondblclick="db()">Double Click</button>
+	<input type="text" ondragenter="drag()">
+	<div id="d1" onmousedown="down()" onmouseup="up()">Click Me</div>
+	<!--div id="d2" onmouseover="over()">Mouse over</div-->
+	<!--div id="d3" onmousemove="move()">Mouse Move</div-->
+	<!--div id="d4" onmouseout="out()">
+		<h3>Mouse Out</h3>
+	</div-->
+	<!--div id="d5" onmouseleave="leave()">
+		<h3>Mouse leave</h3>
+	</div-->
+	<!--div id="d6" onmouseenter="enter()">
+		<h3>Mouse Enter</h3>
+	</div-->
+</body>
+</html>
