@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		function add()
+		{
+			var mark;
+
+			mark=window.prompt("Enter your mark");
+
+			if(mark>=90)
+			{
+				document.write("Congrats, you have distinction.");
+			}
+			else if (mark>=80)
+			{
+				document.write("First class");
+			}
+			else if (mark>=60)
+			{
+				document.write("Second class");
+			}
+			else if (mark>=50)
+			{
+				document.write("Third class");
+			}
+			else
+			{
+				document.write("Fail");
+			}
+		}
+	</script>
+</head>
+<body>
+	<button onclick="add()">Mark</button>
+</body>
+</html>
