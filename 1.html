@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var names =["Mouyleng","Momo","Momoleng","Heng Mouyleng"];
+		var cites =["PS","Kirirom","PP","KD"];
+		function clicked()
+		{
+			names.forEach(test);
+			/*
+			alert(names[0]);
+			alert(names[1]);
+			alert(names[2]);
+			alert(names[3]);
+			alert(names[4]); *//*is undefined. Because there is no 4 arrays names*/
+
+			//for(i=0;i<=names.length-1;i++) 
+			/*if i<=names.length : undefined
+			if i<=names.length-1 : the same i<names.length 
+			if i<=names.length-1 and names[i-1] : show only 3 names */
+			/*{
+				alert(names[i-1]);
+			}*/
+
+			//for(i=0;i<=names.length-1;i++) 
+			//{
+			//	alert(cites[i]+" : "+ names[i]);
+			//}
+		} 
+		
+		//var arr = [10,20,30];
+		//function clicked()
+		//{ 
+			/*
+			//Using forEach
+			arr.forEach(test);
+			
+			arr[3] = 300; //arr[4] =300; //Improper assigment to array
+			alert(arr); 
+
+			//pop and push
+			
+			arr.push(300);
+			alert(arr);
+			var ele= arr.pop();
+			alert(arr);
+			alert("The element popped out is :"+ele); 
+			
+		}
+		/*
+		var mArr =[ 
+					[10,20,30],
+					[40,50],
+					[70,80,90,70]
+				  ];
+		var arrObj = [{id:123, name:"Momo"},{id:124, name:"Mouyleng"}];
+		function clicked() 		
+		{ */
+			//Do not print array element like the below statement
+			/*
+			alert(mArr[0]);
+			alert(mArr[1]);
+			alert(mArr[2]);
+			*/
+			//Efficient way to print the array element
+			/*for(i=0;i<mArr.length;i++)
+			{
+				for(j=0;j<mArr[i].length;j++)
+				{
+				alert(mArr[i][j]);
+				}
+			}*/
+			/*
+			for(i=0;i<arrObj.length;i++)
+			{
+				alert(arrObj[i].id+":"+arrObj[i].name);
+			} 
+
+
+		}*/
+		function test(num)
+		{
+			alert(num);
+		} 
+	</script>
+</head>
+<body>
+	<div id = "div1">Test</div>
+	<button onclick="clicked()">Click me</button>
+</body>
+</html>
