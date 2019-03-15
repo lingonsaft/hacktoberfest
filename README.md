@@ -30,7 +30,7 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 
 - [Hacktoberfest Intro](https://youtu.be/OsAFX_ZbgaE)
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
-- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
+- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)//commend end
 
 
 ## 
