@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>DANGER</title>
+</head>
+<body>
+    <h1>DANGER ZONE</h1>
+    <p>
+        This is a live firing range!
+        Access can exclusively bought by bottle caps!
+
+        This entrance is guarded by lots of Portal Turrets!
+        Be careful to hear closely and you may be able to hear the Turret Serenade
+    </p>
+
+    <button onclick="enterRange()">Enter with bottle caps</button>
+
+    <script>
+        function enterRange() {
+            let rand = Math.floor((Math.random() * 100) + 1);
+            if(rand >= 70) {
+                alert("Access Granted - You Rolled " + rand);
+            }else {
+                alert("Turn Back now! Or you will be shot - You Rolled " + rand);
+            }
+        }
+    </script>
+</body>
+</html>
