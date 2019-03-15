@@ -17,8 +17,8 @@ window.requestAnimationFrame = (function(){
 * Vector
 */
 function Vector(x, y) {
-  this.x = x || 0;
-  this.y = y || 0;
+  this.x = x;
+  this.y = y;
 }
 
 Vector.add = function(a, b) {
