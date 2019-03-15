@@ -29,8 +29,8 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 ## Videos/Vidéos/Vídeos
 
 - [Hacktoberfest Intro](https://youtu.be/OsAFX_ZbgaE)
+- [An Introduction to Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
-- [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 
 ## 
