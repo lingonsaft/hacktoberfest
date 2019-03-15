@@ -153,6 +153,7 @@ Para mais informações sobre a sincronização de garfos [leia este artigo do G
 - Add your own projects to the 'Helpful Material Page'
 - Add helpful links/guides to the 'Helpful Material Page'
 - Update Readme.md
+- Following versioning - https://semver.org/
 
 ## FAQs
 
