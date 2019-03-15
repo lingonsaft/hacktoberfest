@@ -31,7 +31,7 @@ P.S. Star e compartilhe este repositório, se você se divertiu!
 - [Hacktoberfest Intro](https://youtu.be/OsAFX_ZbgaE)
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
-
+- [Git command-line fundamentals](https://youtu.be/HVsySz-h9r4) 
 
 ## 
 bution rules/Règles de contribution/Regras de contribuição
