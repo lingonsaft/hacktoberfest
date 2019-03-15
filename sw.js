@@ -12,7 +12,7 @@ const cacheFiles = [
 ];
 
 // install the service worker
-self.addEventListener('install', (event) => {
+self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.open(hacktoberCache).then((cache) => {
 			console.log('SW Cache is installing');
@@ -29,10 +29,10 @@ self.addEventListener('install', (event) => {
 });
 
 // activate service worker
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
 	event.waitUntil(
-		caches.keys().then((hacktoberCaches) => {
-			return Promise.all(hacktoberCaches.map((cache) => {
+		caches.keys().then(hacktoberCaches => {
+			return Promise.all(hacktoberCaches.map(cache => {
 				//if cache versions to not match, delete old version
 				if (cache !== hacktoberCache) {
 					return caches.delete(cache);
@@ -43,11 +43,11 @@ self.addEventListener('activate', (event) => {
 });
 
 // fetch service worker
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', event => {
 	let request = event.request;
 	event.respondWith (
-			fetch(request).then(
-				(response) => {
+			fetchrequest.then(
+				response => {
 					//check valid response basic means we do NOT cache 3rd party responses
 					if(!response || response.status !== 200 || response.type !== 'basic') {
 						return response;
@@ -55,13 +55,13 @@ self.addEventListener('fetch', (event) => {
 					let responseToCache = response.clone();
 
 					caches.open(hacktoberCache)
-						.then((cache) => {
+						.then(cache => {
 							cache.put(request, responseToCache);
 						});
 					return response;
 				}
-			).catch((err) => {
-				caches.match(request).then((response) => {
+			).catch(err => {
+				caches.match(request).then(response => {
 					if (response) {
 						return response;
 					}
