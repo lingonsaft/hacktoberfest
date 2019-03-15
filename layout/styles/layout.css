@@ -1,0 +1,423 @@
+@charset "utf-8";
+/*
+Template Name: Mudcappro
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("fontawesome-4.6.3.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2{border-bottom:1px solid;}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5{border-top:1px solid;}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0;}
+
+#header #logo *{margin:0; padding:0; line-height:1;}
+#header #logo h1{margin-top:8px; font-size:26px; letter-spacing:3px;}
+
+#header #quickinfo{font-size:.8rem; text-transform:uppercase;}
+#header #quickinfo li{margin-right:50px;}
+#header #quickinfo li:last-child{margin-right:0;}
+#header #quickinfo strong{display:block; margin:0 0 -5px 0; padding:0; font-size:.9rem;}
+#header #quickinfo br{display:none;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:200px 0;}
+
+#pageintro li{text-align:center;}
+#pageintro li article{display:block; max-width:75%; margin:0 auto; padding-bottom:10px; overflow:hidden;}
+#pageintro li article *{word-wrap:break-word;}
+#pageintro li .heading{margin-bottom:20px; font-size:2.5rem;}
+#pageintro li p:first-of-type{margin:0 0 20px 0; text-transform:uppercase; font-weight:700; font-size:1.2rem;}
+#pageintro li p:last-of-type{max-width:70%; margin:0 auto;}
+#pageintro li footer{margin-top:50px;}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:100px 0;}
+
+/* Content */
+.container .content{}
+
+.sectiontitle{display:block; margin-bottom:80px;}
+.sectiontitle *{margin:0;}
+
+.elements{}
+.elements article{}
+.elements article figure{display:block; position:relative;}
+.elements article figure img{}
+.elements article figure figcaption{position:absolute; top:0; left:10px; width:50px;}
+.elements article figure figcaption *{display:block; margin:0; padding:0; text-align:center; text-transform:uppercase; font-style:normal; line-height:1;}
+.elements article figure figcaption time{width:100%;}
+.elements article figure figcaption time strong{padding:12px 0; font-size:18px;}
+.elements article figure figcaption time em{padding:8px 0;}
+.elements article .txtwrap{padding:20px; border-bottom:1px solid;}
+.elements article .txtwrap .heading{margin:0; font-size:1.2rem;}
+.elements article .txtwrap .meta{}
+.elements article .txtwrap .meta li{display:inline-block; font-size:.8rem;}
+.elements article .txtwrap .meta li::after{margin-left:5px; content:"/";}
+.elements article .txtwrap .meta li:last-child::after{margin:0; content:"";}
+.elements article .txtwrap p{}
+.elements article .txtwrap footer{}
+
+/* Comments */
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+#comments form{display:block; width:100%;}
+#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
+#comments textarea{overflow:auto;}
+#comments div{margin-bottom:15px;}
+#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+
+/* Sidebar */
+.container .sidebar{}
+
+.sidebar .sdb_holder{margin-bottom:50px;}
+.sidebar .sdb_holder:last-child{margin-bottom:0;}
+
+
+/* Split Box
+--------------------------------------------------------------------------------------------------------------- */
+.split{}
+
+.split section{display:block; position:relative; float:right; width:50%; padding:100px 0 100px 50px;}
+.split section::after{display:block; position:absolute; top:0; right:-1000%; bottom:0; left:100%; content:"";}
+.split section footer{margin-top:30px;}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+
+#footer nav{margin-bottom:15px; text-transform:uppercase;}
+#footer nav ul{}
+#footer nav ul li{display:inline-block; margin-right:15px;}
+#footer nav ul li:last-child{margin-right:0;}
+
+#footer .linklist li{display:block; margin-bottom:12px; padding:0 0 12px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{text-transform:uppercase; text-align:center;}
+#mainav ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
+#mainav ul ul ul{left:160px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:25px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:20px 0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+/* Breadcrumb */
+#breadcrumb{padding:120px 0 30px;}
+#breadcrumb ul{margin:0 0 30px 0; padding:0 0 8px 0; list-style:none; text-transform:uppercase; border-bottom:1px solid;}
+#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
+#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
+#breadcrumb li a::after{top:3px; right:0; content:"\f101";}
+#breadcrumb li:last-child a{margin:0; padding:0;}
+#breadcrumb li:last-child a::after{display:none;}
+#breadcrumb .heading{margin:0; font-size:2rem;}
+
+/* Sidebar Navigation */
+.sidebar nav{display:block; width:100%;}
+.sidebar nav li{margin:0 0 3px 0; padding:0;}
+.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
+.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav ul ul a{padding-left:35px;}
+.sidebar nav ul ul a::after{left:25px;}
+.sidebar nav ul ul ul a{padding-left:55px;}
+.sidebar nav ul ul ul a::after{left:45px;}
+
+/* Pagination */
+.pagination{display:block; width:100%; text-align:center; clear:both;}
+.pagination li{display:inline-block; margin:0 2px 0 0;}
+.pagination li:last-child{margin-right:0;}
+.pagination a, .pagination strong{display:block; padding:8px 11px; border:1px solid; background-clip:padding-box; font-weight:normal;}
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+/* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center; border-radius:50%; background-clip:padding-box;}
+
+.faico a{color:inherit; background-color:#141414;}
+.faico a:hover{color:#FFFFFF;}
+
+.faicon-dribble:hover{background-color:#EA4C89;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#AE1E04;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#F4F4F4;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#AE1E04;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.coloured::after{background-color:rgba(130,22,3,.55);/* #821603 */}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#AE1E04; border-color:#AE1E04;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Flexslider */
+.flex-direction-nav a, .flex-direction-nav .flex-disabled:hover{color:#FFFFFF;}
+.flex-direction-nav a:hover{color:#AE1E04;}
+
+
+/* Rows */
+.row0, .row0 a{}
+.row1{color:#474747; background-color:#FFFFFF;}
+.row2{background-color:rgba(130,22,3,.55);/* #821603 */ border-color:rgba(255,255,255,.2);}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#A8A7A6;}
+.row5{color:#A8A7A6; background-color:rgba(0,0,0,.35); border-color:rgba(255,255,255,.2);}
+.row5 a{color:inherit;}
+
+
+/* Header */
+#header #logo a{color:inherit;}
+
+
+/* Page Intro */
+#pageintro li p:first-of-type{color:rgba(255,255,255,.5);}
+
+
+/* Split Box */
+.split section, .split section::after{color:#474747; background-color:#F9F9F9;}
+.split section{background:linear-gradient(to right, rgba(249,249,249,.8), rgba(249,249,249,1));}
+
+
+/* Content Area */
+.elements article figure figcaption{color:#FFFFFF;}
+.elements article figure figcaption time strong{background-color:#AE1E04;}
+.elements article figure figcaption time em{background-color:#821603;}
+.elements article .txtwrap{color:#474747; background-color:#F1F0ED;}
+.elements article:hover .txtwrap{border-color:#AE1E04;}
+
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+
+#footer nav a{color:inherit;}
+#footer nav li:first-child a, #footer nav a:hover{color:#AE1E04;}
+
+#footer .linklist li{border-color:rgba(255,255,255,.2);}
+
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#FFFFFF; background-color:#283F6C;}
+#footer input:focus{border-color:#AE1E04;}
+#footer button{color:#FFFFFF; background-color:#AE1E04;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#AE1E04; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(130,22,3,.55); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#AE1E04;}
+#mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.2);}
+
+#breadcrumb ul{border-color:rgba(255,255,255,.2);}
+#breadcrumb a{color:inherit; background-color:inherit;}
+#breadcrumb li:last-child a{color:#AE1E04;}
+
+.container .sidebar nav a{color:inherit; border-color:#F4F4F4;}
+.container .sidebar nav a:hover{color:#AE1E04;}
+
+.pagination a, .pagination strong{border-color:#F4F4F4;}
+.pagination .current *{color:#FFFFFF; background-color:#AE1E04;}
+
+#backtotop{color:#FFFFFF; background-color:#AE1E04;}
+
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#F4F4F4;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#AE1E04;}
+th{color:#FFFFFF; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#header{}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 30px 0;}
+
+	#pageintro li article, #pageintro li p:last-of-type{max-width:none; width:100%; overflow:visible;}
+
+	.elements article{max-width:320px;}
+
+	.container, #footer{padding-bottom:70px;}/* Not neccessary - just looks better */
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	.hoc.split{max-width:none; width:100%;}
+	.split section{float:none; width:100%; padding:10% 5%;}
+
+	#header #quickinfo li{display:block; margin-right:0;}
+}
