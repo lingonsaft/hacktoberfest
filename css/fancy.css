@@ -6,12 +6,26 @@ body {
 
 .box {
   height: 100vh;
-  background: url(/images/bg.jpg);
+  background: url(bg3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.other-box {
+  height: 100vh;
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax {
+  height: 500px;
 }
 
 .h1--transparent {
+  top: 30%;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -24,10 +38,60 @@ body {
   background: rgba(0, 0, 0, .5);
 }
 
+.fancy-div {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px #03a9f4;
+  background: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  text-align: center;
+  transition: .5s;
+}
+
+.fancy-div:hover {
+  border-radius: 0;
+}
+
+.fancy-div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  z-index: -1;
+  transform: rotate(-45deg);
+  border-radius: 10px;
+}
+
+.fancy-div p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+}
+
+.fancy-div:hover p {
+  box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
 .radiant-button {
   position: absolute;
-  top: 26%;
-  right: 16%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   width: 200px;
   height: 60px;
   text-align: center;
@@ -78,56 +142,10 @@ body {
   animation: animate 5s linear infinite;
 }
 
-.fancy-div {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 15px #fff;
-  background: #ffffff94;
-  box-sizing: border-box;
-  text-align: center;
-  transition: .5s;
-}
-
-.fancy-div:hover {
-  border-radius: 0;
-}
-
-.fancy-div:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: -1;
-  transform: rotate(-45deg);
-  border-radius: 10px;
-}
-
-.fancy-div p {
-  margin: 0;
-  padding: 0;
-  color: #0a151a;
-  font-size: 16px;
-  padding: 20px;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .5s;
-}
-
 .svg {
   position: absolute;
-  top: 20%;
-  left: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
 #svg {
