@@ -7,6 +7,15 @@
     -webkit-transform: rotate(360deg);
   }
 }
+ /* The 'spin' animation rotates an element by 360 degrees to create a spinning effect.
+ *
+ * Usage:
+ * To apply this animation to an HTML element, you can use the 'animation' property in your CSS
+ * rule and specify 'spin' as the animation name. For example:
+ *
+ *     .my-element {
+ *         animation: spin 2s linear infinite; /* Apply the 'spin' animation to 'my-element' */
+
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
